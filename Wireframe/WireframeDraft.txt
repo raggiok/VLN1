@@ -17,6 +17,8 @@ Please select an option by pressing a number
     6. Employees
     7. Exit
 
+    (Financials or Ivoices?)
+
 ---------------------------------------------
 
 -----------------Vehicles-------------------
@@ -25,8 +27,10 @@ Please select an option by pressing a number
     1. Create new vehicle
     2. Select vehicle --> edit, delete
     3. Check availability
-    4. View all vehicles
-    5. Main Menu
+    4. Rent out vehicle
+    5. Return vehicle --> add fine, paid or invoiced
+    6. View all vehicles
+    7. Main Menu
 
 ---------------------------------------------
 
@@ -80,14 +84,15 @@ AAA02            Jón Steinsson          Benz         99       01.06.21 13:45   
 ---------------------------------------------
 
 
------------------Reports-------------------
+-----------------Reports--------------------
 Please select an option by pressing a number
 
-    1. View all rates --> print report
-    2. View all destinations --> print report
-    3. List all vehicles --> print report
-    4. View all customers --> print report
-    5. Main Menu
+    1. Rate Reports --> print report
+    2. Destination Reports --> print report
+    3. Vehicle Reports --> print report (filter for utilization of vehicles for destination and filter by type)
+    4. Customer Reports --> print report
+    5. Revenue Reports -->filter for vehicle, destination office, vehicle type, customers, time period (we need to offer a few options)
+    6. Main Menu
 
 ---------------------------------------------
 
