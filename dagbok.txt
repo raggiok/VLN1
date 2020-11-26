@@ -28,7 +28,19 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 -----------------------------
 
 ---Fimmtudagur 26.11.2020---
-
+- Hópurinn ræddi stöðuna og finnst verkefnið vinnast vel.
+- Fannar er búinn að klára klasaritið en við gætum þurft að bæta við skýrslum (reports) og aðgangsstýringu
+- Callista er búin að skila af sér bæði notahendahópagreiningu og búin með kröfulistann
+- Franz er búinn að klára stöðurit fyrir Contracts, Employees og Vehicles. 
+    - Við þurfum líklega að bæta við þriðju skilgreiningunni á Employee permissions (nú eru Admin og Airport staff en okkur vantar City/Office)
+- Hópurinn er núna að skipta með sér verkum við Wireframe
+    - Callista vinnur að Customers
+    - Franz vinnur að Vehicles
+    - Fannar vinnur að Contracts
+    - Ragnar vinnur að reports
+    - Það sem eftir stendur er Destinations og Employees (og mögulega invoices ef það verður sér liður)
+    - Við munum stökkva í það jafn óðum og við klárum
+----------------------------
 
 ---Föstudagur 27.11.2020---
 
