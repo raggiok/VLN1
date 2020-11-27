@@ -32,7 +32,7 @@ New destination is registered.
 ---------------------------------------------
 
 ---------------Select destination-----------    *E-02
-Input country:
+Input city:
 
 2 matches found.
 
