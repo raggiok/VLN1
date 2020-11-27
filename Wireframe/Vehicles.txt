@@ -1,16 +1,29 @@
------------------Vehicles-------------------
+-----------------Main Menu-------------------
+Please select an option by pressing a number
+
+    1. Vehicles					*A-00
+    2. Customers					
+    3. Contracts
+    4. Reports
+    5. Destinations					            
+    6. Employees
+    7. Exit
+
+---------------------------------------------
+
+-----------------Vehicles------------------- 	*A-00
 Please select an option by pressing a number
 
     1. Create new vehicle
     2. Select vehicle
     3. Check availability
-    5. Return vehicle  
-    6. View all vehicles
-    7. Main Menu
+    4. Return vehicle  
+    5. View all vehicles
+    6. Main Menu
 
 ---------------------------------------------
 
--------------Create new vehicle--------------
+-------------Create new vehicle--------------	*A-01
 Please enter the following information to 
 register a new vehicle
 
@@ -23,7 +36,7 @@ Enter Registration Number:
 Enter Type: 
 ---------------------------------------------
 
---------------State of Vehicle---------------
+--------------State of Vehicle---------------	*A-01-01
 Please specify if vehicle is currently in
 operational condition if not please mark it 
 for repair 
@@ -34,7 +47,7 @@ for repair
 Enter state of vehicle: 
 ---------------------------------------------
 
---------------Finalise Registration----------
+-------------Finalise Registration-----------	*A-01-02
 You are about to add the following to the 
 database are you sure you would like to 
 continue ? 
@@ -50,7 +63,7 @@ Registration Number      Brand         Type
  Enter Choice:
 ---------------------------------------------
 
------------------Select vehicle--------------
+-----------------Select vehicle-------------- *A-02
 
 Number     Registration number    Rate      Brand        Type            State
 =================================================================================
@@ -61,7 +74,7 @@ Number     Registration number    Rate      Brand        Type            State
 Enter Number of the vehicle you wish to select: 
 ---------------------------------------------
 
------------------Edit,Delete-------------------
+-----------------Edit,Delete------------------- *A-02-01
 Selected:
 
 Number   Registration number       Rate     Brand       Type     State
@@ -77,17 +90,18 @@ Select Option:
 Enter Option: 
 ---------------------------------------------
 
------------------Edit-------------------
+-----------------Edit-------------------	*A-02-02
 	
 	1.Registration number
 	3.Brand
 	4.Type
 	5.State
+	6.Exit 
 
 Choose Paramater to change: 
 -------------------------------------------
 
------------------Delete-------------------
+-----------------Delete-------------------	 *A-02-03
 You are about to remove selected item from
 the database.
 
@@ -101,7 +115,7 @@ Number   Registration number       Rate     Brand       Type     State
 Are you sure you wish to continue:
 ---------------------------------------------
 
-------------Check availability---------------
+------------Check availability--------------- *A-03
 
 Number   Registration number       Rate     Brand       Type     Availability
 =============================================================================
@@ -114,17 +128,16 @@ Number   Registration number       Rate     Brand       Type     Availability
 
 ---------------------------------------------
 
-----------------Return vehicle---------------
+----------------Return vehicle--------------- *A-04
 	
 Enter vehicle registration you wish to return:  
 ---------------------------------------------
 
-----------------Return vehicle---------------
+----------------Return vehicle--------------- *A-04-01
 	
 Number   Registration number       Rate     Brand       Type     Return data      Late fee
 ============================================================================================
 1.       TJ-921                    120      Mazda       SUV      20-10-2020	  Applicable
-
 
 	1.Mark as paid
 	2.Waive late fee
@@ -133,7 +146,7 @@ Number   Registration number       Rate     Brand       Type     Return data    
 Enter Option: 
 ---------------------------------------------
 
-----------------View all vehicles------------
+----------------View all vehicles------------ *A-05
 	
 Number   Registration number       Rate     Brand       Type     
 ===============================================================
