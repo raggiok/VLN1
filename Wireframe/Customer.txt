@@ -2,7 +2,7 @@
 Please select an option by pressing a number
 
     1. Vehicles
-    2. Customers					*B-00
+    2. Customers					            *B-00
     3. Contracts
     4. Reports
     5. Destinations
@@ -11,17 +11,17 @@ Please select an option by pressing a number
 
 ---------------------------------------------
 
------------------Customers-------------------		*B-00
+-----------------Customers-------------------	*B-00
 Please select an option by pressing a number
 
-    1. Create new customer				*B-01
-    2. Search customer --> edit, deleteselec		*B-02
-    3. View all customers				*B-03
-    4. Main Menu					*B-04
+    1. Create new customer				        *B-01
+    2. Search customer                  		*B-02
+    3. View all customers				        *B-03
+    4. Main Menu					            *B-04
 
 ---------------------------------------------
 
---------------New Customer-------------------		*B-01
+--------------New Customer-------------------	*B-01
 Customer Name:
 SSN Number:
 Phone Number:
@@ -35,7 +35,7 @@ Status:
 New customer is registered.
 ---------------------------------------------
 
---------------Search Customers---------------		*B-02
+--------------Search Customers---------------	*B-02
 Please select an option by pressing a number
 
     1. Search by name
@@ -43,7 +43,7 @@ Please select an option by pressing a number
    
 ---------------------------------------------
 
---------------Search Customers---------------		*B-02-01
+--------------Search Customers---------------	*B-02-01
 Input the name:
 
 1 match found.
@@ -58,7 +58,7 @@ Jón Steinsson       xxxxxx-xxxx     xxx-xxxx        xxx-xxxx          email@ema
 Enter your choice:
 ---------------------------------------------
 
---------------Search Customers---------------		*B-02-02
+--------------Search Customers---------------	*B-02-02
 Input the SSN number :
 
 1 match found.
@@ -73,7 +73,7 @@ Jón Steinsson       xxxxxx-xxxx     xxx-xxxx        xxx-xxxx          email@ema
 Enter your choice:
 ---------------------------------------------
 
------------------Edit customer---------------         	*B-02-01-01
+-----------------Edit customer---------------   *B-02-01-01
 
 Customer Name       SSN             Phone nr.       Mobile nr.        E-mail address         Address                 Country of residence	Credit Card nr. 	Status
 ========================================================================================================================================================================================
@@ -98,7 +98,7 @@ Jón Jónsson       xxxxxx-xxxx       xxx-xxxx        xxx-xxxx          email@em
 
 -------------------------------------------
 
---------Delete customer information---------             *B-02-01-02
+--------Delete customer information---------    *B-02-01-02
 
 Customer Name       SSN             Phone nr.       Mobile nr.        E-mail address         Address                 Country of residence	Credit Card nr. 	Status
 ========================================================================================================================================================================================
@@ -111,7 +111,7 @@ Customer infromation successfully deleted.
 -------------------------------------------
 
 
---------View customer information---------                *B-03
+--------View customer information---------  *B-03
 
 Customer Name       SSN             Phone nr.       Mobile nr.        E-mail address         Address                 Country of residence	Credit Card nr. 	Status
 ========================================================================================================================================================================================
