@@ -1,0 +1,148 @@
+-----------------Vehicles-------------------
+Please select an option by pressing a number
+
+    1. Create new vehicle
+    2. Select vehicle --> edit, delete
+    3. Check availability
+    5. Return vehicle  
+    6. View all vehicles
+    7. Main Menu
+
+---------------------------------------------
+
+-------------Create new vehicle--------------
+Please enter the following information to 
+register a new vehicle
+
+    1.Vehicle brand
+    2.Registation number      
+    3.Type (SUV,Sedan,ect)
+
+Enter Brand Name: 
+Enter Registration Number: 
+Enter Type: 
+---------------------------------------------
+
+--------------State of Vehicle---------------
+Please specify if vehicle is currently in
+operational condition if not please mark it 
+for repair 
+
+    1. Operational    
+    2. Non-Operational
+ 
+Enter state of vehicle: 
+---------------------------------------------
+
+--------------Finalise Registration----------
+You are about to add the following to the 
+database are you sure you would like to 
+continue ? 
+
+Registration Number      Brand         Type            
+=============================================
+ SV-241		        Toyota	     Sedan
+
+
+    1.Yes / Continue 
+    2.No / Cancel   
+
+ Enter Choice:
+---------------------------------------------
+
+-----------------Select vehicle--------------
+
+Number     Registration number    Rate      Brand        Type            State
+=================================================================================
+1.         TJ-921                 120       Mazda         SUV         Operational
+2.         LM-190                 99        Toyata        Sedan       Non-Operational
+
+
+Enter Number of the vehicle you wish to select: 
+---------------------------------------------
+
+-----------------Edit,Delete-------------------
+Selected:
+
+Number   Registration number       Rate     Brand       Type     State
+=============================================================================
+1.       TJ-921                    120      Mazda       SUV      Operational
+
+Select Option:
+
+	1.Edit
+	2.Delete
+	3.Cancal
+
+Enter Option: 
+---------------------------------------------
+
+-----------------Edit-------------------
+	
+	1.Registration number
+	2.Rate
+	3.Brand
+	4.Type
+	5.State
+
+Choose Paramater to change: 
+-------------------------------------------
+
+-----------------Delete-------------------
+You are about to remove selected item from
+the database.
+
+Number   Registration number       Rate     Brand       Type     State
+=============================================================================
+1.       TJ-921                    120      Mazda       SUV      Operational	
+
+	1.Yes // continue 
+	2.No  // exit
+
+Are you sure you wish to continue:
+---------------------------------------------
+
+------------Check availability---------------
+
+Number   Registration number       Rate     Brand       Type     Availability
+=============================================================================
+1.        TJ-921                            Mazda        SUV       Available
+2.        TJ-924                            Lexus        SUV       On-Loan
+3.        LM-190                            Toyata       Sedan     Available
+
+ 
+	1. Exit
+
+---------------------------------------------
+
+----------------Return vehicle---------------
+	
+Enter vehicle registration you wish to return:  
+---------------------------------------------
+
+----------------Return vehicle---------------
+	
+Number   Registration number       Rate     Brand       Type     Return data      Late fee
+============================================================================================
+1.       TJ-921                    120      Mazda       SUV      20-10-2020		  Applicable
+
+
+	1.Mark as paid
+	2.Waive late fee
+	3.Exit
+
+Enter Option: 
+---------------------------------------------
+
+----------------View all vehicles------------
+	
+Number   Registration number       Rate     Brand       Type     
+===============================================================
+1.       TJ-921                    120      Mazda        SUV 
+2.       TJ-924                    230      Lexus        SUV
+3.       LM-190                    105      Toyata       Sedan   
+
+	1.Exit 
+
+Enter Option: 
+---------------------------------------------
