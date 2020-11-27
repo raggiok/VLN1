@@ -2,7 +2,7 @@
 Please select an option by pressing a number
 
     1. Create new vehicle
-    2. Select vehicle --> edit, delete
+    2. Select vehicle
     3. Check availability
     5. Return vehicle  
     6. View all vehicles
@@ -80,7 +80,6 @@ Enter Option:
 -----------------Edit-------------------
 	
 	1.Registration number
-	2.Rate
 	3.Brand
 	4.Type
 	5.State
@@ -124,7 +123,7 @@ Enter vehicle registration you wish to return:
 	
 Number   Registration number       Rate     Brand       Type     Return data      Late fee
 ============================================================================================
-1.       TJ-921                    120      Mazda       SUV      20-10-2020		  Applicable
+1.       TJ-921                    120      Mazda       SUV      20-10-2020	  Applicable
 
 
 	1.Mark as paid
