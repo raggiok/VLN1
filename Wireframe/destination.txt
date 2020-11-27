@@ -26,7 +26,8 @@ City:
 Country:
 Airport:
 Phone number:
-Opening hours: 
+Opening time:
+Closing time:
 
 New destination is registered.
 ---------------------------------------------
@@ -36,40 +37,42 @@ Input city:
 
 2 matches found.
 
-City    Country      Airport    Phone nr.   Opening hours   
-=========================================================
-RVK        IS          KEF        VIN NR      24/7      
-RVK        IS          KEF        VIN NR      24/7     
+City    Country      Airport    Phone nr.   Opening time   Closing time  
+=========================================================================
+RVK        IS          KEF        VIN NR      24/7              -
+RVK        IS          KEF        VIN NR      24/7              -
 
 ---------------------------------------------
 
 -----------------Edit destination---------------    *E-02-01
 
-City    Country      Airport    Phone nr.   Opening hours   
-=========================================================
-RVK        IS          KEF        VIN NR      24/7      
-RVK        IS          KEF        VIN NR      24/7 
+City    Country      Airport    Phone nr.   Opening time   Closing time  
+=========================================================================
+RVK        IS          KEF        VIN NR      24/7              -
+RVK        IS          KEF        VIN NR      24/7              -
 
     1. City.
     2. Country.
     3. Airport.
     4. Phone nr.
-    5. Opening hours.
+    5. Opening time.
+    6. Closing time.
 
 Enter your choice:
 City successfully changed.
 
-City    Country      Airport    Phone nr.   Opening hours   
-=========================================================
-HFJ        IS          KEF        VIN NR      24/7      
+City    Country      Airport    Phone nr.   Opening time   Closing time  
+=========================================================================
+HFJ        IS          KEF        VIN NR      24/7              -
 
 -------------------------------------------
 
 -----------Delete destination--------------     *E-02-02
 
-City    Country      Airport    Phone nr.   Opening hours   
-=========================================================
-HFJ        IS          KEF        VIN NR      24/7  
+City    Country      Airport    Phone nr.   Opening time   Closing time  
+=========================================================================
+RVK        IS          KEF        VIN NR      24/7              -
+RVK        IS          KEF        VIN NR      24/7              -
 
     Are you sure you want to delete this destination (y/n)? :
 
@@ -80,12 +83,13 @@ Destination successfully deleted.
 
 -----------View all destination-------------    *E-03
 
-City    Country      Airport    Phone nr.   Opening hours   
-=========================================================
-HFJ        IS          KEF        VIN NR      24/7  
-RVK        IS          KEF        VIN NR      24/7
-HFJ        IS          KEF        VIN NR      24/7
-HFJ        IS          KEF        VIN NR      24/7
+City    Country      Airport    Phone nr.   Opening time   Closing time  
+=========================================================================
+HFJ        IS          KEF        VIN NR      24/7              -
+RVK        IS          KEF        VIN NR      24/7              -
+RVK        IS          KEF        VIN NR      24/7              -
+RVK        IS          KEF        VIN NR      24/7              -
+RVK        IS          KEF        VIN NR      24/7              -
 -------------------------------------------
 
 
