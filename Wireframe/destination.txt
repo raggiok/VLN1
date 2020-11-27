@@ -28,6 +28,7 @@ Departure date:
 Departure time:
 Arrival date:
 Arrival time:
+Rate: 
 
 New destination is registered.
 ---------------------------------------------
