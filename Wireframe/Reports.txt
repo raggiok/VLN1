@@ -1,0 +1,232 @@
+  
+-----------------Main Menu-------------------
+Please select an option by pressing a number
+
+    1. Vehicles
+    2. Customers
+    3. Contracts                                                    *C-00
+    4. Reports                                                      *R-00
+    5. Destinations
+    6. Employees
+    7. Exit
+
+---------------------------------------------
+
+
+------------------Reports--------------------                       *R-00
+Please select a an option by pressing a number
+
+    1. Revenue overview                                             *R-01
+    2. Revenue by destination                                       *R-02
+    3. Revenue per employee                                         *R-03
+    3. Vehicle utilization (destination, type)                      *R-04
+    4. Invoices by customers                                        *R-05
+    7. Exit
+
+---------------------------------------------
+
+
+-----------------Revenue Overview------------                       *R-01-01
+Please select a time period:
+
+Start date (dd.mm.yy): 01.01.2019
+End date (dd.mm.yy): 31.12.2019
+
+Printing......
+--------------------------------------------
+
+Revenue report
+Time period: 01.01.2019 - 31.12.2019
+
+Month               Revenues
+=============================================
+January             $28,000.00
+February            $14,000.00
+March               $13,000.00
+April               $17,000.00               
+May                 $19,000.00
+June                $29,000.00
+July                $26,000.00
+August              $28,000.00
+September           $16,000.00
+October             $15,000.00
+November            $14,000.00
+December            $31,000.00
+
+Total               $250,000.00
+---------------------------------------------
+
+What would you like to do?                                           *R-01-02
+
+    1. Print report
+    2. Select new time period
+    3. Back
+
+---------------------------------------------
+
+
+------------Revenue by destination------------                       *R-02-01
+Please select a time period:
+
+    Start date (dd.mm.yy): 01.01.2019
+    End date (dd.mm.yy): 31.12.2019
+
+--------------------------------------------
+
+Revenue report
+Time period: 01.06.2019 - 01.09.2019
+
+Destination            Month               Revenues
+==================================================
+Reykjavík
+                    June                $29,000.00
+                    July                $26,000.00
+                    August              $28,000.00
+                    
+                    Total               $250,000.00
+Nuuk
+                    June                $29,000.00
+                    July                $26,000.00
+                    August              $28,000.00
+                    
+                    Total               $250,000.00
+Kulusuk
+                    June                $29,000.00
+                    July                $26,000.00
+                    August              $28,000.00
+                    
+                    Total               $250,000.00
+===================================================
+Total Revenue:                          $750,000.00
+
+---------------------------------------------
+What would you like to do?                                           *R-02-02
+
+    1. Print report
+    2. Select new time period
+    3. Back
+
+
+
+------------Revenue by Employee------------                           *R-03-01
+Please select a time period:
+
+    Start date (dd.mm.yy): 01.01.2019
+    End date (dd.mm.yy): 31.12.2019
+
+--------------------------------------------
+
+Revenue report
+Time period: 01.06.2019 - 01.09.2019
+
+Employee            Month               Revenues
+==================================================
+Ragnar
+                    June                $29,000.00
+                    July                $26,000.00
+                    August              $28,000.00
+                    
+                    Total               $250,000.00
+Callista
+                    June                $29,000.00
+                    July                $26,000.00
+                    August              $28,000.00
+                    
+                    Total               $250,000.00
+Fannar
+                    June                $29,000.00
+                    July                $26,000.00
+                    August              $28,000.00
+                    
+                    Total               $250,000.00
+===================================================
+Total Revenue:                          $750,000.00
+
+---------------------------------------------
+What would you like to do?                                           *R-03-02
+
+    1. Print report
+    2. Select new time period
+    3. Back
+
+
+
+------------Vehicle utilization------------                          *R-04-01
+Please select destination:
+
+    1. All Destinations
+    2. Reykjavík
+    3. Nuuk
+    4. Kulusuk
+    5. Þórshöfn
+    6. Tingwall
+    7. Longyerbyen
+
+--------------------------------------------
+
+Vehicle utilization report
+
+Destination     Number   Registration number       Rate     Brand       Type     Utilization
+================================================================================================
+Reykjavík
+                1        TJ-921                            Mazda        SUV       78%
+                2        TJ-924                            Lexus        SUV       67%
+                3        LM-190                            Toyata       Sedan     88%
+Nuuk
+                1        TJ-921                            Mazda        SUV       98%
+                2        TJ-924                            Lexus        SUV       44%
+                3        LM-190                            Toyata       Sedan     56%
+Kulusuk
+                1        TJ-921                            Mazda        SUV       69%
+                2        TJ-924                            Lexus        SUV       77%
+                3        LM-190                            Toyata       Sedan     92%
+
+---------------------------------------------
+What would you like to do?                                           *R-04-02
+
+    1. Print report
+    2. Select new time period
+    3. Back
+
+
+------------Invoices by customers-----------                          *R-05-01
+Please select a time period:
+
+    Start date (dd.mm.yy): 01.01.2019
+    End date (dd.mm.yy): 31.12.2019
+
+Please select destination:
+
+    1. All Destinations
+    2. Reykjavík
+    3. Nuuk
+    4. Kulusuk
+    5. Þórshöfn
+    6. Tingwall
+    7. Longyerbyen
+
+--------------------------------------------
+
+Customer Invoices
+Destination: All Destinations
+
+Customer Name       SSN                 Registration number     Destination         Amount Due          Status        
+====================================================================================================================
+Arnar Jónsson       xxxxxx-xxxx         TJ-921                  Kulusuk             $450.00             Paid
+Brynjar Jónsson     xxxxxx-xxxx         TJ-921                  Reykjavik           $450.00             Due
+Jón Jónsson         xxxxxx-xxxx         TJ-921                  Nuuk                $450.00             Due
+Jón Jónsson         xxxxxx-xxxx         TJ-921                  Tingwall            $450.00             Cancelled
+====================================================================================================================
+                                                                        Total       $1,800.00
+
+---------------------------------------------
+What would you like to do?                                           *R-05-02
+
+    1. Print report
+    2. Select new time period
+    3. Back
+
+
+
+
+
