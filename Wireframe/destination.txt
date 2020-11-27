@@ -5,23 +5,23 @@ Please select an option by pressing a number
     2. Customers					
     3. Contracts
     4. Reports
-    5. Destinations					*E-00 
+    5. Destinations					            *E-00 
     6. Employees
     7. Exit
 
 ---------------------------------------------
 
------------------Destinations------------------		*E-00
+-----------------Destinations------------------ *E-00
 Please select an option by pressing a number
 
     1. Create new destination
-    2. Select destination -->edit, delete
+    2. Select destination
     3. View all destinations
     4. Main Menu
 
 ---------------------------------------------
 
---------------New destination----------------		*E-01
+--------------New destination----------------   *E-01
 Departure:
 Arrival:
 Departure date:
@@ -32,7 +32,7 @@ Arrival time:
 New destination is registered.
 ---------------------------------------------
 
----------------Select destination------------          	*E-02
+---------------Select destination-----------    *E-02
 Input destination:
 
 2 matches found.
@@ -44,7 +44,7 @@ RVK            Svalbard      VIN NR       99       01.06.21 13:45    01.07.21 19
 
 ---------------------------------------------
 
------------------Edit destination---------------       	*E-02-01
+-----------------Edit destination---------------    *E-02-01
 
 Departure      Arrival       Vehicle     Rate      Departure Date    Arrival Date        
 =====================================================================================
@@ -66,7 +66,7 @@ RVK            CPH          VIN NR       100      26.11.20 17:45    28.11.20 18:
 
 -------------------------------------------
 
------------Delete destination--------------             *E-02-02
+-----------Delete destination--------------     *E-02-02
 
 Departure      Arrival       Vehicle     Rate      Departure Date    Arrival Date        
 =====================================================================================
@@ -79,7 +79,7 @@ Destination successfully deleted.
 -------------------------------------------
 
 
------------View all destination-------------         	*E-03
+-----------View all destination-------------    *E-03
 
 Departure      Arrival       Vehicle     Rate      Departure Date    Arrival Date        
 =====================================================================================
