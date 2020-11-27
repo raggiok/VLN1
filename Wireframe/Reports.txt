@@ -19,7 +19,7 @@ Please select a an option by pressing a number
     1. Revenue overview                                             *R-01
     2. Revenue by destination                                       *R-02
     3. Revenue per employee                                         *R-03
-    3. Vehicle utilization (destination, type)                      *R-04
+    3. Vehicle utilization                                          *R-04
     4. Invoices by customers                                        *R-05
     7. Exit
 
