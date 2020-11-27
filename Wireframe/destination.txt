@@ -22,56 +22,54 @@ Please select an option by pressing a number
 ---------------------------------------------
 
 --------------New destination----------------   *E-01
-Departure:
-Arrival:
-Departure date:
-Departure time:
-Arrival date:
-Arrival time:
-Rate: 
+City:
+Country:
+Airport:
+Phone number:
+Opening hours: 
 
 New destination is registered.
 ---------------------------------------------
 
 ---------------Select destination-----------    *E-02
-Input destination:
+Input country:
 
 2 matches found.
 
-Departure      Arrival       Vehicle     Rate      Departure Date    Arrival Date        
-=====================================================================================
-RVK            Nuuk          VIN NR       100      26.11.20 17:45    28.11.20 18:45  
-RVK            Svalbard      VIN NR       99       01.06.21 13:45    01.07.21 19:45  
+City    Country      Airport    Phone nr.   Opening hours   
+=========================================================
+RVK        IS          KEF        VIN NR      24/7      
+RVK        IS          KEF        VIN NR      24/7     
 
 ---------------------------------------------
 
 -----------------Edit destination---------------    *E-02-01
 
-Departure      Arrival       Vehicle     Rate      Departure Date    Arrival Date        
-=====================================================================================
-RVK            Nuuk          VIN NR       100      26.11.20 17:45    28.11.20 18:45 
+City    Country      Airport    Phone nr.   Opening hours   
+=========================================================
+RVK        IS          KEF        VIN NR      24/7      
+RVK        IS          KEF        VIN NR      24/7 
 
-    1. Departure.
-    2. Arrival.
-    3. Vehicle.
-    4. Rate.
-    5. Departure Date.
-    6. Arrival Date.
+    1. City.
+    2. Country.
+    3. Airport.
+    4. Phone nr.
+    5. Opening hours.
 
 Enter your choice:
-Arrival successfully changed.
+City successfully changed.
 
-Departure      Arrival       Vehicle     Rate      Departure Date    Arrival Date        
-=====================================================================================
-RVK            CPH          VIN NR       100      26.11.20 17:45    28.11.20 18:45 
+City    Country      Airport    Phone nr.   Opening hours   
+=========================================================
+HFJ        IS          KEF        VIN NR      24/7      
 
 -------------------------------------------
 
 -----------Delete destination--------------     *E-02-02
 
-Departure      Arrival       Vehicle     Rate      Departure Date    Arrival Date        
-=====================================================================================
-RVK            Nuuk          VIN NR       100      26.11.20 17:45    28.11.20 18:45 
+City    Country      Airport    Phone nr.   Opening hours   
+=========================================================
+HFJ        IS          KEF        VIN NR      24/7  
 
     Are you sure you want to delete this destination (y/n)? :
 
@@ -82,12 +80,12 @@ Destination successfully deleted.
 
 -----------View all destination-------------    *E-03
 
-Departure      Arrival       Vehicle     Rate      Departure Date    Arrival Date        
-=====================================================================================
-RVK            Nuuk          VIN NR       100      26.11.20 17:45    28.11.20 18:45
-RVK            xxxx          VIN NR       100      26.11.20 17:45    28.11.20 18:45
-RVK            xxxx          VIN NR       100      26.11.20 17:45    28.11.20 18:45
-RVK            xxxx          VIN NR       100      26.11.20 17:45    28.11.20 18:45     	
+City    Country      Airport    Phone nr.   Opening hours   
+=========================================================
+HFJ        IS          KEF        VIN NR      24/7  
+RVK        IS          KEF        VIN NR      24/7
+HFJ        IS          KEF        VIN NR      24/7
+HFJ        IS          KEF        VIN NR      24/7
 -------------------------------------------
 
 
