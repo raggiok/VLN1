@@ -17,3 +17,9 @@ class LogicMain():
                 retList.append(emp)
         return retList
 
+    
+    def all_vehicles(self):
+        return self.data.get_vehicles()
+
+    
+

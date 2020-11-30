@@ -8,7 +8,9 @@ class UIMain:
 
     def ui_loop(self):
         while True:
-            print("\nSelect an option...\n1 - Print all employees \n2 - Get employees by role \nq - to quit program")
+            print("-"*20 + "Main Menu" + "-"*20)
+            print("\nSelect an option...\n1 - Print all employees \n2 - Get employees by role \n3 - Get all vehicles \nq - to quit program\n")
+            print("-"*50)
             command = input("Input your command: ")
             command = command.lower()
             if command == "1":
@@ -22,6 +24,11 @@ class UIMain:
                 print("\nAll employees with role " + role_str + ": ")
                 for employee in results:
                     print(employee)
+            elif command == "3":
+                results  = self.logic.all_vehicles()
+                print("\nAll vehicles:")
+                for vehicle in results:
+                    print(vehicle)
             elif command == "q":
                 return False
             else:
