@@ -25,4 +25,4 @@ class DataMain:
                 vehicle = Vehicle(row["manufacturer"], row["model"], row["vehicle_type"], row["status"], row["man_year"], row["color"], row["licence_type"], row["location"])
                 retList.append(vehicle)
         return retList
-
+        
