@@ -16,9 +16,7 @@ Please select an option by pressing a number
     5. Destinations
     6. Employees
     7. Exit
-
-    (Financials or Ivoices?)
-
+    
 ---------------------------------------------
 
 -----------------Vehicles-------------------

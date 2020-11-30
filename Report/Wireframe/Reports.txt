@@ -4,8 +4,8 @@ Please select an option by pressing a number
 
     1. Vehicles
     2. Customers
-    3. Contracts                                                    *C-00
-    4. Reports                                                      *R-00
+    3. Contracts                                                    
+    4. Reports                                                      *D-00
     5. Destinations
     6. Employees
     7. Exit
@@ -13,20 +13,20 @@ Please select an option by pressing a number
 ---------------------------------------------
 
 
-------------------Reports--------------------                       *R-00
+------------------Reports--------------------                       *D-00
 Please select a an option by pressing a number
 
-    1. Revenue overview                                             *R-01
-    2. Revenue by destination                                       *R-02
-    3. Revenue per employee                                         *R-03
-    3. Vehicle utilization                                          *R-04
-    4. Invoices by customers                                        *R-05
+    1. Revenue overview                                             *D-01
+    2. Revenue by destination                                       *D-02
+    3. Revenue per employee                                         *D-03
+    3. Vehicle utilization                                          *D-04
+    4. Invoices by customers                                        *D-05
     7. Exit
 
 ---------------------------------------------
 
 
------------------Revenue Overview------------                       *R-01-01
+-----------------Revenue Overview------------                       *D-01-01
 Please select a time period:
 
 Start date (dd.mm.yy): 01.01.2019
@@ -56,7 +56,7 @@ December            $31,000.00
 Total               $250,000.00
 ---------------------------------------------
 
-What would you like to do?                                           *R-01-02
+What would you like to do?                                           *D-01-02
 
     1. Print report
     2. Select new time period
@@ -65,7 +65,7 @@ What would you like to do?                                           *R-01-02
 ---------------------------------------------
 
 
-------------Revenue by destination------------                       *R-02-01
+------------Revenue by destination------------                       *D-02-01
 Please select a time period:
 
     Start date (dd.mm.yy): 01.01.2019
@@ -100,7 +100,7 @@ Kulusuk
 Total Revenue:                          $750,000.00
 
 ---------------------------------------------
-What would you like to do?                                           *R-02-02
+What would you like to do?                                           *D-02-02
 
     1. Print report
     2. Select new time period
@@ -108,7 +108,7 @@ What would you like to do?                                           *R-02-02
 
 
 
-------------Revenue by Employee------------                           *R-03-01
+------------Revenue by Employee------------                           *D-03-01
 Please select a time period:
 
     Start date (dd.mm.yy): 01.01.2019
@@ -143,7 +143,7 @@ Fannar
 Total Revenue:                          $750,000.00
 
 ---------------------------------------------
-What would you like to do?                                           *R-03-02
+What would you like to do?                                           *D-03-02
 
     1. Print report
     2. Select new time period
@@ -151,7 +151,7 @@ What would you like to do?                                           *R-03-02
 
 
 
-------------Vehicle utilization------------                          *R-04-01
+------------Vehicle utilization------------                          *D-04-01
 Please select destination:
 
     1. All Destinations
@@ -182,14 +182,14 @@ Kulusuk
                 3        LM-190                            Toyata       Sedan     92%
 
 ---------------------------------------------
-What would you like to do?                                           *R-04-02
+What would you like to do?                                           *D-04-02
 
     1. Print report
     2. Select new time period
     3. Back
 
 
-------------Invoices by customers-----------                          *R-05-01
+------------Invoices by customers-----------                          *D-05-01
 Please select a time period:
 
     Start date (dd.mm.yy): 01.01.2019
@@ -220,7 +220,7 @@ Jón Jónsson         xxxxxx-xxxx         TJ-921                  Tingwall      
                                                                         Total       $1,800.00
 
 ---------------------------------------------
-What would you like to do?                                           *R-05-02
+What would you like to do?                                           *D-05-02
 
     1. Print report
     2. Select new time period
