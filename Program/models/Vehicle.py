@@ -10,4 +10,4 @@ class Vehicle:
         self.location = location
 
     def __str__(self):
-        return self.manufacturer + self.model + self.vehicle_type + self.status + self.man_year + self.color + self.licence_type + self.location
+        return f"{self.manufacturer:<20}{self.model:<20}{self.vehicle_type:<20}{self.status:<20}{self.man_year:<20}{self.color:<20}{self.licence_type:<20}{self.location:<20}"
