@@ -1,6 +1,6 @@
-unique_id,manufacturer,model,vehicle_type,status,man_year,color,licence_type,location
-01,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers licence,Kulusuk
-02,TAILG,Free Fly II,Medium road,OK,2018,Orange,Drivers licence,Kulusuk
+unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,location
+01,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers license,Kulusuk
+02,TAILG,Free Fly II,Medium road,OK,2018,Orange,Drivers license,Kulusuk
 03,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen
 04,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn
 05,Kayman Kayaks,Crazy HV,Light water,OK,2020,Yellow,None,Nuuk
@@ -17,7 +17,9 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,licence_type,loc
 16,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Tingwall
 17,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Longyearbyen
 18,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Kulusuk
-19,Forward,FWD-ZK125H,Medium road,OK,2019,Blue,Drivers licence,Longyearbyen 
+19,Forward,FWD-ZK125H,Medium road,OK,2019,Blue,Drivers license,Longyearbyen 
 20,Colorado,Pontoon Boat,Light water,OK,2019,Green,None,Thorshavn
 21,A2extreem,Powerboard,Light winter,OK,2018,Black,None,Nuuk
-22,Torpedo,3500,Light water,OK,2019,White,Diving licence,Thorshavn
+22,Torpedo,3500,Light water,OK,2019,White,Diving license,Thorshavn
+23,Kia,Ceed,Car,OK,2020,Red,Drivers license,Reykjavik
+24,BMW,Cruiser,Car,OK,2020,Red,Drivers license,Reykjavik
