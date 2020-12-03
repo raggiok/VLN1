@@ -38,7 +38,6 @@ class VehicleLogic():
         total_vehicle_count = self.vehicle_amount_registered()
         total_vehicle_count += 1
         return total_vehicle_count
-    
 
     def search_vehicle_by_ID(self, vehicle_ID):
         '''Returns a single vehicle with corresponding ID'''
@@ -46,7 +45,6 @@ class VehicleLogic():
         for vehicle in vehicles:
             if vehicle.unique_id == vehicle_ID:
                 return vehicle
-        
 
     #Searches for vehicle by Type
     def search_vehicle_by_type(self, vehicle_type):

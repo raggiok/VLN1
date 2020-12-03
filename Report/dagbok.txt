@@ -56,7 +56,42 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 
 
 ---Mánudagur 30.11.2020---
+- Við erum búin að setja upp file structure út frá kennslumyndbandi hjá Friðrik
+- Við ákváðum að skipta verkum þannig að hvert og eitt okkar mun forrita ákveðna virkni af kerfinu á öllum layers
+- Callista mun taka Customers
+- Franz mun taka Destinations
+- Ragnar mun taka Vehicles
+- Fannar mun taka Contracts
+- Þar af leiðandi bjuggum við til margar textaskrár svo að við fáum ekki conflicts hvert við annað þegar við erum að vinna á Git
+- Búið er að stofna skrár á öllum layers fyrir data, logic og UI
+- Hvert og eitt okkar kemur svo til með að búa til skrár undir models eins og þörf er áfangann
+- Við munum reyna útfæra eins mikla lógik fyrir hvert og eitt atriði og við getum og svo tala betur saman annað kvöld til að meta hversu langt við komumst
 
 
----Þirðjudagur 01.12.2020---
+---Þriðjudagur 01.12.2020---
+- Höldum áfram að vinna í öllum layers hvert fyrir sig
+#Ragnar:
+- Erum komin með góða virkni í UI fyrir Vehicles
+- Það er hægt að skrá bíl í UI og hann skrifast í grunninn
+- Það er komin search virknin eftir Type
+- Mun halda áfram í að útvíkka leitarskilyrði og fínpússa UI
+- Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni, uppfæra bíl og svo bæta við útlána og skilavirkni
+#Callista:
+#Fannar:
+#Franz:
 
+---Miðvikuagur 02.12.2020---
+- Höldum áfram að vinna í öllum layers hvert fyrir sig
+#Ragnar:
+- Búinn að útvíkka UI layerinn fyrir Vehicle töluvert
+- Það eru komnir fleiri leitarmöguleikar og edit eiginleiki fyrir Vehicles sem virkar
+- Edit UI layerinn sendir gögn í grunnin sem uppfærast og vistast
+- Format á töflum var uppfært og er nú töluvert betra
+- Menu format er líka í meira samræmi
+- Föll fyrir sambærilega virkni útfærð (t.d. menu headers og footers)
+- Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni og svo bæta við útlána og skilavirkni
+#Callista:
+#Fannar:
+#Franz:
+
+---Fimmtudagur 03.12.2020---

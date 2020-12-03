@@ -28,7 +28,7 @@ Please enter the following information to
 register a new vehicle
 
     1.Vehicle brand
-    2.Registation number      
+    2.Registation number
     3.Type (SUV,Sedan,ect)
 
 Enter Brand Name: 

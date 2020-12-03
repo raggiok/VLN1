@@ -22,4 +22,5 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 21,A2extreem,Powerboard,Light winter,OK,2018,Black,None,Nuuk
 22,Torpedo,3500,Light water,OK,2019,White,Diving license,Thorshavn
 23,Kia,Ceed,Car,OK,2020,Red,Drivers license,Reykjavik
-24,BMW,Cruiser,Car,OK,2020,Red,Drivers license,Reykjavik
+24,KIA,Cruiser,Car,OK,2020,Red,Drivers license,Reykjavik
+25,BMW,Sportsmodel,Car,OK,2019,Black,Drivers License,Nuuk

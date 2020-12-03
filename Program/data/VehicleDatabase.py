@@ -30,7 +30,6 @@ class VehicleData:
                     if updated_vehicle.unique_id == row["unique_id"]:
                         row = {"unique_id": updated_vehicle.unique_id, "manufacturer": updated_vehicle.manufacturer, "model": updated_vehicle.model, "vehicle_type": updated_vehicle.vehicle_type, "status": updated_vehicle.status, "man_year": updated_vehicle.man_year, "color": updated_vehicle.color, "license_type": updated_vehicle.license_type, "location": updated_vehicle.location}
                     writer.writerow(row)
-                    
 
     def get_vehicles(self):
         '''Returns a list of all vehicles in database'''

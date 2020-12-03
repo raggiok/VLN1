@@ -10,7 +10,7 @@ class VehicleUI:
 
     #Prints UI for new vehicle
     def ui_new_vehicle(self):
-        vehicleFieldnames = ["Manufacturer","Model","Vehicle type","Status","Manufacturing year","Color","License Requirement","Location"] #can we automate this list to fetch the header?
+        vehicleFieldnames = ["Manufacturer","Model","Vehicle type","Status","Manufacturing year","Color","License Requirement","Location"]
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new vehicle:" )
@@ -20,8 +20,12 @@ class VehicleUI:
                 return self.vehicle_menu()
             user_input = input(f"Enter {field}: ")
             inputList.append(user_input)
-        vehicle = Vehicle(self.logic.add_unique_ID(), inputList[0], inputList[1],inputList[2], inputList[3], inputList[4], inputList[5], inputList[6], inputList[7]) #can we improve this?
+        vehicle = Vehicle(self.logic.add_unique_ID(), *inputList)
         return vehicle
+
+    #Request new value from user
+    def value_input(self):
+        return input("Enter new value: ")
 
     #Creates the Edit menu layout and returns the Vehicle Instance after edit
     def ui_edit_vehicle(self):
@@ -31,29 +35,21 @@ class VehicleUI:
             self.ui_print_edit_menu() #ask user what he would like to edit
             selection = self.ui_edit_input()
             if selection == "1":
-                new_value = input("Enter new value: ")
-                vehicle.manufacturer = new_value
+                vehicle.manufacturer = self.value_input()
             elif selection == "2":
-                new_value = input("Enter new value: ")
-                vehicle.model = new_value
+                vehicle.model = self.value_input()
             elif selection == "3":
-                new_value = input("Enter new value: ")
-                vehicle.vehicle_type = new_value
+                vehicle.vehicle_type = self.value_input()
             elif selection == "4":
-                new_value = input("Enter new value: ")
-                vehicle.status = new_value
+                vehicle.status = self.value_input()
             elif selection == "5":
-                new_value = input("Enter new value: ")
-                vehicle.man_year = new_value
+                vehicle.man_year = self.value_input()
             elif selection == "6":
-                new_value = input("Enter new value: ")
-                vehicle.color = new_value
+                vehicle.color = self.value_input()
             elif selection == "7":
-                new_value = input("Enter new value: ")
-                vehicle.license_type = new_value
+                vehicle.license_type = self.value_input()
             elif selection == "8":
-                new_value = input("Enter new value: ")
-                vehicle.location = new_value
+                vehicle.location = self.value_input()
             elif selection == "9":
                 print(vehicle)
                 return vehicle
