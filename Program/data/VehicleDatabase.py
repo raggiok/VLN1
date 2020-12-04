@@ -1,11 +1,11 @@
 import csv
-import os
 from models.Vehicle import Vehicle
 
 class VehicleData:
     def __init__(self):
         print("inside data layer")
 
+    #Create New Vehicle
     def new_vehicle(self, vehicle):
         '''Registers the new vehicle in the database'''
         with open('data/vehicles.csv', 'a', newline='', encoding="utf-8") as csvfile:
@@ -40,4 +40,3 @@ class VehicleData:
                 vehicle = Vehicle(row["unique_id"],row["manufacturer"], row["model"], row["vehicle_type"], row["status"], row["man_year"], row["color"], row["license_type"], row["location"])
                 retList.append(vehicle)
         return retList
-

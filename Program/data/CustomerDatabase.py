@@ -8,8 +8,8 @@ class CustomerData:
 
     def new_customer(self,customer):
         with open('data/customer.csv', newline='', encoding="utf-8") as csvfile:
-            customerheader = ["name","ssn","address","postnumber","phone","email","land"]
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames,)
+            fieldnames = ["name","ssn","address","postnumber","phone","email","land"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writerow({"name": customer.name, "ssn": customer.id, "address": customer.address, "postnumber": customer.postnumber, "phone": customer.phone, "email": customer.email, "land": customer.country})
         
 

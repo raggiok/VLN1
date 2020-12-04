@@ -78,6 +78,7 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni, uppfæra bíl og svo bæta við útlána og skilavirkni
 #Callista:
 #Fannar:
+- Vann í UI Data og logic layerum fyrir contract.
 #Franz:
 
 ---Miðvikuagur 02.12.2020---
@@ -92,6 +93,22 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni og svo bæta við útlána og skilavirkni
 #Callista:
 #Fannar:
+-Komin virkni þvert á lög kóda
+-bætti vid leit
+-bætti við print all virkni
 #Franz:
 
+
 ---Fimmtudagur 03.12.2020---
+- Hópurinn ræddi við Gylfa og þarf að endurskipuleggja hvernig við vinnum í þriggja laga fasanum
+- Hingað til hefur hvert og eitt okkar unnið þvert á öll lögin
+- Það er góð leið til að læra á allt en slæm leið til að ná samræmi í hugbúnaðinn
+- Hópurinn ræddi líka annarskonar útfærslu sem hafði setið á hakanum svo sem Availability skráning
+- Við fórum líka yfir hvernig við búum til unique_ID fyrir hvert gildi sem við vistum í grunninn
+- Hver meðlimur ætlaði að klára sína virkni svo hægt sé að commita þessu inn á repo og svo ætlum við að skipta okkur niður á layers
+
+---Fimmtudagur 04.12.2020---
+- Hópurinn er búinn að skipta sér upp á eftirfarandi máta:
+- Ragnar tekur Data layerinn
+- Fannar vinnur Logic layerinn
+- Callistas og Franz vinna UI layerinn

@@ -1,4 +1,4 @@
-from data.CustomerData import CustomerData
+from data.CustomerDatabase import CustomerData
 
 class CustomerLogic:
     def __init__(self):

@@ -16,7 +16,7 @@ class VehicleUI:
         print("\nPlease enter the following details to create a new vehicle:" )
         user_input = ""
         for field in vehicleFieldnames:
-            if user_input == "q":
+            if user_input.lower() == "q":
                 return self.vehicle_menu()
             user_input = input(f"Enter {field}: ")
             inputList.append(user_input)
@@ -51,7 +51,6 @@ class VehicleUI:
             elif selection == "8":
                 vehicle.location = self.value_input()
             elif selection == "9":
-                print(vehicle)
                 return vehicle
 
     #Get input for edit menu
@@ -137,16 +136,16 @@ class VehicleUI:
     def ui_search_menu(self):
         self.ui_menu_header("Vehicle Search")
         print("\nPlease select a search option:")
-        print("1. Type")
-        print("2. Availability")
-        print("3. Manufactuerer")
-        print("4. Model")
-        print("5. Other")
-        print("6. Exit")
+        self.UI_numbered_menu(["Type", "Availability", "Manufacturer", "Model", "Other", "Exit"])
         self.ui_menu_footer
         selection = input("\n>> Select option: ")
         return selection
 
+    #Prints any UI menu in order
+    def UI_numbered_menu(self, a_list):
+        '''Takes a list as parameter and prints all the items of a list in an order from 1. list[0], 2. list[1] and so on'''
+        for i in range(0,(len(a_list))):
+            print(f"{i+1}. {a_list[i]}")
 
     #Prints the Vehicle Main Menu
     def vehicle_menu(self):
