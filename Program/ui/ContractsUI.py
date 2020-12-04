@@ -9,7 +9,7 @@ class ContractUI:
     def contract_ui_loop(self):
         while True:
             print("""\n---------------Contracts---------------\n
-\t1. Create new contract\n\t2. Search contracts\n\t3. Print all contracts\n\t4. View contract\n\t5. Main menu""")
+\t1. Create new contract.\n\t2. Search contracts.\n\t3. Print all contracts.\n\t4. View contract.\n\t5. Edit contract.\n\t6. Delete contract.\n\t7. Main menu.""")
             choice = input("\nEnter option: ")
             if choice == "5":
                 break
@@ -19,6 +19,12 @@ class ContractUI:
                 self.search_menu()
             elif choice == "3":
                 self.print_all_contracts()
+            elif choice == "4":
+                self.view_contract_by_id()
+            elif choice == "5":
+                pass
+            elif choice == "6":
+                self.delete_contract()
                 
     def create_new_contract(self):
         answer_list = []
@@ -61,6 +67,17 @@ class ContractUI:
             print(contract)
 
     def view_contract_by_id(self):
-        while True:
-            contract_id = input("Enter contract identification number: ")
-            
+        contract_id = input("Enter contract identification number: ")
+        contract = self.logic.search_contracts_by_id(contract_id)
+        if contract:
+            print(contract)
+        else:
+            print("Contract not found.")
+
+    def delete_contract(self):
+        contract_id = str(input("Enter the ID number of the contract you want to delete :"))
+        confirmation = self.logic.delete_contract(contract_id)
+        if confirmation == True:
+            print("Contract successfully deleted.")
+        else:
+            print("Contract not found.")
