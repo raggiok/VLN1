@@ -37,5 +37,12 @@ class ContractLogic:
             return result_list
 
     def search_contracts_by_id(self, string):
+        match = ""
         for contract in self.all_contracts():
-            if contract.get
+            if contract.get_vin() == string:
+                match = contract
+        return match
+
+    def delete_contract(self, string):
+        confirmation = self.data.del_contract(string)
+        return confirmation
