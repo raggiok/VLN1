@@ -1,23 +1,26 @@
-unique_id,manufacturer,model,vehicle_type,status,man_year,color,licence_type,location
-01,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers licence,Kulusuk
-02,TAILG,Free Fly II,Medium road,OK,2018,Orange,Drivers licence,Kulusuk
-03,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen
-04,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn
-05,Kayman Kayaks,Crazy HV,Light water,OK,2020,Yellow,None,Nuuk
-06,Cani-Fit,Fat Max,Light off-road,OK,2019,Black,None,Nuuk
-07,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn
-08,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn
-09,Cani-Fit,Fat Max,Light off-road,OK,2020,Black,None,Tingwall
-10,Yedoo,Trexx,Light road,OK,2020,Orange,None,Kulusuk
-11,Yedoo,Trexx,Light road,OK,2020,Orange,None,Thorshavn
-12,Yedoo,Trexx,Light road,OK,2020,Orange,None,Tingwall
-13,Yedoo,Trexx,Light road,OK,2020,Orange,None,Longyearbyen
-14,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk
-15,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk
-16,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Tingwall
-17,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Longyearbyen
-18,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Kulusuk
-19,Forward,FWD-ZK125H,Medium road,OK,2019,Blue,Drivers licence,Longyearbyen 
-20,Colorado,Pontoon Boat,Light water,OK,2019,Green,None,Thorshavn
-21,A2extreem,Powerboard,Light winter,OK,2018,Black,None,Nuuk
-22,Torpedo,3500,Light water,OK,2019,White,Diving licence,Thorshavn
+unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,state
+01,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers license,Kulusuk,Active
+02,TAILG,Free Fly II,Medium road,OK,2018,Orange,Drivers license,Kulusuk,Active
+03,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen,Active
+04,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn,Active
+05,Kayman Kayaks,Crazy HV,Light water,OK,2020,Yellow,None,Nuuk,Active
+06,Cani-Fit,Fat Max,Light off-road,OK,2019,Black,None,Nuuk,Active
+07,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,Active
+08,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,Active
+09,Cani-Fit,Fat Max,Light off-road,OK,2020,Black,None,Tingwall,Active
+10,Yedoo,Trexx,Light road,OK,2020,Orange,None,Kulusuk,Active
+11,Yedoo,Trexx,Light road,OK,2020,Orange,None,Thorshavn,Active
+12,Yedoo,Trexx,Light road,OK,2020,Orange,None,Tingwall,Active
+13,Yedoo,Trexx,Light road,OK,2020,Orange,None,Longyearbyen,Active
+14,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk,Active
+15,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk,Active
+16,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Tingwall,Active
+17,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Longyearbyen,Active
+18,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Kulusuk,Active
+19,Forward,FWD-ZK125H,Medium road,OK,2019,Blue,Drivers license,Longyearbyen,Active 
+20,Colorado,Pontoon Boat,Light water,OK,2019,Green,None,Thorshavn,Active
+21,A2extreem,Powerboard,Light winter,OK,2018,Black,None,Nuuk,Active
+22,Torpedo,3500,Light water,OK,2019,White,Diving license,Thorshavn,Active
+23,Kia,Ceed,Car,OK,2020,Red,Drivers license,Reykjavik,Active
+24,KIA,Cruiser,Car,OK,2020,Red,Drivers license,Reykjavik,Active
+25,BMW,Sportsmodel,Car,OK,2019,Black,Drivers License,Nuuk,Active

@@ -56,7 +56,59 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 
 
 ---Mánudagur 30.11.2020---
+- Við erum búin að setja upp file structure út frá kennslumyndbandi hjá Friðrik
+- Við ákváðum að skipta verkum þannig að hvert og eitt okkar mun forrita ákveðna virkni af kerfinu á öllum layers
+- Callista mun taka Customers
+- Franz mun taka Destinations
+- Ragnar mun taka Vehicles
+- Fannar mun taka Contracts
+- Þar af leiðandi bjuggum við til margar textaskrár svo að við fáum ekki conflicts hvert við annað þegar við erum að vinna á Git
+- Búið er að stofna skrár á öllum layers fyrir data, logic og UI
+- Hvert og eitt okkar kemur svo til með að búa til skrár undir models eins og þörf er áfangann
+- Við munum reyna útfæra eins mikla lógik fyrir hvert og eitt atriði og við getum og svo tala betur saman annað kvöld til að meta hversu langt við komumst
 
 
----Þirðjudagur 01.12.2020---
+---Þriðjudagur 01.12.2020---
+- Höldum áfram að vinna í öllum layers hvert fyrir sig
+#Ragnar:
+- Erum komin með góða virkni í UI fyrir Vehicles
+- Það er hægt að skrá bíl í UI og hann skrifast í grunninn
+- Það er komin search virknin eftir Type
+- Mun halda áfram í að útvíkka leitarskilyrði og fínpússa UI
+- Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni, uppfæra bíl og svo bæta við útlána og skilavirkni
+#Callista:
+#Fannar:
+- Vann í UI Data og logic layerum fyrir contract.
+#Franz:
 
+---Miðvikuagur 02.12.2020---
+- Höldum áfram að vinna í öllum layers hvert fyrir sig
+#Ragnar:
+- Búinn að útvíkka UI layerinn fyrir Vehicle töluvert
+- Það eru komnir fleiri leitarmöguleikar og edit eiginleiki fyrir Vehicles sem virkar
+- Edit UI layerinn sendir gögn í grunnin sem uppfærast og vistast
+- Format á töflum var uppfært og er nú töluvert betra
+- Menu format er líka í meira samræmi
+- Föll fyrir sambærilega virkni útfærð (t.d. menu headers og footers)
+- Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni og svo bæta við útlána og skilavirkni
+#Callista:
+#Fannar:
+-Komin virkni þvert á lög kóda
+-bætti vid leit
+-bætti við print all virkni
+#Franz:
+
+
+---Fimmtudagur 03.12.2020---
+- Hópurinn ræddi við Gylfa og þarf að endurskipuleggja hvernig við vinnum í þriggja laga fasanum
+- Hingað til hefur hvert og eitt okkar unnið þvert á öll lögin
+- Það er góð leið til að læra á allt en slæm leið til að ná samræmi í hugbúnaðinn
+- Hópurinn ræddi líka annarskonar útfærslu sem hafði setið á hakanum svo sem Availability skráning
+- Við fórum líka yfir hvernig við búum til unique_ID fyrir hvert gildi sem við vistum í grunninn
+- Hver meðlimur ætlaði að klára sína virkni svo hægt sé að commita þessu inn á repo og svo ætlum við að skipta okkur niður á layers
+
+---Fimmtudagur 04.12.2020---
+- Hópurinn er búinn að skipta sér upp á eftirfarandi máta:
+- Ragnar tekur Data layerinn
+- Fannar vinnur Logic layerinn
+- Callistas og Franz vinna UI layerinn
