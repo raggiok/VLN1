@@ -5,7 +5,6 @@ from data.ContractsDatabase import ContractData
 #from data.DestinationDatabase import DestinationData
 #from data.EmployeeData import EmployeeData
 
-
 class dataAPI():
 
     def __init__(self):
@@ -13,6 +12,7 @@ class dataAPI():
         self.contract = ContractData()
         #self.destination = DestinationData()
         #self.employee = EmployeeData()
+
 
     ### VEHICLES ###
     def new_vehicle_id(self):
@@ -32,56 +32,52 @@ class dataAPI():
         '''Returns a list of all instances of Vehicles in .csv file'''
         return self.vehicle.get_vehicles()
 
+
     ### CONTRACTS ###
-    def create_contract(self):
-        pass
+    def new_contract_id(self):
+        return self.contract.new_contract_id()
 
-    def update_contract(self):
-        pass
+    def create_contract(self, contract):
+        return self.contract.add_contract(contract)
 
-    def delete_contract(self):
-        pass
+    def update_contract(self, contract):
+        return self.vehicle.edit_contract(contract)
 
-    def all_contracts(self):
-        pass
+    def delete_contract(self, contract):
+        return self.vehicle.delete_contract(contract)
+
+    def get_contracts(self):
+        return self.contract.get_contracts()
 
     ### DESTINATIONS ###
-    def create_destination(self):
+    def new_destination_id(self, destination):
         pass
 
-    def update_destination(self):
+    def create_destination(self, destination):
         pass
 
-    def delete_destination(self):
+    def update_destination(self, destination):
         pass
 
-    def all_destinations(self):
+    def delete_destination(self, destination):
+        pass
+
+    def get_destinations(self):
         pass
 
 
     ### EMPLOYEES ###
-    def create_employee(self):
+    def new_employee_id(self, employee):
         pass
 
-    def update_employee(self):
+    def create_employee(self, employee):
         pass
 
-    def delete_employee(self):
+    def update_employee(self, employee):
         pass
 
-    def all_employee(self):
+    def delete_employee(self, employee):
         pass
 
-    ### DESTINATIONS ###
-    def create_(self):
+    def get_employee(self):
         pass
-
-    def update(self):
-        pass
-
-    def delete(self):
-        pass
-
-    def all(self):
-        pass
-
