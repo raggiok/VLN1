@@ -1,9 +1,12 @@
 class Destination:
-    def __init__(self, country, airport, phone_number, opening_hours):
+    def __init__(self, unique_id, country, city, airport, phone_number, opening_time, closing_time):
+        self.unique_id = unique_id
         self.country = country
+        self.city = city
         self.airport = airport
         self.phone_number = phone_number
-        self.opening_hours = opening_hours
+        self.opening_time = opening_time
+        self.closing_time = closing_time
 
     def __str__(self):
-        return f"{self.country:<20}{self.airport:<20}{self.phone_number:<20}{self.opening_hours:<20}"
+        return f"{self.country:<20}{self.city:<20}{self.airport:<20}{self.phone_number:<20}{self.opening_time:<20}{self.closing_time:<20}"
