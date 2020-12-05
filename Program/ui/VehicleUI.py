@@ -20,8 +20,7 @@ class VehicleUI:
                 return self.vehicle_menu()
             user_input = input(f"Enter {field}: ")
             inputList.append(user_input)
-        vehicle = Vehicle(self.logic.add_unique_ID(), *inputList)
-        return vehicle
+        return inputList
 
     #Request new value from user
     def value_input(self):
@@ -157,7 +156,7 @@ class VehicleUI:
             command = command.lower()
             if command == "1":
                 new_vehicle = self.ui_new_vehicle()
-                self.logic.create_vehicle(new_vehicle)
+                self.logic.create_vehicle(*new_vehicle)
             elif command == "2":
                 selection = self.ui_search_menu()
                 if selection == "1":

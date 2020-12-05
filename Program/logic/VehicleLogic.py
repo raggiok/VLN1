@@ -1,12 +1,14 @@
-from data.VehicleDatabase import VehicleData
+from data.dataAPI import dataAPI
+from models.Vehicle import Vehicle
 
 class VehicleLogic():
     def __init__(self):
-        self.data = VehicleData()
+        self.data = dataAPI()
 
-    def create_vehicle(self, vehicle_instance):
-        '''Creates a vehicle in the database'''
-        return self.data.new_vehicle(vehicle_instance)
+    def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_requirement,location):
+        '''Registers a vehicle in vehicles.csv and returns True if successful and False if it't not registered'''
+        vehicle = Vehicle(self.data.new_vehicle_id(),manufacturer, model, vehicle_type, status, manufacturing_year, color, license_requirement,location)
+        return self.data.create_vehicle(vehicle)
 
     def edit_vehicle(self, vehicle_instance):
         '''Edits a vehicle in the database'''
@@ -32,12 +34,11 @@ class VehicleLogic():
         '''Returns the total number of listed vehicles in Data'''
         return len(self.data.get_vehicles())
 
-    #Add an unique_ID to vehicle
+    # Return unique ID for vehicle from data
     def add_unique_ID(self):
         '''Returns the next number in line for vehicles in databse'''
-        total_vehicle_count = self.vehicle_amount_registered()
-        total_vehicle_count += 1
-        return total_vehicle_count
+        return self.data.new_vehicle_id()
+          
 
     def search_vehicle_by_ID(self, vehicle_ID):
         '''Returns a single vehicle with corresponding ID'''
