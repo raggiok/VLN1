@@ -24,7 +24,7 @@ class Contract:
         return self.customer
     
     def get_vin(self):
-        return self.vehicle_vin
+        return self.identification_number
 
     def get_identification_number(self):
         return self.identification_number
