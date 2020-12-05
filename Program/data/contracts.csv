@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 customer,vin,start_date,end_date,country,contract_id
 Stone,02933,11.01.21,06.04.21,Tunisia,1
 Nash,06806,10.20.20,11.24.20,Guam,2
@@ -15,8 +14,3 @@ Ralph,21642,04.29.21,03.21.20,Viet Nam,12
 Harper,85364,12.18.20,08.07.20,El Salvador,14
 Scott,96184,10.15.20,01.18.21,Heard Island and Mcdonald Islands,15
 Solomon,32066,08.11.20,05.27.20,Guernsey,16
-=======
-customer,vin,start_date,end_date,country,contract_id
-Jón Jónasson,132592,12.10.20,16.10.20,Iceland,320
-test,2313,13.4.22,17.10.20,Iceland,321
->>>>>>> d34924f5aaaf3e21e1201376dcfcab0c8cdb8067
