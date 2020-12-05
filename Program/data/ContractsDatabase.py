@@ -20,3 +20,20 @@ class ContractData:
             fieldnames = ['customer', 'vin', 'start_date', 'end_date', 'country', 'contract_id']
             writer = csv.DictWriter(csvfile, delimiter=',', fieldnames=fieldnames)
             writer.writerow({'customer': customer, 'vin': vin, 'start_date': start_date, 'end_date': end_date, 'country': country, 'contract_id': contract_id})
+
+    def del_contract(self, new_id):
+        temporary_list = []
+        confirmation = False
+        with open('data/contracts.csv', 'r', encoding="utf-8") as cvsfile:
+            for row in csv.DictReader(cvsfile):
+                temporary_list.append(row)
+            with open('data/contracts.csv', 'w', newline='', encoding="utf-8") as writecvsfile:
+                fieldnames = ['customer', 'vin', 'start_date', 'end_date', 'country', 'contract_id'] 
+                writer = csv.DictWriter(writecvsfile, delimiter=',', fieldnames=fieldnames)
+                writer.writeheader()
+                for row in temporary_list:
+                    if row['contract_id'] == new_id:
+                        confirmation = True
+                        continue
+                    writer.writerow(row)
+            return confirmation
