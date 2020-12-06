@@ -27,7 +27,7 @@ class Contract:
         return self.customer
     
     def get_vin(self):
-        return self.unique_id
+        return self.vehicle_unique_id
 
     def get_unique_id(self):
         return self.unique_id

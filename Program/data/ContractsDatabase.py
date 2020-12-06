@@ -78,6 +78,6 @@ class ContractData:
         with open('data/contracts.csv', newline='', encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
-                contract = Contract(row['unique_id'], row['customer'], row["vehicle_unique_id"], row["start_date"],row["end_date"],row["country"],row['employee'],row[,'total_price'],row['state'])
+                contract = Contract(row['unique_id'], row['customer'], row["vehicle_unique_id"], row["start_date"],row["end_date"],row["country"],row['employee'],row['total_price'],row['state'])
                 contract_list.append(contract)
         return contract_list

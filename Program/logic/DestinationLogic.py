@@ -1,16 +1,17 @@
-from data.DestinationDatabase import DestinationData
+from data.dataAPI import dataAPI
+from models.Destinations import Destination
 
 class DestinationLogic():
     def __init__(self):
-        self.data = DestinationData()
+        self.data = dataAPI()
 
-    def create_destination(self, destination_instance):
+    def create_destination(self, a_list):
         '''Creates a destination in the database'''
-        return self.data.new_destination(destination_instance)
+        destination_instance = Destination(self.data.new_destination_id, *a_list)
         
     def edit_destination(self, destination_instance):
         '''Edits a destination in the database'''
-        return self.data.edit_destination(destination_instance)
+        self.data.edit_destination(destination_instance)
 
     #Returns a list of destination types
     def destination_types(self):

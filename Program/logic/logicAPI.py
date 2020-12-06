@@ -46,7 +46,7 @@ class LogicAPI:
         return self.contract.search_contracts_by_name(name)
 
     def create_new_contract(self, a_list):
-        self.contract.create_new_contract(a_list)
+        self.contract.create_contract(a_list)
 
     def search_contracts_by_customer(self, string):
         return self.contract.search_contracts_by_customer(string)

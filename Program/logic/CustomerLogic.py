@@ -1,27 +1,29 @@
-from data.CustomerDatabase import CustomerData
+from data.dataAPI import dataAPI
+from models.Customers import Customer
 
 class CustomerLogic:
     def __init__(self):
-        self.data = CustomerData()
+        self.data = dataAPI()
 
     def create_customer(self, customer_list):
-        return self.data.new_customer(customer_list)
+        customer_instance = Customer(self.data.new_customer_id, *customer_list)
+        self.data.create_customer(customer_instance)
 
     def all_customer(self):
-        return self.data.get_customer()
+        return self.data.get_customers()
 
     # search by name 
     def customer_by_name(self,name):
-        cust = self.data.get_customer()
+        custs = self.data.get_customers()
         retList = []
         for cust in custs:
-            if cust.name == name:
+            if cust.name.lower() == name.lower():
                 retList.append(cust)
         return retList
 
     #search by ID
     def customer_by_ssn(self,ssn):
-        cust = self.data.get_customer()
+        custs = self.data.get_customers()
         retList = []
         for cust in custs:
             if cust.ssn == ssn:
@@ -30,9 +32,9 @@ class CustomerLogic:
 
     #search by area/land
     def customer_by_area(self,country):
-        cust = self.data.get_customer()
+        custs = self.data.get_customers()
         retList = []
         for cust in custs:
-            if cust.country == country:
+            if cust.country.lower() == country.lower():
                 retList.append(cust)
         return retList

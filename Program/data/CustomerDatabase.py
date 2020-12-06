@@ -1,6 +1,6 @@
 import csv
 import os
-from models.Customer import Customer
+from models.Customers import Customer
 
 class CustomerData:
     def __init__(self):
