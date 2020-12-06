@@ -109,6 +109,38 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 
 ---Fimmtudagur 04.12.2020---
 - Hópurinn er búinn að skipta sér upp á eftirfarandi máta:
-- Ragnar tekur Data layerinn
-- Fannar vinnur Logic layerinn
-- Callistas og Franz vinna UI layerinn
+- Ragnar tekur Data layerinn og ætlar að klára delete virkni og gera wrapper sem sendir á logic layer
+- Fannar vinnur Logic layerinn og klárar alla virkni sem UI layerinn biður um
+- Callistas og Franz vinna UI layerinn og setja upp öll menu sem okkur vantar og standardiza útlit jafnt og að taka við öllu inputti frá notanda
+- Um helgina stefnum við að því að útfæra eins margar A og B kröfur og hægt er og ætlum svo að taka stöðuna til að meta hvað er eftir
+
+
+---Föstudagur 05.12.2020---
+- Hópurinn vinnur áfram að skiptu fyrirkomulagi: Ragnar - Datalayer, Fannar - Logiclayer, Franz&Callista - UI layer
+#Ragnar:
+- Byrjaður að setja upp wrapper fyrir DATA layer sem hetiir dataAPI og sameinar alla virkni frá data layer.
+- Uppfæra suma virkni fyrir Vehicle logic og ætlar svo alfarið að hætta vinna í logic og ui layer
+#Callista:
+#Fannar:
+#Franz:
+
+
+---Laugardagur 06.12.2020---
+- Hópurinn ræðir aftur saman um skiptingu á verkefninu og hvernig Models skulu meðhöndlaðir og hvaða breytur Klasarnir taka
+#Ragnar:
+- Kominn langt með að klára dataAPI
+- Sé að það er að fara mikil vinna í að nota sömu föll fyrir hvern klasa (Customer, Destination, Employee etc.)
+- Byrja að endurskrifa datalayerinn með það í huga að 4x föll eiga að geta séð um sömu virknina fyrir alla klasa
+- Föllin þurfa að geta gert: Create, Update, Delete og Get (sækja öll instönce í lista)
+- Virknin mjög langt komin og verður lokið á morgun
+- Þarf að uppfæra edit_data þannig að það skrifi út skránna með header ef það er ekkert í henni (sama með hin functionin)
+#Callista:
+#Fannar:
+#Franz:
+
+---Sunnudagur 07.12.2020---
+
+#Ragnar:
+#Callista:
+#Fannar:
+#Franz:
