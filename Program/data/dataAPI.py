@@ -91,3 +91,21 @@ class dataAPI():
     def get_vehicles(self):
         '''Returns a list of all instances of Vehicles in .csv file'''
         return self.data.get_data(instance_type="vehicle")
+
+    
+    ### INVOICES ###
+    def new_invoices_id(self):
+        return self.data.new_id(instance_type="invoice")
+
+    def create_invoice(self, instance):
+        return self.data.write_data(instance, instance_type="invoice")
+
+    def update_invoice(self, instance):
+        return self.data.edit_data(instance, instance_type="invoice")
+
+    def delete_invoice(self, instance):
+        return self.data.delete_data(instance, instance_type="invoice")
+
+    def get_invoices(self):
+        '''Returns a list of all instances of Contracts in .csv file'''
+        return self.data.get_data(instance_type="invoice")
