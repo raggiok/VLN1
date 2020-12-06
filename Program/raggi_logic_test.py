@@ -1,22 +1,36 @@
-# import csv
-# from data.dataAPI import dataAPI
-from models.Vehicle import Vehicle
+from models.Contracts import Contract
+from models.Customers import Customer
+from models.Destinations import Destination
 from models.Employee import Employee
-from data.datafunc import Data
+from models.Vehicle import Vehicle
+from data.dataAPI import dataAPI
 
 # car = Vehicle("1", "manufacturer", "model", "vehicle_type", "status", "man_year", "color", "license_type", "location")
 
 
 
-test = Data()
+test = dataAPI()
 
 
-# test.write_data(car, "vehicle")
+contract = Contract("3", "TEST", "25", "01.01.2020", "11.02.2025", "Iceland", "Jon Jonsson", "10.000.000")
+customer = Customer("4", "John Smith", "150588-2459", "Heimilisgata 1", "TEST", "Reykjavik", "Iceland", "551-4489", "John@email.com")
+destination = Destination("2", "Iceland", "TEST", "Keflavik Airport", "558-5498", "10:00", "15:00")
+employee = Employee("5", "Jon Jonsson", "25", "City staff", "TEST 50", "105", "Reykjavik", "Iceland")
+car = Vehicle("40", "Benz", "Model-s", "Sportscar", "OK", "2020", "Panther Black", "Drivers License", "TEST")
 
-car2 = Vehicle("27", "blabla", "model", "vehicle_type", "OK", "man_year", "color", "license_type", "location")
 
-# test.edit_data(car2, "vehicle")
 
-employee = Employee("2", "Raggi", "22", "admin", "Heimilisgata 5", "112", "Reykjavik", "Iceland")
+# for item in test.get_contracts():
+#     print(item)
 
-test.get_data("vehicle")
+# for item in test.get_customers():
+#     print(item)
+
+# for item in test.get_destinations():
+#     print(item)
+
+# for item in test.get_employees():
+#     print(item)
+
+# for item in test.get_vehicles():
+#     print(item)

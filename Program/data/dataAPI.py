@@ -1,82 +1,93 @@
 # A Wrapper for all the DATA functionality
-
-from data.VehicleDatabase import VehicleData
-from data.ContractsDatabase import ContractData
-#from data.DestinationDatabase import DestinationData
-#from data.EmployeeData import EmployeeData
+from data.datafunc import Data
 
 class dataAPI():
 
     def __init__(self):
-        self.vehicle = VehicleData()
-        self.contract = ContractData()
-        #self.destination = DestinationData()
-        #self.employee = EmployeeData()
-
-    ### VEHICLES ###
-    def new_vehicle_id(self):
-        return self.vehicle.new_vehicle_id()
-
-    def create_vehicle(self, vehicle):
-        return self.vehicle.new_vehicle(vehicle)
-
-    def update_vehicle(self, vehicle):
-        return self.vehicle.edit_vehicle(vehicle)
-    
-    def delete_vehicle(self, vehicle):
-        '''Changes state of Vehicle from "Active" to "Inactive"'''
-        return self.vehicle.delete_vehicle(vehicle)
-
-    def get_vehicles(self):
-        '''Returns a list of all instances of Vehicles in .csv file'''
-        return self.vehicle.get_vehicles()
+        self.data = Data()
 
 
     ### CONTRACTS ###
     def new_contract_id(self):
-        return self.contract.new_contract_id()
+        return self.data.new_id(instance_type="contract")
 
-    def create_contract(self, contract):
-        return self.contract.create_contract(contract)
+    def create_contract(self, instance):
+        return self.data.write_data(instance, instance_type="contract")
 
-    def update_contract(self, contract):
-        return self.vehicle.edit_contract(contract)
+    def update_contract(self, instance):
+        return self.data.edit_data(instance, instance_type="contract")
 
-    def delete_contract(self, contract):
-        return self.vehicle.delete_contract(contract)
+    def delete_contract(self, instance):
+        return self.data.delete_data(instance, instance_type="contract")
 
     def get_contracts(self):
-        return self.contract.get_contracts()
+        '''Returns a list of all instances of Contracts in .csv file'''
+        return self.data.get_data(instance_type="contract")
+
+    ### CUSTOMER ###
+    def new_customer_id(self):
+        return self.data.new_id(instance_type="customer")
+
+    def create_customer(self, instance):
+        return self.data.write_data(instance, instance_type="customer")
+
+    def update_customer(self, instance):
+        return self.data.edit_data(instance, instance_type="customer")
+
+    def delete_customer(self, instance):
+        return self.data.delete_data(instance, instance_type="customer")
+
+    def get_customers(self):
+        return self.data.get_data(instance_type="customer")
 
     ### DESTINATIONS ###
-    def new_destination_id(self, destination):
-        pass
+    def new_destination_id(self):
+        return self.data.new_id(instance_type="destination")
 
-    def create_destination(self, destination):
-        pass
+    def create_destination(self, instance):
+        return self.data.write_data(instance, instance_type="destination")
 
-    def update_destination(self, destination):
-        pass
+    def update_destination(self, instance):
+        return self.data.edit_data(instance, instance_type="destination")
 
-    def delete_destination(self, destination):
-        pass
+    def delete_destination(self, instance):
+        return self.data.delete_data(instance, instance_type="destination")
 
     def get_destinations(self):
-        pass
+        return self.data.get_data(instance_type="destination")
 
 
     ### EMPLOYEES ###
-    def new_employee_id(self, employee):
-        pass
+    def new_employee_id(self):
+        return self.data.new_id(instance_type="employee")
 
-    def create_employee(self, employee):
-        pass
+    def create_employee(self, instance):
+        return self.data.write_data(instance, instance_type="employee")
 
-    def update_employee(self, employee):
-        pass
+    def update_employee(self, instance):
+        return self.data.edit_data(instance, instance_type="employee")
 
-    def delete_employee(self, employee):
-        pass
+    def delete_employee(self, instance):
+        return self.data.delete_data(instance, instance_type="employee")
 
-    def get_employee(self):
-        pass
+    def get_employees(self):
+        return self.data.get_data(instance_type="employee")
+    
+
+    ### VEHICLES ###
+    def new_vehicle_id(self):
+        return self.data.new_id(instance_type="vehicle")
+
+    def create_vehicle(self, instance):
+        return self.data.write_data(instance, instance_type="vehicle")
+
+    def update_vehicle(self, instance):
+        return self.data.edit_data(instance, instance_type="vehicle")
+    
+    def delete_vehicle(self, instance):
+        '''Changes state of Vehicle from "Active" to "Inactive"'''
+        return self.data.delete_data(instance, instance_type="vehicle")
+
+    def get_vehicles(self):
+        '''Returns a list of all instances of Vehicles in .csv file'''
+        return self.data.get_data(instance_type="vehicle")

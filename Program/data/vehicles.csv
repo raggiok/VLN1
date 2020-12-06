@@ -37,3 +37,8 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 36,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,Active
 37,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,Active
 38,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,Active
+39,blabla,model,vehicle_type,OK,man_year,color,license_type,location,Active
+40,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,TEST,Inactive
+41,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active
+42,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active
+43,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active

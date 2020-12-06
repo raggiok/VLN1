@@ -1,6 +1,6 @@
 import csv
-from models.contracts import Contract
-from models.Customer import Customer
+from models.Contracts import Contract
+from models.Customers import Customer
 from models.Destinations import Destination
 from models.Employee import Employee
 from models.Vehicle import Vehicle
@@ -54,7 +54,7 @@ class Data:
         if instance_type in INSTANCE_TYPES:
             return ID_FOLDER_NAMES[instance_type]
 
-    def new_id(self, instance, instance_type):
+    def new_id(self, instance_type):
         '''Returns a new ID for a the data and stores it in a .csv file'''
         unique_id_folder = self.get_id_folder(instance_type)
         unique_id_title_str = f"{instance_type}_unique_id"
@@ -86,11 +86,9 @@ class Data:
         for item in instance.__dict__.values(): #unpack instance values
             instance_values.append(item)
 
-        print(len(instance_fieldnames))
         for i in range(0, len(instance_fieldnames)): #add values to correct dict key
-            print(i)
             if i == 0:
-                row[instance_fieldnames[i]] = self.new_id(instance, instance_type)
+                row[instance_fieldnames[i]] = self.new_id(instance_type)
             else:
                 row[instance_fieldnames[i]] = instance_values[i]
         
@@ -131,7 +129,6 @@ class Data:
                 writer.writeheader()
                 for row in instance_list:
                     if updated_instance.unique_id == row["unique_id"]:
-                        print("yolo")
                         row = updated_row
                         confirmation = True
                     writer.writerow(row)
@@ -174,14 +171,30 @@ class Data:
         '''Returns a list of all vehicles in database'''
         csv_folder = self.get_csv_folder(instance_type) #get csv folder path to save instance
 
-        instance_index = []
         instance_list = []
         with open(f'{csv_folder}', newline='', encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-                for item in row:
-                    print(item)
-                vehicle = Vehicle(row["unique_id"],row["manufacturer"], row["model"], row["vehicle_type"], row["status"], row["man_year"], row["color"], row["license_type"], row["location"], row["state"])
-                instance_list.append(vehicle)
+                instance_attribute_list = []
+                for value in row:
+                    instance_attribute_list.append(row[f"{value}"])
+                if instance_type == "contract":
+                    contract = Contract(*instance_attribute_list)
+                    instance_list.append(contract)
+                elif instance_type == "customer":
+                    customer = Customer(*instance_attribute_list)
+                    instance_list.append(customer)
+                elif instance_type == "destination":
+                    destination = Destination(*instance_attribute_list)
+                    instance_list.append(destination)
+                elif instance_type == "employee":
+                    employee = Employee(*instance_attribute_list)
+                    instance_list.append(employee)
+                elif instance_type == "vehicle":
+                    vehicle = Vehicle(*instance_attribute_list)
+                    instance_list.append(vehicle)
+
+                instance_attribute_list.clear()
+
         return instance_list
