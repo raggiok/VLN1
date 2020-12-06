@@ -13,7 +13,6 @@ class dataAPI():
         #self.destination = DestinationData()
         #self.employee = EmployeeData()
 
-
     ### VEHICLES ###
     def new_vehicle_id(self):
         return self.vehicle.new_vehicle_id()
@@ -38,7 +37,7 @@ class dataAPI():
         return self.contract.new_contract_id()
 
     def create_contract(self, contract):
-        return self.contract.add_contract(contract)
+        return self.contract.create_contract(contract)
 
     def update_contract(self, contract):
         return self.vehicle.edit_contract(contract)
