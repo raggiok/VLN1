@@ -82,6 +82,6 @@ class VehicleData:
         with open('data/vehicles.csv', newline='', encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
-                vehicle = Vehicle(row["unique_id"],row["manufacturer"], row["model"], row["vehicle_type"], row["status"], row["man_year"], row["color"], row["license_type"], row["location"])
+                vehicle = Vehicle(row["unique_id"],row["manufacturer"], row["model"], row["vehicle_type"], row["status"], row["man_year"], row["color"], row["license_type"], row["location"], row["state"])
                 vehicle_list.append(vehicle)
         return vehicle_list

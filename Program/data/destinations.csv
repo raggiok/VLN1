@@ -1,2 +1,4 @@
-country,airport,phone_number,opening_hours
-Iceland,Keflavík airport,545-1000,9:30-23:30
+unique_id,country,city,airport,phone_number,opening_time,closing_time,state
+1,Iceland,Keflavik,Keflavik Airport,558-5498,10:00,15:00,Active
+2,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Inactive
+3,Iceland,Keflavik,Keflavik Airport,558-5498,10:00,15:00,Active

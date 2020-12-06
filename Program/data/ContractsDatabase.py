@@ -27,11 +27,11 @@ class ContractData:
                 writer.writerow({'contract_unique_id': counter})
         return counter
 
-    def add_contract(self, contract):
+    def create_contract(self, contract):
         with open('data/contracts.csv', 'a', newline='', encoding="utf-8") as csvfile:
-            fieldnames = ['unique_id','customer', 'vehicle_unique_id', 'start_date', 'end_date', 'country']
+            fieldnames = ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date','country', 'employee','total_price', 'state']
             writer = csv.DictWriter(csvfile, delimiter=',', fieldnames=fieldnames)
-            writer.writerow({'unique_id': contract.unique_id,'customer': contract.customer, 'vehicle_unique_id': contract.vehicle_unique_id, 'start_date': contract.start_date, 'end_date': contract.end_date, 'country': contract.country})
+            writer.writerow({'unique_id': contract.unique_id,'customer': contract.customer, 'vehicle_unique_id': contract.vehicle_unique_id, 'start_date': contract.start_date, 'end_date': contract.end_date, 'country': contract.country, 'employee': contract.employee,'total_price': contract.total_price, 'state': contract.state})
 
     def edit_contract(self, updated_contract):
         '''Register's changes of a specific contract'''
@@ -44,12 +44,12 @@ class ContractData:
                 contract_list.append(row)
             #write new file with same content and add new row if it has same ID
             with open('data/contracts.csv', 'w', newline='', encoding="utf-8") as newfile:
-                fieldnames = ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date', 'country']
+                fieldnames = ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date','country', 'employee','total_price', 'state']
                 writer = csv.DictWriter(newfile, fieldnames=fieldnames,)
                 writer.writeheader()
                 for row in contract_list:
                     if updated_contract.unique_id == row["unique_id"]:
-                        row = {"unique_id": updated_contract.unique_id, "vehicle_unique_id": updated_contract.vehicle_unique_id, "start_date": updated_contract.start_date, "end_date": updated_contract.end_date, "country": updated_contract.country, "state": state}
+                        row = {"unique_id": updated_contract.unique_id, "vehicle_unique_id": updated_contract.vehicle_unique_id, "start_date": updated_contract.start_date, "end_date": updated_contract.end_date, "country": updated_contract.country,'employee': updated_contract.employee,'total_price': updated_contract.total_price, "state": updated_contract.state}
                         confirmation = True
                     writer.writerow(row)
         return confirmation
@@ -63,12 +63,12 @@ class ContractData:
             for row in reader:
                 contract_list.append(row)
             with open('data/contracts.csv', 'w', newline='', encoding="utf-8") as writecvsfile:
-                fieldnames = ['unique_id', 'manufacturer', 'model', 'vehicle_type', 'status', 'man_year', 'color', 'license_type', 'location', 'state']
+                fieldnames = ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date','country', 'employee','total_price', 'state']
                 writer = csv.DictWriter(writecvsfile, delimiter=',', fieldnames=fieldnames)
                 writer.writeheader()
                 for row in contract_list:
                     if row['unique_id'] == contract.unique_id:
-                        row = {"unique_id": contract.unique_id, "vehicle_unique_id": contract.vehicle_unique_id, "start_date": contract.start_date, "end_date": contract.end_date, "country": contract.country, "state": state}
+                        row = {"unique_id": contract.unique_id, "vehicle_unique_id": contract.vehicle_unique_id, "start_date": contract.start_date, "end_date": contract.end_date, "country": contract.country, "state": "Inactive"}
                         confirmation = True
                     writer.writerow(row)
         return confirmation #Returns True if successfully deleted, otherwise False
@@ -78,6 +78,6 @@ class ContractData:
         with open('data/contracts.csv', newline='', encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
-                contract = Contract(row['unique_id'], row['customer'], row["vehicle_unique_id"], row["start_date"],row["end_date"],row["country"])
+                contract = Contract(row['unique_id'], row['customer'], row["vehicle_unique_id"], row["start_date"],row["end_date"],row["country"],row['employee'],row[,'total_price'],row['state'])
                 contract_list.append(contract)
         return contract_list
