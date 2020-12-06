@@ -107,5 +107,20 @@ class dataAPI():
         return self.data.delete_data(instance, instance_type="invoice")
 
     def get_invoices(self):
-        '''Returns a list of all instances of Contracts in .csv file'''
         return self.data.get_data(instance_type="invoice")
+
+    ### RATES ###
+    def new_rate_id(self):
+        return self.data.new_id(instance_type="rate")
+
+    def create_rate(self, instance):
+        return self.data.write_data(instance, instance_type="rate")
+
+    def update_rate(self, instance):
+        return self.data.edit_data(instance, instance_type="rate")
+
+    def delete_rate(self, instance):
+        return self.data.delete_data(instance, instance_type="rate")
+
+    def get_rates(self):
+        return self.data.get_data(instance_type="rate")

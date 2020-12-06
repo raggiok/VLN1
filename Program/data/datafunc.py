@@ -5,8 +5,9 @@ from models.Destinations import Destination
 from models.Employee import Employee
 from models.Vehicle import Vehicle
 from models.Invoice import Invoice
+from models.rates import Rate
 
-INSTANCE_TYPES = ["contract", "customer","destination", "employee", "vehicle", "invoice"]
+INSTANCE_TYPES = ["contract", "customer","destination", "employee", "vehicle", "invoice", "rate"]
 
 ALL_FIELDNAMES = {
     "contract": ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date','country', 'employee','total_price','contract_creation_date', 'state'],
@@ -14,7 +15,8 @@ ALL_FIELDNAMES = {
     "destination": ['unique_id', 'country', 'city', 'airport', 'phone_number', 'opening_time', 'closing_time', 'main_contact', 'state'],
     "employee": ['unique_id', 'name', 'ssn', 'role', 'address', 'zip_code', 'city', 'country', 'home_phone', 'mobile_phone', 'email', 'state'],
     "vehicle": ['unique_id', 'manufacturer', 'model', 'vehicle_type', 'status', 'man_year', 'color', 'license_type', 'location','state'],
-    'invoice': ['unique_id', 'customer_unique_id', 'vehicle_unique_id', 'rate', 'total_days', '_total_price', 'invoice_type', 'state']
+    "invoice": ['unique_id', 'customer_unique_id', 'vehicle_unique_id', 'rate', 'total_days', '_total_price', 'invoice_type', 'state'],
+    "rate": ['unique_id','name', 'cost_per_day']
     }
 
 CSV_FOLDER_NAMES = {
@@ -23,7 +25,8 @@ CSV_FOLDER_NAMES = {
     "destination": "data/csv_files/destinations.csv", 
     "employee": "data/csv_files/employees.csv",
     "vehicle": "data/csv_files/vehicles.csv",
-    "invoice": "data/csv_files/invoices.csv"
+    "invoice": "data/csv_files/invoices.csv",
+    "rate": "data/csv_files/rates.csv"
     }
 
 ID_FOLDER_NAMES = {
@@ -32,7 +35,8 @@ ID_FOLDER_NAMES = {
     "destination": "data/unique_id/destination_unique_id.csv", 
     "employee": "data/unique_id/employee_unique_id.csv" ,
     "vehicle": "data/unique_id/vehicle_unique_id.csv",
-    "invoice": "data/unique_id/invoice_unique_id.csv"
+    "invoice": "data/unique_id/invoice_unique_id.csv",
+    "rate": "data/unique_id/rate_unique_id.csv"
     }
 
 class Data:
