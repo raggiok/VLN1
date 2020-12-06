@@ -10,7 +10,7 @@ INSTANCE_TYPES = ["contract", "customer","destination", "employee", "vehicle"]
 ALL_FIELDNAMES = {
     "contract": ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date','country', 'employee','total_price', 'state'],
     "customer": ['unique_id', 'name', 'ssn', 'address', 'zip_code', 'city', 'country', 'phone', 'email', 'state'],
-    "destination": ['unique_id', 'country', 'city', 'airport', 'phone_number', 'opening_time', 'closing_time', 'state'],
+    "destination": ['unique_id', 'country', 'city', 'airport', 'phone_number', 'opening_time', 'closing_time', 'main_contact' 'state'],
     "employee": ['unique_id', 'name', 'age', 'role', 'address', 'zip_code', 'city', 'country', 'state'],
     "vehicle": ['unique_id', 'manufacturer', 'model', 'vehicle_type', 'status', 'man_year', 'color', 'license_type', 'location','state']
     }
@@ -30,7 +30,6 @@ ID_FOLDER_NAMES = {
     "employee": "data/unique_id/employee_unique_id.csv" ,
     "vehicle": "data/unique_id/vehicle_unique_id.csv" 
     }
-
 
 class Data:
     def __init__(self):
