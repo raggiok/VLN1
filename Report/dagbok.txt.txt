@@ -1,3 +1,4 @@
+  
 ---Mánudagur 23.11.2020---
 Ragnar, Franz og Fannar fóru yfir verkefnalýsingu og skiptu með sér verkum.
 Skrifuðum upp helstu atriði verkefnisins.
@@ -97,3 +98,30 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 -bætti vid leit
 -bætti við print all virkni
 #Franz:
+
+
+---Fimmtudagur 03.12.2020---
+- Hópurinn ræddi við Gylfa og þarf að endurskipuleggja hvernig við vinnum í þriggja laga fasanum
+- Hingað til hefur hvert og eitt okkar unnið þvert á öll lögin
+- Það er góð leið til að læra á allt en slæm leið til að ná samræmi í hugbúnaðinn
+- Hópurinn ræddi líka annarskonar útfærslu sem hafði setið á hakanum svo sem Availability skráning
+- Við fórum líka yfir hvernig við búum til unique_ID fyrir hvert gildi sem við vistum í grunninn
+- Hver meðlimur ætlaði að klára sína virkni svo hægt sé að commita þessu inn á repo og svo ætlum við að skipta okkur niður á layers
+
+---Föstutudagur 04.12.2020---
+- Hópurinn er búinn að skipta sér upp á eftirfarandi máta:
+- Ragnar tekur Data layerinn
+- Fannar vinnur Logic layerinn
+- Callistas og Franz vinna UI layerinn
+
+
+---Laugardagur 06.12.2020---
+- Tekin staðan á layer-vinnu
+- Hópur heldur áfram að vinna að sínum verkefnum
+- Ýmsum mögulegum útfærslum á aðgangskerfi velt fyrir sér, engin ákvörðun tekin.
+- Ragnar kastaði fram hugmyndinni að búa til betri 'wrappera' utan um virkni logic- og data layera.
+- Ákváðum að Ragnar skildi búa til wrapper fyrir data layer og Fannar fyrir logic layer.
+
+---Föstudagur 05.12.2020---
+- Verkefni dagsins vel á veg komin.
+- 'Apar' tilbúnir, á þó eftir að 'uppfæra' UI layerinn til að tala við apann.
