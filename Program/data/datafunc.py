@@ -174,10 +174,14 @@ class Data:
         '''Returns a list of all vehicles in database'''
         csv_folder = self.get_csv_folder(instance_type) #get csv folder path to save instance
 
+        instance_index = []
         instance_list = []
         with open(f'{csv_folder}', newline='', encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
+
             for row in reader:
+                for item in row:
+                    print(item)
                 vehicle = Vehicle(row["unique_id"],row["manufacturer"], row["model"], row["vehicle_type"], row["status"], row["man_year"], row["color"], row["license_type"], row["location"], row["state"])
                 instance_list.append(vehicle)
         return instance_list

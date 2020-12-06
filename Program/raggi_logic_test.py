@@ -19,4 +19,4 @@ car2 = Vehicle("27", "blabla", "model", "vehicle_type", "OK", "man_year", "color
 
 employee = Employee("2", "Raggi", "22", "admin", "Heimilisgata 5", "112", "Reykjavik", "Iceland")
 
-test.delete_data(car2, "vehicle")
+test.get_data("vehicle")
