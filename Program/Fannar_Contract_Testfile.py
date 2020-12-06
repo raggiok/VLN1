@@ -4,4 +4,6 @@ from logic.ContractsLogic import ContractLogic
 from ui.ContractsUI import ContractUI
 
 #logic = ContractLogic()
-data_main = ContractUI()
+#data_main = ContractUI()
+alist = ["faa-lala","lklkl","rtrtrt","pepepe"]
+print(*alist)
