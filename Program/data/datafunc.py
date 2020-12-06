@@ -1,5 +1,5 @@
 import csv
-from models.Contracts import Contract
+from models.contracts import Contract
 from models.Customers import Customer
 from models.Destinations import Destination
 from models.Employee import Employee

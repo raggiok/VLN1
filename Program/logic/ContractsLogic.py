@@ -1,24 +1,20 @@
-from data.ContractsDatabase import ContractData
+from data.dataAPI import dataAPI
 from models.contracts import Contract
+
+
 class ContractLogic:
 
     def __init__(self):
-        self.data = ContractData()
+        self.data = dataAPI()
 
     def all_contracts(self):
         return self.data.get_contracts()
 
-    def search_contracts_by_name(self, name):
-        ret_string = ""
-        temporary_list = []
-        for item in self.data.get_contracts():
-            temporary_list = item.get_customer().split()
     
-    def create_new_contract(self, list):      #Vantar betri útfærslu?
-        self.data.add_contract(list[0], list[1], list[2], list[3], list[4], self.add_contract_id())
+    def create_contract(self, a_list):
+        new_contract = Contract(self.data.new_contract_id , *list)
+        self.data.create_contract(new_contract)
 
-    def add_contract_id(self):
-        return (len(self.all_contracts()) + 1)
 
     def search_contracts_by_customer(self, string):
         result_list = []
@@ -39,10 +35,10 @@ class ContractLogic:
     def search_contracts_by_id(self, string):
         match = ""
         for contract in self.all_contracts():
-            if contract.get_vin() == string:
+            if contract.get_unique_id == string:
                 match = contract
         return match
 
     def delete_contract(self, string):
-        confirmation = self.data.del_contract(string)
+        confirmation = self.data.delete_contract(string)
         return confirmation
