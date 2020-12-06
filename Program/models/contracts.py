@@ -1,5 +1,5 @@
 class Contract:
-    def __init__(self, unique_id, customer, vehicle_unique_id, start_date, end_date, country, employee, total_price, state="Active"):
+    def __init__(self, unique_id, customer, vehicle_unique_id, start_date, end_date, country, employee, total_price, contract_creation_date, state="Active"):
         self.unique_id = unique_id
         self.customer = customer
         self.vehicle_unique_id = vehicle_unique_id
@@ -8,6 +8,7 @@ class Contract:
         self.country = country
         self.employee = employee
         self.total_price = total_price
+        self.contract_creation_date = contract_creation_date
         self.state = state
         
     def change_customer_name(self, new_customer_name):

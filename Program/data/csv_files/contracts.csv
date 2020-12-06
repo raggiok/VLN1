@@ -1,0 +1,12 @@
+unique_id,customer,vehicle_unique_id,start_date,end_date,country,employee,total_price,contract_creation_date,state
+1,John Smith,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,10.000,missing,Active
+2,John Smith,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,10.000,missing,Active
+3,TEST,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,10.000.000,missing,Inactive
+4,John Smith,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,10.000,missing,Active
+5,John Smith,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,10.000,missing,Active
+6,John Smith,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,10.000,missing,Active
+7,John Smith,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,10.000,missing,Active
+8,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
+9,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
+10,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
+11,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active

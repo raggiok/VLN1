@@ -1,7 +1,0 @@
-unique_id,name,age,role,address,zip_code,city,country,state
-1,Gummi,22,admin,Heimilisgata 5,112,Reykjavik,Iceland,Active
-2,Raggi,22,admin,Heimilisgata 5,112,Reykjavik,Iceland,Inactive
-3,Jon Jonsson,25,City staff,Heimilisgata 50,105,Reykjavik,Iceland,Active
-4,Jon Jonsson,25,City staff,Heimilisgata 50,105,Reykjavik,Iceland,Active
-5,Jon Jonsson,25,City staff,TEST 50,105,Reykjavik,Iceland,Inactive
-6,Jon Jonsson,25,City staff,Heimilisgata 50,105,Reykjavik,Iceland,Active

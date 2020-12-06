@@ -8,19 +8,19 @@ from models.Vehicle import Vehicle
 INSTANCE_TYPES = ["contract", "customer","destination", "employee", "vehicle"]
 
 ALL_FIELDNAMES = {
-    "contract": ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date','country', 'employee','total_price', 'state'],
+    "contract": ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date','country', 'employee','total_price','contract_creation_date', 'state'],
     "customer": ['unique_id', 'name', 'ssn', 'address', 'zip_code', 'city', 'country', 'phone', 'email', 'state'],
-    "destination": ['unique_id', 'country', 'city', 'airport', 'phone_number', 'opening_time', 'closing_time', 'main_contact' 'state'],
-    "employee": ['unique_id', 'name', 'age', 'role', 'address', 'zip_code', 'city', 'country', 'state'],
+    "destination": ['unique_id', 'country', 'city', 'airport', 'phone_number', 'opening_time', 'closing_time', 'main_contact', 'state'],
+    "employee": ['unique_id', 'name', 'ssn', 'role', 'address', 'zip_code', 'city', 'country', 'home_phone', 'mobile_phone', 'email', 'state'],
     "vehicle": ['unique_id', 'manufacturer', 'model', 'vehicle_type', 'status', 'man_year', 'color', 'license_type', 'location','state']
     }
 
 CSV_FOLDER_NAMES = {
-    "contract": "data/contracts.csv", 
-    "customer": "data/customers.csv", 
-    "destination": "data/destinations.csv", 
-    "employee": "data/employees.csv",
-    "vehicle": "data/vehicles.csv" 
+    "contract": "data/csv_files/contracts.csv", 
+    "customer": "data/csv_files/customers.csv", 
+    "destination": "data/csv_files/destinations.csv", 
+    "employee": "data/csv_files/employees.csv",
+    "vehicle": "data/csv_files/vehicles.csv" 
     }
 
 ID_FOLDER_NAMES = {
