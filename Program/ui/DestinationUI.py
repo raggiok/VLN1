@@ -133,7 +133,7 @@ class destinationUI:
     def ui_search_menu(self):
         self.ui_menu_header("Destination Search")
         print("\nPlease select a search option:")
-        self.UI_numbered_menu(["Country", "Airport", "Phone Number", "Opening Hours", "Exit"])
+        self.UI_numbered_menu(["Country", "Airport", "Phone Number", "Opening Time","Closing Time","Main Contact","State", "Exit"])
         self.ui_menu_footer
         selection = input("\n>> Select option: ")
         return selection
@@ -148,7 +148,7 @@ class destinationUI:
     def destination_menu(self):
         while True:
             self.ui_menu_header("Destination Menu")
-            print("\nSelect an option...\n1. Create new destination \n2. Search destinations \n3. Check availability \n4. Return destination \n5. View all destinations \n6. Edit destination \n7. Delete destination \n8. Main Menu")
+            print("\nSelect an option...\n1. Create new destination \n2. Search destinations \n3. View all destinations \n4. Edit destination \n5. Delete destination \n6. Main Menu")
             self.ui_menu_footer()
             command = input(">> Select option: ")
             command = command.lower()
@@ -184,6 +184,3 @@ class destinationUI:
                 return UIMain()
             else:
                 print("Invalid command, try again")
-    
-
-        
