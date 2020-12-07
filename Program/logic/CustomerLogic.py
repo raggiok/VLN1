@@ -48,4 +48,5 @@ class CustomerLogic:
             return "Customer not found."
 
     #Edit customer
-    def edit customer(self, )
+    def edit_customer(self):
+        pass
