@@ -12,7 +12,7 @@ class ContractLogic:
 
     
     def create_contract(self, a_list):
-        new_contract = Contract(self.data.new_contract_id , *list)
+        new_contract = Contract(self.data.new_contract_id , *a_list)
         self.data.create_contract(new_contract)
 
 

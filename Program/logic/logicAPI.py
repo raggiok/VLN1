@@ -106,10 +106,10 @@ class LogicAPI:
     def get_employees(self):
         return self.employee.get_employees()
 
-    def search_by_role(self, string):
+    def search_employees_by_role(self, string):
         return self.employee.search_by_role(string)
 
-    def search_by_id(self, id_number):
+    def search_employees_by_id(self, id_number):
         return self.employee.search_by_id(id_number)
 
     def delete_employee(self, id_number):
