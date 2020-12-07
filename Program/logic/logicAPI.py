@@ -3,6 +3,7 @@ from logic.ContractsLogic import ContractLogic
 from logic.VehicleLogic import VehicleLogic
 from logic.CustomerLogic import CustomerLogic
 from logic.DestinationLogic import DestinationLogic
+from logic.EmployeeLogic import EmployeeLogic
 
 class LogicAPI:
 
@@ -11,6 +12,7 @@ class LogicAPI:
         self.vehicle = VehicleLogic()
         self.customer = CustomerLogic()
         self.destination = DestinationLogic()
+        self.employee = EmployeeLogic()
 
         ### Vehicles ###
     def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_requirement,location):
@@ -81,7 +83,7 @@ class LogicAPI:
         return self.customer.delete_customer
 
     def update_customer(self, edited_instance):
-        self.customer.edit_customer()
+        self.customer.edit_customer(edited_instance)
 
         ### Destinations ###
     def create_destination(self, a_list):
@@ -95,3 +97,23 @@ class LogicAPI:
 
     def all_destinations(self):
         return self.destination.all_destinations()
+
+        ### Employee ###
+
+    def create_employee(self, a_list):
+        self.employee.create_employee(a_list)
+
+    def get_employees(self):
+        return self.employee.get_employees()
+
+    def search_by_role(self, string):
+        return self.employee.search_by_role(string)
+
+    def search_by_id(self, id_number):
+        return self.employee.search_by_id()
+
+    def delete_employee(self, id_number):
+        return self.employee.delete_employee(id_number)
+
+    def update_employee(self, updated_object):
+        self.employee.update_employee(updated_object)
