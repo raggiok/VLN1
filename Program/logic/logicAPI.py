@@ -77,6 +77,12 @@ class LogicAPI:
     def customer_by_area(self,country):
         return self.customer(country)
 
+    def delete_customer(self, ssn):
+        return self.customer.delete_customer
+
+    def update_customer(self, edited_instance):
+        self.customer.edit_customer()
+
         ### Destinations ###
     def create_destination(self, a_list):
         return self.destination.create_destination(a_list)

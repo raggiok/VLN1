@@ -38,3 +38,14 @@ class CustomerLogic:
             if cust.country.lower() == country.lower():
                 retList.append(cust)
         return retList
+
+    #delete customer information
+    def delete_customer(self, ssn):
+        deleteList = self.customer_by_ssn(ssn)
+        if deleteList:
+            self.data.delete_customer(deleteList[0])
+        else:
+            return "Customer not found."
+
+    #Edit customer
+    def edit customer(self, )

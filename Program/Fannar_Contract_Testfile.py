@@ -1,10 +1,9 @@
 from ui.ContractsUI import ContractUI
 from logic.logicAPI import LogicAPI
+from logic.logicfunc import Logic
 
+from logic.logicfunc import Logic
 
-data = LogicAPI()
-
-for contract in data.all_destinations():
-    print(contract)
-#logic = ContractLogic()
-#data_main = ContractUI()
+LIST = [Logic().Vehicle(), Logic().Customer()]
+number = 1
+LIST[number].printa()
