@@ -110,7 +110,7 @@ class LogicAPI:
         return self.employee.search_by_role(string)
 
     def search_by_id(self, id_number):
-        return self.employee.search_by_id()
+        return self.employee.search_by_id(id_number)
 
     def delete_employee(self, id_number):
         return self.employee.delete_employee(id_number)

@@ -7,10 +7,10 @@ class EmployeeLogic:
         self.data = dataAPI()
 
     def create_employee(self, a_list):
-        return Employee(self.data.new_employee_id, *a_list)
+        return Employee(*a_list)
 
     def get_employees(self):
-        return self.data.get_employees
+        return self.data.get_employees()
 
     def search_by_id(self, string):
         match = ""
