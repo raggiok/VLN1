@@ -33,7 +33,7 @@ class ContractLogic:
     def search_contracts_by_id(self, string):
         match = []
         for contract in self.all_contracts():
-            if contract.get_unique_id == string:
+            if contract.get_unique_id() == string:
                 match.append(contract)
         return self.no_match_found(match)
 
