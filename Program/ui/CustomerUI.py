@@ -1,5 +1,5 @@
 from ui.UIMain import UIMain
-from logic.CustomerLogic import CustomerLogic
+from logic.logicAPI import logicAPI
 from models.Customer import Customer
 
 class CustomerUI:
