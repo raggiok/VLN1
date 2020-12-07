@@ -1,9 +1,9 @@
-from logic.LogicMain import LogicMain
+from logic.logicAPI import LogicAPI
 
 class UIMain:
     def __init__(self):
         print("inside ui")
-        self.logic = LogicMain()
+        self.logicAPI = LogicAPI()
         self.ui_loop()
 
     def ui_loop(self):
@@ -14,18 +14,18 @@ class UIMain:
             command = input("Input your command: ")
             command = command.lower()
             if command == "1":
-                results  = self.logic.all_employees()
+                results  = self.logicAPI.all_employees()
                 print("\nAll employees:")
                 for employee in results:
                     print(employee)
             elif command == "2":
                 role_str = input("Type role name: ")
-                results = self.logic.employee_by_role(role_str)
+                results = self.logicAPI.employee_by_role(role_str)
                 print("\nAll employees with role " + role_str + ": ")
                 for employee in results:
                     print(employee)
             elif command == "3":
-                results  = self.logic.all_vehicles()
+                results  = self.logicAPI.all_vehicles()
                 print("\nAll vehicles:")
                 for vehicle in results:
                     print(vehicle)

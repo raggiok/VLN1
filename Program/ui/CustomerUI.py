@@ -1,10 +1,10 @@
 from ui.UIMain import UIMain
-from logic.CustomerLogic import CustomerLogic
+from logic.logicAPI import logicAPI
 from models.Customer import Customer
 
 class CustomerUI:
     def __init__(self):
-        self.logic = CustomerLogic()
+        self.logicAPI = LogicAPI()
         self.customer_menu()
 
     #create new customer
@@ -56,7 +56,7 @@ class CustomerUI:
             command = command.lower()
             if command == "1":
                 new_customer = self.ui_new_customer()
-                self.logic.create_customer(new_customer)
+                self.logicAPI.create_customer(new_customer)
             elif command == "2":
                 choice = self.ui_search_menu()
                 if choice == "1":
@@ -92,7 +92,7 @@ class CustomerUI:
 
     #Print all customer
     def ui_all_customer(self):
-        for customer in self.logic.all_customer():
+        for customer in self.logicAPI.all_customer():
             print("\n All customers:")
             self.ui_customer_table_header()
             for customer in result:
@@ -103,7 +103,7 @@ class CustomerUI:
     def ui_by_id(self):
         "allowing search by ID only"
         customer_ID = input(">> Please enter SSN: ")
-        customer = self.customer.customer_by_ssn(customer_ID)
+        customer = self.logicAPI.customer_by_ssn(customer_ID)
         print("\nCustomer by SSN: " + customer_ID)
         self.ui.ui_customer_table_header
         print(customer)
@@ -114,7 +114,7 @@ class CustomerUI:
     def ui_by_name(self):
         "allowing search by name only"
         customer_name = input(">> Please enter name of customer: ")
-        customer = self.customer.customer_by_name(customer_name)
+        customer = self.logicAPI.customer_by_name(customer_name)
         print("\nCustomer by name: " + customer_name)
         self.ui.ui_customer_table_header
         print(customer)
@@ -125,7 +125,7 @@ class CustomerUI:
     def ui_by_area(self):
         "allowing search by area only"
         customer_area = input(">> Please enter area of customer: ")
-        customer = self.customer.customer_by_area(customer_area)
+        customer = self.logicAPI.customer_by_area(customer_area)
         print("\nCustomer by area: " + customer_area)
         self.ui.ui_customer_table_header
         print(customer)
@@ -136,41 +136,38 @@ class CustomerUI:
     def value_input(self):
         return input("Enter new value: ")
 
-    #UNFINISHED
+    
+    #name,ssn,address,postnumber,phone,email,land 
     #Creates the Edit menu layout and returns the customer Instance after edit
     def ui_edit_customer(self):
         customer = self.ui_by_ID() #prints specific customer
         selection = ""
-        while selection != "9":
+        while selection != "8":
             self.ui_print_edit_menu() 
             selection = self.ui_edit_input()
             if selection == "1":
-                vehicle.manufacturer = self.value_input()
+                customer.name = self.value_input()
             elif selection == "2":
-                vehicle.model = self.value_input()
+                customer.ssn = self.value_input()
             elif selection == "3":
-                vehicle.vehicle_type = self.value_input()
+                customer.address = self.value_input()
             elif selection == "4":
-                vehicle.status = self.value_input()
+                customer.postnumber = self.value_input()
             elif selection == "5":
-                vehicle.man_year = self.value_input()
+                customer.phone = self.value_input()
             elif selection == "6":
-                vehicle.color = self.value_input()
+                customer.email = self.value_input()
             elif selection == "7":
-                vehicle.license_type = self.value_input()
+                customer.land = self.value_input()
             elif selection == "8":
-                vehicle.location = self.value_input()
-            elif selection == "9":
-                customer.location
-            elif selection == "10":
                 return customer
+            
 
     #Get input for edit menu
     def ui_edit_input(self):
         selection = input("\n>> Select option: ")
         return selection
     
-    #UNFINISHED
     #Prints the Customer Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
@@ -178,12 +175,10 @@ class CustomerUI:
         print("\nSelect field to edit:")
         print("1. Name")
         print("2. SSN")
-        print("3. Phone Number")
-        print("4. Mobile Number")
-        print("5. E-mail Address")
-        print("6. Address")
+        print("3. Address")
+        print("4. POS")
+        print("5. Phone Number")
+        print("6. E-mail Address")
         print("7. Country")
-        print("8. Credit Card Number")
-        print("9. Status")
-        print("10. Exit")
+        print("8. Exit")
         self.ui_menu_footer()

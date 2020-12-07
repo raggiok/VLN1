@@ -77,6 +77,8 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Mun halda áfram í að útvíkka leitarskilyrði og fínpússa UI
 - Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni, uppfæra bíl og svo bæta við útlána og skilavirkni
 #Callista:
+-Working on customer data as occured to be file not found 
+-Working on UI for customer
 #Fannar:
 - Vann í UI Data og logic layerum fyrir contract.
 #Franz:
@@ -92,6 +94,8 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Föll fyrir sambærilega virkni útfærð (t.d. menu headers og footers)
 - Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni og svo bæta við útlána og skilavirkni
 #Callista:
+- Updating UI customer for more code
+- Working on the Modals and Logic
 #Fannar:
 -Komin virkni þvert á lög kóda
 -bætti vid leit
@@ -120,7 +124,8 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 #Ragnar:
 - Byrjaður að setja upp wrapper fyrir DATA layer sem hetiir dataAPI og sameinar alla virkni frá data layer.
 - Uppfæra suma virkni fyrir Vehicle logic og ætlar svo alfarið að hætta vinna í logic og ui layer
-#Callista:
+#Callista: 
+-Continue updating UI layer to have more alike coding pattern instead of having different code basis for each UI layers 
 #Fannar:
 #Franz:
 

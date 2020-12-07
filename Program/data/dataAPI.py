@@ -6,7 +6,6 @@ class dataAPI():
     def __init__(self):
         self.data = Data()
 
-
     ### CONTRACTS ###
     def new_contract_id(self):
         return self.data.new_id(instance_type="contract")

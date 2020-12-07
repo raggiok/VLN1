@@ -6,3 +6,4 @@ unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,em
 5,Jon Jonsson,25,City staff,TEST 50,105,Reykjavik,Iceland,Inactive,889-2121,551-4469,test@test.is
 6,Jon Jonsson,25,City staff,Heimilisgata 50,105,Reykjavik,Iceland,Active,889-2121,551-4469,test@test.is
 7,Jon Jonsson,150589-2129,City staff,TEST 50,105,Reykjavik,Iceland,Active,889-2121,551-4469,test@test.is
+8,Jon Jonsson,150589-2129,City staff,TEST 50,105,Reykjavik,Iceland,Active,889-2121,551-4469,test@test.is

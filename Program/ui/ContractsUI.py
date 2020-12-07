@@ -1,4 +1,4 @@
-from logic.ContractsLogic import ContractLogic
+from logic.logicAPI import LogicAPI
 from models.contracts import Contract
 
 class ContractUI:
