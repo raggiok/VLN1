@@ -19,7 +19,7 @@ class CustomerLogic:
         for cust in custs:
             if cust.name.lower() == name.lower():
                 retList.append(cust)
-        return retList
+        return self.no_match_found(retList)
 
     #search by ID
     def customer_by_ssn(self,ssn):
@@ -28,7 +28,7 @@ class CustomerLogic:
         for cust in custs:
             if cust.ssn == ssn:
                 retList.append(cust)
-        return retList
+        return self.no_match_found(retList)
 
     #search by area/land
     def customer_by_area(self,country):
@@ -37,7 +37,7 @@ class CustomerLogic:
         for cust in custs:
             if cust.country.lower() == country.lower():
                 retList.append(cust)
-        return retList
+        return self.no_match_found(retList)
 
     #delete customer information
     def delete_customer(self, ssn):
@@ -50,3 +50,10 @@ class CustomerLogic:
     #Edit customer
     def edit_customer(self, edited_instance):
         self.data.update_customer()
+
+    def no_match_found(self, result_list):
+        if result_list:
+            return result_list
+        else:
+            result_list.append("No match found.")
+            return result_list

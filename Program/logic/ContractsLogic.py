@@ -21,23 +21,28 @@ class ContractLogic:
         for contract in self.all_contracts():
             if contract.get_customer().lower() == string.lower():
                 result_list.append(contract)
-        if result_list:
-            return result_list
+        return self.no_match_found(result_list)
         
     def search_contracts_by_vin(self, string):
         result_list = []
         for contract in self.all_contracts():
             if contract.get_vin().lower() == string.lower():
                 result_list.append(contract)
-        if result_list:
-            return result_list
+        return self.no_match_found(result_list)
 
     def search_contracts_by_id(self, string):
-        match = ""
+        match = []
         for contract in self.all_contracts():
             if contract.get_unique_id == string:
-                match = contract
-        return match
+                match.append(contract)
+        return self.no_match_found(match)
+
+    def no_match_found(self, result_list):
+        if result_list:
+            return result_list
+        else:
+            result_list.append("No match found.")
+            return result_list
 
     def delete_contract(self, string):
         confirmation = self.data.delete_contract(string)

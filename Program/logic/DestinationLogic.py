@@ -21,11 +21,17 @@ class DestinationLogic():
         for destination in destination:
             if destination.destination_type not in retList:
                 retList.append(destination.destination_type)
-        return retList
+        return self.no_match_found(retList)
 
     #Returns all information about all destinations
     def all_destinations(self):
         '''Returns all information about all destinations'''
         return self.data.get_destinations()
 
+    def no_match_found(self, result_list):
+        if result_list:
+            return result_list
+        else:
+            result_list.append("No match found.")
+            return result_list
  

@@ -7,4 +7,5 @@ from models.contracts import Contract
 #LogicAPI().create_customer(["1", '1', '1', '1', '1', '1', '1', '1', '1'])
 
 print(LogicAPI().search_by_id("1"))
-print(LogicAPI().search_by_role("City staff"))
+for employee in LogicAPI().search_contracts_by_customer("City staff"):
+    print(employee)

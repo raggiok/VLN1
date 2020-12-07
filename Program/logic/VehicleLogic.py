@@ -42,10 +42,12 @@ class VehicleLogic():
 
     def search_vehicle_by_ID(self, vehicle_ID):
         '''Returns a single vehicle with corresponding ID'''
+        ret_list = []
         vehicles = self.data.get_vehicles()
         for vehicle in vehicles:
             if vehicle.unique_id == vehicle_ID:
-                return vehicle
+                ret_list.append(vehicle)
+        return self.no_match_found(ret_list)
 
     #Searches for vehicle by Type
     def search_vehicle_by_type(self, vehicle_type):
@@ -55,4 +57,11 @@ class VehicleLogic():
         for vehicle in vehicle:
             if vehicle.vehicle_type == vehicle_type:
                 retList.append(vehicle)
-        return retList
+        return self.no_match_found(retList)
+
+    def no_match_found(self, result_list):
+        if result_list:
+            return result_list
+        else:
+            result_list.append("No match found.")
+            return result_list

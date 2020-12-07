@@ -13,18 +13,18 @@ class EmployeeLogic:
         return self.data.get_employees()
 
     def search_by_id(self, string):
-        match = ""
+        match = []
         for employee in self.get_employees():
             if employee.unique_id == string:
-                match = employee
-        return match
+                match.append(employee)
+        return self.no_match_found(match)
 
     def search_by_role(self, string):
         match = []
         for employee in self.get_employees():
             if employee.role.lower() == string.lower():
                 match.append(employee)
-        return match
+        return self.no_match_found(match)
 
     def delete_employee(self, string):
         if self.search_by_id(string):
@@ -34,3 +34,10 @@ class EmployeeLogic:
 
     def update_employee(self, updated_employee):
         self.data.update_employee(updated_employee)
+
+    def no_match_found(self, result_list):
+        if result_list:
+            return result_list
+        else:
+            result_list.append("No match found.")
+            return result_list
