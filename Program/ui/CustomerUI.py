@@ -1,15 +1,16 @@
 from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
-from models.Customers import Customer
+from models.Customers import Customers
 
 class CustomerUI:
     def __init__(self):
         self.logicAPI = LogicAPI()
         self.customer_menu()
 
+    #unique_id,name,ssn,address,zip_code,city,country,phone,email,state
     #create new customer
     def ui_new_customer(self):
-        customerFieldnames = ["name","ssn","address","postnumber","phone","email","land"]
+        customerFieldnames = ["unique_id","name","ssn","address","zip_code","city","country","phone","email"]
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new customer:" )
@@ -41,9 +42,31 @@ class CustomerUI:
         self.ui_menu_header("Customer Search") 
         print("\nPlease enter search option:")
         self.UI_numbered_menu(["Name", "SSN", "Country", "Exit"])
-        self.ui_menu_footer
-        selection = input("\n>> Select option: ")
-        return selection
+        self.ui_menu_footer()
+        selection = input("\n>> Select option: ").lower()
+        if selection == "1":
+            cust_name = input(">> Please enter customer name: ")
+            a_list = self.logic.customer_by_name(cust_name)
+            self.ui_customer_table_header()
+            for item in a_list:
+                print(item)
+        elif selection == "2":
+            cust_id = input(">> Please enter customer ID: ")
+            a_list = self.logic.customer_by_ssn(cust_id)
+            self.ui_customer_table_header()
+            for item in a_list:
+                print(item)
+        elif selection == "3":
+            cust_country = input(">> Please enter customer country: ")
+            a_list = self.logic.customer_by_area(cust_country)
+            self.ui_customer_table_header()
+            for item in a_list:
+                print(item)
+        elif selection == "4":
+            return CustomerUI()
+        else:
+            print("Invalid command, try again")
+
 
     #UNFINISHED
     #Print customer main menu
@@ -56,7 +79,7 @@ class CustomerUI:
             command = command.lower()
             if command == "1":
                 new_customer = self.ui_new_customer()
-                self.logicAPI.create_customer(new_customer)
+                self.logic.create_customer(*new_customer)
             elif command == "2":
                 choice = self.ui_search_menu()
             elif command == "3":
@@ -72,10 +95,10 @@ class CustomerUI:
             else:
                 print("Invalid command, try again")
 
-    #name,ssn,address,postnumber,phone,email,land 
+    ##unique_id,name,ssn,address,zip_code,city,country,phone,email,state
     #Print Customer Table Header
     def ui_customer_table_header(self):
-        print(f"{'Name':<20}{'SSN':<20}{'Address':<20}{'Post Number':<20}{'Phone':<20}{'Email':<20}{'Color':<20}{'Country':<20}")
+        print(f"{'Name':<20}{'SSN':<20}{'Address':<20}{'Zip_code':<20}{'City':<20}{'Country':<20}{'Phone':<20}{'Email':<20}")
         print("-"*200)
     
     #Print Customer Table Footer
@@ -130,12 +153,12 @@ class CustomerUI:
         return input("Enter new value: ")
 
     
-    #name,ssn,address,postnumber,phone,email,land 
+    #unique_id,name,ssn,address,zip_code,city,country,phone,email,state
     #Creates the Edit menu layout and returns the customer Instance after edit
     def ui_edit_customer(self):
         customer = self.ui_by_ID() #prints specific customer
         selection = ""
-        while selection != "8":
+        while selection != "9":
             self.ui_print_edit_menu() 
             selection = self.ui_edit_input()
             if selection == "1":
@@ -145,14 +168,16 @@ class CustomerUI:
             elif selection == "3":
                 customer.address = self.value_input()
             elif selection == "4":
-                customer.postnumber = self.value_input()
+                customer.zip_code = self.value_input()
             elif selection == "5":
-                customer.phone = self.value_input()
+                customer.city = self.value_input()
             elif selection == "6":
-                customer.email = self.value_input()
+                customer.country = self.value_input()
             elif selection == "7":
-                customer.land = self.value_input()
-            elif selection == "8":
+                customer.phone = self.value_input()
+            elif selection =="8":
+                customer.email = self.value_input()
+            elif selection == "9":
                 return customer
             
 
@@ -161,6 +186,7 @@ class CustomerUI:
         selection = input("\n>> Select option: ")
         return selection
     
+    #unique_id,name,ssn,address,zip_code,city,country,phone,email,state
     #Prints the Customer Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
@@ -169,11 +195,12 @@ class CustomerUI:
         print("1. Name")
         print("2. SSN")
         print("3. Address")
-        print("4. POS")
-        print("5. Phone Number")
-        print("6. E-mail Address")
-        print("7. Country")
-        print("8. Exit")
+        print("4. Zip_code")
+        print("5. City")
+        print("6. Country")
+        print("7. Phone")
+        print("8. Email")
+        print("9. Exit")
         self.ui_menu_footer()
 
     def ui_delete_customer(self):
