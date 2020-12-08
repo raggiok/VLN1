@@ -110,8 +110,8 @@ class destinationUI:
             print("\t" + destination)
         print()
 
-    #Prints all the destinations of the same type
-    def ui_print_type(self):
+    #Prints all the destinations of the same county
+    def search_destination_by_country(self):
         self.ui_print_types()
         destination_type = input(">> Please enter destination type: ")
         results  = self.logicAPI.search_destination_by_type(destination_type)
@@ -121,6 +121,19 @@ class destinationUI:
             print(destination)
         self.ui_destination_table_footer()
 
+    def search_destination_by_airport():
+        pass    
+
+        
+    def ui_print_type(self):
+        #self.ui_print_types()
+        country = input(">> Please enter destination type: ")
+        results  = self.logicAPI.destination_types()
+        print("\nAll destination by type " + country + ": ")
+        self.ui_destination_table_header()
+        for destination in results:
+            print(destination)
+        self.ui_destination_table_footer()
     #Menu header
     def ui_menu_header(self, menu_name):
         print("\n" + "-"*20 + f"{menu_name}" + "-"*20)

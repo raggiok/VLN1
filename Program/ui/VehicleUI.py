@@ -181,4 +181,10 @@ class VehicleUI:
                 print("Invalid command, try again")
     
 
-        
+    #Menu header
+    def ui_menu_header(self, menu_name):
+        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
+
+    #Menu footer
+    def ui_menu_footer(self):
+        print("\n" + "-"*50)  

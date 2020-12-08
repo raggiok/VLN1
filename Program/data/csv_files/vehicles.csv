@@ -42,3 +42,4 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 41,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active
 42,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active
 43,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active
+45,its,a,car,its,a,bird,no,its,Active
