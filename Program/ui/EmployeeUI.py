@@ -214,13 +214,13 @@ class EmployeeUI:
     def employee_menu(self):
         while True:
             self.ui_menu_header("Employee Menu")
-            print("\nSelect an option...\n1. Create new employee \n2. Search employee  \n3. View all employee \n4. Edit employee \n5. Delete employee \n6. Main Menu")
+            print("\nSelect an option...\n1. Create new employee \n2. Search employees  \n3. View all employees \n4. Edit employee \n5. Delete employee \n6. Main Menu")
             self.ui_menu_footer()
             command = input(">> Select option: ")
             command = command.lower()
             if command == "1":
                 new_employee = self.ui_new_employee()
-                self.logic.create_employee(*new_employee)
+                self.logicAPI.create_employee(new_employee)
             elif command == "2":
                 selection = self.ui_search_menu()
             elif command == "3":
