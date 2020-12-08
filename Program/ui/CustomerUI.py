@@ -59,21 +59,14 @@ class CustomerUI:
                 self.logicAPI.create_customer(new_customer)
             elif command == "2":
                 choice = self.ui_search_menu()
-                if choice == "1":
-                    return self.logic.customer_by_name()
-                    edit_delete = self.ui_edit_delete_menu() 
-                elif choice == "2":
-                    return self.logic.customer_by_ssn()
-                elif choice == "3":
-                    return self.logic.customer_by_area()
-                elif choice == "4":
-                    return CustomerUI()
             elif command == "3":
                 return self.ui_all_customer()
-            elif command == "4": #Edit
-                pass
+            elif command == "4": 
+                new_customer = self.ui_edit_customer()
+                self.logicAPI.edit_customer(new_customer)
             elif command == "5":
-
+                new_customer = self.ui_delete_customer()
+                self.logicAPI.delete_customer(new_customer)
             elif command == "6":
                 return UIMain() 
             else:
@@ -181,4 +174,32 @@ class CustomerUI:
         print("6. E-mail Address")
         print("7. Country")
         print("8. Exit")
+        self.ui_menu_footer()
+
+    def ui_delete_customer(self):
+        customer = self.ui_by_id()
+        choose = ""
+        while choose != "3":
+            self.ui_print_delete_menu()
+            choose = self.ui_delete_input()
+            if choose == "1":
+                pass
+            elif choose == "2":
+                pass
+            elif choose == "3":
+                return employee
+    
+    #print delete input
+    def ui_delete_input(self):
+        choose = input("\n>> Select option: ")
+        return choose
+
+    #print delete menu
+    def ui_print_delete_menu(self):
+         '''Prints options for delete menu and accepts input'''
+        self.ui_menu_header("Delete customer")
+        print("\nSelect option to delete:")
+        print("1. Yes")
+        print("2. No")
+        print("3. Exit")
         self.ui_menu_footer()
