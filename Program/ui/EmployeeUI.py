@@ -86,6 +86,34 @@ class employeeUI:
         print("13.Exit")
         self.ui_menu_footer()
 
+    def ui_delete_employee(self):
+        employee = self.ui_employee_ID()
+        choose = ""
+        while choose != "3":
+            self.ui_print_delete_menu()
+            choose = self.ui_delete_input()
+            if choose == "1":
+                pass
+            elif choose == "2":
+                pass
+            elif choose == "3":
+                return employee
+    
+    #print delete input
+    def ui_delete_input(self):
+        choose = input("\n>> Select option: ")
+        return choose
+
+    #print delete menu
+    def ui_print_delete_menu(self):
+         '''Prints options for delete menu and accepts input'''
+        self.ui_menu_header("Delete employee")
+        print("\nSelect option to delete:")
+        print("1. Yes")
+        print("2. No")
+        print("3. Exit")
+        self.ui_menu_footer()
+
     #Print Employee Table Header
     def ui_employee_table_header(self):
         print(f"{'Unique_id':<20}{'Name':<20}{'SSN':<20}{'Role':<20}{'Address':<20}{'Zip_code':<20}{'City':<20}{'Country':<20}{'Home_phone':<20}{'Mobile_phone':<20}{'Email':<20}{'State':<20}")
@@ -176,30 +204,14 @@ class employeeUI:
                 self.logicAPI.create_employee(*new_employee)
             elif command == "2":
                 selection = self.ui_search_menu()
-                if selection == "1":
-                    self.ui_print_type()
-                elif selection == "2":
-                    pass
-                elif selection == "3":
-                    pass
-                elif selection == "4":
-                    pass
-                elif selection == "5":
-                    pass
-                elif selection == "6":
-                    return employeenUI()
             elif command == "3":
                 self.ui_all_employee()
             elif command == "4":
-                pass
-            elif command == "5":
-                self.ui_all_employee()
-            elif command == "6":
                 new_employee = self.ui_edit_employee()
                 self.logicAPI.edit_employee(new_employee)
-            elif command == "7":
-                pass    
-            elif command == "8":
+            elif command == "5":
+                pass
+            elif command == "6":
                 return UIMain()
             else:
                 print("Invalid command, try again") 
