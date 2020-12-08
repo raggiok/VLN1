@@ -187,7 +187,7 @@ class CustomerUI:
             elif choose == "2":
                 pass
             elif choose == "3":
-                return employee
+                return customer
     
     #print delete input
     def ui_delete_input(self):
