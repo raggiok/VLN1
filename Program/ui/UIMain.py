@@ -9,27 +9,32 @@ class UIMain:
     def ui_loop(self):
         while True:
             print("-"*20 + "Main Menu" + "-"*20)
-            print("\nSelect an option...\n1 - Print all employees \n2 - Get employees by role \n3 - Get all vehicles \nq - to quit program\n")
+            print("\nSelect an option...\n1 - Vehicles \n2 - Customers \n3 - Contracts \n4 - Reports \n5 - Destinations \n6 - Employees \nq - to quit program\n")
             print("-"*50)
             command = input("Input your command: ")
             command = command.lower()
             if command == "1":
-                results  = self.logicAPI.all_employees()
-                print("\nAll employees:")
-                for employee in results:
-                    print(employee)
+                from ui.VehicleUI import VehicleUI
+                VehicleUI.vehicle_menu(self)
             elif command == "2":
-                role_str = input("Type role name: ")
-                results = self.logicAPI.employee_by_role(role_str)
-                print("\nAll employees with role " + role_str + ": ")
-                for employee in results:
-                    print(employee)
+                CustomerUI.customer_menu()
             elif command == "3":
-                results  = self.logicAPI.all_vehicles()
-                print("\nAll vehicles:")
-                for vehicle in results:
-                    print(vehicle)
+                self.ContractsUI.contracts_menu()
+            elif command == "4":
+                pass
+            elif command == "5":
+                self.destinationUI.destination_menu()
+            elif command == "6":            
+                pass
             elif command == "q":
                 return False
             else:
                 print("Invalid command, try again")
+
+        #Menu header
+    def ui_menu_header(self, menu_name):
+        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
+
+    #Menu footer
+    def ui_menu_footer(self):
+        print("\n" + "-"*50)            

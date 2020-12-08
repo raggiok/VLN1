@@ -1,6 +1,6 @@
 from ui.UIMain import UIMain
-from logic.logicAPI import logicAPI
-from models.Customer import Customer
+from logic.logicAPI import LogicAPI
+from models.Customers import Customer
 
 class CustomerUI:
     def __init__(self):
@@ -197,9 +197,9 @@ class CustomerUI:
     #print delete menu
     def ui_print_delete_menu(self):
          '''Prints options for delete menu and accepts input'''
-        self.ui_menu_header("Delete customer")
-        print("\nSelect option to delete:")
-        print("1. Yes")
-        print("2. No")
-        print("3. Exit")
-        self.ui_menu_footer()
+         self.ui_menu_header("Delete customer")
+         print("\nSelect option to delete:")
+         print("1. Yes")
+         print("2. No")
+         print("3. Exit")
+         self.ui_menu_footer()
