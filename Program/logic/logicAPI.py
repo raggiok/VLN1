@@ -39,6 +39,8 @@ class LogicAPI:
     def search_vehicle_by_type(self, vehicle_type):
         return self.vehicle.search_vehicle_by_type(vehicle_type)
 
+    def delete_vehicle(self, vehicle_ID):
+        return self.vehicle.delete_vehicle(vehicle_ID)
 
         ### Contracts ###
     def all_contracts(self):
@@ -80,24 +82,41 @@ class LogicAPI:
         return self.customer(country)
 
     def delete_customer(self, ssn):
-        return self.customer.delete_customer
+        return self.customer.delete_customer(ssn)
 
     def update_customer(self, edited_instance):
         self.customer.edit_customer(edited_instance)
 
+       
         ### Destinations ###
     def create_destination(self, a_list):
         return self.destination.create_destination(a_list)
 
     def edit_destination(self, a_list):
         return self.destination.edit_destination(a_list)
-    
-    def destination_types(self):
-        return self.destination.destination_types()
 
     def all_destinations(self):
         return self.destination.all_destinations()
+       ##Search functions##
+    def search_destination_by_country(self,string):
+        return self.destination.search_destination_by_country(string)
 
+    def search_destination_by_airport(self,string):
+        return self.destination.search_destination_by_airport(string)
+
+    def search_destination_by_opening_time(self,string):
+        return self.destination.search_destination_by_opening_time(string)
+
+    def search_destination_by_closing_time(self,string):
+        return self.destination.search_destination_by_closing_time(string)
+
+    def search_destination_by_Main_contact(self,string):
+        return self.destination.search_destination_by_Main_contact(string)
+
+    def search_destination_by_state(self,string):
+        return self.destination.search_destination_by_state(string)
+
+       
         ### Employee ###
 
     def create_employee(self, a_list):

@@ -12,8 +12,8 @@ unique_id,customer,vehicle_unique_id,start_date,end_date,country,employee,total_
 11,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
 12,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
 13,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
-14,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
-15,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
+14,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Inactive
+15,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Inactive
 16,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
 17,Bobby,25,01.01.2020,11.02.2025,Iceland,Jon Jonsson,9.999,06-Dec 2020,Active
 18,1,1,1,1,1,1,1,1,1

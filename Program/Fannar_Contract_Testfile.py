@@ -4,4 +4,4 @@ from models.contracts import Contract
 
 
 
-LogicAPI().create_new_contract(["1", '1', '1', '1', '1', '1', '1', '1', '1'])
+print(LogicAPI().delete_vehicle('4'))
