@@ -59,6 +59,12 @@ class VehicleLogic():
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
+    def delete_vehicle(self, ID_number):
+        if self.search_vehicle_by_ID(ID_number)[0] == ID_number:
+            self.data.delete_vehicle(self.search_vehicle_by_ID(ID_number)[0])
+        else:
+            return "No match found."
+
     def no_match_found(self, result_list):
         if result_list:
             return result_list

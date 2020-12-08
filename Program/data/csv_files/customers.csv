@@ -1,5 +1,5 @@
 unique_id,name,ssn,address,zip_code,city,country,phone,email,state
-2,John Smith,150588-2459,Heimilisgata 1,104,Reykjavik,Iceland,551-4489,John@email.com,Active
+2,John Smith,150588-2459,Heimilisgata 1,104,Reykjavik,Iceland,551-4489,John@email.com,Inactive
 3,John Smith,150588-2459,Heimilisgata 1,104,Reykjavik,Iceland,551-4489,John@email.com,Active
 4,John Smith,150588-2459,Heimilisgata 1,TEST,Reykjavik,Iceland,551-4489,John@email.com,Inactive
 5,John Smith,150588-2459,Heimilisgata 1,104,Reykjavik,Iceland,551-4489,John@email.com,Active

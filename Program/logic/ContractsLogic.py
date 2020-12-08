@@ -33,7 +33,7 @@ class ContractLogic:
     def search_contracts_by_id(self, string):
         match = []
         for contract in self.all_contracts():
-            if contract.get_unique_id == string:
+            if contract.get_unique_id() == string:
                 match.append(contract)
         return self.no_match_found(match)
 
@@ -44,6 +44,9 @@ class ContractLogic:
             result_list.append("No match found.")
             return result_list
 
-    def delete_contract(self, string):
-        confirmation = self.data.delete_contract(string)
-        return confirmation
+    def delete_contract(self, contract_id):
+        result = self.search_contracts_by_id(contract_id)
+        if result[0] != "No match found.":
+            self.data.delete_contract(result[0])
+        else:
+            return "No match found."

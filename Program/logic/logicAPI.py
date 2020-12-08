@@ -39,6 +39,8 @@ class LogicAPI:
     def search_vehicle_by_type(self, vehicle_type):
         return self.vehicle.search_vehicle_by_type(vehicle_type)
 
+    def delete_vehicle(self, vehicle_ID):
+        return self.vehicle.delete_vehicle(vehicle_ID)
 
         ### Contracts ###
     def all_contracts(self):
@@ -80,7 +82,7 @@ class LogicAPI:
         return self.customer(country)
 
     def delete_customer(self, ssn):
-        return self.customer.delete_customer
+        return self.customer.delete_customer(ssn)
 
     def update_customer(self, edited_instance):
         self.customer.edit_customer(edited_instance)

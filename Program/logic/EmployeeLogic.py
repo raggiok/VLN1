@@ -27,10 +27,11 @@ class EmployeeLogic:
         return self.no_match_found(match)
 
     def delete_employee(self, string):
-        if self.search_by_id(string):
-            self.data.delete_employee(self.search_by_id(string))
+        temp_list = self.search_by_id(string)
+        if temp_list[0] != "No match found.":
+            self.data.delete_employee(temp_list[0])
         else:
-            return "Employee not found."
+            return temp_list
 
     def update_employee(self, updated_employee):
         self.data.update_employee(updated_employee)

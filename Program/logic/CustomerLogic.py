@@ -42,10 +42,10 @@ class CustomerLogic:
     #delete customer information
     def delete_customer(self, ssn):
         deleteList = self.customer_by_ssn(ssn)
-        if deleteList:
+        if deleteList[0] != "No match found.":
             self.data.delete_customer(deleteList[0])
         else:
-            return "Customer not found."
+            return deleteList
 
     #Edit customer
     def edit_customer(self, edited_instance):
