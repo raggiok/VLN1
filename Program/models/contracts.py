@@ -34,4 +34,4 @@ class Contract:
         return self.unique_id
         
     def __str__(self):
-        return f'{self.unique_id:<20}{self.customer:<20}{self.vehicle_unique_id:<20}{self.start_date:<20}{self.end_date:<20}{self.country:<20}{self.employee:<20}{self.total_price:<20}'
+        return f'{self.unique_id:<20}{self.customer:<20}{self.vehicle_unique_id:<20}{self.start_date}-{self.end_date:<20}{self.country:<20}{self.employee:<20}{self.total_price:<20}{self.contract_creation_date:<20}'
