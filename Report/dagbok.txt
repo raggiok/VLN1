@@ -111,7 +111,7 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Við fórum líka yfir hvernig við búum til unique_ID fyrir hvert gildi sem við vistum í grunninn
 - Hver meðlimur ætlaði að klára sína virkni svo hægt sé að commita þessu inn á repo og svo ætlum við að skipta okkur niður á layers
 
----Fimmtudagur 04.12.2020---
+---Föstudagur 04.12.2020---
 - Hópurinn er búinn að skipta sér upp á eftirfarandi máta:
 - Ragnar tekur Data layerinn og ætlar að klára delete virkni og gera wrapper sem sendir á logic layer
 - Fannar vinnur Logic layerinn og klárar alla virkni sem UI layerinn biður um
@@ -119,7 +119,7 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Um helgina stefnum við að því að útfæra eins margar A og B kröfur og hægt er og ætlum svo að taka stöðuna til að meta hvað er eftir
 
 
----Föstudagur 05.12.2020---
+---Laugardagur 05.12.2020---
 - Hópurinn vinnur áfram að skiptu fyrirkomulagi: Ragnar - Datalayer, Fannar - Logiclayer, Franz&Callista - UI layer
 #Ragnar:
 - Byrjaður að setja upp wrapper fyrir DATA layer sem hetiir dataAPI og sameinar alla virkni frá data layer.
@@ -130,8 +130,8 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 #Franz:
 
 
----Laugardagur 06.12.2020---
-- Hópurinn ræðir aftur saman um skiptingu á verkefninu og hvernig Models skulu meðhöndlaðir og hvaða breytur Klasarnir taka
+---Sunnudagur 06.12.2020---
+- Hópurinn er langt kominn með virkni í DataLayer, LogicLayer og UILayer. Franz og Callista eru enn að vinna í UI. Ragnar í data og Fannar í Logic.
 #Ragnar:
 - Kominn langt með að klára dataAPI
 - Sé að það er að fara mikil vinna í að nota sömu föll fyrir hvern klasa (Customer, Destination, Employee etc.)
@@ -139,17 +139,20 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Föllin þurfa að geta gert: Create, Update, Delete og Get (sækja öll instönce í lista)
 - Virknin mjög langt komin og verður lokið á morgun
 - Þarf að uppfæra edit_data þannig að það skrifi út skránna með header ef það er ekkert í henni (sama með hin functionin)
-#Callista:
-#Fannar:
-#Franz:
-
----Sunnudagur 07.12.2020---
-Hópurinn er langt kominn með virkni í DataLayer, LogicLayer og UILayer. Franz og Callista eru enn að vinna í UI. Ragnar í data og Fannar í Logic.
-# Ragnar:
 - Lagaði til í file structure, nú er bara dataAPI og datafun sem þarf að nota í data layer + folderar til að vista .csv skrár
 - Skrifaði tvo nýja models Invoice og Rate (það á eftir að tengja mikið af þeirri virkni við logic og svo yfirfara)
 - Þeir virka með data layerinum (þ.e. create, edit, delete og get all info)
 - Á morgun fer ég vonandi í að hjálpa Fannari með logic layer
+#Callista:
+#Fannar:
+#Franz:
+
+---Mánudagur 07.12.2020---
+DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að koma öllu UI í virkni við Logic og Data
+# Ragnar:
+- Er að vinna í að koma Contract UI í tengingu við LogicAPI
+- Nú getur Contract UI gert Create, Search (eftir mismunandi gildum) og birt alla samninga
+- Það á eftir að bæta við Edit og Delete og svo villuprófa allt input sem kemur frá notanda
 # Callista:
 # Fannar:
 # Franz:

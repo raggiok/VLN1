@@ -2,7 +2,7 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 1,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers license,Kulusuk,Active
 2,TAILG,Free Fly II,Medium road,OK,2018,Orange,Drivers license,Kulusuk,Active
 3,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen,Active
-4,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn,Active
+4,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn,Inactive
 5,Kayman Kayaks,Crazy HV,Light water,OK,2020,Yellow,None,Nuuk,Active
 6,Cani-Fit,Fat Max,Light off-road,OK,2019,Black,None,Nuuk,Active
 7,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,Active

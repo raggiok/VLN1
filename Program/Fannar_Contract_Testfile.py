@@ -4,4 +4,4 @@ from models.contracts import Contract
 
 
 
-print(LogicAPI().delete_employee('4'))
+print(LogicAPI().delete_vehicle('4'))

@@ -49,4 +49,4 @@ class ContractLogic:
         if result[0] != "No match found.":
             self.data.delete_contract(result[0])
         else:
-            return "No match found."
+            return result
