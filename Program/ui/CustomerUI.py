@@ -1,10 +1,10 @@
 from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
-from models.Customers import Customers
+from models.Customers import Customer
 
 class CustomerUI:
     def __init__(self):
-        self.logicAPI = LogicAPI()
+        self.logic = LogicAPI()
         self.customer_menu()
 
     #unique_id,name,ssn,address,zip_code,city,country,phone,email,state

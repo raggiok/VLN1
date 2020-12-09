@@ -13,8 +13,7 @@ class DestinationLogic():
         '''Edits a destination in the database'''
         self.data.edit_destination(destination_instance)
 
-    #Search functions
-    #### Bad code ##### 
+     #### Search Function #####  
     def available_countries(self):
         destination = self.data.get_destinations()
         retList = []
@@ -129,7 +128,7 @@ class DestinationLogic():
         return self.no_match_found(retList)          
 
 
-    #### Bad code ##### 
+    #### Search Function ##### 
 
     #Returns all information about all destinations
     def all_destinations(self):

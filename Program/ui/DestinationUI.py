@@ -2,6 +2,7 @@ from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
 from models.Destinations import Destination
 
+
 class destinationUI:
     def __init__(self):
         self.logicAPI = LogicAPI()
@@ -103,7 +104,7 @@ class destinationUI:
 
 
 
-    ### so bad ###
+    ### search function ###
     
 
     def ui_country_available_print(self):
@@ -235,11 +236,17 @@ class destinationUI:
             print(destination)
         self.ui_destination_table_footer() 
 
-    ### so bad ###
+    ### search function ###
 
 
     #Menu header
     def ui_menu_header(self, menu_name):
+        print(" _   _       _   _            _      _ _                  ")
+        print("| \ | |     | \ | |     /\   (_)    | (_)                 ")
+        print("|  \| | __ _|  \| |    /  \   _ _ __| |_ _ __   ___  ___  ")
+        print("| . ` |/ _` | . ` |   / /\ \ | | '__| | | '_ \ / _ \/ __| ")
+        print("| |\  | (_| | |\  |  / ____ \| | |  | | | | | |  __/\__ \ ")
+        print("|_| \_|\__,_|_| \_| /_/    \_\_|_|  |_|_|_| |_|\___||___/ ")
         print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
 
     #Menu footer
@@ -293,15 +300,13 @@ class destinationUI:
             elif command == "3":
                 self.ui_all_destinations()
             elif command == "4":
-                pass
+                new_destination = self.ui_edit_destination()
+                self.logicAPI.edit_destination(new_destination)
             elif command == "5":
                 self.ui_all_destinations()
             elif command == "6":
-                new_destination = self.ui_edit_destination()
-                self.logicAPI.edit_destination(new_destination)
-            elif command == "7":
-                pass    
-            elif command == "8":
                 return UIMain()
             else:
                 print("Invalid command, try again")
+
+

@@ -23,14 +23,14 @@ class ContractLogic:
         date_string = datetime.datetime.strftime(date_time, '%d.%m.%y')
         return date_string
     
-    def create_contract(self, a_list):
-        new_contract = Contract(self.data.new_contract_id() , *a_list)
+    def create_contract(self, a_list):                                          #Athugar hvort að bíllinn sé bókaður á þessum tíma, hvort að kúninn sé með réttindi o.s.frv.
+        new_contract = Contract("", *a_list)
         if not self.check_availability(new_contract):
-            return "Vehicle unavailable at that time."
+            return "\n*****Vehicle unavailable at that time.*****"
         #elif not self.check_license(new_contract):
-        #    return "Inadequate license type."
+        #    return "*****Inadequate license type.*****"
         elif not self.check_country(new_contract):
-            return "Vehicle position and contract destination differ."
+            return "\n*****Vehicle position and contract destination differ.*****"
         else:
             new_contract.end_date = self.change_to_string(new_contract.end_date)
             new_contract.start_date = self.change_to_string(new_contract.start_date)
@@ -115,7 +115,7 @@ class ContractLogic:
         for vehicle in search_list:
             if vehicle.unique_id == ID:
                 retList.append(vehicle)
-        return self.no_match_found(retList)
+        return retList
 
     def customer_by_name(self,name):
         custs = self.data.get_customers()
