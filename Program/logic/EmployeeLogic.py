@@ -7,7 +7,11 @@ class EmployeeLogic:
         self.data = dataAPI()
 
     def create_employee(self, a_list):
+<<<<<<< HEAD
         employee = Employee(self.data.new_customer_id(), *a_list)
+=======
+        employee = Employee("placeholder", *a_list)
+>>>>>>> 20c2c06f9a457c9638a42696495054c941324a1a
         return self.data.create_employee(employee)
         
     def get_employees(self):

@@ -1,13 +1,5 @@
 unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,email,state
-1,Gummi,22,admin,Heimilisgata 5,112,Reykjavik,Iceland,889-2121,551-4469,test@test.is,Active
-2,Raggi,22,admin,Heimilisgata 5,112,Reykjavik,Iceland,Inactive,889-2121,551-4469,test@test.is,Active
-3,Jon Jonsson,25,City staff,Heimilisgata 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,Active
-4,Jon Jonsson,25,City staff,Heimilisgata 50,105,Reykjavik,Iceland,test@test.is,889-2121,551-4469,Active
-5,Jon Jonsson,25,City staff,TEST 50,105,Reykjavik,Iceland,Inactive,889-2121,551-4469,test@test.is,Active
-6,Jon Jonsson,25,City staff,Heimilisgata 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,Active
-7,Jon Jonsson,150589-2129,City staff,TEST 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,Active
-8,Jon Jonsson,150589-2129,City staff,TEST 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,Active
-9,Jon Jonsson,150589-2129,City staff,TEST 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,Active
-10,Jon Jonsson,150589-2129,City staff,TEST 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,Active
-11,Palli,asdfas,d,dd,,dd,d,d,d,d,Active
-12,Bubbi,d,d,d,dd,d,d,d,d,d,Active
+1,Ragnar,d,d,d,d,d,d,d,d,d,Active
+2,d,d,d,d,d,d,d,d,d,d,Active
+3,Rabbbbi,asdfasd,asdfas,sadfas,sadfasf,asdfasdf,sdaf,4444444,555555555,22222222,Active
+4,adam,22,cashier,sa,sa,sa,s,a,as,sa,Active

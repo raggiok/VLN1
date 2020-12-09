@@ -96,10 +96,11 @@ class VehicleUI:
     def ui_single_vehicle_ID(self):
         '''Prints a single vehicle with a unique ID'''
         vehicle_ID = input(">> Please enter vehicle ID: ")
-        vehicle  = self.logic.search_vehicle_by_ID(vehicle_ID)
+        vehicles  = self.logic.search_vehicle_by_ID(vehicle_ID)
         print("\nVehicle by ID: " + vehicle_ID)
         self.ui_vehicle_table_header()
-        print(vehicle) 
+        for vehicle in vehicles:
+            print(vehicle) 
         self.ui_vehicle_table_footer()
         return vehicle
 
@@ -122,7 +123,7 @@ class VehicleUI:
 
     def ui_vehicle_type_available_print(self):
         print("\nAvailable Options:")
-        vehicles = self.logic.avalible_vehicle_type()
+        vehicles = self.logic.search_vehicle_by_vehicle_type()
         for vehicle in vehicles:
             print("\t" + vehicle)
         print()
@@ -303,7 +304,10 @@ class VehicleUI:
                 new_vehicle = self.ui_edit_vehicle()
                 self.logic.edit_vehicle(new_vehicle)
             elif command == "7":
-                pass    
+                vehicle_id = input(">> Enter vehicle ID to delete: ")
+                vehicle = self.logic.delete_vehicle(vehicle_id)
+                for result in vehicle:
+                    print(result)  
             elif command == "8":
                return UIMain()
             else:

@@ -40,24 +40,24 @@ class CustomerUI:
     #Print search menu 
     def ui_search_menu(self):
         self.ui_menu_header("Customer Search") 
-        print("\nPlease enter search option:")
+        print("\nPlease enter search option:").
         self.UI_numbered_menu(["Name", "SSN", "Country", "Exit"])
         self.ui_menu_footer()
         selection = input("\n>> Select option: ").lower()
         if selection == "1":
-            cust_name = input(">> Please enter customer name: ")
+            cust_name = input(">> Please enter customer name: ").lower()
             a_list = self.logicAPI.customer_by_name(cust_name)
             self.ui_customer_table_header()
             for item in a_list:
                 print(item)
         elif selection == "2":
-            cust_id = input(">> Please enter customer ID: ")
+            cust_id = input(">> Please enter customer ID: ").lower()
             a_list = self.logicAPI.customer_by_ssn(cust_id)
             self.ui_customer_table_header()
             for item in a_list:
                 print(item)
         elif selection == "3":
-            cust_country = input(">> Please enter customer country: ")
+            cust_country = input(">> Please enter customer country: ").lower()
             a_list = self.logicAPI.customer_by_area(cust_country)
             self.ui_customer_table_header()
             for item in a_list:
@@ -75,7 +75,7 @@ class CustomerUI:
             self.ui_menu_header("Customer Menu")
             print("\nSelect an option...\n1. Create new customer \n2. Search customer \n3. View all customers \n4. Edit customer information \n5. Delete customer information \n6. Main menu\n ")   
             self.ui_menu_footer()      
-            command = input(">> Select option: ")
+            command = input(">> Select option: ").lower()
             command = command.lower()
             if command == "1":
                 new_customer = self.ui_new_customer()
@@ -129,7 +129,7 @@ class CustomerUI:
     #Print customer by name
     def ui_by_name(self):
         "allowing search by name only"
-        customer_name = input(">> Please enter name of customer: ")
+        customer_name = input(">> Please enter name of customer: ").lower()
         customer = self.logicAPI.customer_by_name(customer_name)
         print("\nCustomer by name: " + customer_name)
         self.ui.ui_customer_table_header
@@ -140,7 +140,7 @@ class CustomerUI:
     #Print customer by area
     def ui_by_area(self):
         "allowing search by area only"
-        customer_area = input(">> Please enter area of customer: ")
+        customer_area = input(">> Please enter area of customer: ").lower()
         customer = self.logicAPI.customer_by_area(customer_area)
         print("\nCustomer by area: " + customer_area)
         self.ui.ui_customer_table_header

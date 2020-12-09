@@ -194,16 +194,28 @@ class Data:
                         instance_list.append(contract)
                 elif instance_type == "customer":
                     customer = Customer(*instance_attribute_list)
-                    instance_list.append(customer)
+                    if customer.state == "Inactive":
+                        continue
+                    else:
+                        instance_list.append(customer)
                 elif instance_type == "destination":
                     destination = Destination(*instance_attribute_list)
-                    instance_list.append(destination)
+                    if destination.state == "Inactive":
+                        continue
+                    else:
+                        instance_list.append(destination)
                 elif instance_type == "employee":
                     employee = Employee(*instance_attribute_list)
-                    instance_list.append(employee)
+                    if employee.state == "Inactive":
+                        continue
+                    else:
+                        instance_list.append(employee)
                 elif instance_type == "vehicle":
                     vehicle = Vehicle(*instance_attribute_list)
-                    instance_list.append(vehicle)
+                    if vehicle.state == "Inactive":
+                        continue
+                    else:
+                        instance_list.append(vehicle)
 
                 instance_attribute_list.clear()
 
