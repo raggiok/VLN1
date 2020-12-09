@@ -26,16 +26,16 @@ class ContractLogic:
     def create_contract(self, a_list):                                          #Athugar hvort að bíllinn sé bókaður á þessum tíma, hvort að kúninn sé með réttindi o.s.frv.
         new_contract = Contract("", *a_list)
         if not self.check_availability(new_contract):
-            return "\n*****Vehicle unavailable at that time.*****"
+            return "\n*** Vehicle unavailable at that time ***\n"
         #elif not self.check_license(new_contract):
         #    return "*****Inadequate license type.*****"
         elif not self.check_country(new_contract):
-            return "\n*****Vehicle position and contract destination differ.*****"
+            return "\n*** Vehicle position and contract destination differ ***\n"
         else:
             new_contract.end_date = self.change_to_string(new_contract.end_date)
             new_contract.start_date = self.change_to_string(new_contract.start_date)
             self.data.create_contract(new_contract)
-            return "Contract successfully created."
+            return "\n*** Contract successfully created ***\n"
 
     def check_availability(self, new_contract):     #Athugar tímaskorður
         new_contract.end_date = self.change_to_datetime(new_contract.end_date)
@@ -94,7 +94,7 @@ class ContractLogic:
         if result_list:
             return result_list
         else:
-            result_list.append("\n*** No match found ***n")
+            result_list.append("\n*** No match found ***\n")
             return result_list
 
     def delete_contract(self, contract_id):

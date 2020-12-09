@@ -32,7 +32,7 @@ class ContractUI:
     def print_table_header(self):
         print()
         print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<29}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Contract Creation Date":<20}{"Checkout Date":<20}')
-        print("="*171)
+        print("="*200)
 
     #Print Contract Table Footer
     def print_table_footer(self):
@@ -112,6 +112,7 @@ class ContractUI:
                 self.print_table_header()
                 for item in self.logic.all_contracts():
                     print(item)
+                self.print_table_footer()
             elif command == "4":
                 edited_contract = self.ui_edit_contract()
                 self.print_table_header()

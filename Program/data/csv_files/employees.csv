@@ -11,3 +11,4 @@ unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,em
 10,Jon Jonsson,150589-2129,City staff,TEST 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,Active
 11,Palli,asdfas,d,dd,,dd,d,d,d,d,Active
 12,Bubbi,d,d,d,dd,d,d,d,d,d,Active
+13,Billy bob,150585-5456,Admin,email@test.is,105,Rvk,Iceland,8887878,5514469,test@test.is,Active
