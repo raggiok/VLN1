@@ -1,5 +1,5 @@
-from ui.CustomerUI import CustomerUI
+from ui.EmployeeUI import EmployeeUI
 
 if __name__ == "__main__":
-    ui = CustomerUI()
+    ui = EmployeeUI()
     

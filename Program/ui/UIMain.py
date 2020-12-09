@@ -37,4 +37,4 @@ class UIMain:
 
     #Menu footer
     def ui_menu_footer(self):
-        print("\n" + "-"*50)            
+        print("\n" + "-"*50)

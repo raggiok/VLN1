@@ -1,16 +1,16 @@
 from ui.UIMain import UIMain
-from logic.logicAPI import logicAPI
+from logic.logicAPI import LogicAPI
 from models.Employee import Employee
 
-class employeeUI:
+class EmployeeUI:
     def __init__(self):
         self.logicAPI = LogicAPI()
         self.employee_menu()
 
-    #unique_id	name	ssn	role	address	zip_code	city	country	home_phone	mobile_phone	email	state
+    #unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,email,state
     #create new employee
     def ui_new_employee(self):
-        employeeFieldnames = ["unique_id", "name","ssn","role","address","zip_code", "city", "country","home_number","mobile_phone","email","state"]
+        employeeFieldnames = ["name","ssn","role","address","zip_code", "city", "country","home_phone","mobile_phone","email"]
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new employee:" )
@@ -30,7 +30,7 @@ class employeeUI:
     def ui_edit_employee(self):
         employee = self.ui_employee_ID() #prints specific destination
         selection = ""
-        while selection != "13":
+        while selection != "12":
             self.ui_print_edit_menu() #ask user what he would like to edit
             selection = self.ui_edit_input()
             if selection == "1":
@@ -56,8 +56,6 @@ class employeeUI:
             elif selection == "11":
                 employee.email = self.value_input()
             elif selection == "12":
-                employee.state = self.value_input()
-            elif selection == "13":
                 return employee
 
     #Get input for edit menu
@@ -82,8 +80,7 @@ class employeeUI:
         print("9. Home_phone")
         print("10. Mobile_phone")
         print("11. Email")
-        print("12. State")
-        print("13.Exit")
+        print("12. Exit")
         self.ui_menu_footer()
 
     def ui_delete_employee(self):
@@ -106,7 +103,7 @@ class employeeUI:
 
     #print delete menu
     def ui_print_delete_menu(self):
-         '''Prints options for delete menu and accepts input'''
+        '''Prints options for delete menu and accepts input'''
         self.ui_menu_header("Delete employee")
         print("\nSelect option to delete:")
         print("1. Yes")
@@ -116,7 +113,7 @@ class employeeUI:
 
     #Print Employee Table Header
     def ui_employee_table_header(self):
-        print(f"{'Unique_id':<20}{'Name':<20}{'SSN':<20}{'Role':<20}{'Address':<20}{'Zip_code':<20}{'City':<20}{'Country':<20}{'Home_phone':<20}{'Mobile_phone':<20}{'Email':<20}{'State':<20}")
+        print(f"{'Unique_id':<20}{'Name':<20}{'SSN':<20}{'Role':<20}{'Address':<20}{'Zip_code':<20}{'City':<20}{'Country':<20}{'Home_phone':<20}{'Mobile_phone':<20}{'Email':<20}")
         print("-"*200)
 
     #Print employee Table Footer
@@ -126,7 +123,7 @@ class employeeUI:
 
     #Prints all employee
     def ui_all_employee(self):
-        results  = self.logicAPI.all_employee()
+        results  = self.logic.get_employees()
         print("\nAll employee:")
         self.ui_employee_table_header()
         for employee in results:
@@ -145,15 +142,15 @@ class employeeUI:
         return employee
 
     #Prints employee name
-    def ui_employee_name(self):
-        '''Prints a single employee name'''
-        employee_name = input(">> Please enter employee name: ")
-        employee  = self.logicAPI.search_employee_by_name(employee_name)
-        print("\nemployee by name: " + employee_name)
-        self.ui_employee_table_header()
-        print(employee) 
-        self.ui_employee_table_footer()
-        return employee
+    #def ui_employee_name(self):
+    #    '''Prints a single employee name'''
+    #    employee_name = input(">> Please enter employee name: ")
+    #    employee  = self.logicAPI.search_employee_by_name(employee_name)
+    #    print("\nemployee by name: " + employee_name)
+    #    self.ui_employee_table_header()
+    #    print(employee) 
+    #    self.ui_employee_table_footer()
+    #    return employee
     
     #Prints employee role
     def ui_employee_role(self):
@@ -179,10 +176,32 @@ class employeeUI:
     def ui_search_menu(self):
         self.ui_menu_header("Employee Search")
         print("\nPlease select a search option:")
-        self.UI_numbered_menu(["Name", "SSN", "Role", "Exit"])
+        #self.UI_numbered_menu(["Name", "SSN", "Role", "Exit"])
+        self.UI_numbered_menu([ "SSN", "Role", "Exit"])
         self.ui_menu_footer
         selection = input("\n>> Select option: ")
-        return selection
+        #if selection == "1":
+        #   emp_name = input(">> Please enter employee name: ")
+        #    a_list = self.logic.customer_by_name(cust_name)
+        #    self.ui_customer_table_header()
+        #    for item in a_list:
+        #       print(item)
+        if selection == "1":
+            emp_id = input(">> Please enter employee ID: ")
+            a_list = self.logic.search_employees_by_id(emp_id)
+            self.ui_employee_table_header()
+            for item in a_list:
+                print(item)
+        elif selection == "2":
+            emp_role = input(">> Please enter employee role: ")
+            a_list = self.logic.search_employees_by_role(cust_role)
+            self.ui_employee_table_header()
+            for item in a_list:
+                print(item)
+        elif selection == "3":
+            return EmployeeUI()
+        else:
+            print("Invalid command, try again")
 
     #Prints any UI menu in order
     def UI_numbered_menu(self, a_list):
@@ -195,20 +214,20 @@ class employeeUI:
     def employee_menu(self):
         while True:
             self.ui_menu_header("Employee Menu")
-            print("\nSelect an option...\n1. Create new employee \n2. Search employee  \n3. View all employee \n4. Edit employee \n5. Delete employee \n6. Main Menu")
+            print("\nSelect an option...\n1. Create new employee \n2. Search employees  \n3. View all employees \n4. Edit employee \n5. Delete employee \n6. Main Menu")
             self.ui_menu_footer()
             command = input(">> Select option: ")
             command = command.lower()
             if command == "1":
                 new_employee = self.ui_new_employee()
-                self.logicAPI.create_employee(*new_employee)
+                self.logicAPI.create_employee(new_employee)
             elif command == "2":
                 selection = self.ui_search_menu()
             elif command == "3":
                 self.ui_all_employee()
             elif command == "4":
                 new_employee = self.ui_edit_employee()
-                self.logicAPI.edit_employee(new_employee)
+                self.logic.update_employee(new_employee)
             elif command == "5":
                 pass
             elif command == "6":

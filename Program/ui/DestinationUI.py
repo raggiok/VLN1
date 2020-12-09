@@ -100,40 +100,144 @@ class destinationUI:
         print(destination) 
         self.ui_destination_table_footer()
         return destination
+
+
+
+    ### so bad ###
     
-    #Prints the destination type categories
-    def ui_print_types(self):
+
+    def ui_country_available_print(self):
         '''Prints all destination type categories'''
         print("\nAvailable Options:")
-        destinations = self.logicAPI.destination_types()
+        destinations = self.logicAPI.available_country()
         for destination in destinations:
             print("\t" + destination)
         print()
 
-    #Prints all the destinations of the same county
-    def search_destination_by_country(self):
-        self.ui_print_types()
-        destination_type = input(">> Please enter destination type: ")
-        results  = self.logicAPI.search_destination_by_type(destination_type)
-        print("\nAll destinations by type " + destination_type + ": ")
-        self.ui_destination_table_header()
-        for destination in results:
-            print(destination)
-        self.ui_destination_table_footer()
+    def ui_city_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logicAPI.available_city()
+        for destination in destinations:
+            print("\t" + destination)
+        print()
 
-    def search_destination_by_airport():
-        pass    
+    def ui_airport_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logicAPI.available_airport()
+        for destination in destinations:
+            print("\t" + destination)
+        print()
+
+    def ui_phone_number_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logicAPI.available_phone_number()
+        for destination in destinations:
+            print("\t" + destination)
+        print()
+
+    def ui_opening_time_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logicAPI.available_opening_time()
+        for destination in destinations:
+            print("\t" + destination)
+        print()
+
+    def ui_closing_time_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logicAPI.available_closing_time()
+        for destination in destinations:
+            print("\t" + destination)
+        print()    
+
+    def ui_main_contact_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logicAPI.available_main_contact()
+        for destination in destinations:
+            print("\t" + destination)
+        print()             
 
         
-    def ui_print_type(self):
-        #self.ui_print_types()
-        country = input(">> Please enter destination type: ")
-        results  = self.logicAPI.destination_types()
+    def ui_print_country(self):
+        self.ui_country_available_print()
+        country = input(">> Please enter destination Country: ")
+        results  = self.logicAPI.search_destination_by_country(country)
         print("\nAll destination by type " + country + ": ")
         self.ui_destination_table_header()
         for destination in results:
             print(destination)
         self.ui_destination_table_footer()
+
+
+    def ui_print_city(self):
+        self.ui_city_available_print()
+        city = input(">> Please enter destination Country: ")
+        results  = self.logicAPI.search_destination_by_city(city)
+        print("\nAll destination by type " + city + ": ")
+        self.ui_destination_table_header()
+        for destination in results:
+            print(destination)
+        self.ui_destination_table_footer()
+
+    def ui_print_airport(self):
+        self.ui_airport_available_print()
+        airport = input(">> Please enter destination Airport: ")
+        results  = self.logicAPI.search_destination_by_city(airport)
+        print("\nAll destination by type " + airport + ": ")
+        self.ui_destination_table_header()
+        for destination in results:
+            print(destination)
+        self.ui_destination_table_footer()
+
+    def ui_print_phone_number(self):
+        self.ui_phone_number_available_print()
+        phone_number = input(">> Please enter destination Phone number: ")
+        results  = self.logicAPI.search_destination_by_phone_number(phone_number)
+        print("\nAll destination by type " + phone_number + ": ")
+        self.ui_destination_table_header()
+        for destination in results:
+            print(destination)
+        self.ui_destination_table_footer()
+
+
+    def ui_print_opening_time(self):
+        self.ui_opening_time_available_print()
+        opening_time = input(">> Please enter destination Opening time: ")
+        results  = self.logicAPI.search_destination_by_opening_time(opening_time)
+        print("\nAll destination by type " + opening_time + ": ")
+        self.ui_destination_table_header()
+        for destination in results:
+            print(destination)
+        self.ui_destination_table_footer()    
+
+    def ui_print_closing_time(self):
+        self.ui_closing_time_available_print()
+        closing_time = input(">> Please enter destination Closing time: ")
+        results  = self.logicAPI.search_destination_by_opening_time(closing_time)
+        print("\nAll destination by type " + closing_time + ": ")
+        self.ui_destination_table_header()
+        for destination in results:
+            print(destination)
+        self.ui_destination_table_footer() 
+
+    def ui_print_main_contact(self):
+        self.ui_main_contact_available_print()
+        main_contact = input(">> Please enter destination Main contact: ")
+        results  = self.logicAPI.search_destination_by_opening_time(main_contact)
+        print("\nAll destination by type " + main_contact + ": ")
+        self.ui_destination_table_header()
+        for destination in results:
+            print(destination)
+        self.ui_destination_table_footer() 
+
+    ### so bad ###
+
+
     #Menu header
     def ui_menu_header(self, menu_name):
         print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
@@ -146,7 +250,7 @@ class destinationUI:
     def ui_search_menu(self):
         self.ui_menu_header("Destination Search")
         print("\nPlease select a search option:")
-        self.UI_numbered_menu(["Country", "Airport", "Phone Number", "Opening Time","Closing Time","Main Contact","State", "Exit"])
+        self.UI_numbered_menu(["Country","City", "Airport", "Phone Number", "Opening Time","Closing Time","Main Contact", "Exit"])
         self.ui_menu_footer
         selection = input("\n>> Select option: ")
         return selection
@@ -171,17 +275,21 @@ class destinationUI:
             elif command == "2":
                 selection = self.ui_search_menu()
                 if selection == "1":
-                    self.ui_print_type()
+                    self.ui_print_country()
                 elif selection == "2":
-                    pass
+                    self.ui_print_city()
                 elif selection == "3":
-                    pass
+                    self.ui_print_airport()
                 elif selection == "4":
-                    pass
+                    self.ui_print_phone_number()
                 elif selection == "5":
-                    pass
+                    self.ui_print_opening_time()
                 elif selection == "6":
-                    return destinationUI()
+                    self.ui_print_closing_time()
+                elif selection == "7":
+                    self.ui_print_main_contact()
+                elif selection == "8":
+                    self.ui_destination_menu()    
             elif command == "3":
                 self.ui_all_destinations()
             elif command == "4":
