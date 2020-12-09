@@ -1,6 +1,6 @@
 unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,state
 1,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers license,Kulusuk,Active
-2,TAILG,Free Fly II,Medium road,OK,2018,Orange,Drivers license,Kulusuk,Active
+2,TAILG,Free Fly II,Medium road,OK,2019,Orange,Drivers license,Kulusuk,Active
 3,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen,Active
 4,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn,Inactive
 5,Kayman Kayaks,Crazy HV,Light water,OK,2020,Yellow,None,Nuuk,Active
@@ -40,7 +40,7 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 39,blabla,model,vehicle_type,OK,man_year,color,license_type,location,Active
 40,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,TEST,Inactive
 41,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active
-42,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active
-43,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Active
-45,its,a,car,its,a,bird,no,its,Active
-47,Bla,bubba,týpa,OK,1985,REd,Drivers,Reykajvik,Active
+42,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Inactive
+43,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,Inactive
+45,its,a,car,its,a,bird,no,its,Inactive
+47,Bla,bubba,týpa,OK,1985,REd,Drivers,Reykajvik,Inactive

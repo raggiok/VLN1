@@ -1,5 +1,5 @@
 #from ui.VehicleUI import VehicleUI
-from ui.ContractsUI import ContractUI
+from ui.UIMain import UIMain
 
 if __name__ == "__main__":
-    ui = ContractUI()
+    ui = UIMain()
