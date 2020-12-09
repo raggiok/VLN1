@@ -266,7 +266,7 @@ class VehicleUI:
     def vehicle_menu(self):
         while True:
             self.ui_menu_header("Vehicle Menu")
-            print("\nSelect an option...\n1. Create new vehicle \n2. Search vehicles \n3. Check availability \n4. Return vehicle \n5. View all vehicles \n6. Edit vehicle \n7. Delete vehicle \n8. Main Menu")
+            print("\nSelect an option...\n1. Create new vehicle \n2. Search vehicles \n3. Check availability \n4. Return/check out vehicle. \n5. View all vehicles \n6. Edit vehicle \n7. Delete vehicle \n8. Main Menu")
             self.ui_menu_footer()
             command = input(">> Select option: ")
             command = command.lower()
@@ -282,7 +282,7 @@ class VehicleUI:
                 elif selection == "3":
                     self.ui_print_vehicle_type()
                 elif selection == "4":
-                    self.ui_print_status()
+                    self
                 elif selection == "5":
                     self.ui_print_manufacturing_year()
                 elif selection == "6":
@@ -292,11 +292,11 @@ class VehicleUI:
                 elif selection == "8":
                     self.ui_print_location()
                 elif selection == "9":   
-                    self.vehicle_menu()     
+                    self.vehicle_menu()
             elif command == "3":
                 self.ui_all_vehicles()
             elif command == "4":
-                pass
+                self.ui_checkin_menu()
             elif command == "5":
                 self.ui_all_vehicles()
             elif command == "6":
@@ -309,7 +309,21 @@ class VehicleUI:
             else:
                 print("Invalid command, try again")
     
-
+    def ui_checkin_menu(self):
+        self.ui_menu_header('Check-in Menu')
+        print("Select an option...\n1.Check out vehicle.\n2.Check in vehicle.\n3.Return.")
+        self.ui_menu_footer()
+        choice = input(">> Select option: ")
+        if choice == '3':
+            return
+        elif choice == '1':
+            vehicle = input("Enter vehicle ID: ")
+            print(self.logic.vehicle_check_out(vehicle))
+        elif choice == '2':
+            vehicle = input("Enter vehicle ID: ")
+            print(self.logic.vehicle_check_in(vehicle))
+        elif choice == '3':
+            return
     #Menu header
     def ui_menu_header(self, menu_name):
         print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
