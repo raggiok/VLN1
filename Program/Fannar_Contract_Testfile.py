@@ -1,7 +1,9 @@
-from ui.ContractsUI import ContractUI
 from logic.logicAPI import LogicAPI
+from ui.UIMain import UIMain
 from models.contracts import Contract
 
 
 
-print(LogicAPI().delete_vehicle('4'))
+for emp in LogicAPI().all_contracts():
+    print(emp)
+#print(LogicAPI().search_employees_by_role("lala"))
