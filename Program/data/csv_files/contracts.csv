@@ -2,3 +2,4 @@ unique_id,customer,vehicle_unique_id,start_date,end_date,country,employee,total_
 
 75,John Smith,16,12.10.20,12.11.20,Nuuk,Jón,1500,09.12.20,Active
 82,John Smith,16,13.11.20,14.11.20,Nuk,Jón,1500,09.12.20,Active
+85,John Smith,16,15.11.20,16.11.20,Nuk,Jón,1500,09.12.20,Active
