@@ -153,6 +153,8 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 - Er að vinna í að koma Contract UI í tengingu við LogicAPI
 - Nú getur Contract UI gert Create, Search (eftir mismunandi gildum) og birt alla samninga
 - Það á eftir að bæta við Edit og Delete og svo villuprófa allt input sem kemur frá notanda
+- Lagaði Create contract fallið svo að það tekur inn réttar dagsetningar (ekki hægt að leigja tæki fyrir daginn í dag og ekki hægt að skrifa end date fyrir start date)
+- Svo kemur sjálfkrafa skráning á deginum þegar samningur er stofnaður
 # Callista:
 # Fannar:
 # Franz:
