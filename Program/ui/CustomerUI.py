@@ -4,13 +4,13 @@ from models.Customers import Customer
 
 class CustomerUI:
     def __init__(self):
-        self.logic = LogicAPI()
+        self.logicAPI = LogicAPI()
         self.customer_menu()
 
     #unique_id,name,ssn,address,zip_code,city,country,phone,email,state
     #create new customer
     def ui_new_customer(self):
-        customerFieldnames = ["unique_id","name","ssn","address","zip_code","city","country","phone","email"]
+        customerFieldnames = ["name","ssn","address","zip_code","city","country","phone","email"]
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new customer:" )
@@ -46,19 +46,19 @@ class CustomerUI:
         selection = input("\n>> Select option: ").lower()
         if selection == "1":
             cust_name = input(">> Please enter customer name: ")
-            a_list = self.logic.customer_by_name(cust_name)
+            a_list = self.logicAPI.customer_by_name(cust_name)
             self.ui_customer_table_header()
             for item in a_list:
                 print(item)
         elif selection == "2":
             cust_id = input(">> Please enter customer ID: ")
-            a_list = self.logic.customer_by_ssn(cust_id)
+            a_list = self.logicAPI.customer_by_ssn(cust_id)
             self.ui_customer_table_header()
             for item in a_list:
                 print(item)
         elif selection == "3":
             cust_country = input(">> Please enter customer country: ")
-            a_list = self.logic.customer_by_area(cust_country)
+            a_list = self.logicAPI.customer_by_area(cust_country)
             self.ui_customer_table_header()
             for item in a_list:
                 print(item)
@@ -79,14 +79,14 @@ class CustomerUI:
             command = command.lower()
             if command == "1":
                 new_customer = self.ui_new_customer()
-                self.logic.create_customer(*new_customer)
+                self.logicAPI.create_customer(new_customer)
             elif command == "2":
                 choice = self.ui_search_menu()
             elif command == "3":
                 return self.ui_all_customer()
             elif command == "4": 
                 new_customer = self.ui_edit_customer()
-                self.logicAPI.edit_customer(new_customer)
+                self.logicAPI.update_customer(new_customer)
             elif command == "5":
                 new_customer = self.ui_delete_customer()
                 self.logicAPI.delete_customer(new_customer)
@@ -108,12 +108,12 @@ class CustomerUI:
 
     #Print all customer
     def ui_all_customer(self):
-        for customer in self.logicAPI.all_customer():
-            print("\n All customers:")
-            self.ui_customer_table_header()
-            for customer in result:
-                print(customer)
-            self.ui_customer_table_footer()
+        results  = self.logicAPI.all_customer()
+        print("\nAll customers:")
+        self.ui_customer_table_header()
+        for customer in results:
+            print(customer)
+        self.ui_customer_table_footer()
 
     #Print customer by ID
     def ui_by_id(self):
