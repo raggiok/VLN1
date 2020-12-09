@@ -6,6 +6,3 @@ unique_id,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,em
 5,Ragnar,12312,51,10.12.20,11.12.20,d,Ragnar,200,09.12.20,,
 6,Ragnar,5456,51,13.12.20,14.12.20,p,Bubbi,7000,09.12.20,A,B
 7,Baldur,sadfsad,51,15.12.20,16.12.20,u,Ragnar,4000,09.12.20,A,B
-8,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,employee,total_price,contract_creation_date,checkout_date,checkin_date
-9,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,employee,total_price,contract_creation_date,checkout_date,checkin_date
-10,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,employee,total_price,contract_creation_date,checkout_date,checkin_date,checkin_location,state
