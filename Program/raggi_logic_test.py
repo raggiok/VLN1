@@ -26,7 +26,6 @@ def validate(date_text):
         except ValueError:
             print("Incorrect data format, should be DD.MM.YY")
 
-validate("15,02.02")
 
 #test.create_employee(employee)
 
