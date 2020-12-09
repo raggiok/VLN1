@@ -102,19 +102,90 @@ class VehicleUI:
         print(vehicle) 
         self.ui_vehicle_table_footer()
         return vehicle
+
+####################################################Search Menus##########################################################################  
     
-    #Prints the vehicle type categories
-    def ui_print_types(self):
-        '''Prints all vehicle type categories'''
-        print("\nVehicle types available:")
-        vehicles = self.logic.vehicle_types()
+
+    def ui_manufacturer_available_print(self):
+        print("\nAvailable Options:")
+        vehicles = self.logic.available_manufacturers()
         for vehicle in vehicles:
             print("\t" + vehicle)
         print()
 
-    #Prints all the vehicles of the same type
-    def ui_print_type(self):
-        self.ui_print_types()
+    def ui_model_available_print(self):
+        print("\nAvailable Options:")
+        vehicles = self.logic.available_model()
+        for vehicle in vehicles:
+            print("\t" + vehicle)
+        print()
+
+    def ui_vehicle_type_available_print(self):
+        print("\nAvailable Options:")
+        vehicles = self.logic.avalible_vehicle_type()
+        for vehicle in vehicles:
+            print("\t" + vehicle)
+        print()
+
+    def ui_status_available_print(self):
+        print("\nAvailable Options:")
+        vehicles = self.logic.available_status()
+        for vehicle in vehicles:
+            print("\t" + vehicle)
+        print()
+
+    def ui_manufacturing_year_available_print(self):
+        print("\nAvailable Options:")
+        vehicles = self.logic.available_manufacturing_year()
+        for vehicle in vehicles:
+            print("\t" + vehicle)
+        print()
+
+    def ui_color_available_print(self):
+        print("\nAvailable Options:")
+        vehicles = self.logic.available_color()
+        for vehicle in vehicles:
+            print("\t" + vehicle)
+        print()
+
+    def ui_license_type_available_print(self):
+        print("\nAvailable Options:")
+        vehicles = self.logic.available_license_type()
+        for vehicle in vehicles:
+            print("\t" + vehicle)
+        print()
+
+    def ui_location_available_print(self):
+        print("\nAvailable Options:")
+        vehicles = self.logic.available_location()
+        for vehicle in vehicles:
+            print("\t" + vehicle)
+        print()
+
+
+    
+    def ui_print_manufacturer(self):
+        self.ui_manufacturer_available_print()
+        manufacturer = input(">> Please enter vehicle manufacturer: ")
+        results  = self.logic.search_vehicle_by_manufacturer(manufacturer)
+        print("\nAll vehicles by manufacturer " + manufacturer + ": ")
+        self.ui_vehicle_table_header()
+        for vehicle in results:
+            print(vehicle)
+        self.ui_vehicle_table_footer()
+    
+    def ui_print_model(self):
+        self.ui_model_available_print()
+        model = input(">> Please enter vehicle model: ")
+        results  = self.logic.search_vehicle_by_model(model)
+        print("\nAll vehicles by model " + model + ": ")
+        self.ui_vehicle_table_header()
+        for vehicle in results:
+            print(vehicle)
+        self.ui_vehicle_table_footer()
+
+    def ui_print_vehicle_type(self):
+        self.ui_vehicle_type_available_print()
         vehicle_type = input(">> Please enter vehicle type: ")
         results  = self.logic.search_vehicle_by_type(vehicle_type)
         print("\nAll vehicles by type " + vehicle_type + ": ")
@@ -123,12 +194,64 @@ class VehicleUI:
             print(vehicle)
         self.ui_vehicle_table_footer()
 
+    def ui_print_status(self):
+        self.ui_status_available_print()
+        status = input(">> Please enter vehicle status: ")
+        results  = self.logic.search_vehicle_by_status(status)
+        print("\nAll vehicles by type " + status + ": ")
+        self.ui_vehicle_table_header()
+        for vehicle in results:
+            print(vehicle)
+        self.ui_vehicle_table_footer()
+
+    def ui_print_manufacturing_year(self):
+        self.ui_manufacturer_available_print()
+        manufacturing_year = input(">> Please enter vehicle manufacturing year: ")
+        results  = self.logic.search_vehicle_by_type(manufacturing_year)
+        print("\nAll vehicles by manufacturing year " + manufacturing_year + ": ")
+        self.ui_vehicle_table_header()
+        for vehicle in results:
+            print(vehicle)
+        self.ui_vehicle_table_footer()
+    
+    def ui_print_color(self):
+        self.ui_color_available_print()
+        color = input(">> Please enter vehicle color: ")
+        results  = self.logic.search_vehicle_by_color(color)
+        print("\nAll vehicles by color " + color + ": ")
+        self.ui_vehicle_table_header()
+        for vehicle in results:
+            print(vehicle)
+        self.ui_vehicle_table_footer()
+
+    def ui_print_license_type(self):
+        self.ui_license_type_available_print()
+        license_type = input(">> Please enter vehicle license requirement: ")
+        results  = self.logic.search_vehicle_by_license_type(license_type)
+        print("\nAll vehicles by type " + license_type + ": ")
+        self.ui_vehicle_table_header()
+        for vehicle in results:
+            print(vehicle)
+        self.ui_vehicle_table_footer()
+
+    def ui_print_location(self):
+        self.ui_location_available_print()
+        location = input(">> Please enter vehicle location: ")
+        results  = self.logic.search_vehicle_by_location(location)
+        print("\nAll vehicles by type " + location + ": ")
+        self.ui_vehicle_table_header()
+        for vehicle in results:
+            print(vehicle)
+        self.ui_vehicle_table_footer()
+
+#########################################################################################################################
+
 
     #Prints the search menu for vehicles
     def ui_search_menu(self):
         self.ui_menu_header("Vehicle Search")
         print("\nPlease select a search option:")
-        self.UI_numbered_menu(["Type", "Availability", "Manufacturer", "Model", "Other", "Exit"])
+        self.UI_numbered_menu(["Manufacturer","Model","Vehicle type","Status","Manufacturing year","Color","License Requirement","Location","Exit"])
         self.ui_menu_footer
         selection = input("\n>> Select option: ")
         return selection
@@ -151,19 +274,25 @@ class VehicleUI:
                 new_vehicle = self.ui_new_vehicle()
                 self.logic.create_vehicle(*new_vehicle)
             elif command == "2":
-                selection = self.ui_search_menu()
+                selection = self.ui_search_menu()   
                 if selection == "1":
-                    self.ui_print_type()
+                    self.ui_print_manufacturer()
                 elif selection == "2":
-                    pass
+                    self.ui_print_model()
                 elif selection == "3":
-                    pass
+                    self.ui_print_vehicle_type()
                 elif selection == "4":
-                    pass
+                    self.ui_print_status()
                 elif selection == "5":
-                    pass
+                    self.ui_print_manufacturing_year()
                 elif selection == "6":
-                    return VehicleUI()
+                    self.ui_print_color()
+                elif selection == "7":
+                    self.ui_print_license_type()
+                elif selection == "8":
+                    self.ui_print_location()
+                elif selection == "9":   
+                    self.vehicle_menu()     
             elif command == "3":
                 self.ui_all_vehicles()
             elif command == "4":

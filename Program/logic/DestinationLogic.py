@@ -14,48 +14,122 @@ class DestinationLogic():
         self.data.edit_destination(destination_instance)
 
     #Search functions
-    def search_destination_by_country(self,string):
-        match = []
-        for country in self.all_destinations():
-            if Destination.country == string:
-                match.append(country)
-        return self.no_match_found(match)
+    #### Bad code ##### 
+    def available_countries(self):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.country not in retList:
+                retList.append(destination.country)
+        return retList
 
-    def search_destination_by_airport(self,string):
-        match = []
-        for airport in self.all_destinations():
-            if Destination.airport == string:
-                match.append(airport)
-        return self.no_match_found(match)
+    def available_cities(self):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.city not in retList:
+                retList.append(destination.city)
+        return retList     
 
-    def search_destination_by_opening_time(self,string):
-        match = []
-        for opening_time in self.all_destinations():
-            if Destination.opening_time == string:
-                match.append(opening_time)
-        return self.no_match_found(match)
+    def available_airports(self):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.airport not in retList:
+                retList.append(destination.airport)
+        return retList
 
-    def search_destination_by_closing_time(self,string):
-        match = []
-        for closing_time in self.all_destinations():
-            if Destination.closing_time == string:
-                match.append(closing_time)
-        return self.no_match_found(match)
+    def available_phone_numbers(self):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.phone_number not in retList:
+                retList.append(destination.phone_number)
+        return retList 
 
-    def search_destination_by_main_contact(self,string):
-        match = []
-        for main_contact in self.all_destinations():
-            if Destination.main_contact == string:
-                match.append(main_contact)
-        return self.no_match_found(match)
+    def available_opening_times(self):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.opening_time not in retList:
+                retList.append(destination.opening_time)
+        return retList             
 
-    def search_destination_by_state(self,string):
-        match = []
-        for state in self.all_destinations():
-            if Destination.state == string:
-                match.append(state)
-        return self.no_match_found(match) 
-      
+    def available_closing_times(self):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.closing_time not in retList:
+                retList.append(destination.closing_time)
+        return retList 
+
+    def available_main_contacts(self):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.opening_time not in retList:
+                retList.append(destination.opening_time)
+        return retList     
+
+    def search_destinations_by_country(self,country):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.country == country:
+                retList.append(destination)
+        return self.no_match_found(retList)
+
+    def search_destinations_by_cities(self,city):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.city == city:
+                retList.append(destination)
+        return self.no_match_found(retList)
+
+    def search_destinations_by_airport(self,airport):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.airport == airport:
+                retList.append(destination)
+        return self.no_match_found(retList)
+
+    def search_destinations_by_phone_number(self,phone_number):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.phone_number == phone_number:
+                retList.append(destination)
+        return self.no_match_found(retList)
+
+    def search_destinations_by_opening_time(self,opening_time):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.opening_time == opening_time:
+                retList.append(destination)
+        return self.no_match_found(retList)        
+
+    def search_destinations_by_closing_time(self,closing_time):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.closing_time == closing_time:
+                retList.append(destination)
+        return self.no_match_found(retList)  
+
+
+    def search_destinations_by_main_contact(self,main_contact):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.opening_time == opening_time:
+                retList.append(destination)
+        return self.no_match_found(retList)          
+
+
+    #### Bad code ##### 
 
     #Returns all information about all destinations
     def all_destinations(self):

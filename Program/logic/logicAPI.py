@@ -15,14 +15,11 @@ class LogicAPI:
         self.employee = EmployeeLogic()
 
         ### Vehicles ###
-    def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_requirement,location):
-        return self.vehicle.create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_requirement,location)
+    def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location):
+        return self.vehicle.create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location)
 
     def edit_vehicle(self, vehicle):
         return self.vehicle.edit_vehicle(vehicle)
-
-    def vehicle_types(self):
-        return self.vehicle.vehicle_types()
 
     def all_vehicles(self):
         return self.vehicle.all_vehicles()
@@ -36,8 +33,56 @@ class LogicAPI:
     def search_vehicle_by_ID(self, vehicle_ID):
         return self.vehicle.search_vehicle_by_ID(vehicle_ID)
 
-    def search_vehicle_by_type(self, vehicle_type):
+    def search_vehicle_by_manufacturer(self, manufacturer):
+        return self.vehicle.search_vehicle_by_manufacturer(manufacturer)
+
+    def search_vehicle_by_model(self, model):
+        return self.vehicle.search_vehicle_by_model(model)
+
+    def search_vehicle_by_vehicle_type(self, vehicle_type):
         return self.vehicle.search_vehicle_by_type(vehicle_type)
+
+    def search_vehicle_by_status(self, status):
+        return self.vehicle.search_vehicle_by_status(status)
+
+    def search_vehicle_by_manufacturing_year(self, manufacturing_year):
+        return self.vehicle.search_vehicle_by_manufacturing_year(manufacturing_year)
+
+    def search_vehicle_by_color(self, color):
+        return self.vehicle.search_vehicle_by_color(color)   
+
+    def search_vehicle_by_license_type(self, license_type):
+        return self.vehicle.search_vehicle_by_license_type(license_type)
+
+    def search_vehicle_by_location(self, location):
+        return self.vehicle.search_vehicle_by_location(location)
+
+    def available_model(self):
+        return self.vehicle.available_model()
+
+    def available_manufacturers(self):
+        return self.vehicle.available_manufacturers()
+
+    def avalible_vehicle_type(self):
+        return self.vehicle.avalible_vehicle_type()
+
+    def available_status(self):
+        return self.vehicle.available_status()
+
+    def available_manufacturing_year(self):
+        return self.vehicle.available_manufacturing_year()
+
+    def available_color(self):
+        return self.vehicle.available_color()
+
+    def available_license_type(self):
+        return self.vehicle.available_license_type()
+
+    def available_location(self):
+        return self.vehicle.available_location()
+
+
+
 
     def delete_vehicle(self, vehicle_ID):
         return self.vehicle.delete_vehicle(vehicle_ID)
@@ -97,26 +142,55 @@ class LogicAPI:
 
     def all_destinations(self):
         return self.destination.all_destinations()
+      
+      
        ##Search functions##
-    def search_destination_by_country(self,string):
-        return self.destination.search_destination_by_country(string)
+    def search_destination_by_country(self,country):
+        return self.destination.search_destinations_by_country(country)
 
-    def search_destination_by_airport(self,string):
-        return self.destination.search_destination_by_airport(string)
+    def search_destination_by_city(self,city):
+        return self.destination.search_destinations_by_cities(city)    
 
-    def search_destination_by_opening_time(self,string):
-        return self.destination.search_destination_by_opening_time(string)
+    def search_destination_by_airport(self,airport):
+        return self.destination.search_destinations_by_airport(airport)
 
-    def search_destination_by_closing_time(self,string):
-        return self.destination.search_destination_by_closing_time(string)
+    def search_destination_by_phone_number(self,phone_number):
+        return self.destination.search_destinations_by_phone_number(phone_number)    
 
-    def search_destination_by_Main_contact(self,string):
-        return self.destination.search_destination_by_Main_contact(string)
+    def search_destination_by_opening_time(self,opening_time):
+        return self.destination.search_destinations_by_opening_time(opening_time)
 
-    def search_destination_by_state(self,string):
-        return self.destination.search_destination_by_state(string)
+    def search_destination_by_closing_time(self,closing_time):
+        return self.destination.search_destinations_by_closing_time(closing_time)
 
-       
+    def search_destination_by_Main_contact(self,main_contact):
+        return self.destination.search_destinations_by_main_contact(main_contact)
+
+    def available_country(self):
+        return self.destination.available_countries()
+
+    def available_city(self):
+        return self.destination.available_cities()
+
+    def available_airport(self):
+        return self.destination.available_airports()
+
+    def available_phone_number(self):
+        return self.destination.available_phone_numbers()
+
+    def available_opening_time(self):
+        return self.destination.available_opening_times()
+            
+    def available_closing_time(self):
+        return self.destination.available_closing_times()    
+         
+    def available_main_contact(self):
+        return self.destination.available_main_contacts()    
+        
+        
+        
+        
+        
         ### Employee ###
 
     def create_employee(self, a_list):
