@@ -10,7 +10,7 @@ class EmployeeUI:
     #unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,email,state
     #create new employee
     def ui_new_employee(self):
-        employeeFieldnames = ["unique_id", "name","ssn","role","address","zip_code", "city", "country","home_phone","mobile_phone","email"]
+        employeeFieldnames = ["name","ssn","role","address","zip_code", "city", "country","home_phone","mobile_phone","email"]
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new employee:" )

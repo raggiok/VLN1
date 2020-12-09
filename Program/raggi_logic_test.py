@@ -23,7 +23,7 @@ employee = Employee("5", "Jon Jonsson", "150589-2129", "City staff", "TEST 50", 
 
 
 
-test.create_employee(employee)
+#test.create_employee(employee)
 
 # for item in test.get_contracts():
 #     print(item)

@@ -1,6 +1,7 @@
 from logic.logicAPI import LogicAPI
 from ui.UIMain import UIMain
 from models.contracts import Contract
+import datetime
 
 
 class ContractUI:
@@ -30,25 +31,32 @@ class ContractUI:
 
     def print_table_header(self):
         print()
-        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Vehicle ID":<20}{"Contract Duration":<31}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Contract Creation Date":<20}')
+        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Vehicle ID":<20}{"Contract Duration":<29}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Contract Creation Date":<20}')
         print("="*171)
 
     def contract_input(self):
-        retList = []
-        requested_param = ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date', 'country', 'employee', 'total_price', 'contract_creation_date']
-        for item in requested_param:
-            user_input = input(f">> Please enter {item}")
-            retList.append(user_input)
+        customer = input(">> Enter Customer name:")
+        vehicle_id = input(">> Enter Vehicle ID:")
+        start_date = input(">> Enter Start date of rental period (dd.mm.yy):")
+        end_date = input(">> Enter End date of rental period:")
+        country = input(">> Enter Country:")
+        employee = input(">> Enter Employee name:")
+        total_price = input(">> Enter Total price:")
+
+        #Automatically adds current day as creation date:
+        today = datetime.datetime.today()
+        today = today.strftime('%d.%m.%y')
+        contract_creation_date = today
+        retList = [customer, vehicle_id, start_date, end_date, country, employee, total_price, contract_creation_date]
         return retList
-            
-        
+
 
     ### CONTRACT MAIN MENU ###
 
     def contract_main_menu(self):
         while True:
             self.ui_menu_header("Contract Menu")
-            print("\nPlease select a an option:\n")
+            print("\nPlease select a an option:")
             self.ui_numbered_menu(["Create contract", "Search contracts", "View all contracts", "Edit contract", "Delete contract", "Main menu"])
             self.ui_menu_footer()
             command = self.print_select_option()
@@ -77,24 +85,24 @@ class ContractUI:
     def contract_search_menu(self):
         while True:
             self.ui_menu_header("Contract Search")
-            print("\nPlease select search option:\n")
+            print("\nPlease select search option:")
             self.ui_numbered_menu(["Search by Contract ID", "Search by Customer name", "Search by Vehicle ID", "Main menu"])
             self.ui_menu_footer()
             command = self.print_select_option()
             if command == "1":
-                contract_id = input(">> Please enter Contract ID: ")
+                contract_id = input(">> Enter Contract ID: ")
                 a_list = self.logic.search_contracts_by_id(contract_id)
                 self.print_table_header()
                 for item in a_list:
                     print(item)
             elif command == "2":
-                vehicle_id = input(">> Please enter Customer name: ")
+                vehicle_id = input(">> Enter Customer name: ")
                 a_list = self.logic.search_contracts_by_customer(vehicle_id)
                 self.print_table_header()
                 for item in a_list:
                     print(item)
             elif command == "3":
-                vehicle_id = input(">> Please enter vehicle ID: ")
+                vehicle_id = input(">> Enter vehicle ID: ")
                 a_list = self.logic.search_contract_by_vin(vehicle_id)
                 self.print_table_header()
                 for item in a_list:
@@ -103,6 +111,67 @@ class ContractUI:
                 return ContractUI() 
             else:
                 print("Invalid command, try again")
+
+#unique_id, customer, vehicle_unique_id, start_date, end_date, country, employee, total_price, contract_creation_date
+ 
+    #Creates the Edit menu layout and returns the Contract Instance after edit
+    def ui_edit_contract(self):
+        contract = self.ui_single_contract_ID() #prints specific contract
+        selection = ""
+        while selection != "9":
+            self.ui_print_edit_menu() #ask user what he would like to edit
+            selection = self.ui_edit_input()
+            if selection == "1":
+                vehicle.customer = self.value_input()
+            elif selection == "2":
+                vehicle.vehicle_unique_id = self.value_input()
+            elif selection == "3":
+                vehicle.start_date = self.value_input()
+            elif selection == "4":
+                vehicle.end_date = self.value_input()
+            elif selection == "5":
+                vehicle.country = self.value_input()
+            elif selection == "6":
+                vehicle.employee = self.value_input()
+            elif selection == "7":
+                vehicle.total_price = self.value_input()
+            elif selection == "8":
+                return vehicle
+
+    #Get input for edit menu
+    def ui_edit_input(self):
+        selection = input("\n>> Select option: ")
+        return selection
+    
+    #Prints the Vehicle Edit menu options
+    def ui_print_edit_menu(self):
+        '''Prints options for Edit menu and accepts input'''
+        self.ui_menu_header("Edit vehicle")
+        print("\nSelect field to edit:")
+        print("1. Manufacturer")
+        print("2. Model")
+        print("3. Vehicle type")
+        print("4. Status")
+        print("5. Manufacturing year")
+        print("6. Color")
+        print("7. License Requirement")
+        print("8. Exit")
+        self.ui_menu_footer()
+
+    #Prints vehicle with unique ID
+    def ui_single_contract_ID(self):
+        '''Prints a single vehicle with a unique ID'''
+        vehicle_ID = input(">> Enter vehicle ID: ")
+        vehicle  = self.logic.search_vehicle_by_ID(vehicle_ID)
+        print("\nVehicle by ID: " + vehicle_ID)
+        self.ui_vehicle_table_header()
+        print(vehicle) 
+        self.ui_vehicle_table_footer()
+        return vehicle
+
+    #Request new value from user
+    def value_input(self):
+        return input("Enter new value: ")
 
 
 #  def all_contracts(self):

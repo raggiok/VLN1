@@ -7,8 +7,9 @@ class EmployeeLogic:
         self.data = dataAPI()
 
     def create_employee(self, a_list):
-        return Employee(*a_list)
-
+        employee = Employee(self.data.new_customer_id, *a_list)
+        return self.data.create_employee(employee)
+        
     def get_employees(self):
         return self.data.get_employees()
 
