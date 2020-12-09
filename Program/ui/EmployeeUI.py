@@ -10,7 +10,7 @@ class EmployeeUI:
     #unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,email,state
     #create new employee
     def ui_new_employee(self):
-        employeeFieldnames = ["name","ssn","role","address","zip_code", "city", "country","home_phone","mobile_phone","email"]
+        employeeFieldnames = ["Name", "Social security number", "Role", "Address", "Zip Code", "City", "Country", "Home phone", "Mobile phone", "Email"]
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new employee:" )
@@ -114,16 +114,16 @@ class EmployeeUI:
     #Print Employee Table Header
     def ui_employee_table_header(self):
         print(f"{'Unique_id':<20}{'Name':<20}{'SSN':<20}{'Role':<20}{'Address':<20}{'Zip_code':<20}{'City':<20}{'Country':<20}{'Home_phone':<20}{'Mobile_phone':<20}{'Email':<20}")
-        print("-"*200)
+        print("-"*210)
 
     #Print employee Table Footer
     def ui_employee_table_footer(self):
-        print("-"*200)
+        print("-"*210)
         print()
 
     #Prints all employee
     def ui_all_employee(self):
-        results  = self.logic.get_employees()
+        results  = self.logicAPI.get_employees()
         print("\nAll employee:")
         self.ui_employee_table_header()
         for employee in results:
@@ -188,13 +188,13 @@ class EmployeeUI:
         #       print(item)
         if selection == "1":
             emp_id = input(">> Please enter employee ID: ")
-            a_list = self.logic.search_employees_by_id(emp_id)
+            a_list = self.logicAPI.search_employees_by_id(emp_id)
             self.ui_employee_table_header()
             for item in a_list:
                 print(item)
         elif selection == "2":
             emp_role = input(">> Please enter employee role: ")
-            a_list = self.logic.search_employees_by_role(cust_role)
+            a_list = self.logicAPI.search_employees_by_role(cust_role)
             self.ui_employee_table_header()
             for item in a_list:
                 print(item)
@@ -227,7 +227,7 @@ class EmployeeUI:
                 self.ui_all_employee()
             elif command == "4":
                 new_employee = self.ui_edit_employee()
-                self.logic.update_employee(new_employee)
+                self.logicAPI.update_employee(new_employee)
             elif command == "5":
                 pass
             elif command == "6":

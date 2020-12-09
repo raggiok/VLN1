@@ -14,4 +14,4 @@ class Employee:
         self.state = state
 
     def __str__(self):
-        return f"{self.unique_id:<20}{self.name:<20}{self.ssn:<20}{self.role:<20}{self.address:<20}{self.zip_code:<20}{self.city:<20}{self.country:<20}"
+        return f"{self.unique_id:<20}{self.name:<20}{self.ssn:<20}{self.role:<20}{self.address:<20}{self.zip_code:<20}{self.city:<20}{self.country:<20}{self.home_phone:<20}{self.mobile_phone:<20}{self.email:<20}"
