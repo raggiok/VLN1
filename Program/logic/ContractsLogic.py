@@ -1,3 +1,4 @@
+from models.Vehicle import Vehicle
 from data.dataAPI import dataAPI
 from models.contracts import Contract
 import logic.logicAPI
@@ -116,10 +117,22 @@ class ContractLogic:
                 retList.append(vehicle)
         return retList
 
-    def customer_by_name(self,name):
+    def customer_by_ssn(self,ssn):
         custs = self.data.get_customers()
         retList = []
         for cust in custs:
-            if cust.name.lower() == name.lower():
+            if cust.ssn == ssn:
                 retList.append(cust)
-        return self.no_match_found(retList)
+        return retList
+    
+### Föll til að reikna leiguverð ### - á eftir að bæta inn í logicAPA
+
+    def calculate_cost(self, contract_id):
+        contract = self.search_contracts_by_id(contract_id)
+        Vehicle = self.search_vehicle_by_ID(contract.vehicle_unique_id)
+        customer = self.customer_by_ssn(contract.ssn)
+        late_fee = 0.2
+        late_hours = contract.vehicle_signed_in - contract.vehicle.end_date
+        hours_total = contract.start_date - contract.vehicle_signed_in
+
+
