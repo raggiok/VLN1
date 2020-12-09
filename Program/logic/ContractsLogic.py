@@ -23,8 +23,8 @@ class ContractLogic:
         date_string = datetime.datetime.strftime(date_time, '%d.%m.%y')
         return date_string
     
-    def create_contract(self, a_list):
-        new_contract = Contract(self.data.new_contract_id() , *a_list)
+    def create_contract(self, a_list):                                          #Athugar hvort að bíllinn sé bókaður á þessum tíma, hvort að kúninn sé með réttindi o.s.frv.
+        new_contract = Contract("", *a_list)
         if not self.check_availability(new_contract):
             return "\n*****Vehicle unavailable at that time.*****"
         #elif not self.check_license(new_contract):
