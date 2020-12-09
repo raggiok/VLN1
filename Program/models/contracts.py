@@ -1,7 +1,8 @@
 class Contract:
-    def __init__(self, unique_id, customer, vehicle_unique_id, start_date, end_date, country, employee, total_price, contract_creation_date, state="Active"):
+    def __init__(self, unique_id, customer, customer_ssn, vehicle_unique_id, start_date, end_date, country, employee, total_price, contract_creation_date, checkout_date="Available", state="Active"):
         self.unique_id = unique_id
         self.customer = customer
+        self.customer_ssn = customer_ssn
         self.vehicle_unique_id = vehicle_unique_id
         self.start_date = start_date
         self.end_date = end_date
@@ -9,6 +10,7 @@ class Contract:
         self.employee = employee
         self.total_price = total_price
         self.contract_creation_date = contract_creation_date
+        self.checkout_date = checkout_date
         self.state = state
         
     def change_customer_name(self, new_customer_name):
@@ -34,4 +36,4 @@ class Contract:
         return self.unique_id
         
     def __str__(self):
-        return f'{self.unique_id:<20}{self.customer:<20}{self.vehicle_unique_id:<20}{self.start_date}-{self.end_date:<20}{self.country:<20}{self.employee:<20}{self.total_price:<20}{self.contract_creation_date:<20}'
+        return f'{self.unique_id:<20}{self.customer:<20}{self.customer_ssn:<20}{self.vehicle_unique_id:<20}{self.start_date}-{self.end_date:<20}{self.country:<20}{self.employee:<20}{self.total_price:<20}{self.contract_creation_date:<20}{self.checkout_date:<20}'

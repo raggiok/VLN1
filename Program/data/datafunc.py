@@ -10,7 +10,7 @@ from models.rates import Rate
 INSTANCE_TYPES = ["contract", "customer","destination", "employee", "vehicle", "invoice", "rate"]
 
 ALL_FIELDNAMES = {
-    "contract": ['unique_id', 'customer', 'vehicle_unique_id', 'start_date', 'end_date', 'country', 'employee', 'total_price', 'contract_creation_date', 'state'],
+    "contract": ['unique_id', 'customer', 'customer_ssn', 'vehicle_unique_id', 'start_date', 'end_date', 'country', 'employee', 'total_price', 'contract_creation_date', 'checkout_date', 'state'],
     "customer": ['unique_id', 'name', 'ssn', 'address', 'zip_code', 'city', 'country', 'phone', 'email', 'state'],
     "destination": ['unique_id', 'country', 'city', 'airport', 'phone_number', 'opening_time', 'closing_time', 'main_contact', 'state'],
     "employee": ['unique_id', 'name', 'ssn', 'role', 'address', 'zip_code', 'city', 'country', 'home_phone', 'mobile_phone', 'email', 'state'],
@@ -188,7 +188,10 @@ class Data:
                     instance_attribute_list.append(row[f"{value}"])
                 if instance_type == "contract":
                     contract = Contract(*instance_attribute_list)
-                    instance_list.append(contract)
+                    if contract.state == "Inactive":
+                        continue
+                    else:
+                        instance_list.append(contract)
                 elif instance_type == "customer":
                     customer = Customer(*instance_attribute_list)
                     instance_list.append(customer)

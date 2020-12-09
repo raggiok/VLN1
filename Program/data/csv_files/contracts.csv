@@ -1,4 +1,3 @@
-unique_id,customer,vehicle_unique_id,start_date,end_date,country,employee,total_price,contract_creation_date,state
-
-75,John Smith,16,12.10.20,12.11.20,Nuuk,Jón,1500,09.12.20,Active
-82,John Smith,16,13.11.20,14.11.20,Nuk,Jón,1500,09.12.20,Active
+unique_id,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,employee,total_price,contract_creation_date,checkout_date,state
+1,Bobby,101010-1010,40,10.12.20,11.12.20,Iceland,Ragnar,5000,09.12.20,Available,Inactive
+2,Þór,181818-1818,22,10.12.20,11.12.20,Greenland,Ragnar,9999,09.12.20,Available,Inactive
