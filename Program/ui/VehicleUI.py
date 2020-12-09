@@ -305,7 +305,7 @@ class VehicleUI:
             elif command == "7":
                 pass    
             elif command == "8":
-                return UIMain()
+               return UIMain()
             else:
                 print("Invalid command, try again")
     
