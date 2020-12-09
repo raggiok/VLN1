@@ -152,6 +152,15 @@ class VehicleLogic():
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
+    def search_vehicle_by_ID(self, ID):
+        retList = []
+        search_list = self.data.get_vehicles()
+        for vehicle in search_list:
+            if vehicle.unique_id == ID:
+                retList.append(vehicle)
+        return self.no_match_found(retList)
+        
+
 
 
 

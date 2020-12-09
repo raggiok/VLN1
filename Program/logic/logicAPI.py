@@ -95,7 +95,7 @@ class LogicAPI:
         return self.contract.search_contracts_by_name(name)
 
     def create_new_contract(self, a_list):
-        self.contract.create_contract(a_list)
+        return self.contract.create_contract(a_list)
 
     def search_contracts_by_customer(self, string):
         return self.contract.search_contracts_by_customer(string)
@@ -118,13 +118,13 @@ class LogicAPI:
         return self.customer.all_customer()
 
     def customer_by_name(self, name):
-        return self.customer.customer_by_name(ssn)
+        return self.customer.customer_by_name(name)
 
     def customer_by_ssn(self, ssn):
         return self.customer.customer_by_ssn(ssn)
 
     def customer_by_area(self,country):
-        return self.customer(country)
+        return self.customer.customer_by_area(country)
 
     def delete_customer(self, ssn):
         return self.customer.delete_customer(ssn)
