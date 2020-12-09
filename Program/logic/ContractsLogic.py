@@ -12,9 +12,35 @@ class ContractLogic:
 
     
     def create_contract(self, a_list):
-        new_contract = Contract(self.data.new_contract_id , *a_list)
-        self.data.create_contract(new_contract)
+        new_contract = Contract(self.data.new_contract_id() , *a_list)
+        if self.check_availability(new_contract):
+            self.data.create_contract(new_contract)
+        else:
+            return "Vehicle unavailable or inadequate license type."
 
+    def check_availability(self, new_contract):     #Athugar tímaskorður
+        for contract in self.all_contracts():
+            if contract.vehicle_unique_id == new_contract.vehicle_unique_id:
+                if contract.start_date <= new_contract.start_date & contract.end_date >= new_contract.start_date:
+                    return False
+                elif contract.end_date >= new_contract.end_date & new_contract.end_date >= contract.start_date:
+                    return False
+                elif contract.start_date >= new_contract.start_date & contract.start_date <= new_contract.end_date:
+                    return False
+        return True
+    
+    def check_license(self, new_contract):
+        for contract in self.all_contracts():
+            if contract.vehicle.license_type not in new_contract.customer.license_type:
+                return False
+        return True
+
+    def check_country(self, new_contract):
+        if new_contract.country != new_contract.vehicle.location:
+            return False
+        else:
+            return True
+        
 
     def search_contracts_by_customer(self, string):
         result_list = []
