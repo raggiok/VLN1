@@ -197,7 +197,7 @@ class LogicAPI:
         
         
         
-        ### Employee ###
+    ### Employee ###
 
     def create_employee(self, a_list):
         self.employee.create_employee(a_list)
@@ -205,14 +205,57 @@ class LogicAPI:
     def get_employees(self):
         return self.employee.get_employees()
 
-    def search_employees_by_role(self, string):
-        return self.employee.search_by_role(string)
-
-    def search_employees_by_id(self, id_number):
-        return self.employee.search_by_id(id_number)
-
     def delete_employee(self, id_number):
         return self.employee.delete_employee(id_number)
 
     def update_employee(self, updated_object):
         self.employee.update_employee(updated_object)
+
+    #search function
+    def search_employee_by_unique(self,unique_id):
+        return self.employee.search_employee_by_id(unique_id)
+    
+    def search_employees_by_name(self, name):
+        return self.employee.search_by_name(name)
+
+    def search_employees_by_role(self, role):
+        return self.employee.search_by_role(role)
+
+    def search_employees_by_id(self, ssn):
+        return self.employee.search_by_id(ssn)
+
+    def search_employees_by_address(self, address):
+        return self.employee.search_by_address(address)
+       
+    def search_employees_by_zip_code(self, zip_code):
+        return self.employee.search_by_zip_code(zip_code)
+
+    def search_employees_by_city(self, city):
+        return self.employee.search_by_city(city)
+
+    def search_employees_by_country(self, country):
+        return self.employee.search_by_country(country)
+
+    #name	ssn	role	address	zip_code	city	country
+    def available_name(self):
+        return self.employee.available_the_name()
+    
+    def available_ssn(self):
+        return self.employee.available_the_ssn()
+    
+    def available_role(self):
+        return self.employee.available_the_role()
+
+    def available_address(self):
+        return self.employee.available_the_address()
+
+    def available_zip_code(self):
+        return self.employee.available_the_zip_code()
+    
+    def available_city(self):
+        return self.employee.available_the_city()
+
+    def available_country(self):
+        return self.employee.available_the_country()
+
+    
