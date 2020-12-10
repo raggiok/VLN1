@@ -14,9 +14,10 @@ class EmployeeLogic:
         return self.data.get_employees()
 
     def delete_employee(self, string):
-        temp_list = self.search_by_id(string)
-        if temp_list[0] != "No match found.":
+        temp_list = self.search_employee_by_id(string)
+        if temp_list[0] != "*** No match found ***":
             self.data.delete_employee(temp_list[0])
+            return ["\n*** Employee successfully deleted ***\n"]
         else:
             return temp_list
 

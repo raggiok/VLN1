@@ -1,6 +1,6 @@
 unique_id,country,city,airport,phone_number,opening_time,closing_time,main_contact,state
 1,land,Keflavik,Keflavik Airport,558-5498,10:00,15:00,Bjarki,DELETED
-2,Iceland,TEST,,558-5498,10:00,15:00,Bjarki,ACTIVE
+2,Iceland,TEST,,558-5498,10:00,15:00,Bjarki,DELETED
 3,Iceland,Keflavik,RVK,558-5498,10:00,15:00,Bjarki,ACTIVE
 4,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Main Contact,ACTIVE
 5,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Contact,ACTIVE

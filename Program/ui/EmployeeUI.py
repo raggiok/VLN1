@@ -301,6 +301,7 @@ class EmployeeUI:
                 new_employee = self.ui_edit_employee()
                 self.logicAPI.update_employee(new_employee)
             elif command == "5":
+                self.ui_all_employee()
                 employee_id = input(">> Enter employee ID to delete: ")
                 employee = self.logicAPI.delete_employee(employee_id)
                 for result in employee:
