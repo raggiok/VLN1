@@ -294,7 +294,7 @@ class EmployeeUI:
                 elif selection == "7":
                     self.ui_print_country()
                 elif selection == "8":
-                    self.ui_employee_menu()    
+                    self.employee_menu()    
             elif command == "3":
                 self.ui_all_employee()
             elif command == "4":
@@ -307,6 +307,6 @@ class EmployeeUI:
                 for result in employee:
                     print(result)
             elif command == "6":
-                return
+                return 
             else:
                 print("Invalid command, try again") 
