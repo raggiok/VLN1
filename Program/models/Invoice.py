@@ -1,11 +1,8 @@
 class Invoice():
 
-<<<<<<< HEAD
-    def __init__(self, unique_id, customer_unique_id, vehicle_unique_id, rate, total_days, total_price, late_fee, invoice_type="Debit", state="Active", ):
-=======
-    def __init__(self, unique_id, customer_unique_id, vehicle_unique_id, rate, total_days, _total_price="", invoice_type="Debit", state="ACTIVE", ):
->>>>>>> 2c612265a6aad36d663c170db2d290e34c6d9371
+    def __init__(self,unique_id,contract_unique_id, customer_unique_id, vehicle_unique_id, rate, total_days, total_price, late_fee, invoice_type="Debit", state="Active", ):
         self.unique_id = unique_id
+        self.contract_unique_id = contract_unique_id
         self.vehicle_unique_id = vehicle_unique_id
         self.customer_unique_id = customer_unique_id
         self.rate = rate

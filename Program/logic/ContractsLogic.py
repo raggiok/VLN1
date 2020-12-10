@@ -130,30 +130,35 @@ class ContractLogic:
     
 ### Föll til að reikna leiguverð ### - á eftir að bæta inn í logicAPA
 
-    def create_invoice(self, contract_id):
+    def create_invoice(self, contract_nr):
         try:
-            contract = self.search_contracts_by_id(contract_id)[0]
+            contract = self.search_contracts_by_id(contract_nr)[0]
             vehicle = self.search_vehicle_by_ID(contract.vehicle_unique_id)[0]
             customer = self.customer_by_ssn(contract.customer_ssn)[0]
-        except IndexError:
+        except (IndexError, AttributeError):
             return 'Customer, contract or vehicle not found.'
         late_hours = self.change_to_datetime(contract.checkin_date) - self.change_to_datetime(contract.end_date)
-        hours_total = self.change_to_datetime(contract.start_date) - self.change_to_datetime(contract.end_date)
+        hours_total = self.change_to_datetime(contract.end_date) - self.change_to_datetime(contract.start_date) 
         total = 0
         late_fee = 0
         rates = self.data.get_rates()
         rate_invoice = ""
         for rate in rates:
             if rate.name.lower() == vehicle.rate.lower():
-                print(rate.name())
-        #if late_hours.days > 0:
-            #late_fee += late_hours.days * rate_invoice.cost_per_day * LATECHARGE
-        print(type(rate_invoice))
-
-        #total += hours_total.days * rate_invoice.cost_per_day
+                rate_invoice = rate
+        if late_hours.days > 0:
+            late_fee += late_hours.days * int(rate_invoice.cost_per_day) * LATECHARGE
+        total += hours_total.days * int(rate_invoice.cost_per_day)
         total += late_fee
-        invoice = Invoice("", customer.ssn, vehicle.unique_id, rate_invoice, 10, total, late_fee)
-        self.data.create_invoice(invoice)
+        invoice = Invoice("",contract.unique_id, customer.ssn, vehicle.unique_id, rate_invoice.cost_per_day, (hours_total.days + late_hours.days), int(total), int(late_fee))
         contract.total_price = total
-        contract.state = 'Invoiced'
+        contract.state = 'INVOICED'
         self.data.update_contract(contract)
+        return self.create_invoic(invoice)
+        
+
+    def create_invoic(self, new_invoice):
+        for invoice in self.data.get_invoices():
+            if invoice.contract_unique_id == new_invoice.contract_unique_id:
+                return "*** Invoice already sent. ***"
+        return self.data.create_invoice(new_invoice)

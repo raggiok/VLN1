@@ -1,13 +1,6 @@
-unique_id,customer_unique_id,vehicle_unique_id,rate,total_days,_total_price,invoice_type,state
-<<<<<<< HEAD
-1,Vehicle 25,Customer no. 50,15,20,300,Debit,Active
-2,Vehicle 25,Customer no. 50,15,20,300,Debit,Active
-3,13,sadfsad,,10,0,0,Debit
-4,13,sadfsad,,10,0,0,Debit
-5,13,sadfsad,,10,0,0,Debit
-6,13,sadfsad,,10,0,0,Debit
-7,13,sadfsad,,10,0,0,Debit
-=======
+unique_id,contract_unique_id,vehicle_unique_id,customer_unique_id,rate,total_days,total_price,late_fee,invoice_type,state
 1,Vehicle 25,Customer no. 50,15,20,300,Debit,ACTIVE
 2,Vehicle 25,Customer no. 50,15,20,300,Debit,ACTIVE
->>>>>>> 2c612265a6aad36d663c170db2d290e34c6d9371
+9,13,sadfsad,50,10,10.0,60.0,Debit
+10,,41,151515-1515,50,10,190.0,240.0,Debit
+18,5,41,151515-1515,50,5,290,240,Debit
