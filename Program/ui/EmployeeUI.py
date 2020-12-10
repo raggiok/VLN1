@@ -120,10 +120,10 @@ class EmployeeUI:
             print("\t" + employee)
         print()
 
-    def ui_SSN_available_print(self):
+    def ui_ssn_available_print(self):
         '''Prints all customer SSN'''
         print("\nAvailable Options:")
-        employees = self.logicAPI.available_SSN()
+        employees = self.logicAPI.available_ssn()
         for employee in employees:
             print("\t" + employee)
         print()
@@ -240,39 +240,6 @@ class EmployeeUI:
             print(employee)
         self.ui_employee_table_footer()
 
-    #Prints employee with SSN
-   # def ui_employee_ID(self):
-    #    '''Prints a single employee with a unique ID'''
-    #    employee_ID = input(">> Please enter employee SSN: ").lower()
-    #    employee  = self.logicAPI.search_employee_by_ID(employee_ID)
-    #    print("\nemployee by ID: " + employee_ID)
-    #    self.ui_employee_table_header()
-    #    print(employee) 
-    #    self.ui_employee_table_footer()
-    #    return employee
-
-    #Prints employee name
-    #def ui_employee_name(self):
-    #    '''Prints a single employee name'''
-    #    employee_name = input(">> Please enter employee name: ")
-    #    employee  = self.logicAPI.search_employee_by_name(employee_name)
-    #    print("\nemployee by name: " + employee_name)
-    #    self.ui_employee_table_header()
-    #    print(employee) 
-    #    self.ui_employee_table_footer()
-    #    return employee
-    
-    #Prints employee role
-    #def ui_employee_role(self):
-    #    '''Prints a single employee role'''
-    #    ui_employee_role = input(">> Please enter employee role: ").lower()
-    #    employee  = self.logicAPI.search_employee_by_role(employee_role)
-    #    print("\nemployee by role: " + employee_role)
-    #    self.ui_employee_table_header()
-    #    print(employee) 
-    #    self.ui_employee_table_footer()
-    #    return employee
-
     #Menu header
     def ui_menu_header(self, menu_name):
         print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
@@ -291,28 +258,6 @@ class EmployeeUI:
         self.ui_menu_footer()
         selection = input("\n>> Select option: ").lower()
         return selection
-        #if selection == "1":
-        #    emp_name = input(">> Please enter employee name: ").lower()
-        #    a_list = self.logicAPI.search_employee_by_name(emp_name)
-        #    self.ui_customer_table_header()
-        #    for item in a_list:
-        #       print(item)
-        #elif selection == "2":
-        #    emp_id = input(">> Please enter employee ID: ")
-        #    a_list = self.logicAPI.search_employees_by_id(emp_id)
-        #    self.ui_employee_table_header()
-        #    for item in a_list:
-        #        print(item)
-        #elif selection == "3":
-        #    emp_role = input(">> Please enter employee role: ").lower()
-        #    a_list = self.logicAPI.search_employees_by_role(emp_role)
-        #    self.ui_employee_table_header()
-        #    for item in a_list:
-        #        print(item)
-        #elif selection == "3":
-        #    return EmployeeUI()
-        #else:
-        #    print("Invalid command, try again")
 
     #Prints any UI menu in order
     def UI_numbered_menu(self, a_list):
