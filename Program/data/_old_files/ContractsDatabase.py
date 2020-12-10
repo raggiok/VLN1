@@ -54,7 +54,7 @@ class ContractData:
                     writer.writerow(row)
         return confirmation
 
-    #Delete contract from data put's it into "Inactive state"
+    #Delete contract from data put's it into "DELETED state"
     def delete_contract(self, contract): #Data layer receives an instance of Vehicle
         contract_list = []
         confirmation = False
@@ -68,7 +68,7 @@ class ContractData:
                 writer.writeheader()
                 for row in contract_list:
                     if row['unique_id'] == contract.unique_id:
-                        row = {"unique_id": contract.unique_id, "vehicle_unique_id": contract.vehicle_unique_id, "start_date": contract.start_date, "end_date": contract.end_date, "country": contract.country, "state": "Inactive"}
+                        row = {"unique_id": contract.unique_id, "vehicle_unique_id": contract.vehicle_unique_id, "start_date": contract.start_date, "end_date": contract.end_date, "country": contract.country, "state": "DELETED"}
                         confirmation = True
                     writer.writerow(row)
         return confirmation #Returns True if successfully deleted, otherwise False

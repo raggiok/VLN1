@@ -1,50 +1,50 @@
 unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,rate,state
-1,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers license,Kulusuk,A,Active
-2,TAILG,Free Fly II,Medium road,OK,2019,Orange,Drivers license,Kulusuk,A,Active
-3,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen,A,Active
-4,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn,B,Inactive
-5,Kayman Kayaks,Crazy HV,Light water,OK,2020,Yellow,None,Nuuk,A,Active
-6,Cani-Fit,Fat Max,Light off-road,OK,2019,Black,None,Nuuk,A,Active
-7,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,A,Active
-8,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,A,Active
-9,Cani-Fit,Fat Max,Light off-road,OK,2020,Black,None,Tingwall,A,Active
-10,Yedoo,Trexx,Light road,OK,2020,Orange,None,Kulusuk,A,Active
-11,Yedoo,Trexx,Light road,OK,2020,Orange,None,Thorshavn,A,Active
-12,Yedoo,Trexx,Light road,OK,2020,Orange,None,Tingwall,A,Active
-13,Yedoo,Trexx,Light road,OK,2020,Orange,None,Longyearbyen,A,Active
-14,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk,A,Active
-15,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk,A,Active
-16,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Tingwall,A,Active
-17,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Longyearbyen,A,Active
-18,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Kulusuk,A,Active
-19,Forward,FWD-ZK125H,Medium road,OK,2019,Blue,Drivers license,Longyearbyen,A,Active 
-20,Colorado,Pontoon Boat,Light water,OK,2019,Green,None,Thorshavn,A,Active
-21,A2extreem,Powerboard,Light winter,OK,2018,Black,None,Nuuk,A,Active
-22,Torpedo,3500,Light water,OK,2019,White,Diving license,Thorshavn,A,Active
-23,Kia,Ceed,Car,OK,2020,Red,Drivers license,Reykjavik,A,Active
-24,KIA,Cruiser,Car,OK,2020,Red,Drivers license,Reykjavik,A,Active
-25,BMW,Sportsmodel,Car,OK,2019,Black,Drivers License,Nuuk,A,Active
-26,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-27,blabla,model,vehicle_type,OK,man_year,color,license_type,location,B,Inactive
-28,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-29,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-30,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-31,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-32,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-33,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-34,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-35,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-36,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-37,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-38,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,Active
-39,blabla,model,vehicle_type,OK,man_year,color,license_type,location,A,Active
-40,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,TEST,B,Inactive
-41,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,A,Active
-42,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,B,Inactive
-43,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,B,Inactive
-45,its,a,car,its,a,bird,no,its,B,Inactive
-47,Bla,bubba,týpa,OK,1985,REd,Drivers,Reykajvik,B,Inactive
-49,Bubbi,asdf,adfasdf,OK,2020,Red,d,Iceland,A,Active
-51,BMW,Z,Car,OK,2020,BLACK,Drivers License,RVK,A,Active
-53,1,1,1,1,1,1,1,1,A,Active
-55,BMW,BLACK,CAR,OK,2021,BLACK,DRIVERS,RVK,A,Active
+1,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers license,Kulusuk,A,ACTIVE
+2,TAILG,Free Fly II,Medium road,OK,2019,Orange,Drivers license,Kulusuk,A,ACTIVE
+3,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen,A,ACTIVE
+4,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn,B,DELETED
+5,Kayman Kayaks,Crazy HV,Light water,OK,2020,Yellow,None,Nuuk,A,ACTIVE
+6,Cani-Fit,Fat Max,Light off-road,OK,2019,Black,None,Nuuk,A,ACTIVE
+7,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,A,ACTIVE
+8,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,A,ACTIVE
+9,Cani-Fit,Fat Max,Light off-road,OK,2020,Black,None,Tingwall,A,ACTIVE
+10,Yedoo,Trexx,Light road,OK,2020,Orange,None,Kulusuk,A,ACTIVE
+11,Yedoo,Trexx,Light road,OK,2020,Orange,None,Thorshavn,A,ACTIVE
+12,Yedoo,Trexx,Light road,OK,2020,Orange,None,Tingwall,A,ACTIVE
+13,Yedoo,Trexx,Light road,OK,2020,Orange,None,Longyearbyen,A,ACTIVE
+14,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk,A,ACTIVE
+15,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk,A,ACTIVE
+16,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Tingwall,A,ACTIVE
+17,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Longyearbyen,A,ACTIVE
+18,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Kulusuk,A,ACTIVE
+19,Forward,FWD-ZK125H,Medium road,OK,2019,Blue,Drivers license,Longyearbyen,A,ACTIVE 
+20,Colorado,Pontoon Boat,Light water,OK,2019,Green,None,Thorshavn,A,ACTIVE
+21,A2extreem,Powerboard,Light winter,OK,2018,Black,None,Nuuk,A,ACTIVE
+22,Torpedo,3500,Light water,OK,2019,White,Diving license,Thorshavn,A,ACTIVE
+23,Kia,Ceed,Car,OK,2020,Red,Drivers license,Reykjavik,A,ACTIVE
+24,KIA,Cruiser,Car,OK,2020,Red,Drivers license,Reykjavik,A,ACTIVE
+25,BMW,Sportsmodel,Car,OK,2019,Black,Drivers License,Nuuk,A,ACTIVE
+26,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+27,blabla,model,vehicle_type,OK,man_year,color,license_type,location,B,DELETED
+28,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+29,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+30,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+31,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+32,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+33,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+34,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+35,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+36,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+37,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+38,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
+39,blabla,model,vehicle_type,OK,man_year,color,license_type,location,A,ACTIVE
+40,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,TEST,B,DELETED
+41,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,A,ACTIVE
+42,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,B,DELETED
+43,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,B,DELETED
+45,its,a,car,its,a,bird,no,its,B,DELETED
+47,Bla,bubba,týpa,OK,1985,REd,Drivers,Reykajvik,B,DELETED
+49,Bubbi,asdf,adfasdf,OK,2020,Red,d,Iceland,A,ACTIVE
+51,BMW,Z,Car,OK,2020,BLACK,Drivers License,RVK,A,ACTIVE
+53,1,1,1,1,1,1,1,1,A,ACTIVE
+55,BMW,BLACK,CAR,OK,2021,BLACK,DRIVERS,RVK,A,ACTIVE

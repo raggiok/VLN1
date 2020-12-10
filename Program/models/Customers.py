@@ -1,5 +1,5 @@
 class Customer:
-    def __init__(self, unique_id, name, ssn, address, zip_code, city, country, phone, email, state="Active"):
+    def __init__(self, unique_id, name, ssn, address, zip_code, city, country, phone, email, state="ACTIVE"):
         self.unique_id = unique_id
         self.name = name
         self.ssn = ssn

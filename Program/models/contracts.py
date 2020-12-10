@@ -1,5 +1,5 @@
 class Contract:
-    def __init__(self, unique_id, customer, customer_ssn, vehicle_unique_id, start_date, end_date, country, employee, total_price, contract_creation_date, checkout_date="A", checkin_date="B", checkin_location="C", state="Active"):
+    def __init__(self, unique_id, customer, customer_ssn, vehicle_unique_id, start_date, end_date, country, employee, total_price, contract_creation_date, checkout_date="A", checkin_date="B", checkin_location="C", state="ACTIVE"):
         self.unique_id = unique_id
         self.customer = customer
         self.customer_ssn = customer_ssn

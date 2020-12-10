@@ -1,7 +1,7 @@
 unique_id,country,city,airport,phone_number,opening_time,closing_time,main_contact,state
-1,land,Keflavik,Keflavik Airport,558-5498,10:00,15:00,Bjarki,Inactive
-2,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Bjarki,Active
-3,Iceland,Keflavik,Keflavik Airport,558-5498,10:00,15:00,Bjarki,Active
-4,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Main Contact,Active
-5,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Contact,Active
-6,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Contact,Active
+1,land,Keflavik,Keflavik Airport,558-5498,10:00,15:00,Bjarki,DELETED
+2,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Bjarki,ACTIVE
+3,Iceland,Keflavik,Keflavik Airport,558-5498,10:00,15:00,Bjarki,ACTIVE
+4,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Main Contact,ACTIVE
+5,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Contact,ACTIVE
+6,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Contact,ACTIVE
