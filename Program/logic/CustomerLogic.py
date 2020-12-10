@@ -23,7 +23,7 @@ class CustomerLogic:
 
     #Edit customer
     def edit_customer(self, edited_instance):
-        self.data.update_customer()
+        self.data.update_customer(edited_instance)
 
     def no_match_found(self, result_list):
         if result_list:
