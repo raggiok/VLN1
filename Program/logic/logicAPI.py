@@ -294,4 +294,10 @@ class LogicAPI:
     def available_country(self):
         return self.employee.available_the_country()
 
+    def generate_password(self):
+        return self.employee.autogenerate_password()
+
+    def check_password(self,user_id, password):
+        return self.employee.check_employee_password(user_id, password)
+
     

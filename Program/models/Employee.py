@@ -1,5 +1,5 @@
 class Employee:
-    def __init__(self, unique_id, name, ssn, role, address, zip_code, city, country, home_phone, mobile_phone, email, state="ACTIVE"):
+    def __init__(self, unique_id, name, ssn, role, address, zip_code, city, country, home_phone, mobile_phone, email, password="", state="ACTIVE"):
         self.unique_id = unique_id
         self.name = name
         self.ssn = ssn
@@ -11,7 +11,13 @@ class Employee:
         self.mobile_phone = mobile_phone
         self.home_phone = home_phone
         self.email = email
+        self.password = password
         self.state = state
 
+    def get_role(self):
+        return self.role
+
+
     def __str__(self):
-        return f"{self.unique_id:<20}{self.name:<20}{self.ssn:<20}{self.role:<20}{self.address:<20}{self.zip_code:<20}{self.city:<20}{self.country:<20}{self.home_phone:<20}{self.mobile_phone:<20}{self.email:<20}"
+        return f"{self.unique_id:<20}{self.name:<20}{self.ssn:<20}{self.role:<20}{self.address:<20}{self.zip_code:<20}{self.city:<20}{self.country:<20}{self.home_phone:<20}{self.mobile_phone:<20}{self.email:<20}{self.password:<20}"
+

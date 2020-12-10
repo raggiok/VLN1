@@ -166,10 +166,20 @@ class ContractUI:
 
     def canceled_contract(self):
         contract_ID = input(">> Enter contract ID: ")
-        contracts  = self.logic.search_contracts_by_id(contract_ID)
-        for contract in contracts:
-            contract.state = "CANCELED"
-            self.logic.edit_contract(contract)
+        while True:
+            command = input("Are you sure you want to cancel contract? (Y)es or (N)o? ")
+            command = command.lower()
+            if command == "y":
+                contracts  = self.logic.search_contracts_by_id(contract_ID)
+                for contract in contracts:
+                    contract.state = "CANCELED"
+                    return self.logic.edit_contract(contract)
+            elif command == "n":
+                return
+            else:
+                print("\n*** Please select either (Y)es or (N)o ***\n")
+            
+
 
 
 

@@ -4,4 +4,4 @@ unique_id,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,em
 3,David,151515-1515,41,10.12.20,11.12.20,location,Ragnar,190.0,10.12.20,10.12.20,15.12.20,C,Invoiced
 4,David,151515-1515,41,10.12.20,11.12.20,location,Ragnar,190.0,10.12.20,10.12.20,15.12.20,C,Invoiced
 5,David,151515-1515,41,10.12.20,11.12.20,location,Ragnar,190.0,10.12.20,10.12.20,15.12.20,C,Invoiced
-6,David,151515-1515,41,10.12.20,11.12.20,location,Ragnar,190.0,10.12.20,10.12.20,15.12.20,C,Invoiced
+6,David,151515-1515,41,10.12.20,11.12.20,location,Ragnar,190.0,10.12.20,10.12.20,15.12.20,C,CANCELED

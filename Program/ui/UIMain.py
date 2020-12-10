@@ -4,11 +4,14 @@ from ui.CustomerUI import CustomerUI
 from ui.ContractsUI import ContractUI
 from ui.DestinationUI import destinationUI
 from ui.EmployeeUI import EmployeeUI
+from logic.logicAPI import LogicAPI
 
 class UIMain:
     
     def __init__(self):
-        self.ui_loop()
+        self.logic = LogicAPI()
+        self.login()
+        
     
 
         #Menu header
@@ -19,16 +22,37 @@ class UIMain:
         print("| . ` |/ _` | . ` |   / /\ \ | | '__| | | '_ \ / _ \/ __| ")
         print("| |\  | (_| | |\  |  / ____ \| | |  | | | | | |  __/\__ \ ")
         print("|_| \_|\__,_|_| \_| /_/    \_\_|_|  |_|_|_| |_|\___||___/ ")
+        print()
         print("-"*20 + f"{menu_name}" + "-"*20)
 
     #Menu footer
     def ui_menu_footer(self):
         print("-"*50)
 
-    def ui_loop(self):
+
+    def login(self):
+        self.ui_menu_header("Login")
+        while True:
+            print("\n###### Please Login ######\n")
+            employee_id = input(">> Employee ID: ")
+            password = input(">> Password: ")
+            employee_role = self.logic.check_password(employee_id, password)
+
+            if employee_role == None:
+                print("\n*** INVALID PASSWORD AND/OR USERNAME ***\n")
+            else:
+                if employee_role == "OFFICE":
+                    self.office_ui_loop()
+                elif employee_role == "AIRPORT":
+                    self.airport_ui_loop()
+                elif employee_role == "ADMIN":
+                    self.admin_ui_loop()
+
+
+    def admin_ui_loop(self):
         while True:
             self.ui_menu_header("Main Menu")
-            print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \nq. to quit program\n")
+            print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \nq. Quit program\n")
             self.ui_menu_footer()
             command = input("Input your command: ")
             command = command.lower()
@@ -44,6 +68,38 @@ class UIMain:
                 self.destination = destinationUI()
             elif command == "6":            
                 self.employee = EmployeeUI()
+            elif command == "q":
+                break
+            else:
+                print("Invalid command, try again")
+    
+    def airport_ui_loop(self):
+        while True:
+            self.ui_menu_header("Main Menu")
+            print("\nSelect an option...\n1. Vehicles \n2. Customers \nq. Quit program\n")
+            self.ui_menu_footer()
+            command = input("Input your command: ")
+            command = command.lower()
+            if command == "1":
+                self.vehicle = VehicleUI()
+            elif command == "2":
+                self.customer = CustomerUI()
+            elif command == "q":
+                break
+            else:
+                print("Invalid command, try again")
+
+    def office_ui_loop(self):
+        while True:
+            self.ui_menu_header("Main Menu")
+            print("\nSelect an option...\n1. Contracts \n2. Reports \nq. Quit program\n")
+            self.ui_menu_footer()
+            command = input("Input your command: ")
+            command = command.lower()
+            if command == "1":
+                self.contracts = ContractUI()
+            elif command == "2":
+                pass # Vantar reports
             elif command == "q":
                 break
             else:

@@ -6,27 +6,34 @@ from models.Vehicle import Vehicle
 from models.Invoice import Invoice
 from models.rates import Rate
 from data.dataAPI import dataAPI
+from logic.logicAPI import LogicAPI
 
 import datetime
 x = datetime.datetime.today()
 current_time = x.strftime('%d-%b %Y')
 
 test = dataAPI()
+logic = LogicAPI()
 #unique_id, customer, vehicle_unique_id, start_date, end_date, country, employee, total_price, contract_creation_date, state
 
 contract = Contract('5', 'customer', 'customer_ssn', 'vehicle_unique_id', 'start_date', 'end_date', 'country', 'employee', 'total_price', 'contract_creation_date', 'checkout_date', 'checkin_date', 'checkin_location', 'state')
 # customer = Customer("4", "John Smith", "150588-2459", "Heimilisgata 1", "TEST", "Reykjavik", "Iceland", "551-4489", "John@email.com")
 # destination = Destination("2", "Iceland", "TEST", "Keflavik Airport", "558-5498", "10:00", "15:00", "Contact")
-#employee = Employee("5", "Jon Jonsson", "150589-2129", "City staff", "TEST 50", "105", "Reykjavik", "Iceland", "551-4469", "889-2121", "test@test.is")
+employee = Employee("", "Jon Jonsson", "150589-2129", "City staff", "TEST 50", "105", "Reykjavik", "Iceland", "551-4469", "889-2121", "test@test.is")
 # car = Vehicle("40", "Benz", "Model-s", "Sportscar", "OK", "2020", "Panther Black", "Drivers License", "TEST")
-
 # def validate(date_text):
 #         try:
 #             datetime.datetime.strptime(date_text, '%d.%m.%y')
 #         except ValueError:
 #             print("Incorrect data format, should be DD.MM.YY")
 
-test.create_contract(contract)
+#test.create_employee(employee)
+unique_id = "6"
+password = "6168"
+
+test = logic.check_password(unique_id, password)
+for i in test:
+    print(i)
 
 #test.create_employee(employee)
 

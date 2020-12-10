@@ -9,7 +9,7 @@ class EmployeeUI:
     #unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,email,state
     #create new employee
     def ui_new_employee(self):
-        employeeFieldnames = ["Name", "Social security number", "Role", "Address", "Zip Code", "City", "Country", "Home phone", "Mobile phone", "Email"]
+        employeeFieldnames = ["Name", "Social security number", "Role", "Address", "Zip Code", "City", "Country", "Home phone", "Mobile phone", "Email", "Password"]
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new employee:" )
@@ -17,9 +17,13 @@ class EmployeeUI:
         for field in employeeFieldnames:
             if user_input.lower() == "q":
                 return self.employee_menu()
-            user_input = input(f"Enter {field}: ")
+            if field == "Password":
+                user_input = self.logicAPI.generate_password()
+            else:
+                user_input = input(f"Enter {field}: ")
             inputList.append(user_input)
         return inputList
+
 
     #Request new value from user
     def value_input(self):
