@@ -11,7 +11,7 @@ class destinationUI:
 
     #Prints UI for new destination
     def ui_new_destination(self):
-        destinationFieldnames = ["country","airport","phone_number","opening_time","closing_time","main_contact","state"] 
+        destinationFieldnames = ["country","city","airport","phone_number","opening_time","closing_time","main_contact"] 
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new destination:" )
@@ -30,26 +30,30 @@ class destinationUI:
 
     #Creates the Edit menu layout and returns the destination Instance after edit
     def ui_edit_destination(self):
+        self.ui_all_destinations()
         destination = self.ui_single_destination_ID() #prints specific destination
         selection = ""
+    
         while selection != "9":
             self.ui_print_edit_menu() #ask user what he would like to edit
             selection = self.ui_edit_input()
             if selection == "1":
                 destination.country = self.value_input()
             elif selection == "2":
-                destination.airport = self.value_input()
+                destination.city = self.value_input()    
             elif selection == "3":
-                destination.phone_number = self.value_input()
+                destination.airport = self.value_input()
             elif selection == "4":
-                destination.opening_time = self.value_input()
+                destination.phone_number = self.value_input()
             elif selection == "5":
-                destination.closing_time = self.value_input()
+                destination.opening_time = self.value_input()
             elif selection == "6":
-                destination.main_contact = self.value_input()
+                destination.closing_time = self.value_input()
             elif selection == "7":
-                destination.state = self.value_input()
+                destination.main_contact = self.value_input()
             elif selection == "8":
+                destination.state = self.value_input()
+            elif selection == "9":
                 return destination
 
     #Get input for edit menu
@@ -63,18 +67,19 @@ class destinationUI:
         self.ui_menu_header("Edit destination")
         print("\nSelect field to edit:")
         print("1. Country")
-        print("2. Airport")
-        print("3. Phone Number")
-        print("4. Opening Time")
-        print("5. Closing Time")
-        print("6. Main Contact")
-        print("7. State")
-        print("8. Exit")
+        print("2. City")
+        print("3. Airport")
+        print("4. Phone Number")
+        print("5. Opening Time")
+        print("6. Closing Time")
+        print("7. Main Contact")
+        print("8. State")
+        print("9. Exit")
         self.ui_menu_footer()
 
     #Print Destination Table Header
     def ui_destination_table_header(self):
-        print(f"{'Country':<20}{'Airport':<20}{'Phone Number':<20}{'Opening Time':<20}{'Closing Time':<20}{'Main Contact':<20}{'State':<20}")
+        print(f"{'Unique ID':<20}{'Country':<20}{'City':<20}{'Airport':<20}{'Phone Number':<20}{'Opening Time':<20}{'Closing Time':<20}{'Main Contact':<20}")
         print("-"*200)
 
     #Print destination Table Footer
@@ -95,10 +100,11 @@ class destinationUI:
     def ui_single_destination_ID(self):
         '''Prints a single destination with a unique ID'''
         destination_ID = input(">> Please enter destination ID: ")
-        destination  = self.logicAPI.search_destination_by_ID(destination_ID)
+        destination  = self.logicAPI.search_destinations_by_id(destination_ID)
         print("\ndestination by ID: " + destination_ID)
         self.ui_destination_table_header()
-        print(destination) 
+        for destination in destination:
+            print(destination) 
         self.ui_destination_table_footer()
         return destination
 
@@ -168,7 +174,7 @@ class destinationUI:
         self.ui_country_available_print()
         country = input(">> Please enter destination Country: ")
         results  = self.logicAPI.search_destination_by_country(country)
-        print("\nAll destination by type " + country + ": ")
+        print("\nSearch results for " + country + ": ")
         self.ui_destination_table_header()
         for destination in results:
             print(destination)
@@ -177,9 +183,9 @@ class destinationUI:
 
     def ui_print_city(self):
         self.ui_city_available_print()
-        city = input(">> Please enter destination Country: ")
+        city = input(">> Please enter destination City: ")
         results  = self.logicAPI.search_destination_by_city(city)
-        print("\nAll destination by type " + city + ": ")
+        print("\nSearch results for " + city + ": ")
         self.ui_destination_table_header()
         for destination in results:
             print(destination)
@@ -189,7 +195,7 @@ class destinationUI:
         self.ui_airport_available_print()
         airport = input(">> Please enter destination Airport: ")
         results  = self.logicAPI.search_destination_by_city(airport)
-        print("\nAll destination by type " + airport + ": ")
+        print("\nSearch results for " + airport + ": ")
         self.ui_destination_table_header()
         for destination in results:
             print(destination)
@@ -199,7 +205,7 @@ class destinationUI:
         self.ui_phone_number_available_print()
         phone_number = input(">> Please enter destination Phone number: ")
         results  = self.logicAPI.search_destination_by_phone_number(phone_number)
-        print("\nAll destination by type " + phone_number + ": ")
+        print("\nSearch results for " + phone_number + ": ")
         self.ui_destination_table_header()
         for destination in results:
             print(destination)
@@ -210,7 +216,7 @@ class destinationUI:
         self.ui_opening_time_available_print()
         opening_time = input(">> Please enter destination Opening time: ")
         results  = self.logicAPI.search_destination_by_opening_time(opening_time)
-        print("\nAll destination by type " + opening_time + ": ")
+        print("\nSearch results for " + opening_time + ": ")
         self.ui_destination_table_header()
         for destination in results:
             print(destination)
@@ -220,7 +226,7 @@ class destinationUI:
         self.ui_closing_time_available_print()
         closing_time = input(">> Please enter destination Closing time: ")
         results  = self.logicAPI.search_destination_by_opening_time(closing_time)
-        print("\nAll destination by type " + closing_time + ": ")
+        print("\nSearch results for " + closing_time + ": ")
         self.ui_destination_table_header()
         for destination in results:
             print(destination)
@@ -229,8 +235,8 @@ class destinationUI:
     def ui_print_main_contact(self):
         self.ui_main_contact_available_print()
         main_contact = input(">> Please enter destination Main contact: ")
-        results  = self.logicAPI.search_destination_by_opening_time(main_contact)
-        print("\nAll destination by type " + main_contact + ": ")
+        results  = self.logicAPI.search_destination_by_main_contact(main_contact)
+        print("\nSearch results for " + main_contact + ": ")
         self.ui_destination_table_header()
         for destination in results:
             print(destination)
@@ -238,20 +244,7 @@ class destinationUI:
 
     ### search function ###
 
-
-    #Menu header
-    def ui_menu_header(self, menu_name):
-        print(" _   _       _   _            _      _ _                  ")
-        print("| \ | |     | \ | |     /\   (_)    | (_)                 ")
-        print("|  \| | __ _|  \| |    /  \   _ _ __| |_ _ __   ___  ___  ")
-        print("| . ` |/ _` | . ` |   / /\ \ | | '__| | | '_ \ / _ \/ __| ")
-        print("| |\  | (_| | |\  |  / ____ \| | |  | | | | | |  __/\__ \ ")
-        print("|_| \_|\__,_|_| \_| /_/    \_\_|_|  |_|_|_| |_|\___||___/ ")
-        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
-
-    #Menu footer
-    def ui_menu_footer(self):
-        print("\n" + "-"*50)
+   
 
     #Prints the search menu for destinations
     def ui_search_menu(self):
@@ -304,9 +297,26 @@ class destinationUI:
                 self.logicAPI.edit_destination(new_destination)
             elif command == "5":
                 self.ui_all_destinations()
+                destination_id = input(">> Enter destination ID to delete: ")
+                destination = self.logicAPI.delete_destination(destination_id)
+                for result in destination:
+                    print(result) 
             elif command == "6":
                 return UIMain()
             else:
                 print("Invalid command, try again")
 
 
+        #Menu header
+    def ui_menu_header(self, menu_name):
+        print(" _   _       _   _            _      _ _                  ")
+        print("| \ | |     | \ | |     /\   (_)    | (_)                 ")
+        print("|  \| | __ _|  \| |    /  \   _ _ __| |_ _ __   ___  ___  ")
+        print("| . ` |/ _` | . ` |   / /\ \ | | '__| | | '_ \ / _ \/ __| ")
+        print("| |\  | (_| | |\  |  / ____ \| | |  | | | | | |  __/\__ \ ")
+        print("|_| \_|\__,_|_| \_| /_/    \_\_|_|  |_|_|_| |_|\___||___/ ")
+        print("-"*20 + f"{menu_name}" + "-"*20)
+
+    #Menu footer
+    def ui_menu_footer(self):
+        print("-"*50)

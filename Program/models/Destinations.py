@@ -11,4 +11,4 @@ class Destination:
         self.state = state
 
     def __str__(self):
-        return f"{self.country:<20}{self.city:<20}{self.airport:<20}{self.phone_number:<20}{self.opening_time:<20}{self.closing_time:<20}{self.main_contact:<20}"
+        return f"{self.unique_id:<20}{self.country:<20}{self.city:<20}{self.airport:<20}{self.phone_number:<20}{self.opening_time:<20}{self.closing_time:<20}{self.main_contact:<20}"

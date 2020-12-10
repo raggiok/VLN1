@@ -40,7 +40,7 @@ class CustomerUI:
     #Print search menu 
     def ui_search_menu(self):
         self.ui_menu_header("Customer Search") 
-        print("\nPlease enter search option:").
+        print("\nPlease enter search option:")
         self.UI_numbered_menu(["Name", "SSN", "Country", "Exit"])
         self.ui_menu_footer()
         selection = input("\n>> Select option: ").lower()

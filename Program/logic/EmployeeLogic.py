@@ -7,7 +7,7 @@ class EmployeeLogic:
         self.data = dataAPI()
 
     def create_employee(self, a_list):
-        employee = Employee("placeholder", *a_list)
+        employee = Employee(self.data.new_employee_id, *a_list)
         return self.data.create_employee(employee)
         
     def get_employees(self):
@@ -16,7 +16,7 @@ class EmployeeLogic:
     def search_by_id(self, string):
         match = []
         for employee in self.get_employees():
-            if employee.unique_id == string:
+            if employee.unique_id.lower() == string.lower():
                 match.append(employee)
         return self.no_match_found(match)
 
