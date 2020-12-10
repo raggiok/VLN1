@@ -82,6 +82,7 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 #Fannar:
 - Vann í UI Data og logic layerum fyrir contract.
 #Franz:
+- Vann í UI Data og logic layerum fyrir destination
 
 ---Miðvikuagur 02.12.2020---
 - Höldum áfram að vinna í öllum layers hvert fyrir sig
@@ -101,6 +102,9 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 -bætti vid leit
 -bætti við print all virkni
 #Franz:
+-Uppfæra leit í destination í samræmi við kóða 
+-vinn í destination data og logic
+
 
 
 ---Fimmtudagur 03.12.2020---
@@ -128,6 +132,8 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 -Continue updating UI layer to have more alike coding pattern instead of having different code basis for each UI layers 
 #Fannar:
 #Franz:
+-uppfæra UI layer og samræma kóða 
+-unnið í aðalvalmynd UI
 
 
 ---Sunnudagur 06.12.2020---
@@ -146,7 +152,7 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 #Callista:
 #Fannar:
 #Franz:
-
+-áframhaldandi vinna í UI
 ---Mánudagur 07.12.2020---
 DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að koma öllu UI í virkni við Logic og Data
 # Ragnar:
@@ -158,6 +164,7 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 # Callista:
 # Fannar:
 # Franz:
+-Bæta við leitar gildum í UI uppfærði í UI,data og logic
 
 ---Þriðjudagur 08.12.2020---
 -
@@ -165,15 +172,16 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 # Callista:
 # Fannar:
 # Franz:
+-klára aðalvalmynd svo leiðir í öll submenu 
 
----Þriðjudagur 09.12.2020---
+---Miðvikudagur 09.12.2020---
 -
 # Ragnar:
 # Callista:
 # Fannar:
 # Franz:
 
----Miðvikudagur 10.12.2020---
+---Fimmtudagur 10.12.2020---
 -
 # Ragnar:
 # Callista:
