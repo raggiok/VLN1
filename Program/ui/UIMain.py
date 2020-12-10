@@ -9,8 +9,6 @@ class UIMain:
     
     def __init__(self):
         self.ui_loop()
-        self.ui_menu_header()
-        self.ui_menu_footer()
     
 
         #Menu header

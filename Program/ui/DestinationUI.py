@@ -226,7 +226,7 @@ class destinationUI:
     def ui_print_closing_time(self):
         self.ui_closing_time_available_print()
         closing_time = input(">> Please enter destination Closing time: ")
-        results  = self.logicAPI.search_destination_by_opening_time(closing_time)
+        results  = self.logicAPI.search_destination_by_closing_time(closing_time)
         print("\nSearch results for " + closing_time + ": ")
         self.ui_destination_table_header()
         for destination in results:

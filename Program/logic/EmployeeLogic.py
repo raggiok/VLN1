@@ -14,9 +14,10 @@ class EmployeeLogic:
         return self.data.get_employees()
 
     def delete_employee(self, string):
-        temp_list = self.search_by_id(string)
-        if temp_list[0] != "No match found.":
+        temp_list = self.search_employee_by_id(string)
+        if temp_list[0] != "*** No match found ***":
             self.data.delete_employee(temp_list[0])
+            return ["\n*** Employee successfully deleted ***\n"]
         else:
             return temp_list
 
@@ -74,7 +75,7 @@ class EmployeeLogic:
         return retList    
 
     def available_the_city(self):
-        employee = self.data.get_cemployees()
+        employee = self.data.get_employees()
         retList = []
         for employee in employee:
             if employee.city not in retList:
@@ -129,14 +130,6 @@ class EmployeeLogic:
             if employee.address.lower() == address.lower():
                 retList.append(employee)
         return self.no_match_found(retList)
-    
-    def search_by_role(self,role):
-        employee = self.data.get_employees()
-        retList = []
-        for employee in employee:
-            if employee.role.lower() == role.lower():
-                retList.append(employee)
-        return self.no_match_found(retList)
 
     def search_by_country(self,country):
         employee = self.data.get_employees()
@@ -151,5 +144,13 @@ class EmployeeLogic:
         retList = []
         for employee in employee:
             if employee.city.lower() == city.lower():
+                retList.append(employee)
+        return self.no_match_found(retList)
+
+    def search_by_zip_code(self,zip_code):
+        employee = self.data.get_employees()
+        retList = []
+        for employee in employee:
+            if employee.zip_code.lower() == zip_code.lower():
                 retList.append(employee)
         return self.no_match_found(retList)
