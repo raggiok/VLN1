@@ -1,4 +1,3 @@
-from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
 from models.Vehicle import Vehicle
 
@@ -315,7 +314,7 @@ class VehicleUI:
                 for result in vehicle:
                     print(result)  
             elif command == "8":
-               return UIMain()
+               return
             else:
                 print("Invalid command, try again")
     

@@ -1,4 +1,3 @@
-from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
 from models.Employee import Employee
 
@@ -287,7 +286,7 @@ class EmployeeUI:
     def ui_search_menu(self):
         self.ui_menu_header("Employee Search")
         print("\nPlease select a search option:")
-        self.UI_numbered_menu(["Name", "SSN", "Role", "Address", "Zip_code", "City", "Country", "Exit"])
+        self.UI_numbered_menu(["Name", "Social Security Number", "Role", "Address", "Zip Code", "City", "Country", "Exit"])
         #self.UI_numbered_menu([ "ID", "Role", "Exit"])
         self.ui_menu_footer()
         selection = input("\n>> Select option: ").lower()
@@ -362,6 +361,6 @@ class EmployeeUI:
                 for result in employee:
                     print(result)
             elif command == "6":
-                return UIMain()
+                return
             else:
                 print("Invalid command, try again") 

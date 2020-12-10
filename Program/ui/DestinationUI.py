@@ -1,4 +1,3 @@
-from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
 from models.Destinations import Destination
 from ui.GeneralUI import GeneralUI
@@ -304,7 +303,7 @@ class destinationUI:
                 for result in destination:
                     print(result) 
             elif command == "6":
-                return UIMain()
+                return
             else:
                 print("Invalid command, try again")
 

@@ -13,7 +13,7 @@ class Contract:
         self.checkout_date = checkout_date
         self.checkin_date = checkin_date
         self.checkin_location = checkin_location
-        self.state = state
+        self.state = state #Available states: ACTIVE DELETED INVOICED CANCELED
         
     def change_customer_name(self, new_customer_name):
         self.customer = new_customer_name

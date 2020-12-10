@@ -1,6 +1,9 @@
 import os
-
-
+from ui.VehicleUI import VehicleUI
+from ui.CustomerUI import CustomerUI
+from ui.ContractsUI import ContractUI
+from ui.DestinationUI import destinationUI
+from ui.EmployeeUI import EmployeeUI
 
 class UIMain:
     
@@ -32,23 +35,17 @@ class UIMain:
             command = input("Input your command: ")
             command = command.lower()
             if command == "1":
-                from ui.VehicleUI import VehicleUI
-                #os.system('cls')
-                return VehicleUI()
+                self.vehicle = VehicleUI()
             elif command == "2":
-                from ui.CustomerUI import CustomerUI
-                return CustomerUI()
+                self.customer = CustomerUI()
             elif command == "3":
-                from ui.ContractsUI import ContractUI
-                return ContractUI()
+                self.contracts = ContractUI()
             elif command == "4":
                 pass # Vantar reports
             elif command == "5":
-                from ui.DestinationUI import destinationUI
-                return destinationUI()
+                self.destination = destinationUI()
             elif command == "6":            
-                from ui.EmployeeUI import EmployeeUI
-                return EmployeeUI()
+                self.employee = EmployeeUI()
             elif command == "q":
                 break
             else:

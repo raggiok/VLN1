@@ -1,5 +1,4 @@
 from logic.logicAPI import LogicAPI
-from ui.UIMain import UIMain
 from models.contracts import Contract
 import datetime
 
@@ -49,7 +48,7 @@ class ContractUI:
 
     #Prints UI for new contract
     def new_contract(self):
-        contractFieldnames = ["Customer name", "Customer SSN","Vehicle ID", "Start date of rental period (dd.mm.yy)","End date of rental period (dd.mm.yy)","Country","Employee name","Total price"] # + "Contract Creation Date"
+        contractFieldnames = ["Customer name", "Customer Social Security No.","Vehicle ID", "Start date of rental period (dd.mm.yy)","End date of rental period (dd.mm.yy)","Country","Employee name","Total price"] # + "Contract Creation Date"
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new contract:" )
@@ -131,7 +130,7 @@ class ContractUI:
                 for item in result_list:
                     print(item)
             elif command == "7":
-                return UIMain() 
+                return
             else:
                 print("Invalid command, try again")
 

@@ -1,4 +1,3 @@
-from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
 from models.Customers import Customer
 
@@ -41,29 +40,29 @@ class CustomerUI:
     def ui_search_menu(self):
         self.ui_menu_header("Customer Search") 
         print("\nPlease enter search option:")
-        self.UI_numbered_menu(["Name", "SSN", "Country", "Exit"])
+        self.UI_numbered_menu(["Name", "Social Security No.", "Country", "Exit"])
         self.ui_menu_footer()
         selection = input("\n>> Select option: ").lower()
         if selection == "1":
-            cust_name = input(">> Please enter customer name: ").lower()
+            cust_name = input(">> Please enter customer Name: ").lower()
             a_list = self.logicAPI.customer_by_name(cust_name)
             self.ui_customer_table_header()
             for item in a_list:
                 print(item)
         elif selection == "2":
-            cust_id = input(">> Please enter customer ID: ").lower()
+            cust_id = input(">> Please enter customer Social Security No.: ").lower()
             a_list = self.logicAPI.customer_by_ssn(cust_id)
             self.ui_customer_table_header()
             for item in a_list:
                 print(item)
         elif selection == "3":
-            cust_country = input(">> Please enter customer country: ").lower()
+            cust_country = input(">> Please enter customer Country: ").lower()
             a_list = self.logicAPI.customer_by_area(cust_country)
             self.ui_customer_table_header()
             for item in a_list:
                 print(item)
         elif selection == "4":
-            return CustomerUI()
+            return
         else:
             print("Invalid command, try again")
 
@@ -91,7 +90,7 @@ class CustomerUI:
                 new_customer = self.ui_delete_customer()
                 self.logicAPI.delete_customer(new_customer)
             elif command == "6":
-                return UIMain() 
+                return
             else:
                 print("Invalid command, try again")
 
@@ -118,11 +117,12 @@ class CustomerUI:
     #Print customer by ID
     def ui_by_id(self):
         "allowing search by ID only"
-        customer_ID = input(">> Please enter SSN: ")
-        customer = self.logicAPI.customer_by_ssn(customer_ID)
-        print("\nCustomer by SSN: " + customer_ID)
+        customer_ID = input(">> Please enter Social Security No.: ")
+        customers = self.logicAPI.customer_by_ssn(customer_ID)
+        print("\nCustomer by Social Security No.: " + customer_ID)
         self.ui_customer_table_header()
-        print(customer)
+        for customer in customers:
+            print(customer)
         self.ui_customer_table_footer
         return customer
 
@@ -130,10 +130,11 @@ class CustomerUI:
     def ui_by_name(self):
         "allowing search by name only"
         customer_name = input(">> Please enter name of customer: ").lower()
-        customer = self.logicAPI.customer_by_name(customer_name)
+        customers = self.logicAPI.customer_by_name(customer_name)
         print("\nCustomer by name: " + customer_name)
         self.ui_customer_table_header()
-        print(customer)
+        for customer in customers:
+            print(customer)
         self.ui_customer_table_footer
         return customer    
     
@@ -141,10 +142,11 @@ class CustomerUI:
     def ui_by_area(self):
         "allowing search by area only"
         customer_area = input(">> Please enter area of customer: ").lower()
-        customer = self.logicAPI.customer_by_area(customer_area)
+        customers = self.logicAPI.customer_by_area(customer_area)
         print("\nCustomer by area: " + customer_area)
         self.ui_customer_table_header()
-        print(customer)
+        for customer in customers:
+            print(customer)
         self.ui_customer_table_footer
         return customer   
 
@@ -193,7 +195,7 @@ class CustomerUI:
         self.ui_menu_header("Edit customer")
         print("\nSelect field to edit:")
         print("1. Name")
-        print("2. SSN")
+        print("2. Social Security No.")
         print("3. Address")
         print("4. Zip_code")
         print("5. City")
