@@ -15,8 +15,8 @@ class LogicAPI:
         self.employee = EmployeeLogic()
 
         ### Vehicles ###
-    def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location):
-        return self.vehicle.create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location)
+    def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location,rate):
+        return self.vehicle.create_vehicle(manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location,rate)
 
     def edit_vehicle(self, vehicle):
         return self.vehicle.edit_vehicle(vehicle)
