@@ -60,8 +60,8 @@ class VehicleLogic():
         vehicle = self.data.get_vehicles()
         retList = []
         for vehicle in vehicle:
-            if vehicle.manufacturing_year not in retList:
-                retList.append(vehicle.manufacturing_year)
+            if vehicle.man_year not in retList:
+                retList.append(vehicle.man_year)
         return retList     
 
     def available_color(self):
@@ -130,7 +130,7 @@ class VehicleLogic():
         vehicle = self.data.get_vehicles()
         retList = []
         for vehicle in vehicle:
-            if vehicle.manufacturing_year == manufacturing_year:
+            if vehicle.man_year == manufacturing_year:
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
@@ -157,6 +157,15 @@ class VehicleLogic():
         search_list = self.data.get_vehicles()
         for vehicle in search_list:
             if vehicle.unique_id == ID:
+                retList.append(vehicle)
+        return self.no_match_found(retList)
+
+    def search_vehicle_by_color(self, color):
+        '''Returns a list of vehicles based on the type selected'''
+        vehicle = self.data.get_vehicles()
+        retList = []
+        for vehicle in vehicle:
+            if vehicle.color.lower() == color.lower():
                 retList.append(vehicle)
         return self.no_match_found(retList)
         

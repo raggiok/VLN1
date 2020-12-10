@@ -40,7 +40,7 @@ class LogicAPI:
         return self.vehicle.search_vehicle_by_model(model)
 
     def search_vehicle_by_vehicle_type(self, vehicle_type):
-        return self.vehicle.search_vehicle_by_type(vehicle_type)
+        return self.vehicle.search_vehicle_by_vehicle_type(vehicle_type)
 
     def search_vehicle_by_status(self, status):
         return self.vehicle.search_vehicle_by_status(status)
@@ -63,8 +63,8 @@ class LogicAPI:
     def available_manufacturers(self):
         return self.vehicle.available_manufacturers()
 
-    def avalible_vehicle_type(self):
-        return self.vehicle.avalible_vehicle_type()
+    def available_vehicle_type(self):
+        return self.vehicle.available_vehicle_type()
 
     def available_status(self):
         return self.vehicle.available_status()
