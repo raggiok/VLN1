@@ -1,13 +1,13 @@
 from models.Vehicle import Vehicle
 from data.dataAPI import dataAPI
 from models.contracts import Contract
+from models.Invoice import Invoice
 import logic.logicAPI
 import datetime
 
+LATECHARGE = 1.2
 
 class ContractLogic:
-
-    LATECHARGE = 0.2
 
     def __init__(self):
         self.data = dataAPI()
@@ -89,7 +89,7 @@ class ContractLogic:
     def search_contracts_by_id(self, string):
         match = []
         for contract in self.all_contracts():
-            if contract.get_unique_id() == string:
+            if contract.unique_id == string:
                 match.append(contract)
         return self.no_match_found(match)
 
@@ -102,7 +102,7 @@ class ContractLogic:
 
     def delete_contract(self, contract_id):
         result = self.search_contracts_by_id(contract_id)
-        if result[0] != "\n*** No match found ***n":
+        if result[0] != "\n*** No match found ***\n":
             self.data.delete_contract(result[0])
             return "\n*** Contract successfully deleted ***\n"
         else:
@@ -130,12 +130,30 @@ class ContractLogic:
     
 ### Föll til að reikna leiguverð ### - á eftir að bæta inn í logicAPA
 
-    def calculate_cost(self, contract_id):
-        contract = self.search_contracts_by_id(contract_id)
-        Vehicle = self.search_vehicle_by_ID(contract.vehicle_unique_id)
-        customer = self.customer_by_ssn(contract.ssn)
-        late_fee = 0.2
-        late_hours = contract.vehicle_signed_in - contract.vehicle.end_date
-        hours_total = contract.start_date - contract.vehicle_signed_in
+    def create_invoice(self, contract_id):
+        try:
+            contract = self.search_contracts_by_id(contract_id)[0]
+            vehicle = self.search_vehicle_by_ID(contract.vehicle_unique_id)[0]
+            customer = self.customer_by_ssn(contract.customer_ssn)[0]
+        except IndexError:
+            return 'Customer, contract or vehicle not found.'
+        late_hours = self.change_to_datetime(contract.checkin_date) - self.change_to_datetime(contract.end_date)
+        hours_total = self.change_to_datetime(contract.start_date) - self.change_to_datetime(contract.end_date)
+        total = 0
+        late_fee = 0
+        rates = self.data.get_rates()
+        rate_invoice = ""
+        for rate in rates:
+            if rate.name.lower() == vehicle.rate.lower():
+                print(rate.name())
+        #if late_hours.days > 0:
+            #late_fee += late_hours.days * rate_invoice.cost_per_day * LATECHARGE
+        print(type(rate_invoice))
 
-
+        #total += hours_total.days * rate_invoice.cost_per_day
+        total += late_fee
+        invoice = Invoice("", customer.ssn, vehicle.unique_id, rate_invoice, 10, total, late_fee)
+        self.data.create_invoice(invoice)
+        contract.total_price = total
+        contract.state = 'Invoiced'
+        self.data.update_contract(contract)

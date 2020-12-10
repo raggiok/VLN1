@@ -1,3 +1,8 @@
 unique_id,customer_unique_id,vehicle_unique_id,rate,total_days,_total_price,invoice_type,state
 1,Vehicle 25,Customer no. 50,15,20,300,Debit,Active
 2,Vehicle 25,Customer no. 50,15,20,300,Debit,Active
+3,13,sadfsad,,10,0,0,Debit
+4,13,sadfsad,,10,0,0,Debit
+5,13,sadfsad,,10,0,0,Debit
+6,13,sadfsad,,10,0,0,Debit
+7,13,sadfsad,,10,0,0,Debit
