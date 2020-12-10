@@ -5,15 +5,19 @@ class DestinationLogic():
     def __init__(self):
         self.data = dataAPI()
 
-    def create_destination(self, a_list):
+    def create_destination(self, country, city, airport, phone_number, opening_time, closing_time, main_contact):
         '''Creates a destination in the database'''
-        destination_instance = Destination(self.data.new_destination_id, *a_list)
-        
+        destination_instance = Destination(self,country, city, airport, phone_number, opening_time, closing_time, main_contact)
+        return self.data.create_destination(destination_instance)
+
     def edit_destination(self, destination_instance):
         '''Edits a destination in the database'''
-        self.data.edit_destination(destination_instance)
+        return self.data.update_destination(destination_instance)
 
      #### Search Function #####  
+     # the avalible functions return a 
+     # list of all avalible options for 
+     # the choosen parameter 
     def available_countries(self):
         destination = self.data.get_destinations()
         retList = []
@@ -66,15 +70,23 @@ class DestinationLogic():
         destination = self.data.get_destinations()
         retList = []
         for destination in destination:
-            if destination.opening_time not in retList:
-                retList.append(destination.opening_time)
+            if destination.main_contact not in retList:
+                retList.append(destination.main_contact)
         return retList     
+
+    def search_destinations_by_id(self,unique_id):
+        destination = self.data.get_destinations()
+        retList = []
+        for destination in destination:
+            if destination.unique_id == unique_id:
+                retList.append(destination)
+        return self.no_match_found(retList)
 
     def search_destinations_by_country(self,country):
         destination = self.data.get_destinations()
         retList = []
         for destination in destination:
-            if destination.country == country:
+            if destination.country.lower() == country.lower():
                 retList.append(destination)
         return self.no_match_found(retList)
 
@@ -82,7 +94,7 @@ class DestinationLogic():
         destination = self.data.get_destinations()
         retList = []
         for destination in destination:
-            if destination.city == city:
+            if destination.city.lower() == city.lower():
                 retList.append(destination)
         return self.no_match_found(retList)
 
@@ -90,7 +102,7 @@ class DestinationLogic():
         destination = self.data.get_destinations()
         retList = []
         for destination in destination:
-            if destination.airport == airport:
+            if destination.airport.lower() == airport.lower():
                 retList.append(destination)
         return self.no_match_found(retList)
 
@@ -123,7 +135,7 @@ class DestinationLogic():
         destination = self.data.get_destinations()
         retList = []
         for destination in destination:
-            if destination.opening_time == opening_time:
+            if destination.main_contact.lower() == main_contact.lower():
                 retList.append(destination)
         return self.no_match_found(retList)          
 
@@ -134,6 +146,14 @@ class DestinationLogic():
     def all_destinations(self):
         '''Returns all information about all destinations'''
         return self.data.get_destinations()
+
+    def delete_destination(self, ID_number):
+        search = self.search_destinations_by_id(ID_number)
+        if search[0] != "\n*** No match found ***\n":
+            self.data.delete_destination(search[0])
+            return ["\n*** Destination successfully deleted ***\n"]
+        else:
+            return search
 
     def no_match_found(self, result_list):
         if result_list:

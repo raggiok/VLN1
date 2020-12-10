@@ -2,6 +2,7 @@ from ui.UIMain import UIMain
 from logic.VehicleLogic import VehicleLogic
 from models.Vehicle import Vehicle
 
+
 class VehicleUI:
     def __init__(self):
         self.logic = VehicleLogic()
@@ -60,6 +61,7 @@ class VehicleUI:
     #Prints the Vehicle Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
+
         self.ui_menu_header("Edit vehicle")
         print("\nSelect field to edit:")
         print("1. Manufacturer")
@@ -72,6 +74,7 @@ class VehicleUI:
         print("8. Location")
         print("9. Exit")
         self.ui_menu_footer()
+        
 
     #Print Vehicle Table Header
     def ui_vehicle_table_header(self):

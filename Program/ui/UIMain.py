@@ -1,4 +1,9 @@
+import os
+
+
+
 class UIMain:
+    
     def __init__(self):
         print("inside ui")
         self.ui_loop()
@@ -29,6 +34,7 @@ class UIMain:
             command = command.lower()
             if command == "1":
                 from ui.VehicleUI import VehicleUI
+                #os.system('cls')
                 return VehicleUI()
             elif command == "2":
                 from ui.CustomerUI import CustomerUI
@@ -45,7 +51,7 @@ class UIMain:
                 from ui.EmployeeUI import EmployeeUI
                 return EmployeeUI()
             elif command == "q":
-                return False
+                break
             else:
                 print("Invalid command, try again")
 

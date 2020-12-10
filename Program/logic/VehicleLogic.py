@@ -94,7 +94,7 @@ class VehicleLogic():
         vehicle = self.data.get_vehicles()
         retList = []
         for vehicle in vehicle:
-            if vehicle.manufacturer == manufacturer:
+            if vehicle.manufacturer.lower() == manufacturer.lower():
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
@@ -103,7 +103,7 @@ class VehicleLogic():
         vehicle = self.data.get_vehicles()
         retList = []
         for vehicle in vehicle:
-            if vehicle.model == model:
+            if vehicle.model.lower() == model.lower():
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
@@ -112,7 +112,7 @@ class VehicleLogic():
         vehicle = self.data.get_vehicles()
         retList = []
         for vehicle in vehicle:
-            if vehicle.vehicle_type == vehicle_type:
+            if vehicle.vehicle_type.lower() == vehicle_type.lower():
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
@@ -121,7 +121,7 @@ class VehicleLogic():
         vehicle = self.data.get_vehicles()
         retList = []
         for vehicle in vehicle:
-            if vehicle.status == status:
+            if vehicle.status.lower() == status.lower():
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
@@ -139,7 +139,7 @@ class VehicleLogic():
         vehicle = self.data.get_vehicles()
         retList = []
         for vehicle in vehicle:
-            if vehicle.license_type == license_type:
+            if vehicle.license_type.lower() == license_type.lower():
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
@@ -148,7 +148,7 @@ class VehicleLogic():
         vehicle = self.data.get_vehicles()
         retList = []
         for vehicle in vehicle:
-            if vehicle.location == location:
+            if vehicle.location.lower() == location.lower():
                 retList.append(vehicle)
         return self.no_match_found(retList)
 
@@ -160,24 +160,6 @@ class VehicleLogic():
                 retList.append(vehicle)
         return self.no_match_found(retList)
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     #Returns all information about all vehicles
     def all_vehicles(self):

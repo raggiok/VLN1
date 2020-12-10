@@ -7,11 +7,7 @@ class EmployeeLogic:
         self.data = dataAPI()
 
     def create_employee(self, a_list):
-<<<<<<< HEAD
-        employee = Employee(self.data.new_customer_id(), *a_list)
-=======
-        employee = Employee("placeholder", *a_list)
->>>>>>> 20c2c06f9a457c9638a42696495054c941324a1a
+        employee = Employee(self.something, *a_list)
         return self.data.create_employee(employee)
         
     def get_employees(self):
@@ -20,7 +16,7 @@ class EmployeeLogic:
     def search_by_id(self, string):
         match = []
         for employee in self.get_employees():
-            if employee.unique_id == string:
+            if employee.unique_id.lower() == string.lower():
                 match.append(employee)
         return self.no_match_found(match)
 

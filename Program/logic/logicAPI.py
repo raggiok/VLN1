@@ -134,17 +134,23 @@ class LogicAPI:
 
        
         ### Destinations ###
-    def create_destination(self, a_list):
-        return self.destination.create_destination(a_list)
+    def create_destination(self, country, city, airport, phone_number, opening_time, closing_time, main_contact):
+        return self.destination.create_destination(country, city, airport, phone_number, opening_time, closing_time, main_contact)
 
     def edit_destination(self, a_list):
         return self.destination.edit_destination(a_list)
 
     def all_destinations(self):
         return self.destination.all_destinations()
+
+    def delete_destination(self,destination_id):
+        return self.destination.delete_destination(destination_id)
       
       
        ##Search functions##
+    def search_destinations_by_id(self,unique_id):
+        return self.destination.search_destinations_by_id(unique_id)
+
     def search_destination_by_country(self,country):
         return self.destination.search_destinations_by_country(country)
 
@@ -163,7 +169,7 @@ class LogicAPI:
     def search_destination_by_closing_time(self,closing_time):
         return self.destination.search_destinations_by_closing_time(closing_time)
 
-    def search_destination_by_Main_contact(self,main_contact):
+    def search_destination_by_main_contact(self,main_contact):
         return self.destination.search_destinations_by_main_contact(main_contact)
 
     def available_country(self):
