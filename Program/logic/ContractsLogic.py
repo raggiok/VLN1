@@ -64,9 +64,9 @@ class ContractLogic:
         vehicle = self.search_vehicle_by_ID(new_contract.vehicle_unique_id)
         if vehicle:
             if new_contract.country.lower() != vehicle[0].location.lower():
-                return True
-            else:
                 return False
+            else:
+                return True
         
         
 

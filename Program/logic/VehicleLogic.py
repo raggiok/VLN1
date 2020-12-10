@@ -12,7 +12,7 @@ class VehicleLogic():
 
     def edit_vehicle(self, vehicle_instance):
         '''Edits a vehicle in the database'''
-        return self.data.update_vehicle(vehicle_instance)
+        return self.data.edit_vehicle(vehicle_instance)
 
     
     ##### part of search function###
@@ -161,8 +161,12 @@ class VehicleLogic():
         return self.no_match_found(retList)
         
 
+    ### maintainance functions ###
+        def vehicle_check_in(self, vehicle_ID):
+            vehicle = self
 
-
+        def vehicle_check_out(self, vehicle_ID):
+            
 
 
 
@@ -196,9 +200,8 @@ class VehicleLogic():
 
     def delete_vehicle(self, ID_number):
         search = self.search_vehicle_by_ID(ID_number)
-        if search[0] != "\n*** No match found ***\n":
+        if search[0] != "No match found.":
             self.data.delete_vehicle(search[0])
-            return ["\n*** Vehicle successfully deleted ***\n"]
         else:
             return search
 
@@ -206,5 +209,5 @@ class VehicleLogic():
         if result_list:
             return result_list
         else:
-            result_list.append("\n*** No match found ***\n")
+            result_list.append("No match found.")
             return result_list
