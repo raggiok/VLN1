@@ -272,7 +272,7 @@ class CustomerUI:
                 elif selection == "6":
                     self.ui_print_country()
                 elif selection == "7":
-                    self.ui_customer_menu()
+                    self.customer_menu()
             elif command == "3":
                 self.ui_all_customer()
             elif command == "4": 

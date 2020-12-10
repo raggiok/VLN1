@@ -166,3 +166,24 @@ class ContractLogic:
             if invoice.contract_unique_id == new_invoice.contract_unique_id:
                 return "*** Invoice already sent. ***"
         return self.data.create_invoice(new_invoice)
+
+    def get_invoices(self):
+        return self.data.get_invoices()
+
+    def vehicle_check_out(self, contract_id):
+        contract = self.search_contracts_by_id(contract_id)
+        if contract[0] != "\n*** No match found ***\n":
+            contract[0].checkout_date = datetime.date.today().strftime("%d.%m.%y")
+            self.data.update_contract(contract[0])
+            return "Vehicle successfully checked out."
+        else:
+            return contract[0]
+
+    def vehicle_check_in(self,contract_id):
+        contract = self.search_contracts_by_id(contract_id)
+        if contract[0] != "\n*** No match found ***\n":
+            contract[0].checkin_date = datetime.date.today().strftime("%d.%m.%y")
+            self.data.update_contract(contract[0])
+            return "Vehicle successfully checked in."
+        else:
+            return contract[0]

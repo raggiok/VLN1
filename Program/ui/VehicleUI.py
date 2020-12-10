@@ -326,10 +326,10 @@ class VehicleUI:
         if choice == '3':
             return
         elif choice == '1':
-            vehicle = input("Enter vehicle ID: ")
+            vehicle = input("Enter contract ID: ")
             print(self.logic.vehicle_check_out(vehicle))
         elif choice == '2':
-            vehicle = input("Enter vehicle ID: ")
+            vehicle = input("Enter contract ID: ")
             print(self.logic.vehicle_check_in(vehicle))
         elif choice == '3':
             return
