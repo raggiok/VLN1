@@ -7,6 +7,8 @@ import datetime
 
 class ContractLogic:
 
+    LATECHARGE = 0.2
+
     def __init__(self):
         self.data = dataAPI()
 
