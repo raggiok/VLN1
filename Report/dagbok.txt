@@ -158,3 +158,24 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 # Callista:
 # Fannar:
 # Franz:
+
+---Þriðjudagur 08.12.2020---
+-
+# Ragnar:
+# Callista:
+# Fannar:
+# Franz:
+
+---Þriðjudagur 09.12.2020---
+-
+# Ragnar:
+# Callista:
+# Fannar:
+# Franz:
+
+---Miðvikudagur 10.12.2020---
+-
+# Ragnar:
+# Callista:
+# Fannar:
+# Franz:

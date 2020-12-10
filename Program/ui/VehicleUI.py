@@ -129,7 +129,7 @@ class VehicleUI:
 
     def ui_vehicle_type_available_print(self):
         print("\nAvailable Options:")
-        vehicles = self.ui_vehicle_type_available_print()
+        vehicles = self.logic.available_vehicle_type()
         for vehicle in vehicles:
             print("\t" + vehicle)
         print()
@@ -212,9 +212,9 @@ class VehicleUI:
         self.ui_vehicle_table_footer()
 
     def ui_print_manufacturing_year(self):
-        self.ui_manufacturer_available_print()
+        self.ui_manufacturing_year_available_print()
         manufacturing_year = input(">> Please enter vehicle manufacturing year: ")
-        results  = self.logic.search_vehicle_by_type(manufacturing_year)
+        results  = self.logic.search_vehicle_by_manufacturing_year(manufacturing_year)
         print("\nAll vehicles by manufacturing year " + manufacturing_year + ": ")
         self.ui_vehicle_table_header()
         for vehicle in results:
@@ -289,7 +289,7 @@ class VehicleUI:
                 elif selection == "3":
                     self.ui_print_vehicle_type()
                 elif selection == "4":
-                    self
+                    self.ui_print_status()
                 elif selection == "5":
                     self.ui_print_manufacturing_year()
                 elif selection == "6":
