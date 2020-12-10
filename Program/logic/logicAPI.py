@@ -110,27 +110,61 @@ class LogicAPI:
         return self.contract.delete_contract(string)
 
     
-        ### Customers ###
+### Customers ###
     def create_customer(self, customer_list):
         return self.customer.create_customer(customer_list)
 
     def all_customer(self):
         return self.customer.all_customer()
 
-    def customer_by_name(self, name):
-        return self.customer.customer_by_name(name)
-
-    def customer_by_ssn(self, ssn):
-        return self.customer.customer_by_ssn(ssn)
-
-    def customer_by_area(self,country):
-        return self.customer.customer_by_area(country)
-
-    def delete_customer(self, ssn):
-        return self.customer.delete_customer(ssn)
+    def delete_customer(self, unique_id):
+        return self.customer.delete_customer(unique_id)
 
     def update_customer(self, edited_instance):
         self.customer.edit_customer(edited_instance)
+
+      #search function
+    def search_customer_by_unique(self,unique_id):
+        return self.employee.search_customer_by_id(unique_id)
+    
+    def search_customers_by_name(self, name):
+        return self.customer.search_by_name(name)
+
+    def search_customers_by_id(self, ssn):
+        return self.customer.search_by_id(ssn)
+
+    def search_customers_by_address(self, address):
+        return self.customer.search_by_address(address)
+       
+    def search_customers_by_zip_code(self, zip_code):
+        return self.customer.search_by_zip_code(zip_code)
+
+    def search_customers_by_city(self, city):
+        return self.customer.search_by_city(city)
+
+    def search_customers_by_country(self, country):
+        return self.customer.search_by_country(country)
+
+    #name	ssn	role	address	zip_code	city	country
+    def available_customer_name(self):
+        return self.customer.available_the_name()
+    
+    def available_customer_ssn(self):
+        return self.customer.available_the_ssn()
+
+    def available_customer_address(self):
+        return self.customer.available_the_address()
+
+    def available_customer_zip_code(self):
+        return self.customer.available_the_zip_code()
+    
+    def available_customer_city(self):
+        return self.customer.available_the_city()
+
+    def available_customer_country(self):
+        return self.customer.available_the_country()
+        
+    
 
        
         ### Destinations ###
