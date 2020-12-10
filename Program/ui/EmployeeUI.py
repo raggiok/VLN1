@@ -28,7 +28,7 @@ class EmployeeUI:
 
     #Creates the Edit menu layout and returns the employee Instance after edit
     def ui_edit_employee(self):
-        employee = self.ui_employee_ID() #prints specific destination
+        employee = self.ui_single_employee_unique() #prints specific employee
         selection = ""
         while selection != "11":
             self.ui_print_edit_menu() #ask user what he would like to edit
@@ -80,16 +80,14 @@ class EmployeeUI:
         print("11. Exit")
         self.ui_menu_footer()
 
-    
-
     #Print Employee Table Header
     def ui_employee_table_header(self):
         print(f"{'Unique_id':<20}{'Name':<20}{'SSN':<20}{'Role':<20}{'Address':<20}{'Zip_code':<20}{'City':<20}{'Country':<20}{'Home_phone':<20}{'Mobile_phone':<20}{'Email':<20}")
-        print("-"*210)
+        print("-"*200)
 
     #Print employee Table Footer
     def ui_employee_table_footer(self):
-        print("-"*210)
+        print("-"*200)
         print()
 
     #Prints all employee
@@ -101,16 +99,158 @@ class EmployeeUI:
             print(employee)
         self.ui_employee_table_footer()
     
-    #Prints employee with SSN
-    def ui_employee_ID(self):
-        '''Prints a single employee with a unique ID'''
-        employee_ID = input(">> Please enter employee SSN: ").lower()
-        employee  = self.logicAPI.search_employee_by_ID(employee_ID)
-        print("\nemployee by ID: " + employee_ID)
+    #Prints customer with unique ID
+    def ui_single_employee_unique(self):
+        '''Prints a single customer with a unique ID'''
+        employee_unique = input(">> Please enter employee ID: ")
+        employees = self.logicAPI.search_employee_by_unique(employee_unique)
+        print("\ncustomer by ID: " + employee_unique)
         self.ui_employee_table_header()
-        print(employee) 
+        for employee in employees:
+            print(employee) 
         self.ui_employee_table_footer()
         return employee
+
+    #name	ssn	role	address	zip_code	city	country	home_phone	mobile_phone	email	state
+    ###availability option search ###
+    def ui_name_available_print(self):
+        '''Prints all employee name'''
+        print("\nAvailable Options:")
+        employees = self.logicAPI.available_name()
+        for employee in employees:
+            print("\t" + employee)
+        print()
+
+    def ui_SSN_available_print(self):
+        '''Prints all customer SSN'''
+        print("\nAvailable Options:")
+        employees = self.logicAPI.available_SSN()
+        for employee in employees:
+            print("\t" + employee)
+        print()
+    
+    def ui_role_available_print(self):
+        '''Prints all employee role'''
+        print("\nAvailable Options:")
+        employees = self.logicAPI.available_role()
+        for employee in employees:
+            print("\t" + employee)
+        print()
+
+    def ui_address_available_print(self):
+        '''Prints all employee address'''
+        print("\nAvailable Options:")
+        employees = self.logicAPI.available_address()
+        for employee in employees:
+            print("\t" + employee)
+        print()
+
+    def ui_zip_code_available_print(self):
+        '''Prints all employee zip_code'''
+        print("\nAvailable Options:")
+        employees = self.logicAPI.available_zip_code()
+        for employee in employees:
+            print("\t" + employee)
+        print()
+    
+    def ui_city_available_print(self):
+        '''Prints all employee city'''
+        print("\nAvailable Options:")
+        employees = self.logicAPI.available_city()
+        for employee in employees:
+            print("\t" + employee)
+        print()
+    
+    def ui_country_available_print(self):
+        '''Prints all employee country'''
+        print("\nAvailable Options:")
+        employees = self.logicAPI.available_country()
+        for employee in employees:
+            print("\t" + employee)
+        print()
+
+    #name	ssn	role	address	zip_code	city	country	
+    #Print the availability data
+    def ui_print_country(self):
+        self.ui_country_available_print()
+        country = input(">> Please enter employee Country: ")
+        results  = self.logicAPI.search_employee_by_country(country)
+        print("\nSearch results for " + country + ": ")
+        self.ui_employee_table_header()
+        for employee in results:
+            print(employee)
+        self.ui_employee_table_footer()
+
+    def ui_print_city(self):
+        self.ui_city_available_print()
+        city = input(">> Please enter employee City: ")
+        results  = self.logicAPI.search_employee_by_city(city)
+        print("\nSearch results for " + city + ": ")
+        self.ui_employee_table_header()
+        for employee in results:
+            print(employee)
+        self.ui_employee_table_footer()
+
+    def ui_print_zip_code(self):
+        self.ui_zip_code_available_print()
+        zip_code = input(">> Please enter employee zip_code: ")
+        results  = self.logicAPI.search_employee_by_zip_code(zip_code)
+        print("\nSearch results for " + zip_code + ": ")
+        self.ui_employee_table_header()
+        for employee in results:
+            print(employee)
+        self.ui_employee_table_footer()
+
+    def ui_print_address(self):
+        self.ui_address_available_print()
+        address = input(">> Please enter employee address: ")
+        results  = self.logicAPI.search_employee_by_address(address)
+        print("\nSearch results for " + address + ": ")
+        self.ui_employee_table_header()
+        for employee in results:
+            print(employee)
+        self.ui_employee_table_footer()
+
+    def ui_print_role(self):
+        self.ui_role_available_print()
+        role = input(">> Please enter employee role: ")
+        results  = self.logicAPI.search_employee_by_role(role)
+        print("\nSearch results for " + role + ": ")
+        self.ui_employee_table_header()
+        for employee in results:
+            print(employee)
+        self.ui_employee_table_footer()
+
+    def ui_print_ssn(self):
+        self.ui_ssn_available_print()
+        ssn = input(">> Please enter employee ssn: ")
+        results  = self.logicAPI.search_employee_by_ssn(ssn)
+        print("\nSearch results for " + ssn + ": ")
+        self.ui_employee_table_header()
+        for employee in results:
+            print(employee)
+        self.ui_employee_table_footer() 
+
+    def ui_print_name(self):
+        self.ui_name_available_print()
+        name = input(">> Please enter employee name: ")
+        results  = self.logicAPI.search_employee_by_name(name)
+        print("\nSearch results for " + name + ": ")
+        self.ui_employee_table_header()
+        for employee in results:
+            print(employee)
+        self.ui_employee_table_footer()
+
+    #Prints employee with SSN
+   # def ui_employee_ID(self):
+    #    '''Prints a single employee with a unique ID'''
+    #    employee_ID = input(">> Please enter employee SSN: ").lower()
+    #    employee  = self.logicAPI.search_employee_by_ID(employee_ID)
+    #    print("\nemployee by ID: " + employee_ID)
+    #    self.ui_employee_table_header()
+    #    print(employee) 
+    #    self.ui_employee_table_footer()
+    #    return employee
 
     #Prints employee name
     #def ui_employee_name(self):
@@ -124,15 +264,15 @@ class EmployeeUI:
     #    return employee
     
     #Prints employee role
-    def ui_employee_role(self):
-        '''Prints a single employee role'''
-        ui_employee_role = input(">> Please enter employee role: ").lower()
-        employee  = self.logicAPI.search_employee_by_role(employee_role)
-        print("\nemployee by role: " + employee_role)
-        self.ui_employee_table_header()
-        print(employee) 
-        self.ui_employee_table_footer()
-        return employee
+    #def ui_employee_role(self):
+    #    '''Prints a single employee role'''
+    #    ui_employee_role = input(">> Please enter employee role: ").lower()
+    #    employee  = self.logicAPI.search_employee_by_role(employee_role)
+    #    print("\nemployee by role: " + employee_role)
+    #    self.ui_employee_table_header()
+    #    print(employee) 
+    #    self.ui_employee_table_footer()
+    #    return employee
 
     #Menu header
     def ui_menu_header(self, menu_name):
@@ -142,37 +282,38 @@ class EmployeeUI:
     def ui_menu_footer(self):
         print("\n" + "-"*50)
 
-
+    #name	ssn	role	address	zip_code	city	country
     #Prints the search menu for employee
     def ui_search_menu(self):
         self.ui_menu_header("Employee Search")
         print("\nPlease select a search option:")
-        #self.UI_numbered_menu(["Name", "SSN", "Role", "Exit"])
-        self.UI_numbered_menu([ "ID", "Role", "Exit"])
+        self.UI_numbered_menu(["Name", "SSN", "Role", "Address", "Zip_code", "City", "Country", "Exit"])
+        #self.UI_numbered_menu([ "ID", "Role", "Exit"])
         self.ui_menu_footer()
         selection = input("\n>> Select option: ").lower()
+        return selection
         #if selection == "1":
-        #   emp_name = input(">> Please enter employee name: ")
-        #    a_list = self.logic.customer_by_name(cust_name)
+        #    emp_name = input(">> Please enter employee name: ").lower()
+        #    a_list = self.logicAPI.search_employee_by_name(emp_name)
         #    self.ui_customer_table_header()
         #    for item in a_list:
         #       print(item)
-        if selection == "1":
-            emp_id = input(">> Please enter employee ID: ")
-            a_list = self.logicAPI.search_employees_by_id(emp_id)
-            self.ui_employee_table_header()
-            for item in a_list:
-                print(item)
-        elif selection == "2":
-            emp_role = input(">> Please enter employee role: ").lower()
-            a_list = self.logicAPI.search_employees_by_role(emp_role)
-            self.ui_employee_table_header()
-            for item in a_list:
-                print(item)
-        elif selection == "3":
-            return EmployeeUI()
-        else:
-            print("Invalid command, try again")
+        #elif selection == "2":
+        #    emp_id = input(">> Please enter employee ID: ")
+        #    a_list = self.logicAPI.search_employees_by_id(emp_id)
+        #    self.ui_employee_table_header()
+        #    for item in a_list:
+        #        print(item)
+        #elif selection == "3":
+        #    emp_role = input(">> Please enter employee role: ").lower()
+        #    a_list = self.logicAPI.search_employees_by_role(emp_role)
+        #    self.ui_employee_table_header()
+        #    for item in a_list:
+        #        print(item)
+        #elif selection == "3":
+        #    return EmployeeUI()
+        #else:
+        #    print("Invalid command, try again")
 
     #Prints any UI menu in order
     def UI_numbered_menu(self, a_list):
@@ -180,6 +321,7 @@ class EmployeeUI:
         for i in range(0,(len(a_list))):
             print(f"{i+1}. {a_list[i]}")
 
+    #name	ssn	role	address	zip_code	city	country
     #Prints the employee Main Menu
     def employee_menu(self):
         while True:
@@ -193,6 +335,22 @@ class EmployeeUI:
                 self.logicAPI.create_employee(new_employee)
             elif command == "2":
                 selection = self.ui_search_menu()
+                if selection == "1":
+                    self.ui_print_name()
+                elif selection == "2":
+                    self.ui_print_ssn()
+                elif selection == "3":
+                    self.ui_print_role()
+                elif selection == "4":
+                    self.ui_print_address()
+                elif selection == "5":
+                    self.ui_print_zip_code()
+                elif selection == "6":
+                    self.ui_print_city()
+                elif selection == "7":
+                    self.ui_print_country()
+                elif selection == "8":
+                    self.ui_employee_menu()    
             elif command == "3":
                 self.ui_all_employee()
             elif command == "4":
