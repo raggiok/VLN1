@@ -3,3 +3,4 @@ unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,em
 2,d,d,d,d,d,d,d,d,d,d,ACTIVE
 3,Rabbbbi,asdfasd,asdfas,sadfas,sadfasf,asdfasdf,sdaf,4444444,555555555,22222222,ACTIVE
 4,adam,22,cashier,sa,sa,sa,s,a,as,sa,ACTIVE
+5,TEST,ddd,Admin,Heimili,456,RVK,ICE,45612,5514456,test@test.is,ACTIVE

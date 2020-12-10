@@ -80,7 +80,7 @@ class CustomerUI:
                 new_customer = self.ui_new_customer()
                 self.logicAPI.create_customer(new_customer)
             elif command == "2":
-                choice = self.ui_search_menu()
+                self.ui_search_menu()
             elif command == "3":
                 self.ui_all_customer()
             elif command == "4": 

@@ -173,7 +173,7 @@ class EmployeeUI:
     def ui_print_country(self):
         self.ui_country_available_print()
         country = input(">> Please enter employee Country: ")
-        results  = self.logicAPI.search_employee_by_country(country)
+        results  = self.logicAPI.search_employees_by_country(country)
         print("\nSearch results for " + country + ": ")
         self.ui_employee_table_header()
         for employee in results:
@@ -183,7 +183,7 @@ class EmployeeUI:
     def ui_print_city(self):
         self.ui_city_available_print()
         city = input(">> Please enter employee City: ")
-        results  = self.logicAPI.search_employee_by_city(city)
+        results  = self.logicAPI.search_employees_by_city(city)
         print("\nSearch results for " + city + ": ")
         self.ui_employee_table_header()
         for employee in results:
@@ -193,7 +193,7 @@ class EmployeeUI:
     def ui_print_zip_code(self):
         self.ui_zip_code_available_print()
         zip_code = input(">> Please enter employee zip_code: ")
-        results  = self.logicAPI.search_employee_by_zip_code(zip_code)
+        results  = self.logicAPI.search_employees_by_zip_code(zip_code)
         print("\nSearch results for " + zip_code + ": ")
         self.ui_employee_table_header()
         for employee in results:
@@ -203,7 +203,7 @@ class EmployeeUI:
     def ui_print_address(self):
         self.ui_address_available_print()
         address = input(">> Please enter employee address: ")
-        results  = self.logicAPI.search_employee_by_address(address)
+        results  = self.logicAPI.search_employees_by_address(address)
         print("\nSearch results for " + address + ": ")
         self.ui_employee_table_header()
         for employee in results:
@@ -213,7 +213,7 @@ class EmployeeUI:
     def ui_print_role(self):
         self.ui_role_available_print()
         role = input(">> Please enter employee role: ")
-        results  = self.logicAPI.search_employee_by_role(role)
+        results  = self.logicAPI.search_employees_by_role(role)
         print("\nSearch results for " + role + ": ")
         self.ui_employee_table_header()
         for employee in results:
@@ -223,7 +223,7 @@ class EmployeeUI:
     def ui_print_ssn(self):
         self.ui_ssn_available_print()
         ssn = input(">> Please enter employee ssn: ")
-        results  = self.logicAPI.search_employee_by_ssn(ssn)
+        results  = self.logicAPI.search_employees_by_id(ssn)
         print("\nSearch results for " + ssn + ": ")
         self.ui_employee_table_header()
         for employee in results:
@@ -233,7 +233,7 @@ class EmployeeUI:
     def ui_print_name(self):
         self.ui_name_available_print()
         name = input(">> Please enter employee name: ")
-        results  = self.logicAPI.search_employee_by_name(name)
+        results  = self.logicAPI.search_employees_by_name(name)
         print("\nSearch results for " + name + ": ")
         self.ui_employee_table_header()
         for employee in results:
