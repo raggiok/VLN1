@@ -81,7 +81,11 @@ class LogicAPI:
     def available_location(self):
         return self.vehicle.available_location()
 
+    def vehicle_check_out(self, contract_id):
+        return self.contract.vehicle_check_out(contract_id)
 
+    def vehicle_check_in(self, contract_id):
+        return self.contract.vehicle_check_in(contract_id)
 
 
     def delete_vehicle(self, vehicle_ID):
@@ -292,4 +296,7 @@ class LogicAPI:
     def available_country(self):
         return self.employee.available_the_country()
 
-    
+    ###Invoice###
+
+    def create_invoice(self, contract_id):
+        return self.contract.create_invoice(contract_id)
