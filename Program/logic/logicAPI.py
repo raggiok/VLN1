@@ -109,6 +109,8 @@ class LogicAPI:
     def delete_contract(self, string):
         return self.contract.delete_contract(string)
 
+    def edit_contract(self, contract_instance):
+        return self.contract.update_contract(contract_instance)
     
 ### Customers ###
     def create_customer(self, customer_list):
