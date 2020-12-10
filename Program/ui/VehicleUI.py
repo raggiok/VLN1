@@ -1,4 +1,3 @@
-from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
 from models.Vehicle import Vehicle
 
@@ -315,7 +314,7 @@ class VehicleUI:
                 for result in vehicle:
                     print(result)  
             elif command == "8":
-               return UIMain()
+               return
             else:
                 print("Invalid command, try again")
     
@@ -334,6 +333,7 @@ class VehicleUI:
             print(self.logic.vehicle_check_in(vehicle))
         elif choice == '3':
             return
+            
     #Menu header
     def ui_menu_header(self, menu_name):
         print("\n" + "-"*20 + f"{menu_name}" + "-"*20)

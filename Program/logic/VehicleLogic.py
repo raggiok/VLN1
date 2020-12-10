@@ -12,7 +12,7 @@ class VehicleLogic():
 
     def edit_vehicle(self, vehicle_instance):
         '''Edits a vehicle in the database'''
-        return self.data.edit_vehicle(vehicle_instance)
+        return self.data.update_vehicle(vehicle_instance)
 
     
     ##### part of search function###

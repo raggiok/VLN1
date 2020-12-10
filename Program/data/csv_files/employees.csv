@@ -1,5 +1,5 @@
 unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,email,state
-1,Ragnar,d,d,d,d,d,d,d,d,d,Active
-2,d,d,d,d,d,d,d,d,d,d,Active
-3,Rabbbbi,asdfasd,asdfas,sadfas,sadfasf,asdfasdf,sdaf,4444444,555555555,22222222,Active
-4,adam,22,cashier,sa,sa,sa,s,a,as,sa,Active
+1,Ragnar,d,d,d,d,d,d,d,d,d,ACTIVE
+2,d,d,d,d,d,d,d,d,d,d,ACTIVE
+3,Rabbbbi,asdfasd,asdfas,sadfas,sadfasf,asdfasdf,sdaf,4444444,555555555,22222222,ACTIVE
+4,adam,22,cashier,sa,sa,sa,s,a,as,sa,ACTIVE

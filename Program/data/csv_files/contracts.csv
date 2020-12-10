@@ -1,4 +1,5 @@
 unique_id,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,employee,total_price,contract_creation_date,checkout_date,checkin_date,checkin_location,state
+<<<<<<< HEAD
 1,Bobby,101010-1010,40,10.12.20,11.12.20,Iceland,Ragnar,5000,09.12.20,D,D,D,Inactive
 2,Þór,181818-1818,22,10.12.20,11.12.20,Greenland,Ragnar,9999,09.12.20,D,D,D,Inactive
 3,Bobby,151515-0120,2,10.12.20,11.12.20,Iceland,Ragnar,2500,09.12.20,D,D,D,Active
@@ -6,3 +7,10 @@ unique_id,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,em
 5,Ragnar,12312,51,10.12.20,11.12.20,d,Ragnar,200,09.12.20,,,,
 6,Ragnar,5456,51,13.12.20,14.12.20,p,Bubbi,7000,09.12.20,A,B,,
 7,Baldur,sadfsad,13,15.12.20,16.12.20,u,Ragnar,0,09.12.20,15.12.20,17.12.20,Iceland,Invoiced
+=======
+1,Bobby,101010-1010,40,10.12.20,11.12.20,Iceland,Ragnar,5000,09.12.20,D,D,D,Active
+2,Þór,181818-1818,22,10.12.20,11.12.20,Greenland,Ragnar,9999,09.12.20,D,D,D,Active
+3,Bobby,101010-1010,40,10.12.20,11.12.20,Iceland,Ragnar,5000,09.12.20,D,D,D,Active
+4,Þór,181818-1818,22,10.12.20,11.12.20,Greenland,Ragnar,9999,09.12.20,D,D,D,Active
+5,David,151515-1515,32,10.12.20,11.12.20,location,Ragnar,2500,10.12.20,A,B,C,ACTIVE
+>>>>>>> 2c612265a6aad36d663c170db2d290e34c6d9371

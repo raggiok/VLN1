@@ -84,7 +84,7 @@ class dataAPI():
         return self.data.edit_data(instance, instance_type="vehicle")
     
     def delete_vehicle(self, instance):
-        '''Changes state of Vehicle from "Active" to "Inactive"'''
+        '''Changes state of Vehicle from "ACTIVE" to "DELETED"'''
         return self.data.delete_data(instance, instance_type="vehicle")
 
     def get_vehicles(self):

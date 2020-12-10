@@ -150,8 +150,8 @@ class Data:
         delete_row = {}
         instance_values = []
         for item in instance.__dict__.values(): #unpack instance values
-            if item == "Active":
-                item = "Inactive"
+            if item == "ACTIVE":
+                item = "DELETED"
             instance_values.append(item)
 
         for i in range(0, len(instance_fieldnames)): #add values to correct dict key
@@ -188,34 +188,46 @@ class Data:
                     instance_attribute_list.append(row[f"{value}"])
                 if instance_type == "contract":
                     contract = Contract(*instance_attribute_list)
-                    if contract.state == "Inactive":
+                    if contract.state == "DELETED":
                         continue
                     else:
                         instance_list.append(contract)
                 elif instance_type == "customer":
                     customer = Customer(*instance_attribute_list)
-                    if customer.state == "Inactive":
+                    if customer.state == "DELETED":
                         continue
                     else:
                         instance_list.append(customer)
                 elif instance_type == "destination":
                     destination = Destination(*instance_attribute_list)
-                    if destination.state == "Inactive":
+                    if destination.state == "DELETED":
                         continue
                     else:
                         instance_list.append(destination)
                 elif instance_type == "employee":
                     employee = Employee(*instance_attribute_list)
-                    if employee.state == "Inactive":
+                    if employee.state == "DELETED":
                         continue
                     else:
                         instance_list.append(employee)
                 elif instance_type == "vehicle":
                     vehicle = Vehicle(*instance_attribute_list)
-                    if vehicle.state == "Inactive":
+                    if vehicle.state == "DELETED":
                         continue
                     else:
                         instance_list.append(vehicle)
+                elif instance_type == "invoice":
+                    invoice = Invoice(*instance_attribute_list)
+                    if invoice.state == "DELETED":
+                        continue
+                    else:
+                        instance_list.append(vehicle)
+                elif instance_type == "rate":
+                    rate = Rate(*instance_attribute_list)
+                    if rate.state == "DELETED":
+                        continue
+                    else:
+                        instance_list.append(rate)
 
                 instance_attribute_list.clear()
 

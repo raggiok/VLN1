@@ -71,7 +71,7 @@ class VehicleData:
                 writer.writeheader()
                 for row in vehicle_list:
                     if row['unique_id'] == vehicle.unique_id:
-                        row = {"unique_id": vehicle.unique_id, "manufacturer": vehicle.manufacturer, "model": vehicle.model, "vehicle_type": vehicle.vehicle_type, "status": vehicle.status, "man_year": vehicle.man_year, "color": vehicle.color, "license_type": vehicle.license_type, "location": vehicle.location, "state": "Inactive"}
+                        row = {"unique_id": vehicle.unique_id, "manufacturer": vehicle.manufacturer, "model": vehicle.model, "vehicle_type": vehicle.vehicle_type, "status": vehicle.status, "man_year": vehicle.man_year, "color": vehicle.color, "license_type": vehicle.license_type, "location": vehicle.location, "state": "DELETED"}
                         confirmation = True
                     writer.writerow(row)
         return confirmation #Returns True if successfully deleted, otherwise False

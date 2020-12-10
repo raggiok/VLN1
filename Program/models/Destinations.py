@@ -1,5 +1,5 @@
 class Destination:
-    def __init__(self, unique_id, country, city, airport, phone_number, opening_time, closing_time, main_contact, state="Active"):
+    def __init__(self, unique_id, country, city, airport, phone_number, opening_time, closing_time, main_contact, state="ACTIVE"):
         self.unique_id = unique_id
         self.country = country
         self.city = city

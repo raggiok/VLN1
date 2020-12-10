@@ -1,5 +1,4 @@
 from logic.logicAPI import LogicAPI
-from ui.UIMain import UIMain
 from models.contracts import Contract
 import datetime
 
@@ -31,12 +30,12 @@ class ContractUI:
 
     def print_table_header(self):
         print()
-        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<29}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Contract Creation Date":<20}{"Checkout Date":<20}')
-        print("="*200)
+        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<29}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Creation Date":<20}{"Check-out Date":<20}{"Check-in Date":<20}{"Check-in Location":<20}')
+        print("="*250)
 
     #Print Contract Table Footer
     def print_table_footer(self):
-        print("-"*200)
+        print("-"*250)
         print()
 
     def validate(self,date_text):
@@ -49,7 +48,7 @@ class ContractUI:
 
     #Prints UI for new contract
     def new_contract(self):
-        contractFieldnames = ["Customer name", "Customer SSN","Vehicle ID", "Start date of rental period (dd.mm.yy)","End date of rental period (dd.mm.yy)","Country","Employee name","Total price"] # + "Contract Creation Date"
+        contractFieldnames = ["Customer name", "Customer Social Security No.","Vehicle ID", "Start date of rental period (dd.mm.yy)","End date of rental period (dd.mm.yy)","Country","Employee name","Total price"] # + "Contract Creation Date"
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new contract:" )
@@ -100,31 +99,38 @@ class ContractUI:
         while True:
             self.ui_menu_header("Contract Menu")
             print("\nPlease select a an option:")
-            self.ui_numbered_menu(["Create contract", "Search contracts", "View all contracts", "Edit contract", "Delete contract", "Main menu"])
+            self.ui_numbered_menu(["Create contract", "Search contracts", "View all contracts", "Edit contract", "Cancel contract", "Delete contract", "Main menu"])
             self.ui_menu_footer()
             command = self.print_select_option()
-            if command == "1":
+            if command == "1":  #1. Create contract
                 contract_param = self.new_contract()
                 print(self.logic.create_new_contract(contract_param))
-            elif command == "2":
+            elif command == "2": # 2. Search contracts
                 self.contract_search_menu()
-            elif command == "3":
+            elif command == "3": # 3. View all contracts
                 self.print_table_header()
                 for item in self.logic.all_contracts():
                     print(item)
                 self.print_table_footer()
-            elif command == "4":
+            elif command == "4": # 4. Edit contracts
+                self.ui_all_contracts()
                 edited_contract = self.ui_edit_contract()
                 self.print_table_header()
                 print(edited_contract)
                 self.print_table_footer()
-            elif command == "5":
+            elif command == "5": # 5. Cancel contract
+                self.ui_all_contracts()
+                edited_contract = self.ui_edit_contract()
+                self.print_table_header()
+                print(edited_contract)
+                self.print_table_footer()
+            elif command == "6": # 6. Delete contract
                 contract_id = input(">> Enter contract ID to delete: ")
                 result_list = self.logic.delete_contract(contract_id)
                 for item in result_list:
                     print(item)
-            elif command == "6":
-                return UIMain() 
+            elif command == "7":
+                return
             else:
                 print("Invalid command, try again")
 
@@ -228,107 +234,11 @@ class ContractUI:
     def value_input(self):
         return input("Enter new value: ")
 
-
-#  def all_contracts(self):
-#         return self.contract.all_contracts()
-
-#     def search_contracts_by_name(self, name):
-#         return self.contract.search_contracts_by_name(name)
-
-#     def create_new_contract(self, a_list):
-#         self.contract.create_contract(a_list)
-
-#     def search_contracts_by_customer(self, string):
-#         return self.contract.search_contracts_by_customer(string)
-    
-#     def search_contract_by_vin(self, string):
-#         return self.contract.search_contracts_by_vin(string)
-    
-#     def search_contracts_by_id(self, string):
-#         return self.contract.search_contracts_by_id(string)
-
-#     def delete_contract(self, string):
-#         return self.contract.delete_contract(string)
-
-
-
-
-
-
-
-
-#     def contract_ui_loop(self):
-#         while True:
-#             print("""\n---------------Contracts---------------\n
-# \t1. Create new contract.\n\t2. Search contracts.\n\t3. Print all contracts.\n\t4. View contract.\n\t5. Edit contract.\n\t6. Delete contract.\n\t7. Main menu.""")
-#             choice = input("\nEnter option: ")
-#             if choice == "5":
-#                 break
-#             elif choice == "1":
-#                 self.create_new_contract()
-#             elif choice == "2":
-#                 self.search_menu()
-#             elif choice == "3":
-#                 self.print_all_contracts()
-#             elif choice == "4":
-#                 self.view_contract_by_id()
-#             elif choice == "5":
-#                 pass
-#             elif choice == "6":
-#                 self.delete_contract()
-                
-#     def create_new_contract(self):
-#         answer_list = []
-#         question_list = ["Enter customers name: ", "Enter VIN number: ", "Enter start date(dd.mm.yy): ", "Enter end date(dd.mm.yy):", "Enter country: "]
-#         print("Enter 'q' to cancel at any time")
-#         for element in question_list:
-#             answer = input(element)
-#             if answer.lower() == 'q':
-#                 break
-#             answer_list.append(answer)
-#         if len(answer_list) == 5:
-#             self.logic.create_new_contract(answer_list)
-#         else:
-#             return
-
-#     def search_contracts(self):
-#         choice = input("")
-
-#     def search_menu(self):                           #Gera snyrtilegra / Bæta vid no result
-#         while True:
-#             print("Search by: \n1.Customer name.\n2.VIN number\nType 'q' to return to main menu.")
-#             choice = input("Enter option: ")
-#             if choice.lower == 'q':
-#                 return
-#             elif choice == '1':
-#                 name = input("Enter name to search for: ")
-#                 result_list = self.logic.search_contracts_by_customer(name)
-#                 if result_list:
-#                     for result in result_list:
-#                         print(result)
-#             elif choice == '2':
-#                 vin = input("Enter VIN to search for: ")
-#                 result_list = self.logic.search_contracts_by_vin(vin)
-#                 if result_list:
-#                     for result in result_list:
-#                         print(result)
-    
-#     def print_all_contracts(self):
-#         for contract in (self.logic.all_contracts()):
-#             print(contract)
-
-#     def view_contract_by_id(self):
-#         contract_id = input("Enter contract identification number: ")
-#         contract = self.logic.search_contracts_by_id(contract_id)
-#         if contract:
-#             print(contract)
-#         else:
-#             print("Contract not found.")
-
-#     def delete_contract(self):
-#         contract_id = str(input("Enter the ID number of the contract you want to delete :"))
-#         confirmation = self.logic.delete_contract(contract_id)
-#         if confirmation == True:
-#             print("Contract successfully deleted.")
-#         else:
-#             print("Contract not found.")
+    #Prints all contracts
+    def ui_all_contracts(self):
+        contracts  = self.logic.all_contracts()
+        print("\nAll Contracts:")
+        self.print_table_header()
+        for contract in contracts:
+            print(contract)
+        self.print_table_footer()
