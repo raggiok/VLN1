@@ -4,16 +4,16 @@ from ui.CustomerUI import CustomerUI
 from ui.ContractsUI import ContractUI
 from ui.DestinationUI import destinationUI
 from ui.EmployeeUI import EmployeeUI
+from ui.ReportsUI import ReportUI
 from logic.logicAPI import LogicAPI
 
 class UIMain:
-    
+    promt_login = True
+
     def __init__(self):
         self.logic = LogicAPI()
         self.login()
         
-    
-
         #Menu header
     def ui_menu_header(self, menu_name):
         print(" _   _       _   _            _      _ _                  ")
@@ -31,13 +31,16 @@ class UIMain:
 
 
     def login(self):
-        self.ui_menu_header("Login")
-        while True:
-            print("\n###### Please Login ######\n")
-            employee_id = input(">> Employee ID: ")
-            password = input(">> Password: ")
-            employee_role = self.logic.check_password(employee_id, password)
-
+        self.ui_menu_header("Please Login")
+        while self.promt_login == True:
+            print('\nPress "q" to exit')
+            print()
+            # employee_id = input(">> Employee ID: ")
+            # if employee_id == "q":
+            #     break
+            # password = input(">> Password: ")
+            # employee_role = self.logic.check_password(employee_id, password)
+            employee_role = "ADMIN"
             if employee_role == None:
                 print("\n*** INVALID PASSWORD AND/OR USERNAME ***\n")
             else:
@@ -63,13 +66,14 @@ class UIMain:
             elif command == "3":
                 self.contracts = ContractUI()
             elif command == "4":
-                pass # Vantar reports
+                self.report = ReportUI()
             elif command == "5":
                 self.destination = destinationUI()
             elif command == "6":            
                 self.employee = EmployeeUI()
             elif command == "q":
-                break
+                self.promt_login = False
+                return
             else:
                 print("Invalid command, try again")
     
@@ -85,7 +89,8 @@ class UIMain:
             elif command == "2":
                 self.customer = CustomerUI()
             elif command == "q":
-                break
+                self.promt_login = False
+                return
             else:
                 print("Invalid command, try again")
 
@@ -99,9 +104,10 @@ class UIMain:
             if command == "1":
                 self.contracts = ContractUI()
             elif command == "2":
-                pass # Vantar reports
+                self.report = ReportUI()
             elif command == "q":
-                break
+                self.promt_login = False
+                return
             else:
                 print("Invalid command, try again")
 

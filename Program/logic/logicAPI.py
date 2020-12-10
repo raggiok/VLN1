@@ -298,17 +298,21 @@ class LogicAPI:
     def available_country(self):
         return self.employee.available_the_country()
 
-<<<<<<< HEAD
+
     def generate_password(self):
-        return self.employee.autogenerate_password()
+            return self.employee.autogenerate_password()
 
     def check_password(self,user_id, password):
         return self.employee.check_employee_password(user_id, password)
 
+
+
+
+
     
-=======
+
+    
     ###Invoice###
 
     def create_invoice(self, contract_id):
         return self.contract.create_invoice(contract_id)
->>>>>>> da551498953c5ce9a73b7c159c2ecce32bda4fa7

@@ -160,7 +160,7 @@ class ContractUI:
                 for item in a_list:
                     print(item)
             elif command == "4":
-                return ContractUI() 
+                return 
             else:
                 print("Invalid command, try again")
 

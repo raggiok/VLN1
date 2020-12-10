@@ -4,6 +4,7 @@ class ReportUI:
 
     def __init__(self):
         self.logic = LogicAPI()
+        self.report = self.print_report_menu()
 
     def print_report_menu(self):
         self.ui_menu_header('Report Menu')
@@ -34,6 +35,3 @@ class ReportUI:
 
         contractFieldnames = ["Customer name","Vehicle ID", "Start date of rental period (dd.mm.yy)","End date of rental period (dd.mm.yy)","Country","Employee Name","Total price"] # + "Contract Creation Date"
 
-
-
-ReportUI().print_report_menu()
