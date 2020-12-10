@@ -334,6 +334,7 @@ class VehicleUI:
             print(self.logic.vehicle_check_in(vehicle))
         elif choice == '3':
             return
+            
     #Menu header
     def ui_menu_header(self, menu_name):
         print("\n" + "-"*20 + f"{menu_name}" + "-"*20)

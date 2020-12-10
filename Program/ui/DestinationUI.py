@@ -1,10 +1,12 @@
 from ui.UIMain import UIMain
 from logic.logicAPI import LogicAPI
 from models.Destinations import Destination
+from ui.GeneralUI import GeneralUI
 
 
 class destinationUI:
     def __init__(self):
+        self.general = GeneralUI()
         self.logicAPI = LogicAPI()
         self.destination_menu()
         # self.ui_print_type()
@@ -64,7 +66,7 @@ class destinationUI:
     #Prints the destination Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
-        self.ui_menu_header("Edit destination")
+        self.general.ui_menu_header("Edit destination")
         print("\nSelect field to edit:")
         print("1. Country")
         print("2. City")
@@ -75,7 +77,7 @@ class destinationUI:
         print("7. Main Contact")
         print("8. State")
         print("9. Exit")
-        self.ui_menu_footer()
+        self.general.ui_menu_footer()
 
     #Print Destination Table Header
     def ui_destination_table_header(self):
@@ -248,10 +250,10 @@ class destinationUI:
 
     #Prints the search menu for destinations
     def ui_search_menu(self):
-        self.ui_menu_header("Destination Search")
+        self.general.ui_menu_header("Destination Search")
         print("\nPlease select a search option:")
         self.UI_numbered_menu(["Country","City", "Airport", "Phone Number", "Opening Time","Closing Time","Main Contact", "Exit"])
-        self.ui_menu_footer
+        self.general.ui_menu_footer()
         selection = input("\n>> Select option: ")
         return selection
 
@@ -264,9 +266,9 @@ class destinationUI:
     #Prints the destination Main Menu
     def destination_menu(self):
         while True:
-            self.ui_menu_header("Destination Menu")
+            self.general.ui_menu_header("Destination Menu")
             print("\nSelect an option...\n1. Create new destination \n2. Search destinations \n3. View all destinations \n4. Edit destination \n5. Delete destination \n6. Main Menu")
-            self.ui_menu_footer()
+            self.general.ui_menu_footer()
             command = input(">> Select option: ")
             command = command.lower()
             if command == "1":
@@ -289,7 +291,7 @@ class destinationUI:
                 elif selection == "7":
                     self.ui_print_main_contact()
                 elif selection == "8":
-                    self.ui_destination_menu()    
+                    return self.destination_menu()    
             elif command == "3":
                 self.ui_all_destinations()
             elif command == "4":
@@ -308,15 +310,15 @@ class destinationUI:
 
 
         #Menu header
-    def ui_menu_header(self, menu_name):
-        print(" _   _       _   _            _      _ _                  ")
-        print("| \ | |     | \ | |     /\   (_)    | (_)                 ")
-        print("|  \| | __ _|  \| |    /  \   _ _ __| |_ _ __   ___  ___  ")
-        print("| . ` |/ _` | . ` |   / /\ \ | | '__| | | '_ \ / _ \/ __| ")
-        print("| |\  | (_| | |\  |  / ____ \| | |  | | | | | |  __/\__ \ ")
-        print("|_| \_|\__,_|_| \_| /_/    \_\_|_|  |_|_|_| |_|\___||___/ ")
-        print("-"*20 + f"{menu_name}" + "-"*20)
+    # def ui_menu_header(self, menu_name):
+    #     print(" _   _       _   _            _      _ _                  ")
+    #     print("| \ | |     | \ | |     /\   (_)    | (_)                 ")
+    #     print("|  \| | __ _|  \| |    /  \   _ _ __| |_ _ __   ___  ___  ")
+    #     print("| . ` |/ _` | . ` |   / /\ \ | | '__| | | '_ \ / _ \/ __| ")
+    #     print("| |\  | (_| | |\  |  / ____ \| | |  | | | | | |  __/\__ \ ")
+    #     print("|_| \_|\__,_|_| \_| /_/    \_\_|_|  |_|_|_| |_|\___||___/ ")
+    #     print("-"*20 + f"{menu_name}" + "-"*20)
 
     #Menu footer
-    def ui_menu_footer(self):
-        print("-"*50)
+    # def ui_menu_footer(self):
+    #     print("-"*50)

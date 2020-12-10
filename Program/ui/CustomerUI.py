@@ -73,7 +73,7 @@ class CustomerUI:
     def customer_menu(self):
         while True:
             self.ui_menu_header("Customer Menu")
-            print("\nSelect an option...\n1. Create new customer \n2. Search customer \n3. View all customers \n4. Edit customer information \n5. Delete customer information \n6. Main menu\n ")   
+            print("\nSelect an option...\n1. Create new customer \n2. Search customer \n3. View all customers \n4. Edit customer \n5. Delete customer \n6. Main menu ")   
             self.ui_menu_footer()      
             command = input(">> Select option: ").lower()
             command = command.lower()
@@ -83,7 +83,7 @@ class CustomerUI:
             elif command == "2":
                 choice = self.ui_search_menu()
             elif command == "3":
-                return self.ui_all_customer()
+                self.ui_all_customer()
             elif command == "4": 
                 new_customer = self.ui_edit_customer()
                 self.logicAPI.update_customer(new_customer)
@@ -121,7 +121,7 @@ class CustomerUI:
         customer_ID = input(">> Please enter SSN: ")
         customer = self.logicAPI.customer_by_ssn(customer_ID)
         print("\nCustomer by SSN: " + customer_ID)
-        self.ui.ui_customer_table_header
+        self.ui_customer_table_header()
         print(customer)
         self.ui_customer_table_footer
         return customer
@@ -132,7 +132,7 @@ class CustomerUI:
         customer_name = input(">> Please enter name of customer: ").lower()
         customer = self.logicAPI.customer_by_name(customer_name)
         print("\nCustomer by name: " + customer_name)
-        self.ui.ui_customer_table_header
+        self.ui_customer_table_header()
         print(customer)
         self.ui_customer_table_footer
         return customer    
@@ -143,7 +143,7 @@ class CustomerUI:
         customer_area = input(">> Please enter area of customer: ").lower()
         customer = self.logicAPI.customer_by_area(customer_area)
         print("\nCustomer by area: " + customer_area)
-        self.ui.ui_customer_table_header
+        self.ui_customer_table_header()
         print(customer)
         self.ui_customer_table_footer
         return customer   
@@ -156,7 +156,7 @@ class CustomerUI:
     #unique_id,name,ssn,address,zip_code,city,country,phone,email,state
     #Creates the Edit menu layout and returns the customer Instance after edit
     def ui_edit_customer(self):
-        customer = self.ui_by_ID() #prints specific customer
+        customer = self.ui_by_id() #prints specific customer
         selection = ""
         while selection != "9":
             self.ui_print_edit_menu() 

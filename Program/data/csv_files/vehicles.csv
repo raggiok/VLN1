@@ -46,5 +46,5 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 47,Bla,bubba,týpa,OK,1985,REd,Drivers,Reykajvik,B,DELETED
 49,Bubbi,asdf,adfasdf,OK,2020,Red,d,Iceland,A,ACTIVE
 51,BMW,Z,Car,OK,2020,BLACK,Drivers License,RVK,A,ACTIVE
-53,BMW,1,1,1,1,1,1,1,A,ACTIVE
+53,BMW,1,1,1,1,,1,1,A,ACTIVE
 55,BMW,BLACK,CAR,OK,2021,BLACK,DRIVERS,RVK,A,ACTIVE
