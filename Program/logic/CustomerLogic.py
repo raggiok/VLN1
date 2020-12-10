@@ -12,40 +12,14 @@ class CustomerLogic:
     def all_customer(self):
         return self.data.get_customers()
 
-    # search by name 
-    def customer_by_name(self,name):
-        custs = self.data.get_customers()
-        retList = []
-        for cust in custs:
-            if cust.name.lower() == name.lower():
-                retList.append(cust)
-        return self.no_match_found(retList)
-
-    #search by ID
-    def customer_by_ssn(self,ssn):
-        custs = self.data.get_customers()
-        retList = []
-        for cust in custs:
-            if cust.ssn == ssn:
-                retList.append(cust)
-        return self.no_match_found(retList)
-
-    #search by area/land
-    def customer_by_area(self,country):
-        custs = self.data.get_customers()
-        retList = []
-        for cust in custs:
-            if cust.country.lower() == country.lower():
-                retList.append(cust)
-        return self.no_match_found(retList)
-
     #delete customer information
-    def delete_customer(self, ssn):
-        deleteList = self.customer_by_ssn(ssn)
-        if deleteList[0] != "No match found.":
-            self.data.delete_customer(deleteList[0])
+    def delete_customer(self, string):
+        temp_list = self.search_customer_by_id(string)
+        if temp_list[0] != "*** No match found ***":
+            self.data.delete_customer(temp_list[0])
+            return ["\n*** Customer successfully deleted ***\n"]
         else:
-            return deleteList
+            return temp_list
 
     #Edit customer
     def edit_customer(self, edited_instance):
@@ -57,3 +31,112 @@ class CustomerLogic:
         else:
             result_list.append("No match found.")
             return result_list
+
+    
+#name	ssn	role	address	zip_code	city	country	
+###serach function ###
+    def available_the_name(self):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.name not in retList:
+                retList.append(customer.name)
+        return retList     
+
+    def available_the_ssn(self):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.ssn not in retList:
+                retList.append(customer.ssn)
+        return retList    
+
+
+    def available_the_address(self):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.address not in retList:
+                retList.append(customer.address)
+        return retList 
+
+    def available_the_zip_code(self):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.zip_code not in retList:
+                retList.append(customer.zip_code)
+        return retList    
+
+    def available_the_city(self):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.city not in retList:
+                retList.append(customer.city)
+        return retList     
+
+    def available_the_country(self):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.country not in retList:
+                retList.append(customer.country)
+        return retList 
+
+    ###
+    def search_customer_by_id(self,unique_id):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.unique_id == unique_id:
+                retList.append(customer)
+        return self.no_match_found(retList)
+
+    def search_by_name(self,name):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.name.lower() == name.lower():
+                retList.append(customer)
+        return self.no_match_found(retList)
+
+    def search_by_id(self,ssn):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.ssn.lower() == ssn.lower():
+                retList.append(customer)
+        return self.no_match_found(retList)
+
+    def search_by_address(self,address):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.address.lower() == address.lower():
+                retList.append(customer)
+        return self.no_match_found(retList)
+
+    def search_by_country(self,country):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.country.lower() == country.lower():
+                retList.append(customer)
+        return self.no_match_found(retList)
+
+    def search_by_city(self,city):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.city.lower() == city.lower():
+                retList.append(customer)
+        return self.no_match_found(retList)
+
+    def search_by_zip_code(self,zip_code):
+        customer = self.data.get_customers()
+        retList = []
+        for customer in customer:
+            if customer.zip_code.lower() == zip_code.lower():
+                retList.append(customer)
+        return self.no_match_found(retList)
