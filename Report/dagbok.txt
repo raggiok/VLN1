@@ -78,7 +78,7 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Næstu verkefni eru að skoða hvernig hægt er að eyða úr grunni, uppfæra bíl og svo bæta við útlána og skilavirkni
 #Callista:
 -Working on customer data as occured to be file not found 
--Working on UI for customer
+-Working on UI data for customer
 #Fannar:
 - Vann í UI Data og logic layerum fyrir contract.
 #Franz:
@@ -150,6 +150,8 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Þeir virka með data layerinum (þ.e. create, edit, delete og get all info)
 - Á morgun fer ég vonandi í að hjálpa Fannari með logic layer
 #Callista:
+- start working on employee UI draft 
+- creating menu options
 #Fannar:
 #Franz:
 -áframhaldandi vinna í UI
@@ -162,6 +164,8 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 - Lagaði Create contract fallið svo að það tekur inn réttar dagsetningar (ekki hægt að leigja tæki fyrir daginn í dag og ekki hægt að skrifa end date fyrir start date)
 - Svo kemur sjálfkrafa skráning á deginum þegar samningur er stofnaður
 # Callista:
+- continue with employee UI print options 
+- updating customer UI 
 # Fannar:
 # Franz:
 -Bæta við leitar gildum í UI uppfærði í UI,data og logic
