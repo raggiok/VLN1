@@ -125,7 +125,7 @@ class LogicAPI:
 
       #search function
     def search_customer_by_unique(self,unique_id):
-        return self.employee.search_customer_by_id(unique_id)
+        return self.customer.search_customer_by_id(unique_id)
     
     def search_customers_by_name(self, name):
         return self.customer.search_by_name(name)
