@@ -30,12 +30,12 @@ class ContractUI:
 
     def print_table_header(self):
         print()
-        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<29}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Creation Date":<20}{"Check-out Date":<20}{"Check-in Date":<20}{"Check-in Location":<20}')
-        print("="*250)
+        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<29}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Creation Date":<20}{"Check-out Date":<20}{"Check-in Date":<20}{"Check-in Location":<20}{"State":<20}')
+        print("="*260)
 
     #Print Contract Table Footer
     def print_table_footer(self):
-        print("-"*250)
+        print("-"*260)
         print()
 
     def validate(self,date_text):
@@ -120,10 +120,7 @@ class ContractUI:
                 self.print_table_footer()
             elif command == "5": # 5. Cancel contract
                 self.ui_all_contracts()
-                edited_contract = self.ui_edit_contract()
-                self.print_table_header()
-                print(edited_contract)
-                self.print_table_footer()
+                self.canceled_contract()
             elif command == "6": # 6. Delete contract
                 contract_id = input(">> Enter contract ID to delete: ")
                 result_list = self.logic.delete_contract(contract_id)
@@ -166,7 +163,16 @@ class ContractUI:
                 return ContractUI() 
             else:
                 print("Invalid command, try again")
- 
+
+    def canceled_contract(self):
+        contract_ID = input(">> Enter contract ID: ")
+        contracts  = self.logic.search_contracts_by_id(contract_ID)
+        for contract in contracts:
+            contract.state = "CANCELED"
+            self.logic.edit_contract(contract)
+
+
+
     #Creates the Edit menu layout and returns the Contract Instance after edit
     def ui_edit_contract(self):
         contracts = self.ui_single_contract_ID() #returns a list of contracts, in this case only one contract

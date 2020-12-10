@@ -55,6 +55,10 @@ class ContractLogic:
                     return False
         return True
 
+    def update_contract(self, contract_instance):
+            '''Edits a vehicle in the database'''
+            return self.data.update_contract(contract_instance)
+
 
     ###def check_license(self, new_contract):      LAGA SÍÐAR
         #if logic.logicAPI.LogicAPI.search_vehicle_by_ID(logic.logicAPI.LogicAPI(),new_contract.vehicle_unique_id)[0].license_type not in logic.logicAPI.LogicAPI.customer_by_name(logic.logicAPI.LogicAPI(),new_contract.customer)[0].license:

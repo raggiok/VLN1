@@ -68,7 +68,7 @@ class CustomerUI:
         print("1. Name")
         print("2. Social Security No.")
         print("3. Address")
-        print("4. Zip_code")
+        print("4. Zip code")
         print("5. City")
         print("6. Country")
         print("7. Phone")
@@ -79,7 +79,7 @@ class CustomerUI:
     #name,ssn,address,zip_code,city,country,phone,email,state
     #Print Customer Table Header
     def ui_customer_table_header(self):
-        print(f"{'Unique_id':<20}{'Name':<20}{'SSN':<20}{'Address':<20}{'Zip_code':<20}{'City':<20}{'Country':<20}{'Phone':<20}{'Email':<20}")
+        print(f"{'Customer ID':<20}{'Name':<20}{'SSN':<20}{'Address':<20}{'Zip code':<20}{'City':<20}{'Country':<20}{'Phone':<20}{'Email':<20}")
         print("-"*200)
     
     #Print Customer Table Footer
