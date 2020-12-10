@@ -5,9 +5,9 @@ class VehicleLogic():
     def __init__(self):
         self.data = dataAPI()
 
-    def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location):
+    def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location,rate):
         '''Registers a vehicle in vehicles.csv and returns True if successful and False if it't not registered'''
-        vehicle = Vehicle(self.data.new_vehicle_id(),manufacturer, model, vehicle_type, status, manufacturing_year, color, license_type,location)
+        vehicle = Vehicle(self.data.new_vehicle_id(),manufacturer, model, vehicle_type, status, manufacturing_year, color, license_type,location,rate)
         return self.data.create_vehicle(vehicle)
 
     def edit_vehicle(self, vehicle_instance):

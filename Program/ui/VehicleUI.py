@@ -1,17 +1,17 @@
 from ui.UIMain import UIMain
-from logic.VehicleLogic import VehicleLogic
+from logic.logicAPI import LogicAPI
 from models.Vehicle import Vehicle
 
 
 class VehicleUI:
     def __init__(self):
-        self.logic = VehicleLogic()
+        self.logic = LogicAPI()
         self.vehicle_menu()
         # self.ui_print_type()
 
     #Prints UI for new vehicle
     def ui_new_vehicle(self):
-        vehicleFieldnames = ["Manufacturer","Model","Vehicle type","Status","Manufacturing year","Color","License Requirement","Location"]
+        vehicleFieldnames = ["Manufacturer","Model","Vehicle type","Status","Manufacturing year","Color","License Requirement","Location", "Rate"]
         inputList = []
         print("\nPress 'q' and hit 'enter' to cancel at any time.")
         print("\nPlease enter the following details to create a new vehicle:" )
@@ -51,6 +51,8 @@ class VehicleUI:
             elif selection == "8":
                 vehicle.location = self.value_input()
             elif selection == "9":
+                vehicle.rate = self.value_input()
+            elif selection == "q":
                 return vehicle
 
     #Get input for edit menu
@@ -72,13 +74,14 @@ class VehicleUI:
         print("6. Color")
         print("7. License Requirement")
         print("8. Location")
-        print("9. Exit")
+        print("9. Rate")
+        print("q. Exit")
         self.ui_menu_footer()
         
 
     #Print Vehicle Table Header
     def ui_vehicle_table_header(self):
-        print(f"{'Unique ID':<20}{'Manufacturer':<20}{'Model':<20}{'Vehicle type':<20}{'Status':<20}{'Manufac. year':<20}{'Color':<20}{'License Req.':<20}{'Location':<20}")
+        print(f"{'Unique ID':<20}{'Manufacturer':<20}{'Model':<20}{'Vehicle type':<20}{'Status':<20}{'Manufac. year':<20}{'Color':<20}{'License Req.':<20}{'Location':<20}{'Rate':<20}")
         print("-"*200)
     
     #Print Vehicle Table Footer
@@ -126,7 +129,7 @@ class VehicleUI:
 
     def ui_vehicle_type_available_print(self):
         print("\nAvailable Options:")
-        vehicles = self.logic.search_vehicle_by_vehicle_type()
+        vehicles = self.ui_vehicle_type_available_print()
         for vehicle in vehicles:
             print("\t" + vehicle)
         print()
@@ -191,7 +194,7 @@ class VehicleUI:
     def ui_print_vehicle_type(self):
         self.ui_vehicle_type_available_print()
         vehicle_type = input(">> Please enter vehicle type: ")
-        results  = self.logic.search_vehicle_by_type(vehicle_type)
+        results  = self.logic.search_vehicle_by_vehicle_type(vehicle_type)
         print("\nAll vehicles by type " + vehicle_type + ": ")
         self.ui_vehicle_table_header()
         for vehicle in results:
