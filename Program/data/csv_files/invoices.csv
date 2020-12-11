@@ -1,8 +1,4 @@
 unique_id,contract_unique_id,customer_unique_id,vehicle_unique_id,rate,total_days,total_price,late_fee,invoice_type,state
-<<<<<<< HEAD
-32,5,151515-1515,41,50,5,290,240,Debit,PAYED
-=======
 1,5,151515-1515,41,50,5,290,240,Debit,ACTIVE
 
 
->>>>>>> 5e3d7dd3ea1270040a7c49ccddd6fdfa3b4f3472
