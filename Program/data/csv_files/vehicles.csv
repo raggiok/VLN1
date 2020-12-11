@@ -1,55 +1,1001 @@
 unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,rate,state
-1,TAILG,Free Fly II,Medium road,OK,2018,White,Drivers license,Kulusuk,A,ACTIVE
-2,TAILG,Free Fly II,Medium road,OK,2019,Orange,Drivers license,Kulusuk,A,ACTIVE
-3,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen,A,ACTIVE
-4,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn,B,DELETED
-5,Kayman Kayaks,Crazy HV,Light water,OK,2021,Yellow,None,Nuuk,A,ACTIVE
-6,Cani-Fit,Fat Max,Light off-road,OK,2019,Black,None,Nuuk,A,ACTIVE
-7,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,A,ACTIVE
-8,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,A,ACTIVE
-9,Cani-Fit,Fat Max,Light off-road,OK,2020,Black,None,Tingwall,A,ACTIVE
-10,Yedoo,Trexx,Light road,OK,2020,Orange,None,Kulusuk,A,ACTIVE
-11,Yedoo,Trexx,Light road,OK,2020,Orange,None,Thorshavn,A,ACTIVE
-12,Yedoo,Trexx,Light road,OK,2020,Orange,None,Tingwall,A,ACTIVE
-13,Yedoo,Trexx,Light road,OK,2020,Orange,None,Longyearbyen,A,ACTIVE
-14,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk,A,ACTIVE
-15,Yedoo,Trexx,Light road,OK,2020,Orange,None,Nuuk,A,ACTIVE
-16,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Tingwall,A,ACTIVE
-17,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Longyearbyen,A,ACTIVE
-18,WildChild,Fatboy Mini BMX,Light road,OK,2020,Red,None,Kulusuk,A,ACTIVE
-19,Forward,FWD-ZK125H,Medium road,OK,2019,Blue,Drivers license,Longyearbyen,A,ACTIVE 
-20,Colorado,Pontoon Boat,Light water,OK,2019,Green,None,Thorshavn,A,ACTIVE
-21,A2extreem,Powerboard,Light winter,OK,2018,Black,None,Nuuk,A,ACTIVE
-22,Torpedo,3500,Light water,OK,2019,White,Diving license,Thorshavn,A,ACTIVE
-23,Kia,Ceed,Car,OK,2020,Red,Drivers license,Reykjavik,A,ACTIVE
-24,KIA,Cruiser,Car,OK,2020,Red,Drivers license,Reykjavik,A,ACTIVE
-25,BMW,Sportsmodel,Car,OK,2019,Black,Drivers License,Nuuk,A,ACTIVE
-26,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-27,blabla,model,vehicle_type,OK,man_year,color,license_type,location,B,DELETED
-28,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-29,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-30,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-31,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-32,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-33,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-34,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-35,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-36,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-37,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-38,manufacturer,model,vehicle_type,status,man_year,color,license_type,location,A,ACTIVE
-39,blabla,model,vehicle_type,OK,man_year,color,license_type,location,A,ACTIVE
-40,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,TEST,B,DELETED
-41,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,A,ACTIVE
-42,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,B,DELETED
-43,Benz,Model-s,Sportscar,OK,2020,Panther Black,Drivers License,London,B,DELETED
-45,its,a,car,its,a,bird,no,its,B,DELETED
-47,Bla,bubba,týpa,OK,1985,REd,Drivers,Reykajvik,B,DELETED
-49,Bubbi,asdf,adfasdf,OK,2020,Red,d,Iceland,A,ACTIVE
-51,BMW,Z,Car,OK,2020,BLACK,Drivers License,RVK,A,ACTIVE
-53,BMW,1,1,1,1,,1,1,A,ACTIVE
-55,BMW,BLACK,CAR,OK,2021,BLACK,DRIVERS,RVK,A,ACTIVE
-57,BMW,BLOISSS,BABA,OKOKOK,2015,BLUE,DRIVER,Reykjavik,500,ACTIVE
-59,asdf,sadf,sadf,asdf,sadf,sdf,asdf,asfd,asdf,ACTIVE
-61,asdf,sadf,rara,OK,2020,Red,Driver,Iceland,2500,ACTIVE
-62,test,test,test,test,test,test,test,test,test,ACTIVE
-64,TADA,BABA,CAR,OK,2010,RED,DRIVER,Iceland,A,ACTIVE
+1,Lotus,Elise,24 hour,OK,2004,Crimson,Truck driving license,China,C,China
+2,Toyota,Prius,Reduced,OK,2011,Puce,Pilots license,China,B,Peru
+3,BMW,X5 M,bifurcated,OK,2012,Orange,Driving license,Bangladesh,B,Macedonia
+4,Geo,Metro,hybrid,OK,1995,Blue,Truck driving license,Brazil,C,Philippines
+5,Mazda,929,Right-sized,OK,1988,Green,Truck driving license,Svalbard and Jan Mayen,D,Latvia
+6,Daewoo,Nubira,Profound,OK,2001,Pink,Astronaut license,Portugal,A,Brazil
+7,Mitsubishi,Galant,Profit-focused,OK,1988,Orange,Pilots license,Venezuela,C,China
+8,Kia,Amanti,Distributed,OK,2009,Puce,Truck driving license,United States,D,Portugal
+9,Lexus,GS,Upgradable,OK,1999,Violet,Astronaut license,Japan,D,Russia
+10,Audi,A4,Grass-roots,OK,1996,Orange,Driving license,China,F,Palestinian Territory
+11,Saturn,L-Series,software,OK,2003,Goldenrod,Pilots license,Thailand,B,Russia
+12,Lincoln,MKZ,Assimilated,OK,2009,Maroon,Pilots license,Argentina,B,Mozambique
+13,Ford,F450,artificial intelligence,OK,2008,Purple,Pilots license,Philippines,C,China
+14,Mazda,Millenia,intermediate,OK,1999,Khaki,Truck driving license,Colombia,F,Thailand
+15,Ford,Fusion,Proactive,OK,2012,Fuscia,Driving license,Sweden,C,Honduras
+16,Acura,RL,discrete,OK,2005,Crimson,Driving license,Indonesia,C,China
+17,Saturn,VUE,adapter,OK,2006,Teal,Pilots license,Indonesia,D,Bolivia
+18,Mitsubishi,Lancer,global,OK,2001,Violet,Pilots license,China,F,Japan
+19,GMC,Rally Wagon G2500,Synchronised,OK,1995,Fuscia,Pilots license,Indonesia,B,Bolivia
+20,Ford,Mustang,tangible,OK,1964,Green,Truck driving license,Azerbaijan,E,Argentina
+21,Ford,Thunderbird,Cross-group,OK,1997,Crimson,Truck driving license,China,F,China
+22,Chrysler,LHS,software,OK,1999,Indigo,Driving license,France,C,Hungary
+23,Pontiac,GTO,system engine,OK,1969,Puce,Truck driving license,France,D,Libya
+24,Mazda,Miata MX-5,transitional,OK,2010,Puce,Pilots license,Indonesia,A,Myanmar
+25,Pontiac,Firefly,Total,OK,1994,Teal,Driving license,China,D,Mexico
+26,Mercury,Villager,Proactive,OK,1994,Turquoise,Truck driving license,Poland,E,Honduras
+27,Suzuki,XL-7,grid-enabled,OK,2002,Violet,Astronaut license,Indonesia,E,China
+28,Mercury,Cougar,Compatible,OK,1970,Green,Driving license,Poland,E,France
+29,Mitsubishi,Precis,migration,OK,1992,Khaki,Astronaut license,Macedonia,A,China
+30,Volvo,S60,Adaptive,OK,2002,Khaki,Truck driving license,Portugal,A,Brazil
+31,GMC,Safari,core,OK,2001,Yellow,Pilots license,New Zealand,D,Israel
+32,Infiniti,G,Grass-roots,OK,1992,Blue,Driving license,Bulgaria,E,China
+33,Nissan,Armada,human-resource,OK,2005,Yellow,Pilots license,Canada,D,Thailand
+34,Suzuki,Sidekick,migration,OK,1997,Goldenrod,Astronaut license,China,C,Indonesia
+35,Suzuki,Equator,logistical,OK,2009,Mauv,Truck driving license,Brazil,A,Russia
+36,GMC,Yukon,model,OK,1992,Mauv,Pilots license,Austria,C,China
+37,Lexus,SC,Face to face,OK,2008,Orange,Astronaut license,Belarus,B,Brazil
+38,Chevrolet,Camaro,moderator,OK,2002,Aquamarine,Truck driving license,Bhutan,E,New Zealand
+39,Ford,F-Series,Diverse,OK,2001,Yellow,Truck driving license,Ecuador,A,Argentina
+40,Bentley,Mulsanne,maximized,OK,2012,Khaki,Pilots license,Indonesia,C,China
+41,Volvo,V40,intangible,OK,2003,Goldenrod,Pilots license,France,B,Indonesia
+42,Pontiac,Bonneville,Robust,OK,1991,Aquamarine,Driving license,Liberia,F,Armenia
+43,Ford,Contour,incremental,OK,1997,Green,Driving license,Cape Verde,E,Philippines
+44,Kia,Sephia,extranet,OK,1998,Purple,Driving license,France,D,China
+45,Volkswagen,Cabriolet,interface,OK,1987,Maroon,Truck driving license,Indonesia,C,China
+46,Volvo,V70,Phased,OK,2006,Mauv,Truck driving license,Indonesia,F,Peru
+47,Cadillac,DTS,even-keeled,OK,2007,Maroon,Truck driving license,Israel,F,Indonesia
+48,Nissan,300ZX,contingency,OK,1992,Fuscia,Pilots license,China,D,Indonesia
+49,Infiniti,M,Business-focused,OK,2010,Indigo,Astronaut license,Bangladesh,D,Czech Republic
+50,Daewoo,Nubira,neural-net,OK,1999,Violet,Pilots license,Canada,E,Portugal
+51,Mercury,Mountaineer,empowering,OK,2010,Orange,Pilots license,Albania,A,Azerbaijan
+52,Ford,Taurus,zero administration,OK,1999,Turquoise,Pilots license,France,C,China
+53,Volkswagen,Tiguan,solution,OK,2012,Aquamarine,Pilots license,Japan,D,Poland
+54,Kia,Sedona,core,OK,2005,Orange,Truck driving license,Colombia,C,France
+55,Toyota,Sienna,implementation,OK,1999,Pink,Pilots license,China,D,China
+56,Hyundai,Sonata,toolset,OK,2000,Red,Driving license,Kosovo,D,Indonesia
+57,Tesla,Roadster,Object-based,OK,2012,Aquamarine,Truck driving license,Brazil,D,Nigeria
+58,Ford,E-Series,Function-based,OK,1986,Puce,Pilots license,China,E,Indonesia
+59,Mercedes-Benz,W126,Total,OK,1981,Purple,Truck driving license,China,D,Poland
+60,Mercedes-Benz,400SEL,Multi-tiered,OK,1993,Khaki,Pilots license,Argentina,C,Russia
+61,Saab,9-7X,matrix,OK,2007,Indigo,Pilots license,Czech Republic,F,China
+62,GMC,Sonoma Club,Fundamental,OK,1992,Puce,Pilots license,France,D,China
+63,Chevrolet,Camaro,Innovative,OK,1981,Pink,Driving license,Sweden,D,Russia
+64,GMC,Vandura 3500,reciprocal,OK,1992,Goldenrod,Astronaut license,Russia,F,China
+65,Ford,Ranger,Proactive,OK,1999,Violet,Astronaut license,Philippines,A,Canada
+66,Toyota,Tundra,static,OK,2011,Green,Truck driving license,Macedonia,A,Czech Republic
+67,Honda,Ridgeline,migration,OK,2008,Violet,Astronaut license,China,E,Netherlands
+68,Chrysler,Concorde,value-added,OK,1999,Crimson,Pilots license,China,F,China
+69,Lamborghini,Diablo,User-friendly,OK,1995,Turquoise,Truck driving license,China,E,Russia
+70,Porsche,928,application,OK,1986,Indigo,Astronaut license,Indonesia,F,Colombia
+71,GMC,3500 Club Coupe,Re-contextualized,OK,1998,Pink,Truck driving license,Sweden,D,Poland
+72,Saab,9-3,infrastructure,OK,2010,Yellow,Truck driving license,China,B,China
+73,Volkswagen,Jetta,Inverse,OK,1984,Pink,Astronaut license,Argentina,F,Brazil
+74,Dodge,Caravan,Organized,OK,1985,Yellow,Driving license,Sudan,C,China
+75,Isuzu,Rodeo,firmware,OK,1999,Maroon,Driving license,China,E,Brazil
+76,Nissan,GT-R,neural-net,OK,2010,Purple,Astronaut license,Albania,E,South Korea
+77,Jaguar,XK Series,multi-tasking,OK,2003,Fuscia,Pilots license,Indonesia,D,China
+78,Volkswagen,Golf,service-desk,OK,2012,Turquoise,Pilots license,Brazil,C,United Kingdom
+79,Oldsmobile,Achieva,Front-line,OK,1996,Maroon,Truck driving license,Chile,D,Panama
+80,Mercury,Mountaineer,synergy,OK,2006,Khaki,Pilots license,Nigeria,A,China
+81,Toyota,Camry,needs-based,OK,2011,Crimson,Pilots license,Poland,B,Nicaragua
+82,Ford,Aspire,methodical,OK,1996,Indigo,Truck driving license,Russia,B,China
+83,Honda,CR-V,uniform,OK,2010,Khaki,Pilots license,Philippines,F,Norway
+84,Mercury,Grand Marquis,composite,OK,2001,Aquamarine,Driving license,Czech Republic,C,Kenya
+85,GMC,2500,neural-net,OK,1993,Crimson,Astronaut license,Sweden,F,Italy
+86,GMC,2500,fresh-thinking,OK,1998,Maroon,Truck driving license,Indonesia,E,Thailand
+87,Acura,RL,context-sensitive,OK,2003,Mauv,Astronaut license,China,A,Indonesia
+88,Subaru,Tribeca,discrete,OK,2010,Aquamarine,Driving license,Russia,F,Russia
+89,GMC,Yukon XL 1500,contextually-based,OK,2004,Purple,Driving license,Philippines,B,Sweden
+90,Ford,Focus,framework,OK,2003,Mauv,Pilots license,Philippines,E,Poland
+91,Scion,xB,leverage,OK,2006,Pink,Pilots license,Indonesia,C,Czech Republic
+92,Subaru,Forester,Extended,OK,2011,Violet,Astronaut license,Cameroon,C,Indonesia
+93,Chevrolet,Impala,Upgradable,OK,2003,Blue,Astronaut license,China,B,China
+94,Mercedes-Benz,SLK-Class,knowledge base,OK,1997,Teal,Pilots license,United States,B,China
+95,BMW,M3,hierarchy,OK,2010,Pink,Pilots license,Armenia,B,Portugal
+96,Buick,Enclave,neutral,OK,2009,Aquamarine,Astronaut license,Jamaica,C,Ukraine
+97,GMC,EV1,Graphical User Interface,OK,1999,Mauv,Astronaut license,Sweden,C,Portugal
+98,Kia,Sephia,model,OK,2000,Violet,Pilots license,Brazil,F,Poland
+99,Honda,CR-V,interactive,OK,2012,Green,Pilots license,France,F,China
+100,Nissan,Altima,synergy,OK,1997,Maroon,Astronaut license,Brazil,B,China
+101,Dodge,Ram Wagon B150,Pre-emptive,OK,1992,Indigo,Truck driving license,South Africa,A,China
+102,Ford,EXP,Assimilated,OK,1984,Teal,Truck driving license,Cuba,C,China
+103,Mercury,Cougar,interactive,OK,1997,Orange,Pilots license,Chad,F,Bangladesh
+104,Dodge,Ram Van 3500,process improvement,OK,2000,Purple,Driving license,Philippines,C,Indonesia
+105,Buick,Coachbuilder,Vision-oriented,OK,1994,Crimson,Driving license,Norway,B,Ukraine
+106,Mazda,MX-6,Self-enabling,OK,1992,Fuscia,Driving license,China,C,South Africa
+107,Mazda,626,fresh-thinking,OK,1992,Aquamarine,Driving license,Azerbaijan,E,United States
+108,Cadillac,Escalade,Progressive,OK,2009,Blue,Astronaut license,China,A,China
+109,Volkswagen,Passat,bandwidth-monitored,OK,2006,Maroon,Truck driving license,Poland,E,China
+110,Lexus,ES,migration,OK,1993,Puce,Driving license,Slovenia,B,China
+111,Subaru,Brat,zero tolerance,OK,1986,Goldenrod,Pilots license,South Africa,E,Brazil
+112,Ford,Econoline E250,grid-enabled,OK,1997,Green,Driving license,Cuba,D,Peru
+113,Infiniti,QX,bottom-line,OK,2005,Teal,Truck driving license,Russia,B,China
+114,Kia,Rio,Diverse,OK,2009,Purple,Pilots license,Thailand,B,Brazil
+115,Audi,A4,modular,OK,1999,Red,Pilots license,Philippines,B,Poland
+116,Jaguar,XK,task-force,OK,2012,Green,Pilots license,Poland,A,Monaco
+117,Pontiac,GTO,circuit,OK,1965,Goldenrod,Pilots license,Poland,E,Canada
+118,Nissan,Cube,Quality-focused,OK,2011,Puce,Driving license,China,D,China
+119,Dodge,Grand Caravan,Pre-emptive,OK,2008,Purple,Driving license,China,B,China
+120,MINI,Cooper,optimal,OK,2002,Teal,Truck driving license,Thailand,F,Indonesia
+121,Oldsmobile,Aurora,Business-focused,OK,1997,Fuscia,Driving license,Philippines,D,Afghanistan
+122,Mercedes-Benz,SL-Class,Compatible,OK,1991,Mauv,Astronaut license,Honduras,B,South Africa
+123,GMC,Envoy,reciprocal,OK,1999,Yellow,Driving license,Guatemala,C,Indonesia
+124,Dodge,Neon,array,OK,2002,Green,Astronaut license,Indonesia,A,Russia
+125,Mitsubishi,Lancer,synergy,OK,2003,Pink,Pilots license,Sweden,E,Brazil
+126,Chevrolet,S10,throughput,OK,2004,Violet,Astronaut license,Czech Republic,B,Uganda
+127,Honda,Civic,Cloned,OK,2006,Puce,Driving license,Argentina,A,Macedonia
+128,Mercedes-Benz,500SEC,Total,OK,1993,Blue,Astronaut license,Thailand,F,Sweden
+129,Volkswagen,Golf,Upgradable,OK,1983,Red,Truck driving license,Indonesia,B,Sweden
+130,Subaru,Outback,Enterprise-wide,OK,2001,Khaki,Driving license,Indonesia,E,Iran
+131,BMW,Alpina B7,Exclusive,OK,2007,Crimson,Driving license,Mali,C,France
+132,Honda,CR-V,throughput,OK,1999,Mauv,Truck driving license,China,F,Slovenia
+133,Lexus,IS F,intermediate,OK,2010,Khaki,Astronaut license,Poland,F,Japan
+134,Saab,9-5,De-engineered,OK,2010,Crimson,Driving license,Cuba,D,China
+135,Chrysler,PT Cruiser,middleware,OK,2010,Teal,Astronaut license,Nigeria,F,Indonesia
+136,Mitsubishi,Mighty Max,middleware,OK,1986,Turquoise,Astronaut license,Canada,E,Russia
+137,Bentley,Continental Super,national,OK,2010,Maroon,Truck driving license,Chile,D,Brazil
+138,Toyota,Land Cruiser,solution,OK,1996,Puce,Driving license,Portugal,B,Azerbaijan
+139,GMC,Savana 3500,Multi-channelled,OK,2000,Indigo,Pilots license,Georgia,E,Poland
+140,Pontiac,Parisienne,core,OK,1984,Blue,Driving license,Bolivia,F,Indonesia
+141,Mazda,B-Series,Pre-emptive,OK,1998,Mauv,Astronaut license,Madagascar,B,Ireland
+142,Saab,9-3,Devolved,OK,2003,Aquamarine,Truck driving license,Indonesia,C,Canada
+143,Infiniti,QX,encryption,OK,1997,Indigo,Driving license,Indonesia,A,Indonesia
+144,Mazda,Miata MX-5,systemic,OK,1999,Teal,Pilots license,Micronesia,D,Japan
+145,Aston Martin,Vantage,next generation,OK,2008,Khaki,Driving license,Indonesia,D,Philippines
+146,Kia,Borrego,24 hour,OK,2009,Indigo,Astronaut license,China,A,Ukraine
+147,Mercedes-Benz,C-Class,Reduced,OK,2007,Aquamarine,Pilots license,China,A,Russia
+148,Lincoln,Continental,database,OK,2002,Blue,Driving license,Brazil,B,Ethiopia
+149,Dodge,Ram Van 2500,hybrid,OK,1995,Puce,Pilots license,Ukraine,B,Panama
+150,Honda,CR-V,content-based,OK,2010,Yellow,Pilots license,Indonesia,E,China
+151,Buick,Skyhawk,algorithm,OK,1987,Turquoise,Pilots license,Poland,D,Norway
+152,Dodge,Ram 1500,transitional,OK,1998,Fuscia,Astronaut license,Brazil,A,Sweden
+153,Land Rover,Range Rover,application,OK,1994,Violet,Truck driving license,Poland,E,Indonesia
+154,Nissan,Armada,Universal,OK,2005,Khaki,Pilots license,China,F,Russia
+155,Chevrolet,Avalanche 1500,web-enabled,OK,2003,Goldenrod,Astronaut license,Nigeria,B,Indonesia
+156,Volvo,240,Cloned,OK,1992,Maroon,Truck driving license,Sweden,D,China
+157,Kia,Sephia,Managed,OK,1999,Crimson,Truck driving license,Thailand,C,Greece
+158,Ford,Fairlane,Grass-roots,OK,1965,Goldenrod,Astronaut license,Ecuador,A,Argentina
+159,Chevrolet,Suburban 1500,Vision-oriented,OK,2006,Yellow,Astronaut license,China,D,Russia
+160,Dodge,Stealth,neutral,OK,1996,Crimson,Driving license,Indonesia,B,Canada
+161,MINI,Cooper,Team-oriented,OK,2009,Blue,Truck driving license,China,D,Indonesia
+162,GMC,Jimmy,human-resource,OK,1995,Puce,Driving license,Luxembourg,E,Mexico
+163,Chevrolet,Express 2500,data-warehouse,OK,2002,Aquamarine,Astronaut license,Philippines,C,China
+164,Dodge,Colt,secured line,OK,1989,Puce,Astronaut license,France,F,Indonesia
+165,Ford,Taurus,synergy,OK,1994,Mauv,Driving license,North Korea,E,France
+166,Jaguar,XK,context-sensitive,OK,2011,Turquoise,Astronaut license,Indonesia,F,Russia
+167,Mazda,MX-5,Customizable,OK,2012,Turquoise,Pilots license,Cyprus,E,China
+168,Mitsubishi,Eclipse,uniform,OK,1991,Puce,Pilots license,China,B,Thailand
+169,Cadillac,CTS-V,motivating,OK,2006,Puce,Astronaut license,Norway,E,China
+170,Ford,Courier,Robust,OK,1986,Green,Truck driving license,Estonia,E,Indonesia
+171,Dodge,Charger,circuit,OK,1999,Violet,Astronaut license,Poland,F,Burundi
+172,Mercedes-Benz,S-Class,bottom-line,OK,1984,Crimson,Astronaut license,Palestinian Territory,F,Philippines
+173,Audi,4000CS Quattro,Distributed,OK,1986,Green,Truck driving license,Philippines,A,Russia
+174,Hummer,H2,Object-based,OK,2009,Orange,Driving license,Sweden,C,Indonesia
+175,Mercury,Sable,middleware,OK,2003,Violet,Driving license,Russia,D,United States
+176,Pontiac,Firebird,Down-sized,OK,2000,Aquamarine,Driving license,United States,D,France
+177,Lotus,Elan,approach,OK,1992,Goldenrod,Truck driving license,Iran,A,China
+178,Oldsmobile,Silhouette,conglomeration,OK,2004,Puce,Astronaut license,Azerbaijan,C,Armenia
+179,Hummer,H1,Object-based,OK,1996,Purple,Pilots license,Russia,D,Nigeria
+180,Pontiac,Firefly,Implemented,OK,1986,Goldenrod,Astronaut license,Yemen,B,Azerbaijan
+181,Toyota,Tacoma,tangible,OK,2010,Crimson,Pilots license,Indonesia,A,Mauritius
+182,Volvo,XC60,Monitored,OK,2009,Fuscia,Astronaut license,China,C,Poland
+183,Suzuki,Verona,framework,OK,2005,Khaki,Astronaut license,Indonesia,A,Samoa
+184,Jaguar,XJ Series,24/7,OK,1998,Teal,Pilots license,Russia,A,Malaysia
+185,Nissan,Altima,Right-sized,OK,1997,Crimson,Astronaut license,Japan,B,United States
+186,Audi,A4,Visionary,OK,2006,Turquoise,Pilots license,United Kingdom,D,Guatemala
+187,Suzuki,Sidekick,Streamlined,OK,1994,Puce,Driving license,Sweden,F,Indonesia
+188,Ford,Escape,system engine,OK,2006,Mauv,Driving license,China,B,China
+189,Honda,Accord,data-warehouse,OK,2002,Turquoise,Astronaut license,United Kingdom,F,Peru
+190,Pontiac,Grand Prix,utilisation,OK,1989,Teal,Truck driving license,Czech Republic,B,Philippines
+191,Toyota,Celica,Team-oriented,OK,2000,Mauv,Driving license,Russia,F,Russia
+192,Honda,Accord,moratorium,OK,1983,Red,Driving license,Indonesia,E,China
+193,Toyota,Land Cruiser,Function-based,OK,2004,Red,Driving license,China,A,Indonesia
+194,Aston Martin,DBS,Universal,OK,2009,Goldenrod,Truck driving license,Philippines,E,China
+195,Daewoo,Leganza,uniform,OK,2001,Fuscia,Driving license,Indonesia,B,Philippines
+196,Hyundai,Azera,Configurable,OK,2006,Teal,Driving license,China,E,Laos
+197,Chevrolet,Express 1500,Team-oriented,OK,1999,Yellow,Driving license,Latvia,B,Russia
+198,Hyundai,Sonata,budgetary management,OK,2009,Red,Driving license,Ukraine,A,Indonesia
+199,Audi,5000S,Devolved,OK,1987,Khaki,Driving license,Thailand,B,China
+200,Mercedes-Benz,M-Class,client-server,OK,2008,Pink,Truck driving license,Russia,C,Bosnia and Herzegovina
+201,Land Rover,Discovery,bottom-line,OK,2007,Violet,Astronaut license,Thailand,B,Poland
+202,Volkswagen,Passat,maximized,OK,1997,Puce,Pilots license,Brazil,A,Thailand
+203,Pontiac,Grand Prix,local area network,OK,1989,Crimson,Driving license,Pakistan,F,China
+204,Dodge,Durango,hybrid,OK,1998,Purple,Driving license,Russia,D,Albania
+205,Mercedes-Benz,300SE,process improvement,OK,1992,Mauv,Driving license,Peru,E,Philippines
+206,Volkswagen,Jetta,executive,OK,1991,Violet,Pilots license,Russia,C,Croatia
+207,BMW,5 Series,customer loyalty,OK,2009,Fuscia,Astronaut license,Albania,C,Philippines
+208,Hyundai,Accent,Object-based,OK,2012,Pink,Driving license,China,E,China
+209,Dodge,D250,Multi-lateral,OK,1993,Fuscia,Truck driving license,Palestinian Territory,E,Mongolia
+210,Audi,A4,Right-sized,OK,2012,Yellow,Truck driving license,China,D,Kazakhstan
+211,Chevrolet,Express 2500,composite,OK,1997,Pink,Truck driving license,France,B,Kyrgyzstan
+212,Chevrolet,Cavalier,Centralized,OK,1992,Purple,Astronaut license,Egypt,A,United States
+213,GMC,Safari,object-oriented,OK,2002,Violet,Astronaut license,Indonesia,E,Kazakhstan
+214,Cadillac,Escalade,context-sensitive,OK,2006,Blue,Pilots license,Niger,D,Azerbaijan
+215,Pontiac,Torrent,Adaptive,OK,2008,Khaki,Truck driving license,Egypt,C,Russia
+216,Cadillac,Escalade,encompassing,OK,2004,Pink,Driving license,Indonesia,B,China
+217,Volvo,V40,forecast,OK,2000,Violet,Pilots license,Zimbabwe,C,Thailand
+218,GMC,Sierra 2500,Compatible,OK,2001,Blue,Pilots license,France,F,Uruguay
+219,Mercury,Mystique,open system,OK,1995,Green,Driving license,Poland,A,Cameroon
+220,Volvo,XC70,Extended,OK,2007,Orange,Driving license,Indonesia,E,Albania
+221,Mazda,MX-6,Networked,OK,1992,Turquoise,Pilots license,Russia,E,Brazil
+222,Dodge,Ram Wagon B150,asymmetric,OK,1992,Mauv,Astronaut license,China,C,Indonesia
+223,Nissan,350Z Roadster,Public-key,OK,2006,Turquoise,Driving license,Ukraine,A,Thailand
+224,Mazda,Mazda5,circuit,OK,2006,Fuscia,Truck driving license,Brazil,A,Brazil
+225,GMC,Sonoma Club Coupe,analyzing,OK,1996,Pink,Truck driving license,Russia,E,Portugal
+226,Suzuki,XL-7,contingency,OK,2004,Green,Truck driving license,France,D,Russia
+227,Ford,Escape,maximized,OK,2002,Teal,Truck driving license,Burkina Faso,F,Peru
+228,Mercedes-Benz,GL-Class,secured line,OK,2009,Violet,Astronaut license,Sweden,B,Peru
+229,Lexus,SC,leading edge,OK,1993,Maroon,Pilots license,Finland,E,Portugal
+230,Lexus,GS,neutral,OK,2005,Fuscia,Driving license,Poland,F,Poland
+231,Hyundai,Sonata,Compatible,OK,2008,Orange,Truck driving license,Luxembourg,D,Lithuania
+232,Jaguar,XJ Series,capability,OK,2003,Goldenrod,Pilots license,China,D,United States
+233,Chevrolet,Silverado,secured line,OK,2007,Blue,Truck driving license,China,D,Mexico
+234,Hummer,H1,clear-thinking,OK,1993,Pink,Pilots license,Poland,D,Indonesia
+235,Volvo,240,Organized,OK,1993,Violet,Astronaut license,China,D,Paraguay
+236,Subaru,SVX,Enhanced,OK,1996,Crimson,Truck driving license,Pakistan,F,Colombia
+237,Dodge,Ram Van 3500,Automated,OK,1999,Pink,Driving license,Philippines,D,Colombia
+238,Honda,Ridgeline,system engine,OK,2009,Orange,Astronaut license,France,A,China
+239,Nissan,240SX,3rd generation,OK,1992,Purple,Pilots license,Indonesia,C,China
+240,Mercury,Cougar,interactive,OK,1990,Mauv,Pilots license,Indonesia,B,United States
+241,Land Rover,Range Rover,Synergized,OK,1995,Green,Pilots license,Poland,C,Poland
+242,Dodge,Dakota Club,Intuitive,OK,1992,Indigo,Pilots license,Tunisia,A,China
+243,Dodge,Charger,analyzing,OK,2010,Blue,Pilots license,France,E,Indonesia
+244,Ford,F250,interface,OK,2006,Fuscia,Driving license,Ukraine,B,Armenia
+245,Dodge,Intrepid,concept,OK,2004,Turquoise,Driving license,China,E,Japan
+246,BMW,M3,multi-tasking,OK,2003,Khaki,Truck driving license,Russia,D,Philippines
+247,Mercedes-Benz,E-Class,Pre-emptive,OK,2012,Pink,Pilots license,Russia,A,Indonesia
+248,Ford,Tempo,transitional,OK,1994,Puce,Driving license,France,C,United States
+249,Acura,NSX,User-friendly,OK,1994,Crimson,Driving license,Indonesia,C,China
+250,Dodge,Magnum,attitude-oriented,OK,2007,Khaki,Astronaut license,Colombia,C,China
+251,Chevrolet,Silverado 1500,adapter,OK,2010,Orange,Pilots license,Vietnam,A,Finland
+252,Mazda,MX-5,Multi-layered,OK,1998,Maroon,Truck driving license,Mexico,F,Russia
+253,Chevrolet,Camaro,archive,OK,1972,Fuscia,Astronaut license,China,A,China
+254,Toyota,Camry,extranet,OK,2007,Khaki,Astronaut license,Tanzania,B,Russia
+255,Suzuki,Swift,Self-enabling,OK,1991,Puce,Driving license,Uruguay,F,Palestinian Territory
+256,Maserati,Gran Sport,success,OK,2006,Blue,Truck driving license,Bangladesh,D,South Africa
+257,Dodge,Charger,logistical,OK,1968,Orange,Truck driving license,United States,B,Poland
+258,Volkswagen,Jetta,encoding,OK,1990,Turquoise,Pilots license,Mexico,D,Russia
+259,Chevrolet,Malibu,framework,OK,2009,Khaki,Truck driving license,China,D,China
+260,Buick,Park Avenue,Persistent,OK,2005,Goldenrod,Pilots license,Poland,E,Russia
+261,Mercedes-Benz,600SEL,pricing structure,OK,1993,Teal,Truck driving license,China,D,Sweden
+262,Ferrari,612 Scaglietti,non-volatile,OK,2006,Teal,Driving license,Indonesia,B,China
+263,Subaru,Legacy,user-facing,OK,2007,Green,Astronaut license,Brazil,C,Philippines
+264,Hyundai,Elantra,time-frame,OK,1994,Crimson,Truck driving license,China,F,China
+265,Buick,Regal,Reduced,OK,2012,Crimson,Astronaut license,Slovenia,A,China
+266,BMW,5 Series,Synergized,OK,1995,Aquamarine,Driving license,Indonesia,A,Poland
+267,Hyundai,Sonata,composite,OK,2011,Indigo,Truck driving license,Honduras,B,Indonesia
+268,GMC,3500 Club Coupe,3rd generation,OK,1992,Khaki,Truck driving license,Russia,B,Afghanistan
+269,Pontiac,Grand Am,User-centric,OK,1998,Orange,Driving license,Paraguay,E,Greece
+270,Aston Martin,Rapide,intermediate,OK,2010,Indigo,Astronaut license,Madagascar,F,Albania
+271,Lexus,LX,portal,OK,2006,Turquoise,Driving license,China,B,Japan
+272,Toyota,Land Cruiser,logistical,OK,2011,Red,Driving license,Russia,A,Philippines
+273,Chevrolet,Corvette,Operative,OK,1973,Teal,Pilots license,China,A,Panama
+274,Mitsubishi,Montero Sport,structure,OK,1997,Blue,Truck driving license,United States,F,Brazil
+275,Lexus,IS,archive,OK,2005,Fuscia,Truck driving license,Ukraine,F,Russia
+276,Mazda,Familia,logistical,OK,1991,Goldenrod,Truck driving license,Egypt,A,China
+277,Volkswagen,Cabriolet,benchmark,OK,1990,Red,Driving license,Philippines,F,Indonesia
+278,Buick,Skylark,parallelism,OK,1989,Red,Driving license,Russia,E,Bulgaria
+279,Eagle,Summit,leading edge,OK,1996,Khaki,Driving license,Thailand,F,China
+280,Lexus,ES,multimedia,OK,2007,Maroon,Truck driving license,Armenia,B,Brazil
+281,Cadillac,Escalade,Persistent,OK,2003,Maroon,Driving license,Ukraine,C,Slovenia
+282,Pontiac,Bonneville,Graphic Interface,OK,1997,Puce,Pilots license,Denmark,D,Brazil
+283,Jeep,Liberty,interface,OK,2007,Green,Pilots license,China,F,Armenia
+284,Ford,E-Series,Graphic Interface,OK,1992,Indigo,Pilots license,Philippines,A,United States
+285,Dodge,Caliber,asymmetric,OK,2011,Khaki,Driving license,Indonesia,C,China
+286,Mitsubishi,Mirage,customer loyalty,OK,1985,Goldenrod,Pilots license,Japan,D,Haiti
+287,Cadillac,XLR,asynchronous,OK,2005,Crimson,Driving license,Indonesia,E,Russia
+288,Plymouth,Grand Voyager,Centralized,OK,1999,Fuscia,Pilots license,China,D,United States
+289,Isuzu,Rodeo,Multi-lateral,OK,1992,Teal,Astronaut license,Indonesia,F,Canada
+290,Mercury,Milan,Centralized,OK,2007,Green,Pilots license,Canada,A,China
+291,Jeep,Cherokee,secondary,OK,1998,Goldenrod,Truck driving license,Bulgaria,C,Tanzania
+292,Dodge,Dynasty,Phased,OK,1992,Aquamarine,Pilots license,United States,E,Argentina
+293,Toyota,Celica,3rd generation,OK,1993,Khaki,Driving license,China,D,Georgia
+294,Audi,Coupe GT,Integrated,OK,1986,Orange,Pilots license,Portugal,C,Poland
+295,Volkswagen,New Beetle,Intuitive,OK,2001,Purple,Astronaut license,Philippines,A,Brazil
+296,Ford,Bronco,Upgradable,OK,1986,Khaki,Truck driving license,Russia,F,China
+297,Nissan,GT-R,bandwidth-monitored,OK,2010,Khaki,Astronaut license,Indonesia,B,Canada
+298,Honda,CR-V,local area network,OK,2004,Blue,Astronaut license,Malawi,A,Portugal
+299,Aston Martin,Virage,Persistent,OK,2012,Aquamarine,Driving license,Peru,F,China
+300,Cadillac,Escalade ESV,policy,OK,2004,Pink,Pilots license,United States,A,Japan
+301,GMC,Yukon XL 2500,interface,OK,2012,Fuscia,Astronaut license,North Korea,C,Greece
+302,Eagle,Summit,asymmetric,OK,1993,Indigo,Pilots license,France,D,Kosovo
+303,Volkswagen,Golf,moratorium,OK,2001,Green,Driving license,China,F,Indonesia
+304,Pontiac,Grand Prix,synergy,OK,2008,Turquoise,Truck driving license,Greece,B,Vietnam
+305,Porsche,Panamera,software,OK,2013,Red,Astronaut license,Canada,D,China
+306,GMC,Savana 2500,responsive,OK,1999,Green,Truck driving license,Palestinian Territory,C,Sweden
+307,GMC,Sierra 3500,tertiary,OK,2010,Goldenrod,Driving license,Poland,E,Norway
+308,Mitsubishi,Mirage,interface,OK,1991,Violet,Astronaut license,Indonesia,E,Croatia
+309,Suzuki,Daewoo Lacetti,Multi-lateral,OK,2005,Violet,Truck driving license,China,E,China
+310,Pontiac,Grand Am,client-server,OK,1985,Goldenrod,Driving license,Brazil,D,China
+311,Suzuki,SX4,intranet,OK,2008,Mauv,Driving license,China,A,Philippines
+312,Ford,Contour,interactive,OK,1998,Green,Truck driving license,Israel,C,China
+313,Mercury,Sable,Customizable,OK,2008,Fuscia,Astronaut license,Indonesia,B,United States
+314,Ford,LTD Crown Victoria,Phased,OK,1990,Orange,Truck driving license,China,A,Russia
+315,Volkswagen,Routan,algorithm,OK,2012,Indigo,Pilots license,Netherlands,C,Czech Republic
+316,Hyundai,Veracruz,hierarchy,OK,2012,Purple,Pilots license,Slovenia,D,Colombia
+317,Honda,S2000,Proactive,OK,2003,Pink,Driving license,China,E,Peru
+318,Aston Martin,V8 Vantage S,logistical,OK,2012,Aquamarine,Truck driving license,Hungary,C,Sweden
+319,GMC,Envoy,architecture,OK,2003,Red,Driving license,China,F,China
+320,Chevrolet,3500,high-level,OK,1997,Yellow,Pilots license,Portugal,C,Greece
+321,Chrysler,Crossfire,moderator,OK,2005,Aquamarine,Astronaut license,Philippines,D,China
+322,GMC,Sierra 1500,dedicated,OK,1999,Mauv,Truck driving license,South Africa,B,Gambia
+323,Geo,Tracker,Enterprise-wide,OK,1997,Pink,Driving license,Peru,E,Indonesia
+324,Buick,Terraza,homogeneous,OK,2006,Yellow,Truck driving license,Argentina,B,Brazil
+325,Dodge,Ram Wagon B250,forecast,OK,1993,Puce,Pilots license,China,D,Czech Republic
+326,Audi,riolet,Decentralized,OK,1998,Mauv,Pilots license,Peru,C,Venezuela
+327,Honda,S2000,well-modulated,OK,2004,Green,Astronaut license,Czech Republic,D,Russia
+328,Honda,Element,complexity,OK,2004,Pink,Pilots license,Indonesia,F,China
+329,Chevrolet,Lumina,fault-tolerant,OK,1999,Orange,Driving license,Indonesia,B,Poland
+330,Chevrolet,Corsica,tertiary,OK,1992,Purple,Truck driving license,Brazil,E,Poland
+331,Suzuki,Vitara,Synergized,OK,2002,Purple,Driving license,Argentina,F,Vietnam
+332,Dodge,Caliber,workforce,OK,2007,Green,Truck driving license,Indonesia,B,Brazil
+333,Chevrolet,Corvette,info-mediaries,OK,1996,Aquamarine,Astronaut license,Russia,F,Philippines
+334,Lotus,Esprit,system engine,OK,1995,Khaki,Pilots license,China,A,Russia
+335,Dodge,Viper,zero administration,OK,2000,Turquoise,Driving license,Brazil,C,Antigua and Barbuda
+336,Audi,R8,De-engineered,OK,2011,Red,Truck driving license,Brazil,C,Brazil
+337,Cadillac,DeVille,Total,OK,2002,Blue,Truck driving license,Cuba,E,Bulgaria
+338,Nissan,Pathfinder,workforce,OK,2003,Puce,Astronaut license,China,E,Namibia
+339,Mitsubishi,Truck,groupware,OK,1988,Purple,Truck driving license,Tanzania,B,Portugal
+340,Oldsmobile,Aurora,Function-based,OK,2003,Yellow,Astronaut license,Finland,C,Indonesia
+341,Jeep,Liberty,ability,OK,2004,Violet,Pilots license,China,C,Argentina
+342,Land Rover,Defender,national,OK,1994,Indigo,Astronaut license,Indonesia,D,Portugal
+343,Pontiac,1000,implementation,OK,1986,Maroon,Driving license,Vietnam,D,Philippines
+344,Chevrolet,Express 1500,Front-line,OK,2005,Fuscia,Truck driving license,China,E,China
+345,Audi,A6,radical,OK,2011,Aquamarine,Astronaut license,Kazakhstan,B,Russia
+346,Oldsmobile,Cutlass,Reactive,OK,1998,Violet,Truck driving license,United States,C,Burkina Faso
+347,Lamborghini,Countach,full-range,OK,1988,Yellow,Astronaut license,Indonesia,D,Czech Republic
+348,GMC,Sierra 1500,Assimilated,OK,2010,Violet,Pilots license,Tunisia,A,Indonesia
+349,Mitsubishi,Diamante,Organized,OK,2000,Indigo,Truck driving license,China,C,Mexico
+350,Hummer,H2,moderator,OK,2006,Purple,Pilots license,Bhutan,C,Thailand
+351,Mercury,Topaz,Front-line,OK,1988,Goldenrod,Truck driving license,Peru,A,China
+352,Lincoln,Navigator,zero defect,OK,2009,Teal,Truck driving license,Russia,F,China
+353,Volvo,S90,Function-based,OK,1997,Violet,Pilots license,China,B,Ethiopia
+354,Infiniti,FX,process improvement,OK,2003,Mauv,Pilots license,China,B,Philippines
+355,Eagle,Summit,Front-line,OK,1995,Purple,Astronaut license,China,B,Poland
+356,Chevrolet,3500,open architecture,OK,1996,Goldenrod,Truck driving license,China,D,China
+357,Kia,Sorento,Automated,OK,2005,Red,Astronaut license,China,C,Russia
+358,Chevrolet,Avalanche 2500,Programmable,OK,2006,Indigo,Driving license,China,D,Indonesia
+359,Toyota,Tacoma Xtra,hybrid,OK,2001,Maroon,Driving license,Czech Republic,A,Portugal
+360,Lincoln,Continental,emulation,OK,1995,Green,Pilots license,Germany,A,Indonesia
+361,Volkswagen,Golf III,local area network,OK,1995,Green,Truck driving license,Malaysia,D,China
+362,GMC,Envoy,Enhanced,OK,2006,Fuscia,Astronaut license,China,D,Burundi
+363,Mazda,Miata MX-5,multi-state,OK,1994,Purple,Pilots license,Ivory Coast,D,China
+364,Chrysler,Imperial,client-driven,OK,1926,Pink,Truck driving license,Russia,A,Russia
+365,Isuzu,Trooper,benchmark,OK,2001,Maroon,Truck driving license,Brazil,B,Denmark
+366,Dodge,Durango,incremental,OK,2012,Green,Astronaut license,Indonesia,D,Argentina
+367,Ford,Econoline E350,Assimilated,OK,1998,Fuscia,Driving license,Canada,B,China
+368,Mazda,323,Configurable,OK,1995,Orange,Truck driving license,Uzbekistan,D,Philippines
+369,Volkswagen,Touareg,multi-tasking,OK,2008,Yellow,Astronaut license,United States,D,Portugal
+370,Lamborghini,Murciélago,optimizing,OK,2002,Pink,Driving license,Brazil,D,Brazil
+371,GMC,Savana 3500,analyzing,OK,2006,Fuscia,Truck driving license,Portugal,D,Brazil
+372,Volkswagen,Passat,framework,OK,2002,Blue,Truck driving license,Brazil,D,China
+373,Chevrolet,Astro,even-keeled,OK,2003,Teal,Driving license,Sweden,D,Czech Republic
+374,Acura,NSX,executive,OK,2000,Maroon,Truck driving license,Peru,F,Marshall Islands
+375,Jeep,Wrangler,Progressive,OK,1997,Aquamarine,Astronaut license,China,A,Democratic Republic of the Congo
+376,Honda,Civic,Triple-buffered,OK,2000,Mauv,Driving license,Cambodia,E,China
+377,BMW,M5,holistic,OK,2010,Violet,Driving license,Armenia,C,Peru
+378,Lexus,SC,well-modulated,OK,2000,Orange,Truck driving license,China,A,Philippines
+379,Land Rover,Range Rover,Customer-focused,OK,2001,Aquamarine,Astronaut license,United States,E,Russia
+380,Audi,A6,portal,OK,2000,Aquamarine,Astronaut license,Colombia,F,Madagascar
+381,Ford,Ranger,benchmark,OK,1998,Yellow,Pilots license,Mexico,D,Indonesia
+382,Volvo,940,foreground,OK,1994,Yellow,Driving license,Greece,C,Ireland
+383,Volkswagen,Jetta,Upgradable,OK,2007,Violet,Truck driving license,Mexico,C,Indonesia
+384,Nissan,Maxima,needs-based,OK,2000,Purple,Astronaut license,Portugal,B,Cyprus
+385,Ram,2500,system engine,OK,2012,Puce,Truck driving license,Vietnam,D,Dominican Republic
+386,Hyundai,Azera,client-driven,OK,2006,Pink,Pilots license,Indonesia,A,Canada
+387,Subaru,Outback,Multi-tiered,OK,2002,Blue,Pilots license,Netherlands,E,Russia
+388,BMW,X3,flexibility,OK,2007,Fuscia,Driving license,Japan,F,Portugal
+389,Dodge,Dakota,secondary,OK,1992,Mauv,Astronaut license,Russia,E,Tunisia
+390,GMC,Rally Wagon 2500,Quality-focused,OK,1992,Violet,Truck driving license,China,A,American Samoa
+391,Buick,Roadmaster,core,OK,1996,Crimson,Driving license,Indonesia,C,Indonesia
+392,Dodge,Ram Van 2500,upward-trending,OK,2003,Yellow,Pilots license,Panama,A,China
+393,Mercedes-Benz,300TE,Stand-alone,OK,1993,Orange,Astronaut license,Brazil,A,Philippines
+394,Cadillac,DeVille,composite,OK,1999,Violet,Astronaut license,China,B,United States
+395,Mazda,Tribute,Profound,OK,2008,Khaki,Astronaut license,Denmark,A,Ukraine
+396,Mitsubishi,Montero,matrices,OK,1993,Violet,Pilots license,Costa Rica,E,Tanzania
+397,Hummer,H2,solution,OK,2004,Aquamarine,Astronaut license,China,B,China
+398,Audi,A6,Intuitive,OK,2012,Purple,Driving license,China,E,Czech Republic
+399,Chevrolet,Tahoe,database,OK,2007,Green,Pilots license,Argentina,D,Indonesia
+400,Toyota,Sequoia,synergy,OK,2011,Red,Driving license,Croatia,C,France
+401,Dodge,D350,Grass-roots,OK,1993,Violet,Astronaut license,Poland,F,Iran
+402,Lotus,Elan,value-added,OK,1991,Puce,Pilots license,Ukraine,B,China
+403,Toyota,Sequoia,local area network,OK,2001,Violet,Driving license,Armenia,B,Canada
+404,Porsche,Boxster,service-desk,OK,2000,Orange,Truck driving license,Greece,B,El Salvador
+405,Aston Martin,DBS,Multi-channelled,OK,2008,Maroon,Astronaut license,Ireland,F,Mongolia
+406,Mazda,B-Series,Programmable,OK,2009,Aquamarine,Driving license,Poland,C,Indonesia
+407,Chevrolet,Express 1500,system-worthy,OK,2012,Maroon,Astronaut license,Philippines,F,Panama
+408,Subaru,Legacy,Advanced,OK,2007,Orange,Pilots license,China,C,Bolivia
+409,Mazda,323,Enterprise-wide,OK,1993,Crimson,Pilots license,Portugal,D,Indonesia
+410,BMW,3 Series,Customer-focused,OK,1992,Turquoise,Truck driving license,Peru,C,Colombia
+411,Toyota,Echo,structure,OK,2000,Teal,Astronaut license,China,C,Germany
+412,Dodge,Nitro,success,OK,2010,Crimson,Pilots license,Iran,F,China
+413,Pontiac,Daewoo Kalos,Adaptive,OK,2006,Mauv,Pilots license,Poland,D,China
+414,Cadillac,Escalade,Configurable,OK,2000,Purple,Pilots license,Belarus,B,Uganda
+415,Dodge,Ram 2500 Club,attitude-oriented,OK,1997,Khaki,Astronaut license,Sweden,F,China
+416,Toyota,Tacoma Xtra,multi-state,OK,2001,Yellow,Astronaut license,China,C,Philippines
+417,Volkswagen,Golf,multi-state,OK,1983,Aquamarine,Driving license,Argentina,E,Poland
+418,Dodge,Viper,Synchronised,OK,2010,Teal,Astronaut license,Indonesia,B,Brazil
+419,Bentley,Continental Flying Spur,Fully-configurable,OK,2011,Fuscia,Astronaut license,Philippines,A,Philippines
+420,Lotus,Exige,directional,OK,2010,Maroon,Driving license,Venezuela,C,Philippines
+421,Lincoln,Navigator,User-centric,OK,2001,Red,Driving license,Russia,E,Argentina
+422,Chevrolet,Corvette,forecast,OK,1995,Yellow,Pilots license,Finland,C,Honduras
+423,GMC,Savana 1500,Future-proofed,OK,2004,Mauv,Truck driving license,Indonesia,A,Thailand
+424,Dodge,Intrepid,dynamic,OK,1997,Goldenrod,Driving license,Colombia,A,France
+425,Hyundai,Entourage,time-frame,OK,2008,Maroon,Astronaut license,China,D,Sweden
+426,Toyota,Celica,intermediate,OK,1995,Fuscia,Pilots license,China,F,Ukraine
+427,Acura,MDX,Extended,OK,2008,Turquoise,Pilots license,China,C,Philippines
+428,Jaguar,S-Type,interactive,OK,2008,Violet,Truck driving license,France,F,China
+429,Toyota,Solara,Graphical User Interface,OK,2005,Puce,Pilots license,Belarus,D,Greece
+430,Oldsmobile,Bravada,contingency,OK,2004,Green,Truck driving license,Peru,F,Azerbaijan
+431,Ford,Expedition,monitoring,OK,2002,Aquamarine,Truck driving license,Thailand,F,United States
+432,Mazda,Miata MX-5,modular,OK,1997,Teal,Pilots license,China,D,China
+433,Chevrolet,Malibu,challenge,OK,2000,Fuscia,Pilots license,Indonesia,F,Ukraine
+434,Pontiac,GTO,Open-architected,OK,1974,Turquoise,Pilots license,China,E,Ghana
+435,BMW,M,Compatible,OK,2002,Fuscia,Astronaut license,Thailand,A,China
+436,BMW,545,Configurable,OK,2005,Fuscia,Driving license,France,E,Indonesia
+437,Kia,Sedona,bifurcated,OK,2003,Green,Truck driving license,Sudan,F,Russia
+438,Chevrolet,Venture,archive,OK,1999,Aquamarine,Driving license,China,C,United States
+439,Chevrolet,APV,model,OK,1993,Blue,Truck driving license,Russia,A,Philippines
+440,Oldsmobile,Silhouette,optimal,OK,2003,Puce,Truck driving license,Russia,E,China
+441,Volvo,V50,optimal,OK,2009,Teal,Truck driving license,Czech Republic,A,Slovenia
+442,Mercedes-Benz,SL-Class,Face to face,OK,1995,Turquoise,Truck driving license,Russia,A,China
+443,Toyota,Corolla,well-modulated,OK,2004,Green,Driving license,Belarus,C,China
+444,Kia,Optima,Public-key,OK,2012,Fuscia,Pilots license,Sri Lanka,A,Czech Republic
+445,Mitsubishi,Diamante,model,OK,1993,Red,Driving license,China,D,Japan
+446,Mitsubishi,Eclipse,client-server,OK,2006,Red,Driving license,France,C,China
+447,Lexus,GX,strategy,OK,2012,Violet,Truck driving license,Indonesia,B,Mexico
+448,GMC,Savana 2500,systematic,OK,2011,Turquoise,Truck driving license,Indonesia,C,United States
+449,Dodge,Ram 2500 Club,tangible,OK,1995,Orange,Pilots license,Philippines,A,Portugal
+450,Ford,Taurus,capacity,OK,2002,Khaki,Driving license,Argentina,C,Argentina
+451,Ford,Escort ZX2,ability,OK,2003,Maroon,Truck driving license,Palestinian Territory,E,Mali
+452,Isuzu,Rodeo,radical,OK,2003,Turquoise,Pilots license,China,C,Kyrgyzstan
+453,Mercedes-Benz,SL65 AMG,multi-tasking,OK,2006,Yellow,Driving license,United States,A,France
+454,Nissan,350Z Roadster,tangible,OK,2006,Turquoise,Pilots license,Indonesia,E,China
+455,Volvo,XC90,Face to face,OK,2011,Aquamarine,Pilots license,Brazil,D,Russia
+456,Lexus,GS,array,OK,2007,Violet,Pilots license,France,F,Brazil
+457,Kia,Mohave/Borrego,Optional,OK,2009,Yellow,Astronaut license,Japan,A,China
+458,Toyota,Tacoma,knowledge user,OK,1995,Puce,Truck driving license,Nigeria,E,China
+459,Cadillac,Brougham,software,OK,1992,Blue,Driving license,Philippines,B,Brazil
+460,Mazda,B-Series,Re-engineered,OK,2008,Crimson,Astronaut license,Azerbaijan,F,Peru
+461,GMC,Canyon,Open-architected,OK,2006,Red,Pilots license,Japan,D,Indonesia
+462,Volvo,S60,extranet,OK,2003,Pink,Pilots license,Philippines,F,Peru
+463,Ford,F150,frame,OK,1992,Purple,Astronaut license,China,F,China
+464,Hyundai,Tucson,Adaptive,OK,2007,Indigo,Driving license,Vietnam,E,France
+465,Mercedes-Benz,CLS-Class,Programmable,OK,2007,Blue,Truck driving license,Philippines,B,Brazil
+466,Mercury,Mountaineer,functionalities,OK,1997,Teal,Pilots license,Germany,E,Philippines
+467,Ford,Econoline E250,Synchronised,OK,1999,Khaki,Driving license,South Korea,A,Ecuador
+468,Volvo,V70,Graphical User Interface,OK,2010,Turquoise,Truck driving license,Zimbabwe,F,Peru
+469,Lincoln,Continental,Open-source,OK,1988,Puce,Astronaut license,Russia,B,Croatia
+470,GMC,Yukon XL 1500,Synergistic,OK,2012,Aquamarine,Driving license,Germany,F,Philippines
+471,Buick,Riviera,Progressive,OK,1989,Puce,Truck driving license,Israel,A,France
+472,Ford,Thunderbird,Optimized,OK,1972,Yellow,Driving license,Chad,B,Portugal
+473,Mazda,Miata MX-5,Assimilated,OK,1993,Mauv,Pilots license,Indonesia,C,Poland
+474,Ford,F-Series Super Duty,benchmark,OK,2007,Orange,Truck driving license,Philippines,E,Germany
+475,Lexus,LX,Streamlined,OK,2006,Blue,Pilots license,China,A,Indonesia
+476,Jaguar,XJ,executive,OK,2006,Turquoise,Driving license,Indonesia,E,China
+477,Nissan,Quest,standardization,OK,1999,Aquamarine,Astronaut license,China,E,Ukraine
+478,Volvo,XC70,explicit,OK,2005,Violet,Driving license,Slovenia,E,Colombia
+479,Infiniti,M,encryption,OK,2003,Goldenrod,Driving license,Czech Republic,E,China
+480,Hummer,H2,Enterprise-wide,OK,2003,Khaki,Truck driving license,China,A,China
+481,Nissan,Altima,benchmark,OK,2000,Yellow,Truck driving license,Mauritius,A,Colombia
+482,Dodge,Ram Wagon B250,Triple-buffered,OK,1992,Aquamarine,Driving license,Poland,C,Indonesia
+483,Audi,Cabriolet,reciprocal,OK,1998,Mauv,Driving license,China,C,Argentina
+484,Ford,Expedition,array,OK,2002,Mauv,Pilots license,Russia,C,China
+485,Dodge,Charger,Future-proofed,OK,1968,Khaki,Driving license,Tanzania,C,Honduras
+486,Cadillac,Escalade ESV,bi-directional,OK,2011,Turquoise,Truck driving license,Portugal,F,Spain
+487,Dodge,Viper,access,OK,1995,Turquoise,Driving license,Poland,D,Indonesia
+488,Land Rover,Discovery,complexity,OK,1998,Goldenrod,Driving license,Brazil,C,China
+489,Land Rover,Range Rover,hardware,OK,1998,Crimson,Astronaut license,Poland,A,Germany
+490,Chrysler,300C,human-resource,OK,2005,Crimson,Pilots license,Canada,F,Brazil
+491,Jeep,Wrangler,collaboration,OK,2004,Fuscia,Driving license,China,E,Russia
+492,GMC,Savana 1500,optimizing,OK,2007,Goldenrod,Astronaut license,China,B,Brazil
+493,Mitsubishi,Challenger,bandwidth-monitored,OK,1999,Blue,Truck driving license,China,F,China
+494,Mitsubishi,Mighty Max,Triple-buffered,OK,1996,Turquoise,Pilots license,Spain,A,China
+495,Subaru,Outback,extranet,OK,2004,Teal,Driving license,United Kingdom,D,Russia
+496,GMC,Savana 1500,approach,OK,2010,Fuscia,Astronaut license,France,D,Cuba
+497,Ferrari,California,time-frame,OK,2010,Fuscia,Pilots license,China,E,China
+498,Land Rover,Discovery,Organized,OK,2011,Fuscia,Driving license,Indonesia,F,Poland
+499,GMC,2500,Intuitive,OK,1994,Violet,Truck driving license,Norway,F,Colombia
+500,Aston Martin,DBS,Business-focused,OK,2009,Violet,Truck driving license,Indonesia,F,Kazakhstan
+501,Lexus,GX,high-level,OK,2010,Blue,Pilots license,Philippines,D,Armenia
+502,Mitsubishi,Mirage,complexity,OK,1995,Pink,Driving license,South Korea,B,Azerbaijan
+503,Mercedes-Benz,R-Class,Reactive,OK,2006,Puce,Truck driving license,Venezuela,B,United States
+504,Mitsubishi,Lancer,toolset,OK,2006,Indigo,Truck driving license,China,C,France
+505,Chevrolet,1500,policy,OK,1993,Blue,Pilots license,Brazil,E,Canada
+506,Saturn,S-Series,capacity,OK,1997,Khaki,Pilots license,South Africa,A,Japan
+507,Kia,Spectra5,exuding,OK,2006,Crimson,Astronaut license,Czech Republic,E,China
+508,Pontiac,Solstice,synergy,OK,2009,Purple,Truck driving license,China,B,China
+509,Infiniti,FX,Progressive,OK,2009,Aquamarine,Truck driving license,Sweden,C,Indonesia
+510,Cadillac,XLR,Persevering,OK,2004,Purple,Pilots license,Russia,B,China
+511,Ford,Edge,secured line,OK,2007,Orange,Driving license,China,F,Brazil
+512,Audi,100,Assimilated,OK,1992,Teal,Truck driving license,Iran,E,Iran
+513,Honda,CR-X,superstructure,OK,1988,Crimson,Pilots license,China,D,China
+514,Ford,E350,protocol,OK,2007,Pink,Driving license,Philippines,F,Indonesia
+515,Bentley,Continental Flying Spur,capacity,OK,2007,Indigo,Pilots license,China,C,Indonesia
+516,Chevrolet,3500,model,OK,1993,Yellow,Truck driving license,Brazil,E,Russia
+517,Infiniti,Q,local area network,OK,2005,Crimson,Truck driving license,Thailand,C,China
+518,Lexus,LX,Optional,OK,2003,Turquoise,Truck driving license,Nigeria,F,Nigeria
+519,Honda,Insight,algorithm,OK,2003,Fuscia,Astronaut license,Philippines,D,Colombia
+520,Audi,5000CS Quattro,Automated,OK,1986,Orange,Astronaut license,Brazil,E,China
+521,Mercedes-Benz,SL-Class,impactful,OK,1998,Yellow,Driving license,China,C,Paraguay
+522,BMW,325,client-driven,OK,2004,Purple,Pilots license,Indonesia,D,Vietnam
+523,Nissan,Maxima,Seamless,OK,2007,Indigo,Driving license,Democratic Republic of the Congo,C,Poland
+524,Honda,Ridgeline,customer loyalty,OK,2006,Green,Truck driving license,Malaysia,C,China
+525,Infiniti,G35,access,OK,2007,Puce,Driving license,Russia,C,China
+526,Audi,100,incremental,OK,1990,Turquoise,Pilots license,Philippines,C,Russia
+527,GMC,Sierra 1500,optimal,OK,2000,Blue,Pilots license,Brazil,D,Greece
+528,GMC,3500,full-range,OK,1996,Fuscia,Astronaut license,Finland,B,China
+529,Subaru,Impreza,groupware,OK,2002,Purple,Pilots license,Portugal,A,Indonesia
+530,Dodge,Ram Van 2500,portal,OK,1997,Yellow,Driving license,China,E,Indonesia
+531,Ford,Festiva,Compatible,OK,1990,Aquamarine,Truck driving license,Philippines,E,China
+532,Ford,Bronco,content-based,OK,1995,Violet,Pilots license,China,E,Czech Republic
+533,Cadillac,SRX,4th generation,OK,2011,Aquamarine,Pilots license,Jordan,F,Indonesia
+534,Lotus,Evora,moratorium,OK,2012,Pink,Truck driving license,China,D,Ukraine
+535,Dodge,Charger,logistical,OK,2009,Violet,Astronaut license,Russia,C,China
+536,Lotus,Esprit,asymmetric,OK,2002,Aquamarine,Driving license,Maldives,C,Kazakhstan
+537,Mercedes-Benz,C-Class,moratorium,OK,2010,Pink,Pilots license,Russia,B,China
+538,Maybach,57,capability,OK,2009,Aquamarine,Truck driving license,Russia,F,Palestinian Territory
+539,Saturn,VUE,Proactive,OK,2008,Goldenrod,Driving license,Colombia,D,Brazil
+540,Nissan,350Z,archive,OK,2007,Fuscia,Driving license,Czech Republic,F,Philippines
+541,Pontiac,Bonneville,conglomeration,OK,1965,Violet,Truck driving license,China,B,Canada
+542,Mitsubishi,Lancer Evolution,grid-enabled,OK,2006,Turquoise,Truck driving license,Luxembourg,A,Austria
+543,Pontiac,Grand Prix,Cloned,OK,1963,Aquamarine,Astronaut license,Canada,E,Sierra Leone
+544,Isuzu,Rodeo,regional,OK,2002,Green,Truck driving license,Philippines,A,Greece
+545,Mercury,Sable,reciprocal,OK,1987,Yellow,Driving license,Mauritius,E,Philippines
+546,Oldsmobile,88,encoding,OK,1992,Indigo,Truck driving license,Indonesia,D,Cuba
+547,Ford,E150,value-added,OK,2004,Puce,Pilots license,Czech Republic,C,Pakistan
+548,Ford,F150,circuit,OK,2005,Fuscia,Astronaut license,China,C,Russia
+549,Audi,A6,multimedia,OK,2004,Blue,Astronaut license,Mexico,E,France
+550,GMC,Suburban 2500,capacity,OK,1998,Orange,Truck driving license,China,E,Indonesia
+551,Nissan,Frontier,local area network,OK,2011,Green,Driving license,Russia,F,Portugal
+552,Ford,F250,groupware,OK,1999,Puce,Truck driving license,Russia,B,Portugal
+553,Dodge,Stratus,emulation,OK,2000,Blue,Pilots license,Russia,A,China
+554,Pontiac,GTO,bifurcated,OK,1965,Teal,Truck driving license,Mongolia,F,China
+555,Scion,xD,radical,OK,2012,Turquoise,Astronaut license,Brazil,F,Sierra Leone
+556,Audi,A3,didactic,OK,2007,Crimson,Astronaut license,Indonesia,E,Thailand
+557,Oldsmobile,LSS,throughput,OK,1998,Purple,Driving license,Sweden,E,Norway
+558,Dodge,Avenger,Inverse,OK,2012,Red,Driving license,Saint Lucia,B,Ecuador
+559,Plymouth,Colt Vista,Assimilated,OK,1994,Pink,Pilots license,China,C,China
+560,GMC,Envoy XUV,Grass-roots,OK,2005,Aquamarine,Astronaut license,Nepal,A,Poland
+561,GMC,1500,definition,OK,1995,Orange,Pilots license,Sweden,D,Bosnia and Herzegovina
+562,Lincoln,MKX,6th generation,OK,2008,Crimson,Driving license,Belize,D,Russia
+563,Chrysler,Sebring,attitude,OK,1995,Orange,Truck driving license,Ukraine,E,China
+564,Toyota,Sienna,Robust,OK,2004,Pink,Pilots license,Bosnia and Herzegovina,D,Indonesia
+565,BMW,7 Series,client-driven,OK,1993,Fuscia,Driving license,Tunisia,E,Kazakhstan
+566,Subaru,XT,optimal,OK,1991,Teal,Astronaut license,France,A,Portugal
+567,Chevrolet,Silverado 2500,toolset,OK,2002,Puce,Truck driving license,China,F,Argentina
+568,GMC,Canyon,Function-based,OK,2004,Khaki,Pilots license,Mauritius,A,Ukraine
+569,Merkur,XR4Ti,coherent,OK,1985,Turquoise,Truck driving license,Philippines,C,Indonesia
+570,Ford,F350,neutral,OK,2008,Khaki,Truck driving license,Germany,E,Armenia
+571,Suzuki,SX4,disintermediate,OK,2009,Fuscia,Astronaut license,China,F,Indonesia
+572,Toyota,Ipsum,extranet,OK,2000,Blue,Driving license,Indonesia,C,Mongolia
+573,Honda,Odyssey,Secured,OK,1995,Violet,Truck driving license,Philippines,F,Tunisia
+574,Mitsubishi,Montero,collaboration,OK,2004,Teal,Driving license,China,A,Poland
+575,Nissan,Altima,client-server,OK,2005,Orange,Astronaut license,Philippines,E,Philippines
+576,Pontiac,Sunbird,Fundamental,OK,1985,Violet,Truck driving license,China,D,Ireland
+577,Pontiac,LeMans,client-server,OK,1991,Crimson,Pilots license,Uzbekistan,C,China
+578,Scion,xA,high-level,OK,2004,Khaki,Truck driving license,China,E,Russia
+579,Chrysler,300,Reverse-engineered,OK,2008,Pink,Astronaut license,Vietnam,D,Honduras
+580,Buick,Skyhawk,systematic,OK,1987,Puce,Pilots license,Vietnam,B,France
+581,Toyota,Sequoia,open system,OK,2006,Khaki,Pilots license,China,C,Latvia
+582,Subaru,Baja,Streamlined,OK,2003,Puce,Truck driving license,China,F,China
+583,Pontiac,G6,definition,OK,2007,Orange,Astronaut license,France,F,Canada
+584,Nissan,350Z,Devolved,OK,2006,Green,Truck driving license,China,A,United States
+585,Kia,Sorento,Realigned,OK,2012,Blue,Astronaut license,Palestinian Territory,F,Ukraine
+586,Mercedes-Benz,CL-Class,Automated,OK,2011,Green,Driving license,Indonesia,F,China
+587,Mazda,Miata MX-5,foreground,OK,1997,Red,Astronaut license,Trinidad and Tobago,A,Serbia
+588,Buick,Park Avenue,Ergonomic,OK,2004,Aquamarine,Astronaut license,Venezuela,C,Morocco
+589,Volkswagen,Eos,adapter,OK,2011,Red,Driving license,Russia,E,Greece
+590,Infiniti,QX,capability,OK,2004,Indigo,Truck driving license,China,A,Colombia
+591,Pontiac,Bonneville,heuristic,OK,2002,Indigo,Driving license,Bosnia and Herzegovina,B,Nigeria
+592,Mercury,Cougar,help-desk,OK,2000,Green,Driving license,Croatia,E,Iran
+593,Acura,Integra,Self-enabling,OK,1997,Green,Truck driving license,France,E,Russia
+594,GMC,Jimmy,software,OK,1996,Blue,Driving license,Poland,F,Ireland
+595,Lexus,ES,installation,OK,1989,Green,Truck driving license,Russia,E,Afghanistan
+596,Chrysler,Town & Country,extranet,OK,1993,Indigo,Driving license,Russia,F,Indonesia
+597,Dodge,Viper,frame,OK,1996,Turquoise,Astronaut license,United States,A,Philippines
+598,Pontiac,Grand Am,Distributed,OK,1993,Red,Astronaut license,Philippines,C,Poland
+599,Subaru,Tribeca,website,OK,2010,Crimson,Astronaut license,Philippines,C,Gambia
+600,BMW,3 Series,Face to face,OK,1999,Mauv,Pilots license,Indonesia,B,China
+601,Chevrolet,Traverse,Reactive,OK,2011,Fuscia,Astronaut license,Sweden,C,Slovenia
+602,Acura,Integra,interface,OK,1988,Pink,Astronaut license,China,E,Portugal
+603,Acura,NSX,infrastructure,OK,1992,Green,Pilots license,Norway,B,Kenya
+604,Acura,NSX,Realigned,OK,1998,Fuscia,Pilots license,Bosnia and Herzegovina,F,Indonesia
+605,Ford,Bronco II,productivity,OK,1987,Green,Pilots license,Ukraine,D,Thailand
+606,Merkur,XR4Ti,Universal,OK,1985,Red,Astronaut license,China,B,Democratic Republic of the Congo
+607,Lexus,GS,Ergonomic,OK,2000,Red,Pilots license,France,F,China
+608,GMC,Sonoma,methodical,OK,1996,Teal,Truck driving license,Indonesia,D,France
+609,Maserati,Spyder,frame,OK,1991,Fuscia,Driving license,Indonesia,B,Indonesia
+610,BMW,7 Series,cohesive,OK,1999,Yellow,Truck driving license,Madagascar,A,Poland
+611,BMW,550,Re-engineered,OK,2006,Violet,Truck driving license,Madagascar,E,China
+612,Saturn,S-Series,budgetary management,OK,1994,Goldenrod,Astronaut license,China,F,Argentina
+613,GMC,Rally Wagon G3500,attitude,OK,1995,Khaki,Truck driving license,Indonesia,F,China
+614,GMC,Sonoma,explicit,OK,2004,Blue,Astronaut license,China,D,Chile
+615,Ford,F-250 Super Duty,pricing structure,OK,2006,Fuscia,Truck driving license,Czech Republic,E,Indonesia
+616,Cadillac,Eldorado,conglomeration,OK,1993,Aquamarine,Truck driving license,Indonesia,E,Philippines
+617,Suzuki,Swift,monitoring,OK,1987,Yellow,Pilots license,China,E,Mauritania
+618,Lincoln,LS,disintermediate,OK,2000,Goldenrod,Pilots license,China,C,Portugal
+619,Jeep,Wrangler,system-worthy,OK,1993,Teal,Astronaut license,Marshall Islands,F,United States
+620,Ford,Laser,Innovative,OK,1988,Blue,Truck driving license,Canada,E,Philippines
+621,Oldsmobile,Aurora,Universal,OK,1999,Puce,Driving license,Egypt,D,Canada
+622,Mercedes-Benz,S-Class,full-range,OK,1996,Orange,Astronaut license,Nicaragua,C,Thailand
+623,Dodge,Ram 3500,bottom-line,OK,1997,Pink,Truck driving license,China,B,Philippines
+624,BMW,Z3,intangible,OK,1996,Teal,Astronaut license,Ireland,F,Turkmenistan
+625,Chrysler,300,array,OK,2011,Purple,Astronaut license,China,C,Russia
+626,Honda,Accord,Vision-oriented,OK,2000,Indigo,Pilots license,Indonesia,D,China
+627,GMC,Sierra 3500,radical,OK,2005,Teal,Truck driving license,France,F,China
+628,Hyundai,Accent,De-engineered,OK,2001,Orange,Pilots license,Russia,D,Brazil
+629,Hyundai,XG350,intermediate,OK,2005,Blue,Astronaut license,Indonesia,F,Portugal
+630,Chevrolet,Blazer,encompassing,OK,2001,Crimson,Astronaut license,Togo,B,Philippines
+631,Volkswagen,New Beetle,reciprocal,OK,2009,Yellow,Pilots license,Philippines,C,China
+632,BMW,Z3,moratorium,OK,2002,Blue,Pilots license,Japan,F,Russia
+633,Saab,9000,De-engineered,OK,1996,Violet,Driving license,Malaysia,B,Thailand
+634,Mercedes-Benz,R-Class,Cross-platform,OK,2011,Orange,Astronaut license,Hungary,B,China
+635,Mitsubishi,Galant,hierarchy,OK,2003,Indigo,Pilots license,Sudan,F,Peru
+636,Mazda,RX-7,Diverse,OK,1990,Aquamarine,Truck driving license,Croatia,E,New Zealand
+637,Ford,Thunderbird,Mandatory,OK,1983,Maroon,Astronaut license,China,F,China
+638,Mitsubishi,Chariot,4th generation,OK,1988,Khaki,Astronaut license,Indonesia,B,Indonesia
+639,Audi,S4,24 hour,OK,2001,Indigo,Driving license,Vietnam,B,Ukraine
+640,Nissan,Maxima,Streamlined,OK,2011,Indigo,Truck driving license,South Africa,D,China
+641,Lamborghini,Gallardo,Monitored,OK,2007,Aquamarine,Pilots license,China,E,Philippines
+642,Aston Martin,Rapide,Integrated,OK,2011,Goldenrod,Driving license,Portugal,A,Russia
+643,Subaru,Forester,Organic,OK,2008,Green,Pilots license,Ecuador,C,China
+644,Pontiac,Safari,internet solution,OK,1988,Turquoise,Driving license,Russia,C,Brazil
+645,Ford,F-350 Super Duty,4th generation,OK,2006,Crimson,Pilots license,Sweden,D,Russia
+646,Acura,Vigor,Streamlined,OK,1993,Blue,Truck driving license,Russia,A,Portugal
+647,Acura,MDX,function,OK,2009,Teal,Astronaut license,Wallis and Futuna,B,Indonesia
+648,Toyota,Sienna,even-keeled,OK,2006,Purple,Astronaut license,Indonesia,F,China
+649,Mazda,Millenia,responsive,OK,1997,Pink,Driving license,Philippines,E,Madagascar
+650,Chevrolet,Colorado,success,OK,2004,Goldenrod,Astronaut license,Brazil,F,Andorra
+651,Ford,E350,bifurcated,OK,2007,Crimson,Truck driving license,Portugal,E,Vietnam
+652,Ford,Mustang,interactive,OK,1970,Fuscia,Pilots license,China,F,Poland
+653,Volvo,XC90,non-volatile,OK,2004,Red,Astronaut license,Philippines,B,Philippines
+654,Dodge,Neon,bi-directional,OK,2005,Green,Truck driving license,Gambia,B,Peru
+655,Audi,A6,object-oriented,OK,2003,Crimson,Astronaut license,Uruguay,D,Indonesia
+656,Volkswagen,Golf,infrastructure,OK,1992,Khaki,Truck driving license,China,F,Colombia
+657,Mazda,Navajo,Grass-roots,OK,1992,Maroon,Driving license,China,A,Djibouti
+658,Chevrolet,Silverado,responsive,OK,2001,Purple,Truck driving license,Colombia,B,Ecuador
+659,Volkswagen,GTI,bifurcated,OK,1988,Blue,Astronaut license,Guyana,F,Poland
+660,Hyundai,Elantra,transitional,OK,1998,Goldenrod,Driving license,Indonesia,E,United States
+661,Cadillac,CTS,customer loyalty,OK,2012,Aquamarine,Truck driving license,Greece,C,Philippines
+662,Mercury,Sable,framework,OK,1996,Green,Astronaut license,Brazil,D,China
+663,Ford,Thunderbird,model,OK,1992,Green,Truck driving license,Indonesia,E,Philippines
+664,Bugatti,Veyron,maximized,OK,2009,Goldenrod,Pilots license,Portugal,D,China
+665,Chevrolet,Astro,neutral,OK,2000,Blue,Astronaut license,Philippines,B,China
+666,Porsche,911,Synergistic,OK,1990,Fuscia,Pilots license,Indonesia,B,China
+667,Saab,9000,Public-key,OK,1997,Goldenrod,Astronaut license,Portugal,D,Colombia
+668,Lexus,SC,Synergistic,OK,1997,Puce,Astronaut license,Ukraine,F,Ukraine
+669,Hyundai,Genesis,toolset,OK,2010,Turquoise,Pilots license,Croatia,F,Colombia
+670,Lexus,LS,Realigned,OK,1995,Teal,Pilots license,Colombia,F,China
+671,Mercedes-Benz,500SEL,Balanced,OK,1993,Green,Pilots license,Brazil,E,France
+672,Chrysler,Aspen,analyzer,OK,2007,Purple,Driving license,Greece,C,Poland
+673,Mercury,Villager,internet solution,OK,2001,Green,Astronaut license,Peru,A,Indonesia
+674,Lincoln,Continental,Polarised,OK,1994,Puce,Driving license,Indonesia,F,Poland
+675,Dodge,Journey,executive,OK,2011,Orange,Astronaut license,China,E,Brazil
+676,Chrysler,Sebring,Quality-focused,OK,1998,Red,Astronaut license,China,A,Italy
+677,Chevrolet,Tracker,emulation,OK,2000,Orange,Pilots license,Nepal,C,France
+678,Audi,A8,zero administration,OK,2011,Teal,Driving license,Dominican Republic,B,Pakistan
+679,GMC,Sierra 3500,moderator,OK,2005,Yellow,Driving license,Armenia,D,Croatia
+680,Mercedes-Benz,C-Class,hierarchy,OK,1996,Turquoise,Truck driving license,Kazakhstan,B,Indonesia
+681,Mazda,B2500,Synergistic,OK,2001,Green,Truck driving license,Portugal,D,Philippines
+682,Acura,MDX,Future-proofed,OK,2006,Teal,Driving license,Indonesia,B,Indonesia
+683,Kia,Soul,Networked,OK,2010,Green,Truck driving license,Argentina,D,Colombia
+684,Mercedes-Benz,SL-Class,system engine,OK,2012,Orange,Pilots license,Czech Republic,E,Mexico
+685,Ford,GT,scalable,OK,2005,Khaki,Astronaut license,Indonesia,D,China
+686,Lincoln,Mark VIII,foreground,OK,1998,Violet,Driving license,Sweden,C,Iran
+687,Toyota,Prius,algorithm,OK,2011,Mauv,Driving license,Indonesia,F,Thailand
+688,Chevrolet,Express 2500,background,OK,2004,Red,Pilots license,Russia,A,Sweden
+689,Mazda,CX-9,hybrid,OK,2008,Red,Truck driving license,Portugal,E,China
+690,Chevrolet,Beretta,heuristic,OK,1994,Purple,Pilots license,China,B,Indonesia
+691,Ford,Fairlane,mobile,OK,1967,Crimson,Astronaut license,United States,E,Canada
+692,Mitsubishi,Truck,Stand-alone,OK,1985,Maroon,Driving license,Kyrgyzstan,C,Portugal
+693,Mercury,Cougar,context-sensitive,OK,1967,Goldenrod,Driving license,France,F,Costa Rica
+694,BMW,M3,Multi-channelled,OK,1995,Yellow,Astronaut license,Greece,A,Peru
+695,Volkswagen,GTI,intangible,OK,2008,Teal,Driving license,Iran,E,Indonesia
+696,Bentley,Continental GT,Synergistic,OK,2006,Red,Astronaut license,Indonesia,D,China
+697,Pontiac,Trans Sport,bandwidth-monitored,OK,1999,Red,Driving license,Portugal,E,Brazil
+698,Mercedes-Benz,S-Class,parallelism,OK,1997,Goldenrod,Pilots license,China,A,Peru
+699,Daihatsu,Charade,circuit,OK,1992,Puce,Astronaut license,China,E,Lithuania
+700,Audi,S4,definition,OK,2010,Green,Astronaut license,France,D,Indonesia
+701,Mercedes-Benz,CLS-Class,impactful,OK,2010,Mauv,Astronaut license,Czech Republic,C,China
+702,Dodge,Ram Van B150,system engine,OK,1992,Yellow,Truck driving license,Afghanistan,C,Saint Kitts and Nevis
+703,Toyota,Sienna,productivity,OK,2005,Yellow,Truck driving license,China,E,Ukraine
+704,Suzuki,Reno,function,OK,2007,Goldenrod,Truck driving license,France,C,China
+705,Mitsubishi,Chariot,leverage,OK,1996,Khaki,Driving license,Ukraine,F,China
+706,Pontiac,Tempest,time-frame,OK,1961,Blue,Pilots license,Russia,C,Philippines
+707,Maybach,62,motivating,OK,2006,Pink,Driving license,Czech Republic,E,Tunisia
+708,Citroën,CX,Polarised,OK,1989,Aquamarine,Pilots license,Slovenia,B,Japan
+709,Suzuki,XL7,hardware,OK,2009,Khaki,Pilots license,China,D,Peru
+710,Honda,CR-V,methodical,OK,2004,Khaki,Driving license,Indonesia,E,China
+711,Chevrolet,S10,Multi-channelled,OK,1994,Purple,Truck driving license,China,F,Brazil
+712,Hyundai,Equus,User-centric,OK,2013,Aquamarine,Astronaut license,Colombia,E,Poland
+713,Ford,F150,User-friendly,OK,2010,Teal,Driving license,China,F,Philippines
+714,Plymouth,Fury,Visionary,OK,1964,Maroon,Truck driving license,Indonesia,B,Poland
+715,Chevrolet,Impala,heuristic,OK,2000,Maroon,Driving license,Guatemala,B,Montenegro
+716,Porsche,911,strategy,OK,1997,Turquoise,Astronaut license,Ukraine,B,Philippines
+717,Dodge,Ram Van 2500,Inverse,OK,2000,Red,Pilots license,Philippines,F,Japan
+718,Mazda,CX-7,extranet,OK,2007,Red,Truck driving license,China,C,Mexico
+719,Chrysler,Pacifica,leverage,OK,2006,Maroon,Truck driving license,Philippines,A,Russia
+720,Subaru,Impreza WRX,application,OK,2011,Red,Driving license,Brazil,C,Portugal
+721,Chevrolet,G-Series 2500,Down-sized,OK,1997,Indigo,Astronaut license,Indonesia,D,Sweden
+722,Volvo,S80,Innovative,OK,2012,Aquamarine,Truck driving license,Brazil,F,Russia
+723,Oldsmobile,Bravada,systematic,OK,1994,Blue,Pilots license,Portugal,A,China
+724,Mazda,Protege,superstructure,OK,1994,Puce,Truck driving license,China,E,Austria
+725,Saab,9000,secured line,OK,1987,Blue,Astronaut license,China,B,Japan
+726,Mercedes-Benz,S-Class,Customizable,OK,1996,Khaki,Pilots license,Indonesia,B,China
+727,Suzuki,Daewoo Lacetti,knowledge base,OK,2007,Crimson,Truck driving license,Croatia,D,Panama
+728,Dodge,Charger,composite,OK,2011,Crimson,Pilots license,Portugal,A,Vietnam
+729,Mitsubishi,Outlander,Optimized,OK,2007,Green,Pilots license,Tajikistan,A,Luxembourg
+730,Ford,Tempo,attitude,OK,1989,Pink,Astronaut license,Greece,A,Macedonia
+731,Kia,Amanti,system-worthy,OK,2007,Crimson,Pilots license,Reunion,C,China
+732,Chrysler,New Yorker,Programmable,OK,1996,Khaki,Driving license,Madagascar,E,China
+733,Dodge,Ram Van 3500,Enhanced,OK,1996,Violet,Driving license,China,A,Philippines
+734,Chevrolet,Avalanche 1500,definition,OK,2002,Red,Astronaut license,Laos,D,China
+735,Ford,Ranger,Cross-platform,OK,1986,Blue,Driving license,Brazil,C,France
+736,Dodge,Durango,Front-line,OK,2005,Indigo,Driving license,Ireland,E,Belarus
+737,Lincoln,MKX,parallelism,OK,2008,Orange,Astronaut license,France,F,Poland
+738,Chevrolet,Cavalier,Graphic Interface,OK,1999,Green,Truck driving license,Ukraine,C,France
+739,Dodge,D250,Assimilated,OK,1993,Fuscia,Truck driving license,Martinique,A,Indonesia
+740,Pontiac,Montana,moderator,OK,2004,Puce,Truck driving license,Japan,C,Canada
+741,Hyundai,Accent,database,OK,1996,Khaki,Astronaut license,Albania,D,China
+742,Pontiac,Grand Prix,Sharable,OK,2007,Crimson,Truck driving license,Indonesia,F,Palestinian Territory
+743,Lamborghini,Murciélago,reciprocal,OK,2005,Goldenrod,Truck driving license,Yemen,C,Peru
+744,Ford,Mustang,Reactive,OK,1968,Violet,Pilots license,Sweden,E,Canada
+745,Ford,Festiva,Inverse,OK,1989,Violet,Astronaut license,Indonesia,A,China
+746,Ford,E-Series,Optimized,OK,1985,Crimson,Truck driving license,Indonesia,D,Malaysia
+747,Suzuki,Aerio,utilisation,OK,2007,Violet,Truck driving license,Philippines,D,Uganda
+748,Pontiac,Grand Prix,structure,OK,1972,Crimson,Pilots license,China,B,Palestinian Territory
+749,Chevrolet,Suburban 1500,definition,OK,2012,Turquoise,Driving license,Portugal,F,Philippines
+750,Ford,Ranger,Virtual,OK,1986,Goldenrod,Pilots license,Philippines,D,Indonesia
+751,Suzuki,Swift,groupware,OK,2004,Blue,Driving license,Russia,A,Togo
+752,Ford,E-Series,Proactive,OK,2004,Khaki,Driving license,Russia,C,Russia
+753,Porsche,911,Stand-alone,OK,1991,Yellow,Driving license,Iran,C,Kazakhstan
+754,Eagle,Vision,Multi-channelled,OK,1997,Crimson,Driving license,China,D,Czech Republic
+755,Acura,ZDX,heuristic,OK,2011,Purple,Astronaut license,Czech Republic,E,Russia
+756,Dodge,Viper,composite,OK,1993,Purple,Astronaut license,China,C,China
+757,Infiniti,EX,Upgradable,OK,2010,Purple,Astronaut license,Indonesia,C,Philippines
+758,GMC,Sierra 3500,Innovative,OK,2001,Mauv,Astronaut license,Philippines,A,Russia
+759,Ford,Mustang,Optimized,OK,1998,Yellow,Pilots license,Zambia,C,Malaysia
+760,Maserati,Spyder,attitude,OK,2005,Indigo,Pilots license,China,C,Portugal
+761,Suzuki,SJ,Centralized,OK,1987,Green,Driving license,Cuba,D,France
+762,GMC,2500,ability,OK,1999,Crimson,Truck driving license,Greece,C,Ukraine
+763,Volkswagen,Corrado,Upgradable,OK,1992,Fuscia,Astronaut license,Portugal,B,Czech Republic
+764,Chevrolet,K5 Blazer,system engine,OK,1995,Khaki,Driving license,Greece,D,Mongolia
+765,Toyota,Tundra,discrete,OK,2009,Maroon,Driving license,Poland,F,Brazil
+766,Infiniti,M,data-warehouse,OK,2004,Fuscia,Truck driving license,China,B,China
+767,Acura,TL,collaboration,OK,2001,Aquamarine,Astronaut license,Brazil,C,Poland
+768,Toyota,Land Cruiser,workforce,OK,1992,Blue,Pilots license,Brazil,F,France
+769,Jeep,Commander,Compatible,OK,2008,Indigo,Truck driving license,Portugal,D,Indonesia
+770,GMC,Yukon,upward-trending,OK,1993,Teal,Pilots license,New Zealand,C,Philippines
+771,Pontiac,Firefly,Re-contextualized,OK,1984,Red,Pilots license,New Zealand,A,Ivory Coast
+772,Toyota,4Runner,migration,OK,1995,Pink,Driving license,China,C,China
+773,Buick,LeSabre,Focused,OK,1995,Blue,Truck driving license,France,F,China
+774,Saab,9-7X,orchestration,OK,2007,Turquoise,Truck driving license,Portugal,E,Indonesia
+775,Plymouth,Breeze,architecture,OK,1996,Yellow,Pilots license,China,A,France
+776,Dodge,Ram 3500,Re-engineered,OK,2006,Puce,Pilots license,China,B,Belarus
+777,Chevrolet,Sonic,Integrated,OK,2012,Blue,Astronaut license,Russia,B,Argentina
+778,Hyundai,Veracruz,product,OK,2010,Green,Astronaut license,Samoa,C,Nepal
+779,Toyota,FJ Cruiser,orchestration,OK,2010,Khaki,Pilots license,Colombia,B,Peru
+780,Maserati,228,local area network,OK,1989,Puce,Truck driving license,Czech Republic,A,Sweden
+781,Cadillac,SRX,knowledge user,OK,2011,Mauv,Driving license,China,D,Tanzania
+782,GMC,2500 Club Coupe,Progressive,OK,1997,Red,Driving license,Indonesia,B,China
+783,Hyundai,Azera,contextually-based,OK,2009,Khaki,Truck driving license,Paraguay,E,China
+784,GMC,Yukon,Right-sized,OK,2010,Mauv,Truck driving license,China,D,Czech Republic
+785,Ford,Explorer,hierarchy,OK,2007,Maroon,Truck driving license,Philippines,A,China
+786,Mazda,MPV,User-centric,OK,2000,Pink,Truck driving license,Canada,E,China
+787,Volvo,V90,Decentralized,OK,1997,Puce,Driving license,Russia,B,Colombia
+788,Hyundai,Accent,responsive,OK,1997,Orange,Pilots license,Peru,E,China
+789,Mercedes-Benz,SLS-Class,3rd generation,OK,2011,Goldenrod,Astronaut license,Japan,D,Afghanistan
+790,Ford,Festiva,Devolved,OK,1989,Aquamarine,Driving license,Micronesia,A,Bangladesh
+791,Honda,Accord,algorithm,OK,2012,Red,Driving license,Poland,E,Indonesia
+792,Buick,LaCrosse,architecture,OK,2007,Maroon,Astronaut license,France,C,Thailand
+793,Volkswagen,Touareg,asynchronous,OK,2010,Goldenrod,Astronaut license,France,A,Vietnam
+794,Volkswagen,GTI,optimal,OK,1998,Maroon,Driving license,Russia,C,Indonesia
+795,BMW,Z3,heuristic,OK,1997,Khaki,Truck driving license,Greece,D,Malaysia
+796,Porsche,928,collaboration,OK,1988,Puce,Driving license,Madagascar,C,Colombia
+797,Dodge,Viper,Digitized,OK,1999,Goldenrod,Driving license,Honduras,F,China
+798,Bentley,Continental Flying Spur,Enhanced,OK,2010,Fuscia,Driving license,China,A,Indonesia
+799,GMC,2500,interface,OK,1995,Teal,Driving license,China,A,Philippines
+800,Toyota,Solara,content-based,OK,2007,Orange,Pilots license,Japan,E,Sweden
+801,Volvo,V40,interface,OK,2000,Teal,Truck driving license,Madagascar,A,Ukraine
+802,Ford,E250,impactful,OK,2011,Turquoise,Truck driving license,Czech Republic,F,Saudi Arabia
+803,Acura,Integra,moderator,OK,1993,Red,Truck driving license,Jordan,B,China
+804,Chevrolet,Blazer,database,OK,2005,Purple,Astronaut license,Denmark,D,China
+805,Mercedes-Benz,E-Class,extranet,OK,1990,Khaki,Truck driving license,China,D,China
+806,Mitsubishi,Galant,Visionary,OK,2001,Turquoise,Driving license,Ukraine,E,Poland
+807,Volvo,V70,tangible,OK,2010,Green,Driving license,China,A,China
+808,GMC,Envoy,zero administration,OK,2005,Teal,Truck driving license,Ukraine,C,Portugal
+809,Suzuki,Vitara,bottom-line,OK,2003,Pink,Astronaut license,Vietnam,A,Russia
+810,Infiniti,QX,Integrated,OK,2000,Indigo,Truck driving license,Czech Republic,E,Malta
+811,Toyota,Celica,Function-based,OK,2000,Aquamarine,Pilots license,China,E,Philippines
+812,Mercedes-Benz,300CE,tertiary,OK,1992,Khaki,Driving license,China,F,Indonesia
+813,Chrysler,Cirrus,help-desk,OK,1999,Indigo,Truck driving license,Kazakhstan,C,China
+814,Volvo,V50,multi-state,OK,2009,Blue,Truck driving license,Poland,D,France
+815,Chrysler,200,Persistent,OK,2012,Purple,Astronaut license,Poland,D,Lithuania
+816,Maserati,Quattroporte,Managed,OK,2006,Purple,Pilots license,Poland,F,Philippines
+817,Volvo,XC70,contextually-based,OK,2008,Puce,Pilots license,Poland,A,Argentina
+818,Ford,Thunderbird,scalable,OK,2004,Purple,Truck driving license,Indonesia,B,Brazil
+819,Subaru,Forester,matrices,OK,1999,Aquamarine,Astronaut license,Indonesia,D,Argentina
+820,Isuzu,i-Series,utilisation,OK,2006,Maroon,Truck driving license,Bulgaria,D,Kazakhstan
+821,Buick,Reatta,success,OK,1990,Yellow,Pilots license,Kazakhstan,F,Norway
+822,Volkswagen,Passat,encompassing,OK,1986,Pink,Pilots license,Thailand,C,Portugal
+823,Chrysler,Town & Country,Innovative,OK,1992,Teal,Astronaut license,Russia,D,Brazil
+824,Jeep,Liberty,attitude-oriented,OK,2003,Maroon,Driving license,Bolivia,D,China
+825,Chevrolet,Monte Carlo,Versatile,OK,1995,Mauv,Astronaut license,Czech Republic,A,Ivory Coast
+826,Nissan,Altima,eco-centric,OK,2011,Fuscia,Astronaut license,Thailand,B,Indonesia
+827,Land Rover,Defender,24/7,OK,1997,Fuscia,Astronaut license,Indonesia,C,China
+828,Chevrolet,Sportvan G30,Reactive,OK,1993,Yellow,Pilots license,Indonesia,C,Russia
+829,Mitsubishi,Galant,zero tolerance,OK,2010,Fuscia,Pilots license,Philippines,A,China
+830,Mazda,Tribute,Reverse-engineered,OK,2009,Purple,Driving license,China,F,Madagascar
+831,Toyota,MR2,frame,OK,2001,Turquoise,Pilots license,China,E,Portugal
+832,GMC,Suburban 2500,leading edge,OK,1995,Teal,Pilots license,China,A,China
+833,Bentley,Continental,benchmark,OK,2005,Maroon,Driving license,Russia,D,Laos
+834,Toyota,RAV4,intermediate,OK,1996,Red,Pilots license,Kenya,B,Vietnam
+835,Infiniti,I,bi-directional,OK,1996,Indigo,Truck driving license,Indonesia,E,Brazil
+836,Volvo,C30,alliance,OK,2012,Purple,Driving license,China,E,Portugal
+837,Toyota,Land Cruiser,context-sensitive,OK,1995,Turquoise,Astronaut license,Russia,D,Peru
+838,Cadillac,XLR-V,approach,OK,2007,Indigo,Pilots license,China,C,Russia
+839,Chrysler,PT Cruiser,optimal,OK,2007,Purple,Astronaut license,Indonesia,C,Philippines
+840,Mercedes-Benz,Sprinter,Switchable,OK,2011,Violet,Astronaut license,Indonesia,E,Georgia
+841,Pontiac,Grand Prix,Triple-buffered,OK,1975,Mauv,Astronaut license,Israel,F,Vietnam
+842,Chevrolet,G-Series 2500,Right-sized,OK,1997,Khaki,Astronaut license,Indonesia,A,Bulgaria
+843,Dodge,Viper,Cross-group,OK,2008,Red,Pilots license,Russia,E,Indonesia
+844,Lamborghini,Diablo,zero defect,OK,2001,Indigo,Astronaut license,Philippines,A,Portugal
+845,Mitsubishi,Montero,high-level,OK,2002,Mauv,Astronaut license,China,B,Indonesia
+846,Subaru,Justy,logistical,OK,1991,Indigo,Driving license,Syria,F,Czech Republic
+847,BMW,M3,Pre-emptive,OK,2003,Yellow,Astronaut license,Indonesia,D,Moldova
+848,Honda,Prelude,User-centric,OK,1984,Fuscia,Pilots license,Russia,E,Japan
+849,Honda,Pilot,responsive,OK,2008,Indigo,Driving license,Russia,A,Tunisia
+850,Volkswagen,Golf,Phased,OK,2006,Teal,Astronaut license,Lesotho,B,Indonesia
+851,Pontiac,LeMans,capability,OK,1965,Orange,Astronaut license,Greece,B,Indonesia
+852,Ford,Flex,high-level,OK,2010,Blue,Astronaut license,Moldova,A,Bulgaria
+853,Mercury,Grand Marquis,installation,OK,2003,Purple,Pilots license,Poland,F,Indonesia
+854,Audi,A6,firmware,OK,2007,Crimson,Driving license,Thailand,F,China
+855,Pontiac,LeMans,extranet,OK,1993,Violet,Astronaut license,France,B,Cyprus
+856,GMC,Safari,Focused,OK,1995,Yellow,Pilots license,Sri Lanka,E,Czech Republic
+857,Chevrolet,Corsica,non-volatile,OK,1994,Purple,Astronaut license,Indonesia,D,Thailand
+858,Buick,Rainier,knowledge user,OK,2004,Indigo,Driving license,Russia,E,China
+859,Pontiac,Sunfire,foreground,OK,1997,Teal,Pilots license,Canada,E,Croatia
+860,Mercury,Marquis,framework,OK,1985,Aquamarine,Driving license,China,F,Russia
+861,Honda,Pilot,mobile,OK,2012,Purple,Driving license,Kazakhstan,C,Croatia
+862,Chevrolet,Corvette,Horizontal,OK,1985,Purple,Driving license,Indonesia,C,China
+863,Mercedes-Benz,E-Class,productivity,OK,2008,Orange,Pilots license,Brazil,D,Croatia
+864,Volkswagen,Routan,Implemented,OK,2010,Fuscia,Astronaut license,Egypt,E,Portugal
+865,Pontiac,Bonneville,Fundamental,OK,1984,Violet,Astronaut license,Mauritius,E,Russia
+866,Ford,Escort,modular,OK,1985,Violet,Astronaut license,Portugal,C,China
+867,Mercury,Tracer,moratorium,OK,1993,Green,Driving license,Philippines,F,China
+868,Chrysler,PT Cruiser,Persevering,OK,2009,Green,Driving license,China,E,Russia
+869,Pontiac,Firebird,adapter,OK,1998,Red,Truck driving license,China,C,Brazil
+870,Lotus,Elise,forecast,OK,2011,Violet,Astronaut license,Malaysia,E,Greece
+871,Toyota,Land Cruiser,multi-tasking,OK,2011,Mauv,Driving license,Mexico,B,Russia
+872,Buick,Lucerne,strategy,OK,2009,Mauv,Pilots license,China,F,Portugal
+873,Mazda,B-Series,infrastructure,OK,2008,Maroon,Astronaut license,Brazil,C,China
+874,Suzuki,Vitara,Streamlined,OK,2004,Yellow,Driving license,Indonesia,B,"Bonaire, Saint Eustatius and Saba "
+875,BMW,7 Series,zero defect,OK,1999,Fuscia,Astronaut license,Indonesia,E,China
+876,Chevrolet,Avalanche,Mandatory,OK,2008,Pink,Driving license,Peru,B,France
+877,Maybach,62,User-centric,OK,2003,Green,Astronaut license,China,A,Israel
+878,Land Rover,Defender Ice Edition,mission-critical,OK,2010,Orange,Truck driving license,Kenya,A,United States
+879,Chevrolet,Lumina,mission-critical,OK,1997,Blue,Astronaut license,Philippines,C,Greece
+880,Volkswagen,Tiguan,fault-tolerant,OK,2011,Pink,Driving license,Philippines,A,Mexico
+881,Chevrolet,HHR,logistical,OK,2011,Red,Driving license,China,C,Mexico
+882,Porsche,911,hybrid,OK,2004,Orange,Astronaut license,United States,F,China
+883,Mitsubishi,Galant,Centralized,OK,2010,Blue,Pilots license,United States,B,China
+884,Pontiac,G5,methodology,OK,2009,Red,Truck driving license,France,D,Philippines
+885,Buick,LeSabre,standardization,OK,2000,Purple,Pilots license,Indonesia,F,China
+886,Ford,Aspire,zero defect,OK,1994,Blue,Driving license,Pakistan,F,Portugal
+887,Lincoln,Continental,Assimilated,OK,1995,Aquamarine,Astronaut license,Philippines,D,Albania
+888,Mitsubishi,Lancer Evolution,structure,OK,2008,Teal,Truck driving license,Barbados,A,China
+889,Chevrolet,Express 2500,attitude,OK,2010,Blue,Truck driving license,Sweden,D,China
+890,Dodge,Viper,Face to face,OK,1992,Indigo,Pilots license,Brazil,D,Yemen
+891,Mazda,626,reciprocal,OK,1991,Pink,Pilots license,Portugal,B,China
+892,Porsche,911,Operative,OK,2005,Turquoise,Truck driving license,South Africa,B,China
+893,Ford,Mustang,asymmetric,OK,1973,Fuscia,Driving license,Israel,E,Iran
+894,Ford,Mustang,hierarchy,OK,2003,Orange,Astronaut license,Pakistan,D,Czech Republic
+895,Mazda,Miata MX-5,utilisation,OK,1996,Puce,Astronaut license,Japan,A,Australia
+896,Saab,9-2X,multi-tasking,OK,2005,Fuscia,Truck driving license,China,B,China
+897,Audi,A6,instruction set,OK,1998,Maroon,Driving license,Japan,E,Philippines
+898,Buick,Regal,national,OK,1987,Crimson,Driving license,Indonesia,D,Greece
+899,Acura,Legend,flexibility,OK,1990,Blue,Truck driving license,Greece,A,Japan
+900,Maserati,Spyder,User-centric,OK,2002,Pink,Pilots license,Russia,C,Finland
+901,Chevrolet,Avalanche,contingency,OK,2007,Aquamarine,Driving license,China,F,Argentina
+902,Mazda,Mazda5,even-keeled,OK,2009,Blue,Truck driving license,China,D,China
+903,Ford,F-Series,neutral,OK,1985,Violet,Driving license,Russia,D,Brazil
+904,Acura,NSX,Enhanced,OK,2000,Teal,Driving license,China,A,Bahrain
+905,Ford,GT500,portal,OK,2007,Violet,Astronaut license,Poland,D,Bahamas
+906,GMC,Envoy,Digitized,OK,1999,Orange,Astronaut license,Myanmar,C,Poland
+907,Suzuki,XL-7,Stand-alone,OK,2007,Purple,Pilots license,Russia,A,Philippines
+908,Honda,Odyssey,system engine,OK,2007,Crimson,Driving license,Slovenia,A,Moldova
+909,Mitsubishi,Mirage,client-server,OK,1985,Crimson,Astronaut license,Italy,A,Iran
+910,Chrysler,LeBaron,analyzer,OK,1995,Green,Driving license,Russia,E,Ukraine
+911,Mazda,B2600,attitude-oriented,OK,1987,Green,Driving license,Armenia,F,Portugal
+912,Nissan,Altima,process improvement,OK,2013,Fuscia,Driving license,Indonesia,D,Kazakhstan
+913,Toyota,Solara,Secured,OK,2005,Green,Driving license,Madagascar,D,Russia
+914,Dodge,Dakota,Advanced,OK,1993,Aquamarine,Pilots license,Portugal,F,Angola
+915,Mercedes-Benz,SL65 AMG,multi-tasking,OK,2006,Maroon,Truck driving license,China,A,South Africa
+916,Toyota,RAV4,encryption,OK,2007,Purple,Pilots license,Russia,A,France
+917,Chrysler,Concorde,multi-state,OK,2003,Crimson,Astronaut license,Russia,D,China
+918,Nissan,Armada,moratorium,OK,2008,Orange,Astronaut license,Netherlands,F,China
+919,Maserati,Quattroporte,Synergized,OK,2005,Yellow,Pilots license,Poland,E,Indonesia
+920,Isuzu,Oasis,interactive,OK,1999,Pink,Truck driving license,Namibia,D,Philippines
+921,Nissan,Frontier,Polarised,OK,2012,Violet,Truck driving license,China,C,Indonesia
+922,Dodge,Ram Van 3500,Future-proofed,OK,2003,Goldenrod,Truck driving license,Albania,E,Indonesia
+923,Oldsmobile,Bravada,user-facing,OK,1997,Green,Truck driving license,Greece,D,Ukraine
+924,Mitsubishi,Truck,superstructure,OK,1995,Fuscia,Astronaut license,Pakistan,C,United States
+925,GMC,Savana 3500,Decentralized,OK,1996,Aquamarine,Driving license,China,C,Indonesia
+926,Acura,NSX,mission-critical,OK,1994,Violet,Astronaut license,Peru,D,Ukraine
+927,Ford,LTD Crown Victoria,hybrid,OK,1984,Purple,Astronaut license,Mauritius,C,Brazil
+928,Audi,Allroad,secured line,OK,2001,Crimson,Truck driving license,Philippines,E,Pakistan
+929,Chevrolet,Corvette,optimizing,OK,2000,Turquoise,Astronaut license,Japan,E,Philippines
+930,Mitsubishi,Montero,Organized,OK,1997,Green,Pilots license,Russia,F,Nepal
+931,Volvo,C70,encryption,OK,2009,Yellow,Pilots license,Philippines,D,China
+932,Mercury,Villager,architecture,OK,1998,Orange,Driving license,China,B,Czech Republic
+933,Aston Martin,DB9,scalable,OK,2011,Puce,Astronaut license,China,F,Vietnam
+934,Chevrolet,G-Series G20,budgetary management,OK,1994,Red,Pilots license,China,B,Brazil
+935,Maserati,Spyder,heuristic,OK,2004,Purple,Truck driving license,Morocco,C,Malawi
+936,Subaru,Legacy,Proactive,OK,2008,Indigo,Pilots license,Poland,C,Armenia
+937,Toyota,Tacoma,hub,OK,2003,Khaki,Astronaut license,Finland,B,Mali
+938,Mercedes-Benz,E-Class,object-oriented,OK,1993,Mauv,Truck driving license,Iran,E,Cuba
+939,Toyota,Camry,Object-based,OK,2007,Maroon,Astronaut license,Brazil,B,Japan
+940,Isuzu,Trooper,time-frame,OK,2000,Khaki,Truck driving license,China,E,Brazil
+941,Mercedes-Benz,SL-Class,Seamless,OK,2009,Crimson,Astronaut license,Honduras,E,Portugal
+942,Chevrolet,Beretta,contingency,OK,1994,Maroon,Truck driving license,Russia,B,Philippines
+943,Audi,A6,Secured,OK,2009,Orange,Driving license,Greece,C,Croatia
+944,Lexus,IS-F,hardware,OK,2009,Mauv,Driving license,China,B,Philippines
+945,Lexus,RX,object-oriented,OK,2000,Turquoise,Driving license,Portugal,B,Ukraine
+946,Suzuki,Cultus,framework,OK,1985,Turquoise,Pilots license,China,C,Indonesia
+947,Volkswagen,R32,Face to face,OK,2009,Mauv,Driving license,Pakistan,F,Hungary
+948,Ford,Contour,structure,OK,1995,Puce,Astronaut license,Canada,A,Russia
+949,Honda,Element,functionalities,OK,2008,Indigo,Pilots license,United Kingdom,F,Portugal
+950,Ford,Expedition,Operative,OK,2001,Green,Astronaut license,China,C,China
+951,Acura,TL,system engine,OK,1997,Turquoise,Astronaut license,Japan,D,Honduras
+952,Toyota,MR2,Cross-group,OK,1992,Fuscia,Truck driving license,Macedonia,B,China
+953,Lexus,LFA,analyzing,OK,2012,Turquoise,Pilots license,Indonesia,F,Belarus
+954,Lotus,Esprit,Reverse-engineered,OK,1998,Yellow,Truck driving license,Finland,B,Sierra Leone
+955,Kia,Sportage,initiative,OK,2011,Crimson,Astronaut license,China,B,Czech Republic
+956,Ferrari,F430,Expanded,OK,2006,Teal,Driving license,Afghanistan,E,Argentina
+957,Porsche,Boxster,functionalities,OK,2007,Khaki,Pilots license,Australia,D,Poland
+958,Mercury,Mountaineer,monitoring,OK,2007,Teal,Pilots license,Sweden,B,Indonesia
+959,Infiniti,Q,Monitored,OK,2000,Aquamarine,Pilots license,Cuba,A,Peru
+960,Maybach,57S,Up-sized,OK,2005,Green,Pilots license,Ukraine,E,Dominican Republic
+961,Chevrolet,Aveo,capacity,OK,2009,Yellow,Pilots license,Brazil,A,Brazil
+962,Porsche,Cayenne,user-facing,OK,2006,Orange,Truck driving license,Russia,E,United States
+963,Oldsmobile,98,hub,OK,1992,Aquamarine,Driving license,China,D,China
+964,Ford,Mustang,approach,OK,1983,Red,Driving license,Indonesia,A,Belarus
+965,Audi,A5,Focused,OK,2010,Fuscia,Truck driving license,China,C,Brazil
+966,Toyota,Supra,methodology,OK,1997,Yellow,Driving license,Ukraine,D,Russia
+967,Kia,Sephia,needs-based,OK,2000,Orange,Pilots license,Philippines,E,Russia
+968,Bentley,Arnage,infrastructure,OK,2007,Red,Pilots license,Poland,C,Portugal
+969,Spyker,C8 Spyder,benchmark,OK,2004,Aquamarine,Truck driving license,France,C,Poland
+970,Saab,900,Digitized,OK,1986,Orange,Astronaut license,Macedonia,E,United States
+971,Cadillac,SRX,Fully-configurable,OK,2008,Turquoise,Truck driving license,Japan,A,Japan
+972,Lincoln,Navigator,framework,OK,2006,Teal,Driving license,El Salvador,B,Albania
+973,Oldsmobile,98,Organic,OK,1992,Orange,Pilots license,Canada,B,Peru
+974,Mercury,Cougar,De-engineered,OK,2002,Purple,Driving license,China,E,France
+975,Dodge,Ram 1500 Club,Integrated,OK,1997,Orange,Driving license,United States,F,Slovenia
+976,Ford,F150,Ameliorated,OK,2006,Mauv,Pilots license,Poland,E,Indonesia
+977,Chevrolet,Bel Air,empowering,OK,1967,Yellow,Pilots license,China,A,China
+978,Lincoln,Town Car,functionalities,OK,1991,Aquamarine,Truck driving license,Canada,A,Philippines
+979,Chevrolet,Venture,Decentralized,OK,2000,Purple,Driving license,China,A,Philippines
+980,Tesla,Model S,Inverse,OK,2012,Red,Driving license,Brazil,E,China
+981,Volvo,S80,Visionary,OK,2004,Purple,Astronaut license,Philippines,E,Kazakhstan
+982,Mercury,Mariner,contextually-based,OK,2006,Turquoise,Truck driving license,Canada,C,Russia
+983,Ford,E350,open architecture,OK,2010,Khaki,Pilots license,Kosovo,C,China
+984,Chrysler,PT Cruiser,bandwidth-monitored,OK,2004,Red,Pilots license,China,D,Guatemala
+985,Chrysler,LHS,multi-tasking,OK,2000,Khaki,Pilots license,Argentina,A,Iran
+986,Mazda,929,strategy,OK,1991,Fuscia,Astronaut license,Monaco,B,Brazil
+987,Mercedes-Benz,C-Class,Adaptive,OK,1996,Crimson,Astronaut license,China,A,France
+988,Suzuki,Sidekick,incremental,OK,1995,Crimson,Truck driving license,Vietnam,F,Yemen
+989,Lincoln,Continental,Ameliorated,OK,1994,Crimson,Driving license,Indonesia,D,Indonesia
+990,Buick,Skylark,projection,OK,1985,Green,Pilots license,Sweden,D,Croatia
+991,GMC,Sierra 3500,high-level,OK,2012,Crimson,Pilots license,China,A,Bolivia
+992,Mazda,Millenia,Intuitive,OK,2001,Maroon,Pilots license,China,A,Argentina
+993,Mercury,Sable,Seamless,OK,1987,Puce,Driving license,Croatia,A,China
+994,Chevrolet,TrailBlazer,real-time,OK,2008,Maroon,Truck driving license,Sweden,D,Indonesia
+995,Saturn,Astra,flexibility,OK,2009,Mauv,Truck driving license,Iran,A,Portugal
+996,Ford,F350,focus group,OK,2012,Green,Astronaut license,Tajikistan,A,China
+997,GMC,Sierra 2500,methodical,OK,2008,Turquoise,Pilots license,Indonesia,B,Iran
+998,Volkswagen,riolet,open architecture,OK,1993,Turquoise,Astronaut license,Russia,E,Indonesia
+999,Dodge,Ram 1500,composite,OK,2001,Pink,Truck driving license,Haiti,E,Indonesia
+1000,Toyota,Venza,Cross-platform,OK,2010,Purple,Driving license,Brazil,A,Japan
