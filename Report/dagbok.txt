@@ -176,7 +176,7 @@ lagaði search föll í logic layer.
 ---Þriðjudagur 08.12.2020---
 -
 # Ragnar:
--áframhald með Contact flokkin koma virkni í lag
+-áframhald með Contract flokkin koma virkni í lag
 # Callista:
 -Updating Customer and employee UI
 -bug Checking
@@ -187,8 +187,9 @@ Vann í að implementa availability kerfi fyrir bíla og bætti datetime föllum
 
 ---Miðvikudagur 09.12.2020---
 -
-# Ragnar:
-# Callista:
+# Ragnar: 
+-fara yfir villur í kóða
+# Callista: worked on serch functions for Customer and employee
 # Fannar: Vann við að bæta við invoice kerfi, tengja rates við bíla og reikna út tíma og verð o.sfrv. 
 # Franz:
 -áfram hald með UI Layer og villuprófun
