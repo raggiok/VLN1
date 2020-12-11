@@ -316,3 +316,12 @@ class LogicAPI:
 
     def create_invoice(self, contract_id):
         return self.contract.create_invoice(contract_id)
+    
+    def search_invoices(self, invoice_id):
+        return self.contract.search_invoices(invoice_id)
+
+    def get_all_invoices(self):
+        return self.contract.get_all_invoices()
+    
+    def set_invoice_to_payed(self, invoice_id):
+        return self.contract.set_invoice_to_payed()

@@ -154,7 +154,8 @@ class ContractLogic:
             late_fee += late_hours.days * int(rate_invoice.cost_per_day) * LATECHARGE
         total += hours_total.days * int(rate_invoice.cost_per_day)
         total += late_fee
-        invoice = Invoice("",contract.unique_id, customer.ssn, vehicle.unique_id, rate_invoice.cost_per_day, (hours_total.days + late_hours.days), int(total), int(late_fee))
+        invoice = Invoice("", contract.unique_id, customer.ssn, vehicle.unique_id, rate_invoice.cost_per_day, (hours_total.days + late_hours.days), int(total), int(late_fee))
+        print(invoice)
         contract.total_price = total
         contract.state = 'INVOICED'
         self.data.update_contract(contract)
@@ -165,8 +166,8 @@ class ContractLogic:
         for invoice in self.data.get_invoices():
             if invoice.contract_unique_id == new_invoice.contract_unique_id:
                 return "*** Invoice already sent. ***"
-        return self.data.create_invoice(new_invoice)
-
+        self.data.create_invoice(new_invoice)
+        return 'Invoice successfully sent.'
     def get_invoices(self):
         return self.data.get_invoices()
 
@@ -187,3 +188,23 @@ class ContractLogic:
             return "Vehicle successfully checked in."
         else:
             return contract[0]
+
+    def search_invoices(self, invoice_id):
+        match = []
+        for invoice in self.data.get_invoices():
+            if invoice.unique_id == invoice_id:
+                match.append(invoice)
+        return self.no_match_found(match)
+    
+    def get_all_invoices(self):
+        a_list = self.data.get_invoices()
+        return self.no_match_found(a_list)
+
+    def set_invoice_to_payed(self, invoice_id):
+        listi = self.search_invoices(invoice_id)
+        if listi[0] != "\n*** No match found ***\n":
+            listi[0].state = 'PAYED'
+            self.data.update_invoice(listi[0])
+            return 'State successfully changed.'
+        else:
+            return listi[0]
