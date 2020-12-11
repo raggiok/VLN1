@@ -97,9 +97,6 @@ class LogicAPI:
     def all_contracts(self):
         return self.contract.all_contracts()
 
-    def search_contracts_by_name(self, name):
-        return self.contract.search_contracts_by_name(name)
-
     def create_new_contract(self, a_list):
         return self.contract.create_contract(a_list)
 
@@ -294,7 +291,7 @@ class LogicAPI:
     def available_zip_code(self):
         return self.employee.available_the_zip_code()
     
-    def available_city(self):
+    def emp_available_city(self):
         return self.employee.available_the_city()
 
     def emp_available_country(self):

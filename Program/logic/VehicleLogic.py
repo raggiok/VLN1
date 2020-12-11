@@ -39,14 +39,6 @@ class VehicleLogic():
             if vehicle.vehicle_type not in retList:
                 retList.append(vehicle.vehicle_type)
         return retList
-      
-    def available_model(self):
-        vehicle = self.data.get_vehicles()
-        retList = []
-        for vehicle in vehicle:
-            if vehicle.model not in retList:
-                retList.append(vehicle.model)
-        return retList
 
     def available_status(self):
         vehicle = self.data.get_vehicles()

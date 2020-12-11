@@ -30,7 +30,7 @@ class ReportUI:
         print("="*260)
     
     def print_table_footer(self):
-        print("-"*260)
+        print("-"*60)
         print()
 
     def revenue_table_header(self):
@@ -72,61 +72,13 @@ class ReportUI:
             else:
                 print("Invalid command, try again")
 
-    #Review revenue during time period
-
-    #Overview of vehicle in a specific destination, categorized by type
-
-
-
-    #     contractFieldnames = ["Customer name","Vehicle ID", "Start date of rental period (dd.mm.yy)","End date of rental period (dd.mm.yy)","Country","Employee Name","Total price"] # + "Contract Creation Date"
-
-
-
-
-    # def print_report_menu(self):
-    #     self.ui_menu_header('Report Menu')
-    #     print("""\nSelect an option...\n1. Print statistics by destination.\n2. Print revenue statistics.\n3. Print billing overview.""")
-    #     self.ui_menu_footer()
-
-    # def print_report_menu(self):
-    #     self.general.ui_menu_header('Report Menu')
-    #     print("""\nSelect an option...\n1. Print statistics by destination.\n2. Print revenue statistics.\n3. Print billing overview.""")
-    #     self.ui_menu_footer()
-
-    # def destination_statistics(self):
-    #     self.general.ui_menu_header('Destination Statistics')
-    #     print("""Select an option...\n1. Revenue statistics.\n2. Vehicle statistics.""")
-    #     self.ui_menu_footer()
-
-    # def revenue_statistics(self):
-    #     self.general.ui_menu_header('Revenue Statistics')
-    #     print("""Select an option...\n1. Revenue by month.\n2. Revenue by date.""")
-    #     self.ui_menu_footer()
-
-    # def billing_overview(self):
-    #     self.general.ui_menu_header('Billing Overview')
-    #     start_date = input("From date (dd.mm.yy): ")
-    #     end_date = input("End date (dd.mm.yy): ")
-
-
-
-    # def destination_statistics(self):
-    #     self.ui_menu_header('Destination Statistics')
-    #     print("""Select an option...\n1. Revenue statistics.\n2. Vehicle statistics.""")
-    #     self.ui_menu_footer()
-
     def revenue_statistics(self, start_date, end_date):
         search_list = self.logic.revenue_by_date(start_date, end_date)
         if search_list == 'No revenue to show during that time period.':
             print(f'\n***** {search_list} *****')
             return
         else:
-            print(self.revenue_table_header)
+            self.revenue_table_header()
             for result in search_list:
                 print(f'{result.checkout_date:<20}{result.country:<20}{result.total_price:<20}')
-            print(self.print_table_footer)
-
-    # def billing_overview(self):
-    #     self.ui_menu_header('Billing Overview')
-    #     start_date = input("From date (dd.mm.yy): ")
-    #     end_date = input("End date (dd.mm.yy): ")
+            self.print_table_footer()

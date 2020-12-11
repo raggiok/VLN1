@@ -239,7 +239,7 @@ class ContractUI:
         print("6. Employee name")
         print("7. Total price")
         print("8. Exit")
-        self.ui_menu_footer()
+        self.general.ui_menu_footer()
 
     #Prints contract with unique ID
     def ui_single_contract_ID(self):

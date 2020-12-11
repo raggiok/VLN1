@@ -156,7 +156,7 @@ class EmployeeUI:
     def ui_city_available_print(self):
         '''Prints all employee city'''
         print("\nAvailable Options:")
-        employees = self.logicAPI.available_city()
+        employees = self.logicAPI.emp_available_city()
         for employee in employees:
             print("\t" + employee)
         print()
