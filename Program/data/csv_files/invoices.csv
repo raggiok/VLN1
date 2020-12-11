@@ -1,6 +1,4 @@
 unique_id,contract_unique_id,vehicle_unique_id,customer_unique_id,rate,total_days,total_price,late_fee,invoice_type,state
-1,Vehicle 25,Customer no. 50,15,20,300,Debit,ACTIVE
-2,Vehicle 25,Customer no. 50,15,20,300,Debit,ACTIVE
-9,13,sadfsad,50,10,10.0,60.0,Debit
-10,,41,151515-1515,50,10,190.0,240.0,Debit
-18,5,41,151515-1515,50,5,290,240,Debit
+
+29,5,41,151515-1515,50,5,290,240,Debit
+30,6,151515-1515,41,50,5,290,240,Debit

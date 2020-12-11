@@ -4,6 +4,7 @@ from ui.CustomerUI import CustomerUI
 from ui.ContractsUI import ContractUI
 from ui.DestinationUI import destinationUI
 from ui.EmployeeUI import EmployeeUI
+from ui.InvoiceUI import InvoiceUI
 
 class UIMain:
     
@@ -28,7 +29,7 @@ class UIMain:
     def ui_loop(self):
         while True:
             self.ui_menu_header("Main Menu")
-            print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \nq. to quit program\n")
+            print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \n7. Invoices \nq. to quit program\n")
             self.ui_menu_footer()
             command = input("Input your command: ")
             command = command.lower()
@@ -44,6 +45,8 @@ class UIMain:
                 self.destination = destinationUI()
             elif command == "6":            
                 self.employee = EmployeeUI()
+            elif command == '7':
+                self.invoice = InvoiceUI()
             elif command == "q":
                 break
             else:
