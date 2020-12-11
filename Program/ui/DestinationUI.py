@@ -290,7 +290,7 @@ class destinationUI:
                 elif selection == "7":
                     self.ui_print_main_contact()
                 elif selection == "8":
-                    return self.destination_menu()    
+                    return   
             elif command == "3":
                 self.ui_all_destinations()
             elif command == "4":

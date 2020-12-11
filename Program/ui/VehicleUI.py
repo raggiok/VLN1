@@ -17,7 +17,7 @@ class VehicleUI:
         user_input = ""
         for field in vehicleFieldnames:
             if user_input.lower() == "q":
-                return self.vehicle_menu()
+                return
             user_input = input(f"Enter {field}: ")
             inputList.append(user_input)
         return inputList
@@ -52,7 +52,7 @@ class VehicleUI:
             elif selection == "9":
                 vehicle.rate = self.value_input()
             elif selection == "q":
-                return vehicle
+                return 
 
     #Get input for edit menu
     def ui_edit_input(self):
