@@ -315,8 +315,8 @@ class LogicAPI:
     def get_all_invoices(self):
         return self.contract.get_all_invoices()
     
-    def set_invoice_to_payed(self, invoice_id):
-        return self.contract.set_invoice_to_payed(invoice_id)
+    def set_invoice_to_paid(self, invoice_id):
+        return self.contract.set_invoice_to_paid(invoice_id)
 
 
     ### REPORTS ###

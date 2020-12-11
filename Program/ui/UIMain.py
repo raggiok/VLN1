@@ -12,6 +12,7 @@ class UIMain:
     promt_login = True
 
     def __init__(self):
+        self.logic = LogicAPI()
         self.login()
         
         #Menu header
@@ -35,12 +36,11 @@ class UIMain:
         while self.promt_login == True:
             print('\nPress "q" to exit')
             print()
-            # employee_id = input(">> Employee ID: ")
-            # if employee_id == "q":
-            #     break
-            # password = input(">> Password: ")
-            # employee_role = self.logic.check_password(employee_id, password)
-            employee_role = "ADMIN"
+            employee_id = input(">> Employee ID: ")
+            if employee_id == "q":
+                break
+            password = input(">> Password: ")
+            employee_role = self.logic.check_password(employee_id, password)
             if employee_role == None:
                 print("\n*** INVALID PASSWORD AND/OR USERNAME ***\n")
             else:

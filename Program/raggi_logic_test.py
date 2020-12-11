@@ -16,7 +16,7 @@ test = dataAPI()
 logic = LogicAPI()
 #unique_id, customer, vehicle_unique_id, start_date, end_date, country, employee, total_price, contract_creation_date, state
 
-contract = Contract('5', 'customer', 'customer_ssn', 'vehicle_unique_id', 'start_date', 'end_date', 'country', 'employee', 'total_price', 'contract_creation_date', 'checkout_date', 'checkin_date', 'checkin_location', 'state')
+contract = Contract('', 'customer', 'customer_ssn', 'vehicle_unique_id', 'start_date', 'end_date', 'country', 'employee', 'total_price', 'contract_creation_date', 'checkout_date', 'checkin_date', 'checkin_location', 'state')
 # customer = Customer("4", "John Smith", "150588-2459", "Heimilisgata 1", "TEST", "Reykjavik", "Iceland", "551-4489", "John@email.com")
 # destination = Destination("2", "Iceland", "TEST", "Keflavik Airport", "558-5498", "10:00", "15:00", "Contact")
 employee = Employee("", "Jon Jonsson", "150589-2129", "City staff", "TEST 50", "105", "Reykjavik", "Iceland", "551-4469", "889-2121", "test@test.is")

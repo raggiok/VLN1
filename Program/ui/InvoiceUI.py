@@ -29,7 +29,7 @@ class InvoiceUI:
     def invoice_menu(self):
         while True:
             self.general.ui_menu_header("Invoice Menu")
-            self.ui_numbered_menu(["Print invoice list", "Search for invoice by unique ID", "Send invoice", "Mark invoice as payed", "Main menu"])
+            self.ui_numbered_menu(["Print invoice list", "Search for invoice by unique ID", "Send invoice", "Mark invoice as paid", "Main menu"])
             self.general.ui_menu_footer()
             choice = self.print_select_option()
             if choice == '1':
@@ -47,7 +47,7 @@ class InvoiceUI:
                 print(self.logic.create_invoice(invoice_ID))
             elif choice == '4':
                 id_invoice = input(">> Enter invoice ID: ")
-                print(self.logic.set_invoice_to_payed(id_invoice))
+                print(self.logic.set_invoice_to_paid(id_invoice))
             elif choice == '5':
                 return
             else:

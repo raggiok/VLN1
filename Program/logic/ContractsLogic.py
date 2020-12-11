@@ -199,7 +199,7 @@ class ContractLogic:
         a_list = self.data.get_invoices()
         return self.no_match_found(a_list)
 
-    def set_invoice_to_payed(self, invoice_id):
+    def set_invoice_to_paid(self, invoice_id):
         listi = self.search_invoices(invoice_id)
         if listi[0] != "\n*** No match found ***\n":
             listi[0].state = 'PAID'
