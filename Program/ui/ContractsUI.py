@@ -136,7 +136,7 @@ class ContractUI:
                 contract_id = input(">> Enter contract ID to delete: ")
                 result_list = self.logic.delete_contract(contract_id)
                 for item in result_list:
-                    print(item)
+                    print(item ,end="")
             elif command == "7":
                 return
             else:

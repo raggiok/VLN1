@@ -1,4 +1,2 @@
 unique_id,contract_unique_id,customer_unique_id,vehicle_unique_id,rate,total_days,total_price,late_fee,invoice_type,state
-1,5,151515-1515,41,50,5,290,240,Debit,ACTIVE
-
-
+1,5,151515-1515,41,50,5,290,240,Debit,PAID

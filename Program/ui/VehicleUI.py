@@ -282,7 +282,7 @@ class VehicleUI:
     def vehicle_menu(self):
         while True:
             self.general.ui_menu_header("Vehicle Menu")
-            print("\nSelect an option...\n1. Create new vehicle \n2. Search vehicles \n3. Check availability \n4. Return/check out vehicle. \n5. View all vehicles \n6. Edit vehicle \n7. Delete vehicle \n8. Main Menu")
+            print("\nSelect an option...\n1. Create new vehicle \n2. Search vehicles \n3. Check availability \n4. Check in/check out vehicle. \n5. View all vehicles \n6. Edit vehicle \n7. Delete vehicle \n8. Main Menu")
             self.general.ui_menu_footer()
             command = input(">> Select option: ")
             command = command.lower()

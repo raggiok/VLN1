@@ -1,5 +1,1001 @@
 unique_id,country,city,airport,phone_number,opening_time,closing_time,main_contact,state
-1,Iceland,Reykjavik,Keflavik,551-4545,441-4545,15:00,Ragnar,ACTIVE
-2,Greenland,Nuuk,Narsasaq,552-4545,10:00,13:00,Nisse,ACTIVE
-3,Greenland,Kulusuk,Nigaratatak,09:00,12:00,14:00,Bjogdo,ACTIVE
-4,Faraoe Islands,Thorshavn,Faroyer Airport,224-4566,15:00,21:00,Isleif,ACTIVE
+1,Brazil,Porto Ferreira,Delta Oscar Juliett Quebec Whiskey Golf Echo Charlie Tango X-ray,774-1627,"error: invalid date ""08:00""",Puce,Ara,ACTIVE
+2,Malaysia,Kuching,Juliett Golf Romeo Sierra Alfa Victor Lima Uniform Hotel Tango Yankee Zulu Oscar India X-ray Foxtrot,402-0508,"error: invalid date ""08:00""",Red,Gabrielle,ACTIVE
+3,Lithuania,Varniai,Foxtrot X-ray Bravo Uniform Mike Victor Echo Alfa Papa Quebec Yankee,401-5928,"error: invalid date ""08:00""",Green,Pammie,ACTIVE
+4,Ukraine,Podgortsy,Yankee Tango Lima Charlie Golf Whiskey Hotel India Juliett X-ray Bravo Kilo Uniform Quebec Zulu,387-7145,"error: invalid date ""08:00""",Violet,Carlynne,ACTIVE
+5,Malta,Attard,Delta Quebec Uniform Papa Mike Whiskey India Sierra Golf Oscar X-ray Juliett Charlie Romeo Victor November Echo Kilo Tango,370-7901,"error: invalid date ""08:00""",Yellow,Jacquelin,ACTIVE
+6,Colombia,Cartagena del Chairá,Juliett Charlie Golf Romeo Mike Uniform Tango Oscar Foxtrot X-ray Hotel Kilo November Delta Alfa Quebec Papa Yankee,325-2526,"error: invalid date ""08:00""",Mauv,Billi,ACTIVE
+7,Kazakhstan,Lenger,Alfa Papa Delta Kilo Quebec Victor Juliett Uniform Foxtrot Charlie Mike Zulu Lima,350-5165,"error: invalid date ""08:00""",Violet,Amitie,ACTIVE
+8,Ecuador,Latacunga,Delta Mike Kilo Romeo Whiskey Zulu Foxtrot Juliett Golf Bravo Alfa India Echo Hotel Yankee Quebec,627-6032,"error: invalid date ""08:00""",Maroon,Theresa,ACTIVE
+9,Sweden,Skärhamn,Whiskey Lima Alfa India Zulu Sierra Foxtrot Delta Mike November Charlie Papa Quebec Bravo,302-0181,"error: invalid date ""08:00""",Khaki,Heda,ACTIVE
+10,Costa Rica,Escazú,Quebec Delta Victor Mike Bravo Hotel Whiskey Alfa Charlie Kilo Sierra,957-5738,"error: invalid date ""08:00""",Goldenrod,Ida,ACTIVE
+11,Portugal,Fajã de Cima,Bravo Sierra India Juliett Delta Charlie Zulu Victor Hotel Romeo Whiskey Mike Foxtrot Golf Papa X-ray,566-5866,"error: invalid date ""08:00""",Teal,Belva,ACTIVE
+12,Brazil,Gravatá,Juliett Romeo Quebec Alfa Echo Oscar Whiskey Papa Foxtrot Mike,938-6411,"error: invalid date ""08:00""",Goldenrod,Muffin,ACTIVE
+13,Indonesia,Dawuhan,Sierra Whiskey Oscar Mike Tango Echo Victor Uniform Zulu X-ray Charlie,065-6600,"error: invalid date ""08:00""",Aquamarine,Flo,ACTIVE
+14,China,Xiejiatan,Hotel Yankee Mike November Uniform Lima India Sierra Whiskey Charlie Victor Alfa Foxtrot Quebec,569-5268,"error: invalid date ""08:00""",Maroon,Melanie,ACTIVE
+15,China,Yiyang,Echo Uniform Hotel Tango Papa Juliett Golf Charlie Zulu Quebec Sierra Yankee,793-2128,"error: invalid date ""08:00""",Khaki,Frederica,ACTIVE
+16,Peru,Curahuasi,Zulu Romeo Whiskey Tango India November Victor Yankee Juliett Foxtrot Bravo X-ray Echo Alfa Papa Hotel Sierra Delta Oscar,147-3479,"error: invalid date ""08:00""",Puce,Rina,ACTIVE
+17,Malaysia,Kuala Terengganu,X-ray November Charlie Juliett Tango Victor Yankee Whiskey Zulu Quebec Uniform Hotel Papa Echo Oscar Bravo Sierra,387-3265,"error: invalid date ""08:00""",Turquoise,Charis,ACTIVE
+18,United States,Alexandria,Lima Zulu Alfa Mike Tango Delta Golf Victor Yankee Charlie Echo X-ray,984-3512,"error: invalid date ""08:00""",Khaki,Kimberlyn,ACTIVE
+19,Ukraine,Zaliztsi,Tango India Romeo Mike Oscar Uniform Sierra Juliett Yankee Victor X-ray Echo Bravo Zulu November Alfa Papa Lima Kilo,219-7971,"error: invalid date ""08:00""",Maroon,Kimbra,ACTIVE
+20,Philippines,San Nicolas,Golf Charlie November Echo Zulu Quebec X-ray Juliett Yankee Lima Uniform Hotel Kilo Bravo Tango,767-2888,"error: invalid date ""08:00""",Khaki,Jojo,ACTIVE
+21,China,Luofang,Oscar Quebec Papa Sierra Alfa Tango Echo Juliett Whiskey X-ray Kilo Victor Zulu Uniform Delta Foxtrot Charlie Golf,670-1619,"error: invalid date ""08:00""",Turquoise,Reyna,ACTIVE
+22,Colombia,El Tambo,X-ray Hotel Kilo Quebec Papa Delta India Golf Yankee Tango Echo Sierra Juliett Foxtrot Alfa Whiskey,879-0042,"error: invalid date ""08:00""",Aquamarine,Merry,ACTIVE
+23,Cuba,Yaguajay,Hotel India Echo Juliett Foxtrot Golf Victor November Charlie Delta Oscar Tango Alfa Whiskey X-ray Kilo Yankee Bravo Zulu Lima,787-5035,"error: invalid date ""08:00""",Red,Carmine,ACTIVE
+24,Thailand,Sukhirin,Echo Romeo Delta Whiskey Victor Uniform Tango Lima Bravo Sierra Oscar Charlie X-ray,746-6618,"error: invalid date ""08:00""",Aquamarine,Marys,ACTIVE
+25,United Kingdom,Charlton,Echo Alfa Juliett Kilo Foxtrot X-ray Tango Golf Hotel Charlie Uniform Romeo Sierra Mike Lima Oscar Delta November Victor Zulu,433-2990,"error: invalid date ""08:00""",Crimson,Kristina,ACTIVE
+26,China,Baitu,Alfa Hotel Lima November Mike Delta X-ray Juliett Kilo Charlie,869-4572,"error: invalid date ""08:00""",Crimson,Cherilyn,ACTIVE
+27,Poland,Miejsce Piastowe,Bravo Zulu X-ray Kilo Sierra Golf Charlie Oscar November Yankee Foxtrot Delta Uniform Quebec Mike Whiskey,485-0230,"error: invalid date ""08:00""",Goldenrod,Ainslee,ACTIVE
+28,Finland,Kurikka,Papa X-ray Quebec Foxtrot Oscar India Tango Charlie Echo Bravo Whiskey Mike Victor Hotel Sierra Lima Alfa November Romeo Golf,601-5432,"error: invalid date ""08:00""",Mauv,Pris,ACTIVE
+29,China,Shuhong,Lima Oscar Alfa Bravo India Yankee November Foxtrot Sierra Golf Zulu,459-1720,"error: invalid date ""08:00""",Maroon,Berrie,ACTIVE
+30,Czech Republic,Mirotice,Alfa Whiskey Victor Yankee Papa India X-ray Sierra Delta Hotel Mike Echo Charlie Tango Lima Kilo,419-6195,"error: invalid date ""08:00""",Turquoise,Aeriela,ACTIVE
+31,Peru,Bellavista,November X-ray Alfa Foxtrot Whiskey Hotel Lima Sierra India Uniform Kilo Juliett Echo Mike Charlie Bravo Oscar Papa,376-4868,"error: invalid date ""08:00""",Puce,Sherry,ACTIVE
+32,Poland,Rudna Mała,Delta Tango Papa Romeo Alfa Hotel Charlie Foxtrot November Mike X-ray Echo Lima Juliett Zulu Quebec Whiskey,660-5948,"error: invalid date ""08:00""",Green,Kathrine,ACTIVE
+33,Brazil,Rio Largo,Romeo Papa Yankee Delta Alfa Uniform Echo Sierra Tango Lima Mike Oscar Bravo X-ray Juliett Victor,533-9748,"error: invalid date ""08:00""",Red,Mil,ACTIVE
+34,Czech Republic,Žandov,Hotel Quebec Zulu Oscar Tango Romeo Kilo Yankee Whiskey Foxtrot Victor Echo India Alfa X-ray Golf Uniform,624-8988,"error: invalid date ""08:00""",Red,Flora,ACTIVE
+35,Brazil,Itaguaçu,Mike Golf Foxtrot Oscar Tango Juliett Zulu Bravo Victor Kilo Echo Charlie November Yankee Lima,727-3286,"error: invalid date ""08:00""",Red,Renelle,ACTIVE
+36,Armenia,Jrashen,X-ray India Quebec Kilo Lima Whiskey Victor Bravo Oscar Tango Zulu Hotel Foxtrot Yankee,083-7795,"error: invalid date ""08:00""",Turquoise,Cris,ACTIVE
+37,Philippines,San Antonio,Juliett Tango November Bravo Lima Echo Oscar Golf Papa Delta Mike Foxtrot Alfa Victor Whiskey,535-0077,"error: invalid date ""08:00""",Aquamarine,Reyna,ACTIVE
+38,China,Cheban,Echo Tango Juliett X-ray Lima Yankee Mike Whiskey Hotel Victor Golf Kilo,700-4038,"error: invalid date ""08:00""",Puce,Galina,ACTIVE
+39,Nigeria,Gembu,Sierra India Alfa Charlie X-ray Foxtrot Papa Quebec Oscar Kilo Lima Yankee,482-8130,"error: invalid date ""08:00""",Violet,Hayley,ACTIVE
+40,Lesotho,Butha-Buthe,Foxtrot Romeo Mike Echo Bravo Juliett Charlie Quebec Papa Delta November Oscar Lima Uniform Alfa Tango Zulu Hotel Whiskey Sierra,771-2373,"error: invalid date ""08:00""",Violet,Alexi,ACTIVE
+41,China,Qijiawan,November Romeo Lima Yankee Quebec Alfa Sierra Papa Tango X-ray,342-0503,"error: invalid date ""08:00""",Green,Fara,ACTIVE
+42,Philippines,Baquero Norte,India Kilo Papa Bravo Charlie Zulu Quebec Whiskey Hotel Foxtrot Sierra Mike Yankee Lima Uniform X-ray Juliett Romeo,392-5394,"error: invalid date ""08:00""",Khaki,Anissa,ACTIVE
+43,Indonesia,Kandang Timur,Yankee November Papa Bravo Romeo Zulu X-ray India Golf Oscar Victor Tango Mike Quebec Whiskey Delta Foxtrot,517-6471,"error: invalid date ""08:00""",Crimson,Tommi,ACTIVE
+44,Ukraine,Manyava,Delta Oscar Victor Papa Foxtrot Lima Alfa Mike Juliett Charlie Tango Hotel Kilo X-ray Zulu November,795-5433,"error: invalid date ""08:00""",Teal,Kynthia,ACTIVE
+45,Uzbekistan,Bulung’ur,Foxtrot Hotel Kilo Delta Oscar Uniform Charlie Zulu Bravo Echo November Papa Yankee Sierra,953-7292,"error: invalid date ""08:00""",Teal,Sayre,ACTIVE
+46,Poland,Żarki-Letnisko,Lima November Mike Oscar Tango Bravo Zulu Papa Sierra Charlie Yankee Romeo India Kilo Victor Uniform Delta X-ray Golf,476-3377,"error: invalid date ""08:00""",Aquamarine,Martynne,ACTIVE
+47,South Africa,Port Saint John’s,Quebec Oscar Tango X-ray Hotel India November Juliett Whiskey Kilo,458-0073,"error: invalid date ""08:00""",Mauv,Candie,ACTIVE
+48,Costa Rica,Paraíso,India X-ray Papa Echo November Romeo Oscar Alfa Delta Hotel Bravo Quebec Lima Charlie Sierra,028-5762,"error: invalid date ""08:00""",Goldenrod,Madlen,ACTIVE
+49,Indonesia,Atap,Delta Tango Sierra Bravo Lima X-ray Kilo Golf Foxtrot Oscar Hotel Romeo Zulu Charlie Uniform November India,447-0191,"error: invalid date ""08:00""",Pink,Max,ACTIVE
+50,Vietnam,Lũng Hồ,Papa Lima Tango Delta Alfa Foxtrot Yankee India Victor Zulu X-ray Uniform Bravo Quebec Mike Juliett,475-0245,"error: invalid date ""08:00""",Yellow,Carine,ACTIVE
+51,Indonesia,Banjar Bucu,Lima Alfa Bravo Mike X-ray Charlie Hotel Romeo November Sierra India Oscar Echo Zulu Golf Delta Papa Tango Juliett,423-2827,"error: invalid date ""08:00""",Mauv,Kaile,ACTIVE
+52,China,E’erdun Wula,Juliett Uniform Victor Hotel November Tango Romeo Mike Kilo Delta,687-1497,"error: invalid date ""08:00""",Goldenrod,Lonnie,ACTIVE
+53,Philippines,Santa Catalina,Echo Juliett Tango Lima India Alfa Hotel Yankee Sierra Mike Zulu Kilo Uniform Foxtrot Romeo Papa Delta Bravo Oscar Quebec,129-2795,"error: invalid date ""08:00""",Indigo,Ferdinande,ACTIVE
+54,Philippines,Curry,Hotel Kilo Tango Papa November Yankee Oscar Mike Lima X-ray Romeo,837-9521,"error: invalid date ""08:00""",Green,Bryana,ACTIVE
+55,Indonesia,Panoongan,Delta Echo Foxtrot Golf Kilo Oscar November Tango Juliett X-ray Charlie Hotel Sierra Quebec Romeo Victor Yankee India,192-7041,"error: invalid date ""08:00""",Orange,Catlin,ACTIVE
+56,Philippines,Malabor,Zulu Charlie Hotel November Kilo Alfa India Papa Oscar Bravo Tango,755-3614,"error: invalid date ""08:00""",Indigo,Vicky,ACTIVE
+57,Germany,Hanau,Tango Papa Yankee Hotel India Delta Charlie Romeo Kilo November,987-7934,"error: invalid date ""08:00""",Yellow,Nonnah,ACTIVE
+58,Netherlands,Enschede,Zulu Delta November India Kilo X-ray Alfa Whiskey Foxtrot Hotel Echo Romeo Sierra Oscar Charlie Golf Lima Victor,994-4847,"error: invalid date ""08:00""",Turquoise,Juli,ACTIVE
+59,Poland,Puszczykowo,November Tango Juliett Charlie Romeo Delta X-ray Victor Kilo Golf Zulu Hotel,820-0321,"error: invalid date ""08:00""",Yellow,Ernestine,ACTIVE
+60,Brazil,Águas Belas,Victor X-ray Papa Hotel India Bravo Charlie Uniform Lima Quebec Sierra Alfa Oscar Romeo Delta Juliett Tango Mike,004-2404,"error: invalid date ""08:00""",Indigo,Candide,ACTIVE
+61,Brazil,Bela Vista do Paraíso,Sierra Whiskey Mike November Juliett Lima Bravo Oscar Alfa Hotel India Tango X-ray,617-2038,"error: invalid date ""08:00""",Khaki,Fallon,ACTIVE
+62,Czech Republic,Planá,Whiskey X-ray Echo November Papa Yankee Romeo Quebec Sierra Zulu Alfa,476-3582,"error: invalid date ""08:00""",Green,Eloise,ACTIVE
+63,Indonesia,Jubung,Romeo Mike Zulu Yankee Bravo Charlie Golf Uniform Lima Hotel Quebec Whiskey Echo Juliett Tango Oscar,503-1257,"error: invalid date ""08:00""",Turquoise,Emilia,ACTIVE
+64,United States,Bryan,November Tango Charlie Uniform Oscar Yankee Sierra Romeo Kilo Bravo Whiskey Juliett Delta Lima Zulu,782-2909,"error: invalid date ""08:00""",Turquoise,Donni,ACTIVE
+65,Indonesia,Waimangura,Mike Oscar Alfa Foxtrot Charlie Bravo Kilo Zulu Yankee Uniform Tango Sierra Juliett Delta X-ray Romeo Quebec Echo,094-0633,"error: invalid date ""08:00""",Aquamarine,Portia,ACTIVE
+66,Philippines,Lalagsan,Lima India Whiskey Victor X-ray Uniform Foxtrot Sierra Quebec Golf November Zulu Oscar Charlie Tango Yankee Romeo Hotel Delta,886-4391,"error: invalid date ""08:00""",Yellow,Billie,ACTIVE
+67,China,Changfeng,Papa November Hotel Uniform Quebec Sierra Alfa Whiskey X-ray Delta Echo Yankee Juliett,321-0703,"error: invalid date ""08:00""",Indigo,Hertha,ACTIVE
+68,Brazil,Votuporanga,Golf Mike Yankee Kilo Whiskey Romeo Delta Victor Zulu X-ray Hotel Alfa Uniform Foxtrot Charlie Tango Lima India Oscar November,579-0328,"error: invalid date ""08:00""",Mauv,Jodi,ACTIVE
+69,Ukraine,Horodne,Golf Oscar India November Whiskey Victor Kilo Bravo Charlie Delta Juliett,318-1478,"error: invalid date ""08:00""",Blue,Ailey,ACTIVE
+70,Japan,Tokoname,X-ray Hotel Zulu Whiskey Golf Juliett Charlie Delta Lima Oscar Victor Tango,541-5823,"error: invalid date ""08:00""",Violet,Sophi,ACTIVE
+71,Russia,Ufimskiy,Sierra Tango Delta Zulu Whiskey Yankee India Uniform Romeo Charlie Mike,131-9804,"error: invalid date ""08:00""",Goldenrod,Jaquenette,ACTIVE
+72,Peru,Sangallaya,Yankee Victor Whiskey November Quebec Lima Zulu Kilo Foxtrot Golf Bravo Juliett Uniform,753-8925,"error: invalid date ""08:00""",Khaki,Orsa,ACTIVE
+73,Philippines,Tanudan,Lima Oscar Delta Foxtrot Romeo Bravo Zulu Tango Papa Juliett Quebec Sierra Hotel,634-0235,"error: invalid date ""08:00""",Teal,Fiona,ACTIVE
+74,Sweden,Västerås,Kilo Romeo Tango Golf India Hotel Papa Delta Bravo Lima X-ray,671-3840,"error: invalid date ""08:00""",Teal,Beverlee,ACTIVE
+75,Vietnam,Tô Hạp,Yankee Uniform Hotel November Oscar Tango X-ray Charlie Mike Romeo Victor Sierra Juliett Bravo,809-3698,"error: invalid date ""08:00""",Aquamarine,Jania,ACTIVE
+76,Indonesia,Kaca,Foxtrot Lima Kilo Golf Delta Alfa Sierra Uniform Mike Oscar Yankee Romeo Echo,172-7892,"error: invalid date ""08:00""",Blue,Adelind,ACTIVE
+77,France,Marseille,Hotel Foxtrot X-ray Sierra Victor Oscar Bravo November Tango Juliett Alfa,652-4580,"error: invalid date ""08:00""",Blue,Kym,ACTIVE
+78,Sudan,El Fasher,Victor Sierra Yankee X-ray Romeo Oscar Lima Delta Zulu Kilo Papa Golf,303-1903,"error: invalid date ""08:00""",Maroon,Sibeal,ACTIVE
+79,Albania,Zall-Herr,Golf Romeo Delta Echo India Mike Bravo November Foxtrot Charlie Alfa Lima Hotel Kilo Yankee Victor Whiskey Papa X-ray Sierra,988-2730,"error: invalid date ""08:00""",Khaki,Sal,ACTIVE
+80,Portugal,Paços,Tango Bravo Delta Hotel India Oscar Sierra Quebec Charlie Foxtrot Juliett Alfa November Kilo Golf Whiskey Echo Uniform,399-9054,"error: invalid date ""08:00""",Yellow,Joly,ACTIVE
+81,Mauritania,Aleg,Lima Romeo Zulu Foxtrot Charlie Juliett Quebec November Bravo Tango Whiskey Hotel Uniform Oscar Delta Echo India Alfa,600-1636,"error: invalid date ""08:00""",Blue,Carmelita,ACTIVE
+82,Portugal,Carvalhal Redondo,Quebec Alfa Victor X-ray India Tango Juliett Romeo Echo Foxtrot Oscar Golf Lima Delta,947-8346,"error: invalid date ""08:00""",Blue,Astra,ACTIVE
+83,Mongolia,Bürenhayrhan,Uniform Whiskey Mike Zulu Delta Kilo Papa Victor Sierra Golf Bravo,329-1417,"error: invalid date ""08:00""",Orange,Ingaberg,ACTIVE
+84,China,Meilisi,November Whiskey Victor Hotel Uniform Kilo Juliett Sierra X-ray Mike Bravo Echo Delta Alfa Yankee Charlie Lima,989-9074,"error: invalid date ""08:00""",Crimson,Cami,ACTIVE
+85,China,Haoyi,Romeo Foxtrot Hotel Tango Quebec Bravo Lima Echo Papa November Yankee Golf Oscar Alfa Mike Charlie India,620-3493,"error: invalid date ""08:00""",Fuscia,Norene,ACTIVE
+86,Indonesia,Tenjolaya,Romeo India Hotel Golf Lima Charlie Bravo Victor Oscar Juliett Mike Sierra,957-1916,"error: invalid date ""08:00""",Fuscia,Ashley,ACTIVE
+87,Philippines,Candating,Charlie Victor Papa Mike Echo Romeo Oscar Delta Whiskey Yankee,829-3369,"error: invalid date ""08:00""",Indigo,Tiphanie,ACTIVE
+88,Portugal,Ifanes,Juliett Charlie Tango Kilo Quebec Victor Uniform India Yankee Romeo Oscar Bravo Papa,402-5033,"error: invalid date ""08:00""",Puce,Kay,ACTIVE
+89,Indonesia,Kuniran,X-ray Hotel Tango Juliett Alfa Quebec Oscar Golf Papa Uniform Foxtrot Zulu India Sierra Echo,960-9071,"error: invalid date ""08:00""",Indigo,Daffi,ACTIVE
+90,Argentina,Alejo Ledesma,Oscar India November Tango Whiskey Foxtrot Yankee Kilo Charlie Quebec Echo,351-1677,"error: invalid date ""08:00""",Khaki,Liuka,ACTIVE
+91,Mexico,El Zapote,Alfa Uniform India Foxtrot Kilo Lima Oscar Hotel Mike X-ray Whiskey,039-6895,"error: invalid date ""08:00""",Puce,Caitlin,ACTIVE
+92,Cameroon,Foumbot,Hotel November Uniform India Mike Bravo Romeo Foxtrot X-ray Alfa Lima Tango Kilo Sierra Oscar Yankee Golf Echo Delta Whiskey,188-2781,"error: invalid date ""08:00""",Blue,Adore,ACTIVE
+93,Venezuela,San Juan de Manapiare,Whiskey Kilo Romeo Hotel Tango Sierra Charlie Uniform India November Golf Oscar Juliett Zulu Papa Yankee Lima Foxtrot X-ray,172-9589,"error: invalid date ""08:00""",Indigo,Vanessa,ACTIVE
+94,Portugal,Gavinhos de Baixo,Lima Alfa Foxtrot November Papa Charlie Quebec X-ray Mike Romeo Echo Juliett Hotel India Tango Kilo,682-2247,"error: invalid date ""08:00""",Crimson,Phillie,ACTIVE
+95,Greece,Rizó,Whiskey Delta Papa Kilo Tango Golf Victor Yankee Quebec Sierra November Zulu Lima Charlie Echo,583-7172,"error: invalid date ""08:00""",Aquamarine,Linzy,ACTIVE
+96,Micronesia,Ruo,Victor Kilo Mike Foxtrot Golf Papa Uniform Romeo November Bravo India Zulu Charlie Echo Oscar Yankee,088-1351,"error: invalid date ""08:00""",Orange,Celeste,ACTIVE
+97,China,Choushui,Lima Victor Juliett Uniform Hotel Papa Sierra Zulu Mike Oscar India Foxtrot X-ray Alfa Charlie Yankee,945-2223,"error: invalid date ""08:00""",Turquoise,Goldie,ACTIVE
+98,Brazil,Araguaiana,Quebec India Lima Mike Delta Yankee Whiskey Romeo Kilo Tango Oscar Sierra Bravo Zulu Juliett Victor Papa Hotel,674-4008,"error: invalid date ""08:00""",Blue,Dominique,ACTIVE
+99,Japan,Kanaya,Mike Sierra Hotel Alfa Charlie Yankee Uniform Lima Golf November,288-6145,"error: invalid date ""08:00""",Aquamarine,Adara,ACTIVE
+100,Samoa,Safotulafai,November Echo Mike Sierra Golf Kilo Papa Hotel Charlie Delta Zulu Oscar X-ray,869-5204,"error: invalid date ""08:00""",Purple,Esther,ACTIVE
+101,Cuba,Banes,Golf Mike Papa Hotel Oscar Juliett Charlie X-ray Uniform Delta Whiskey Sierra Zulu Quebec Lima Foxtrot Bravo,713-5678,"error: invalid date ""08:00""",Green,Jenilee,ACTIVE
+102,Portugal,Antas,Oscar Tango X-ray November Lima Golf Victor Bravo Echo India Mike Delta Alfa Zulu Hotel,716-6841,"error: invalid date ""08:00""",Indigo,Sarah,ACTIVE
+103,Indonesia,Sukakerta,India Yankee Delta Romeo Echo Bravo Mike Sierra Hotel Quebec Tango,810-9767,"error: invalid date ""08:00""",Teal,Georgianne,ACTIVE
+104,Brazil,Solânea,Oscar Victor Charlie Foxtrot Bravo Alfa Quebec Whiskey Papa Sierra,281-6058,"error: invalid date ""08:00""",Pink,Ellen,ACTIVE
+105,Mexico,San Francisco,Lima Tango Hotel Juliett Foxtrot Quebec Whiskey Golf X-ray Sierra,037-5424,"error: invalid date ""08:00""",Mauv,Ira,ACTIVE
+106,Philippines,Baguio,Bravo Lima Foxtrot Tango Zulu Hotel Quebec Whiskey Charlie X-ray,360-4108,"error: invalid date ""08:00""",Yellow,Anna-maria,ACTIVE
+107,China,Shitan,Mike India Juliett Golf Romeo Hotel Zulu Alfa Tango X-ray Delta,802-9420,"error: invalid date ""08:00""",Violet,Tanitansy,ACTIVE
+108,Brazil,Itatinga,Whiskey Yankee Juliett Uniform Alfa November Kilo Charlie Echo Delta Sierra Papa Bravo Foxtrot X-ray Hotel Oscar Victor Quebec,744-4213,"error: invalid date ""08:00""",Teal,Rozina,ACTIVE
+109,China,Lungmar,Mike Uniform Papa Bravo Juliett X-ray Echo Yankee Golf Romeo Whiskey November Charlie,377-0159,"error: invalid date ""08:00""",Blue,Brande,ACTIVE
+110,China,Bohou,India Quebec Juliett Echo Yankee Oscar Tango Sierra Victor Golf Uniform Delta November,942-2866,"error: invalid date ""08:00""",Aquamarine,Carolee,ACTIVE
+111,France,Marseille,Hotel Zulu Sierra Lima Uniform Whiskey Oscar Papa Quebec Juliett Echo,441-1702,"error: invalid date ""08:00""",Indigo,Leona,ACTIVE
+112,Serbia,Belo Blato,Lima Foxtrot Alfa Tango X-ray Juliett Zulu Sierra Victor Delta Quebec Uniform India Yankee Charlie Echo,820-7630,"error: invalid date ""08:00""",Indigo,Tori,ACTIVE
+113,Mexico,Vista Hermosa,Sierra Victor Mike Hotel Alfa Charlie Oscar Zulu Juliett Quebec Bravo,323-1788,"error: invalid date ""08:00""",Red,Livvie,ACTIVE
+114,Sierra Leone,Potoru,Echo Oscar X-ray Hotel India Alfa Delta Mike Zulu Quebec Tango Bravo November Golf Victor Romeo,998-2450,"error: invalid date ""08:00""",Aquamarine,Leela,ACTIVE
+115,Finland,Virolahti,Hotel Juliett Alfa Yankee X-ray Victor Romeo Uniform Kilo Bravo Delta Echo Charlie,794-5108,"error: invalid date ""08:00""",Orange,Queenie,ACTIVE
+116,Finland,Ingå,Oscar Uniform Juliett Sierra Foxtrot Papa X-ray Bravo Zulu Delta Mike India,868-5378,"error: invalid date ""08:00""",Pink,Anet,ACTIVE
+117,Philippines,Bagong Pagasa,Oscar Zulu Foxtrot Quebec Golf Kilo Sierra Echo Victor Papa,259-7139,"error: invalid date ""08:00""",Pink,Krysta,ACTIVE
+118,Japan,Mobara,Uniform Romeo Charlie Bravo Quebec Mike Juliett Victor Whiskey Foxtrot Echo Papa Kilo Alfa November Sierra Tango,430-9959,"error: invalid date ""08:00""",Purple,Elisabetta,ACTIVE
+119,Poland,Łopuszna,Zulu Lima Uniform Papa Victor Yankee Charlie Hotel Tango Golf Whiskey Delta India Bravo Oscar Mike November Juliett Sierra,090-0288,"error: invalid date ""08:00""",Purple,Georgeta,ACTIVE
+120,Canada,West End,Lima Bravo Tango Whiskey Foxtrot Papa X-ray Delta Charlie Quebec India Uniform Yankee Oscar Kilo Romeo November Echo,892-8023,"error: invalid date ""08:00""",Teal,Marlie,ACTIVE
+121,Palau,Koror Town,Foxtrot Zulu Alfa Romeo India X-ray Golf Hotel Victor Uniform November Juliett Sierra,471-9483,"error: invalid date ""08:00""",Teal,Ernaline,ACTIVE
+122,Palestinian Territory,Al ‘Awjā,Echo Mike Zulu Charlie Oscar Tango Juliett Lima India Papa,724-0036,"error: invalid date ""08:00""",Orange,Lilllie,ACTIVE
+123,Brazil,Duque de Caxias,Juliett Whiskey Oscar Delta Echo Golf Kilo Tango Yankee Uniform Lima November,887-3239,"error: invalid date ""08:00""",Orange,Iormina,ACTIVE
+124,Bulgaria,Dulovo,Mike Delta Whiskey Lima Hotel Zulu Papa Golf Quebec X-ray,137-2170,"error: invalid date ""08:00""",Puce,Jennica,ACTIVE
+125,Indonesia,Sekarjalak,Whiskey Oscar India Delta Victor Foxtrot Mike Golf Tango November Quebec Sierra,082-7514,"error: invalid date ""08:00""",Turquoise,Amaleta,ACTIVE
+126,China,Jiaotang,Lima Romeo X-ray Foxtrot Zulu Alfa Yankee Whiskey November Juliett Delta,897-4392,"error: invalid date ""08:00""",Violet,Valina,ACTIVE
+127,Netherlands,Amsterdam Binnenstad en Oostelijk Havengebied,Foxtrot Sierra Victor Papa X-ray Kilo Quebec Romeo Zulu India,761-0252,"error: invalid date ""08:00""",Aquamarine,Marty,ACTIVE
+128,Brazil,Blumenau,Yankee Victor Whiskey Lima Tango Mike Echo Papa Hotel Sierra Quebec Foxtrot November Bravo,496-9614,"error: invalid date ""08:00""",Goldenrod,Cordelia,ACTIVE
+129,China,Ke’erlun,Alfa X-ray Romeo Hotel Oscar India Echo Yankee Delta Whiskey Sierra Zulu Charlie Golf Papa Foxtrot Quebec,992-7850,"error: invalid date ""08:00""",Orange,Sib,ACTIVE
+130,United States,Oklahoma City,Lima Zulu India Sierra Mike Delta Quebec Victor Echo Juliett Whiskey Golf Tango Bravo Alfa,218-3766,"error: invalid date ""08:00""",Teal,Alejandra,ACTIVE
+131,Mexico,La Soledad,Echo Golf November India Oscar Mike Victor Whiskey Kilo Sierra,429-7602,"error: invalid date ""08:00""",Purple,Mollee,ACTIVE
+132,Canada,Leduc,Foxtrot Yankee Bravo Golf Romeo Sierra Uniform Quebec Delta Hotel Tango Papa Mike Echo Alfa November Lima,207-6896,"error: invalid date ""08:00""",Fuscia,Hedy,ACTIVE
+133,China,Huqiu,Tango Lima X-ray Romeo Yankee Hotel Charlie Golf Victor Mike Sierra,294-4639,"error: invalid date ""08:00""",Aquamarine,Kassandra,ACTIVE
+134,Japan,Kashima-shi,Kilo Hotel Uniform India November X-ray Sierra Papa Lima Mike Romeo Victor Oscar,505-6727,"error: invalid date ""08:00""",Mauv,Cary,ACTIVE
+135,Myanmar,Twante,Bravo Charlie India Kilo Hotel Papa Uniform X-ray Tango Yankee Oscar Golf Alfa Echo Zulu Lima Whiskey November,853-3048,"error: invalid date ""08:00""",Indigo,Vikky,ACTIVE
+136,Honduras,El Triunfo,India Mike Yankee Victor Whiskey Sierra Kilo Alfa November X-ray Tango Delta Romeo Echo Juliett Papa Zulu,310-7975,"error: invalid date ""08:00""",Indigo,Tandi,ACTIVE
+137,Brazil,Itabira,Alfa Lima Hotel Tango Romeo Echo November Victor Delta India Papa Charlie Yankee Golf Zulu,988-0042,"error: invalid date ""08:00""",Purple,Lurette,ACTIVE
+138,Argentina,El Bolsón,Kilo Foxtrot Bravo Oscar Charlie X-ray Mike Romeo Golf Delta Papa Whiskey Hotel Quebec,755-3077,"error: invalid date ""08:00""",Orange,Kora,ACTIVE
+139,Canada,Melville,Romeo X-ray Echo Oscar Golf Zulu Charlie Mike Victor Tango Lima Juliett Whiskey Hotel Foxtrot Sierra,703-0398,"error: invalid date ""08:00""",Maroon,Jazmin,ACTIVE
+140,China,Qujing,Tango Kilo X-ray Sierra Victor India Juliett Papa Golf Oscar Charlie,579-0857,"error: invalid date ""08:00""",Indigo,Marice,ACTIVE
+141,China,Daqiao,November Victor Echo Sierra Kilo Whiskey Bravo Lima Alfa Mike Romeo Juliett Tango Golf,424-3143,"error: invalid date ""08:00""",Crimson,Nedda,ACTIVE
+142,Peru,Curibaya,November Lima India Zulu Golf Whiskey Papa Quebec X-ray Oscar Delta Uniform Yankee Charlie Tango Kilo Foxtrot Victor,058-7150,"error: invalid date ""08:00""",Violet,Mandie,ACTIVE
+143,Ireland,Milltown,Hotel November Kilo Yankee Zulu Tango Oscar Quebec Foxtrot Romeo Sierra Bravo Victor India Echo Uniform,862-7980,"error: invalid date ""08:00""",Fuscia,Codie,ACTIVE
+144,Argentina,Loreto,Alfa Victor Lima India Tango Sierra X-ray Quebec Bravo Delta Juliett Foxtrot Papa Charlie,860-4446,"error: invalid date ""08:00""",Fuscia,Cairistiona,ACTIVE
+145,Philippines,Calasgasan,Mike Delta Whiskey Quebec India Yankee Foxtrot November Papa Golf Charlie Zulu Oscar,946-2055,"error: invalid date ""08:00""",Aquamarine,Naoma,ACTIVE
+146,China,Ganping,November Delta Uniform Tango Alfa Charlie Bravo Zulu Whiskey Golf Sierra Victor Kilo Oscar Juliett Mike Papa Quebec Yankee,134-6391,"error: invalid date ""08:00""",Mauv,Zitella,ACTIVE
+147,China,Yajiang,Zulu Papa Yankee Juliett Mike Delta Whiskey Oscar Lima Quebec Victor,811-0102,"error: invalid date ""08:00""",Orange,Sella,ACTIVE
+148,Brazil,Astorga,India Foxtrot Echo Hotel Quebec Victor Tango Uniform Delta Yankee Golf Alfa Lima X-ray Whiskey Bravo Papa,676-9467,"error: invalid date ""08:00""",Violet,Bernetta,ACTIVE
+149,Dominican Republic,Pescadería,Lima Juliett Oscar Zulu Papa Sierra Quebec Alfa X-ray November Bravo Charlie Kilo Tango Whiskey Hotel Yankee,291-0118,"error: invalid date ""08:00""",Goldenrod,Daphne,ACTIVE
+150,Tajikistan,Vahdat,Mike Charlie Alfa Victor Sierra Foxtrot Bravo Zulu Juliett Lima Echo Delta Oscar,485-9480,"error: invalid date ""08:00""",Khaki,Honey,ACTIVE
+151,Brazil,Nerópolis,Alfa Lima Delta Yankee Whiskey Golf Echo Uniform Sierra Zulu Charlie India X-ray Papa Quebec Oscar Tango Mike,374-3103,"error: invalid date ""08:00""",Crimson,Roxanne,ACTIVE
+152,Iran,Tākestān,Uniform Victor Yankee Sierra Charlie November Alfa Quebec Echo Foxtrot Golf Papa Mike Delta Bravo India Lima Oscar Hotel Romeo,195-8789,"error: invalid date ""08:00""",Fuscia,Basia,ACTIVE
+153,Indonesia,Kadubera,Golf X-ray Sierra Whiskey Charlie India Mike Papa Juliett Bravo Uniform Quebec Romeo Oscar Hotel,911-7344,"error: invalid date ""08:00""",Pink,Isabella,ACTIVE
+154,Peru,Tayabamba,Alfa Yankee India Hotel Charlie Tango Kilo Romeo Juliett Lima,441-9485,"error: invalid date ""08:00""",Pink,Retha,ACTIVE
+155,Peru,Aco,Yankee India Golf Mike Whiskey Delta Echo Foxtrot Kilo Romeo,775-2939,"error: invalid date ""08:00""",Violet,Kikelia,ACTIVE
+156,Sudan,Bārah,Alfa Oscar November Foxtrot Lima Bravo Charlie Papa Kilo Whiskey Hotel Tango Victor Golf Mike X-ray,315-7820,"error: invalid date ""08:00""",Fuscia,Stesha,ACTIVE
+157,Portugal,Souto,Tango Quebec Hotel Oscar Sierra Papa Echo Alfa Bravo Charlie Juliett Mike November Victor Foxtrot Delta Golf Romeo Lima Zulu,936-3959,"error: invalid date ""08:00""",Blue,Justine,ACTIVE
+158,Cambodia,Kampong Cham,X-ray Delta Bravo Juliett Zulu Yankee Mike Uniform Sierra Tango,796-2798,"error: invalid date ""08:00""",Goldenrod,Karrah,ACTIVE
+159,Philippines,Liloan,November X-ray Romeo Sierra Victor Mike Quebec Bravo Lima Yankee Juliett Zulu Echo Golf Foxtrot Kilo Whiskey,371-2271,"error: invalid date ""08:00""",Red,Abbey,ACTIVE
+160,Ukraine,Klenovyy,Echo Tango Whiskey Alfa Sierra India Uniform Mike Delta X-ray Romeo,231-5312,"error: invalid date ""08:00""",Crimson,Daisie,ACTIVE
+161,Ukraine,Brylivka,India Oscar Foxtrot November Lima Alfa Mike Uniform Echo X-ray Bravo Whiskey Papa Victor Delta Juliett Quebec Charlie Yankee Sierra,600-3235,"error: invalid date ""08:00""",Violet,Loraine,ACTIVE
+162,Morocco,Moulay Yacoub,Yankee November Juliett Whiskey India Uniform Sierra Tango Echo Lima Romeo Victor Oscar Mike Delta Hotel Zulu,338-1289,"error: invalid date ""08:00""",Mauv,Rubina,ACTIVE
+163,Germany,Chemnitz,Tango Uniform Golf Foxtrot Quebec Victor Whiskey Romeo Yankee Hotel Oscar X-ray Kilo Sierra India Echo Alfa Bravo Papa Delta,540-1027,"error: invalid date ""08:00""",Fuscia,Mechelle,ACTIVE
+164,Russia,Vyselki,Foxtrot Sierra Romeo Charlie Alfa Uniform November Oscar Bravo Lima Papa Juliett Delta Mike Echo Tango Victor Hotel India Zulu,468-1389,"error: invalid date ""08:00""",Red,Lian,ACTIVE
+165,Gambia,Wassu,Yankee Oscar Sierra Papa Lima Romeo November Foxtrot Tango Quebec Golf Alfa India Bravo,763-1465,"error: invalid date ""08:00""",Aquamarine,Vivi,ACTIVE
+166,Indonesia,Barajalan,Papa X-ray Kilo Foxtrot Uniform Romeo Mike Lima Golf Hotel Quebec November Echo Charlie Juliett Oscar Yankee Tango Bravo,031-4924,"error: invalid date ""08:00""",Pink,Saundra,ACTIVE
+167,Albania,Kokaj,Sierra Oscar X-ray Alfa Uniform Echo Mike Victor Delta Papa Lima Hotel Bravo,909-3647,"error: invalid date ""08:00""",Green,Cassie,ACTIVE
+168,Angola,Longonjo,Kilo Mike Echo Sierra Golf Yankee Foxtrot Juliett Delta Romeo Uniform Tango Zulu Bravo Lima November,428-2487,"error: invalid date ""08:00""",Violet,Jaime,ACTIVE
+169,Macedonia,Pirok,Foxtrot Echo Victor Alfa November Kilo Juliett Tango Bravo Oscar Whiskey Mike Golf Romeo Hotel Uniform Papa Quebec Charlie,606-4921,"error: invalid date ""08:00""",Pink,Mariana,ACTIVE
+170,Indonesia,Cilangkap,Foxtrot Kilo Yankee Echo Uniform Hotel Alfa Tango India Zulu,975-0162,"error: invalid date ""08:00""",Mauv,Erena,ACTIVE
+171,Indonesia,Sempol,Oscar Echo Lima X-ray Victor Alfa Hotel Uniform Golf Yankee Charlie Quebec November Delta Foxtrot Whiskey Zulu,663-6527,"error: invalid date ""08:00""",Khaki,Tamarra,ACTIVE
+172,China,Youyun,Quebec Foxtrot Echo X-ray Charlie Alfa Bravo November Papa Lima Romeo Sierra Mike Zulu,930-0302,"error: invalid date ""08:00""",Blue,Mireielle,ACTIVE
+173,Brazil,Guanhães,Whiskey Mike Victor Sierra Juliett Delta Kilo Golf Uniform India Bravo Tango Charlie Romeo X-ray Alfa Papa,867-4409,"error: invalid date ""08:00""",Puce,Wilow,ACTIVE
+174,Libya,Brak,Papa Alfa Mike Quebec Charlie X-ray November Sierra Uniform Romeo Delta Tango Juliett Kilo Golf Echo Lima India,782-2709,"error: invalid date ""08:00""",Yellow,Charmaine,ACTIVE
+175,Bulgaria,Gŭlŭbovo,Foxtrot Tango Victor X-ray Golf Charlie Lima Juliett Papa Romeo Uniform Echo Zulu Delta Oscar,748-2901,"error: invalid date ""08:00""",Aquamarine,Raquela,ACTIVE
+176,Albania,Bicaj,Quebec Mike Romeo Uniform Tango Yankee Bravo November Oscar Charlie Hotel Victor India Juliett Whiskey Kilo,236-0821,"error: invalid date ""08:00""",Goldenrod,Cammy,ACTIVE
+177,Indonesia,Cigadog Hilir,Sierra Echo Hotel Kilo Juliett Quebec Bravo Yankee Victor Mike X-ray India Charlie November Zulu Papa Golf Whiskey Oscar,655-2049,"error: invalid date ""08:00""",Violet,Fredericka,ACTIVE
+178,Sweden,Knivsta,X-ray Delta Echo Mike Alfa Victor Zulu Quebec November Sierra Golf Hotel Yankee Kilo Papa Foxtrot,123-8128,"error: invalid date ""08:00""",Pink,Elonore,ACTIVE
+179,Poland,Stoczek,Delta Oscar India Zulu Mike November X-ray Kilo Juliett Golf Quebec Sierra Echo Bravo Lima Hotel Papa Whiskey,356-6150,"error: invalid date ""08:00""",Violet,Juieta,ACTIVE
+180,Canada,Hanna,Sierra Uniform November Zulu Kilo Whiskey Victor India Lima Golf Charlie Bravo Alfa Oscar,949-3306,"error: invalid date ""08:00""",Violet,Camille,ACTIVE
+181,Botswana,Gaborone,Alfa X-ray Uniform November India Whiskey Delta Tango Bravo Quebec Zulu Foxtrot Juliett Mike Kilo Golf,544-2438,"error: invalid date ""08:00""",Red,Rosalyn,ACTIVE
+182,Pakistan,Mastung,Quebec Alfa Echo Foxtrot India Whiskey Sierra X-ray Hotel Bravo Tango Papa Golf Victor Delta Kilo November Charlie Juliett Uniform,930-2392,"error: invalid date ""08:00""",Yellow,Hana,ACTIVE
+183,Venezuela,Punta de Piedra,Victor Whiskey Kilo Alfa Yankee Juliett Romeo Bravo Mike India X-ray Hotel Charlie Oscar Quebec Zulu Sierra Lima,090-6629,"error: invalid date ""08:00""",Purple,Timothea,ACTIVE
+184,Japan,Maebaru,Sierra Whiskey Golf Echo Quebec Mike Kilo Victor Bravo Yankee Hotel Oscar India Foxtrot,728-7428,"error: invalid date ""08:00""",Maroon,Paige,ACTIVE
+185,China,Zhangbang,Bravo X-ray November Alfa Golf Papa Delta Foxtrot Charlie Quebec Juliett Oscar Uniform Yankee,735-3632,"error: invalid date ""08:00""",Teal,Freddi,ACTIVE
+186,United States,Akron,Romeo Alfa Uniform Mike Tango Quebec Delta India Hotel Charlie Foxtrot Victor Zulu X-ray Papa Yankee,165-6244,"error: invalid date ""08:00""",Khaki,Lexie,ACTIVE
+187,Indonesia,Kalijeruk,Charlie Bravo Papa X-ray November Quebec Whiskey Echo Zulu Victor,786-8789,"error: invalid date ""08:00""",Puce,Julita,ACTIVE
+188,Macedonia,Brvenica,Charlie Foxtrot Golf Zulu Lima Whiskey Uniform Hotel Kilo Mike Papa Yankee Oscar Juliett Alfa Quebec November India Tango Sierra,717-5052,"error: invalid date ""08:00""",Blue,Anderea,ACTIVE
+189,France,Annonay,Zulu November Charlie Whiskey Romeo Kilo Victor India Bravo Yankee Alfa X-ray Mike Foxtrot Uniform,492-0433,"error: invalid date ""08:00""",Pink,Alanna,ACTIVE
+190,Portugal,Breia,Romeo Echo Uniform India Victor Yankee Foxtrot Lima Tango Bravo Mike Hotel Sierra Delta Golf November Quebec Zulu Juliett,779-9336,"error: invalid date ""08:00""",Aquamarine,Tiena,ACTIVE
+191,Brazil,Dom Pedro,Romeo Quebec November Sierra Victor Uniform Yankee Charlie Oscar Echo Whiskey Bravo Alfa Papa Mike,769-7150,"error: invalid date ""08:00""",Aquamarine,Chrystel,ACTIVE
+192,United States,Dayton,Quebec Foxtrot November Yankee Bravo Zulu Lima Kilo Whiskey Sierra Victor Mike Alfa,448-3969,"error: invalid date ""08:00""",Green,Zelma,ACTIVE
+193,Paraguay,Yaguarón,Charlie India Yankee Lima Golf Victor Oscar Quebec Papa Zulu Echo Romeo Mike November Foxtrot Juliett Bravo,518-2062,"error: invalid date ""08:00""",Puce,Kelcey,ACTIVE
+194,China,Guicheng,Zulu Juliett Hotel Delta Victor India Quebec Lima Whiskey Sierra November Kilo Bravo Yankee Oscar Romeo,096-7485,"error: invalid date ""08:00""",Blue,Dinah,ACTIVE
+195,Indonesia,Oibioin,Delta Echo X-ray Mike Charlie Golf Quebec India Oscar Zulu Kilo Victor November Juliett Hotel Whiskey Yankee Papa Romeo,166-2778,"error: invalid date ""08:00""",Orange,Cassy,ACTIVE
+196,Poland,Chodzież,Zulu Kilo November Quebec India Victor Foxtrot Hotel Delta Echo Lima Alfa Uniform Tango Whiskey Mike Golf Juliett Papa Sierra,744-6011,"error: invalid date ""08:00""",Maroon,Fidelia,ACTIVE
+197,Portugal,Porto Alto,Victor Papa Sierra Oscar Alfa Quebec Mike Echo Zulu Juliett November,220-7293,"error: invalid date ""08:00""",Fuscia,Mallorie,ACTIVE
+198,Brazil,Coruripe,Victor Sierra Romeo Uniform Echo Mike X-ray Alfa Charlie Foxtrot Delta Lima Juliett Yankee Zulu,211-2338,"error: invalid date ""08:00""",Yellow,Lainey,ACTIVE
+199,Venezuela,Mirimire,India Delta Bravo Yankee Mike Kilo X-ray Victor Charlie Tango Lima Quebec Foxtrot Echo Whiskey Hotel November Zulu,756-7146,"error: invalid date ""08:00""",Teal,Eimile,ACTIVE
+200,Malta,Santa Luċija,Charlie Lima Oscar India Sierra X-ray Tango Echo Bravo Papa Hotel Uniform Alfa November Yankee,739-6997,"error: invalid date ""08:00""",Goldenrod,Joyous,ACTIVE
+201,Ukraine,Katyuzhanka,Mike Kilo Papa Juliett Zulu Hotel Tango Whiskey Victor Foxtrot Romeo Lima X-ray Uniform Quebec Delta Bravo,832-5048,"error: invalid date ""08:00""",Green,Brenn,ACTIVE
+202,Portugal,Lentisqueira,Zulu Victor Kilo Juliett Foxtrot Whiskey Lima Sierra Echo Quebec Golf Romeo Oscar,811-4694,"error: invalid date ""08:00""",Red,Ermina,ACTIVE
+203,Moldova,Comrat,November Tango Echo Mike Bravo India Uniform Delta Whiskey Quebec Victor Hotel Golf Alfa Lima Sierra Foxtrot,940-6278,"error: invalid date ""08:00""",Orange,Ronnica,ACTIVE
+204,Portugal,Rio Meão,Tango Lima X-ray Golf India Echo Romeo Quebec Alfa Papa Foxtrot Kilo Zulu Victor Hotel Yankee Uniform Sierra Bravo Delta,616-1261,"error: invalid date ""08:00""",Blue,Sybille,ACTIVE
+205,China,Laiguangying,Sierra Kilo Lima Echo Charlie India Bravo Golf Juliett Oscar Victor Alfa Zulu Quebec Hotel Delta Uniform Yankee,375-4977,"error: invalid date ""08:00""",Aquamarine,Kamila,ACTIVE
+206,Brazil,Osasco,Romeo Foxtrot Oscar India Bravo Juliett Uniform Whiskey Victor November Kilo Charlie Mike Golf,796-2527,"error: invalid date ""08:00""",Green,Celinka,ACTIVE
+207,Morocco,Tissa,Uniform X-ray November Foxtrot Mike Lima Echo Zulu Juliett Sierra Oscar Hotel Yankee Delta Romeo India Bravo Papa Kilo,820-2791,"error: invalid date ""08:00""",Maroon,Jenny,ACTIVE
+208,Russia,Tomarovka,Uniform Foxtrot Juliett Tango Lima Hotel Alfa Mike Echo Delta,484-5900,"error: invalid date ""08:00""",Green,Karlee,ACTIVE
+209,Czech Republic,Hostavice,Alfa Juliett Zulu Delta Romeo November Kilo Echo Oscar India,554-8422,"error: invalid date ""08:00""",Puce,Harriett,ACTIVE
+210,Philippines,Namboongan,Alfa Papa Lima Zulu Charlie Whiskey Golf Uniform Yankee X-ray Mike Hotel Delta Foxtrot Kilo,500-3824,"error: invalid date ""08:00""",Crimson,Meg,ACTIVE
+211,Portugal,Santo António da Charneca,Delta Charlie Golf Echo Hotel Sierra Victor X-ray Tango Oscar Lima Zulu Romeo Quebec Mike Yankee Bravo Whiskey,480-9134,"error: invalid date ""08:00""",Mauv,Camila,ACTIVE
+212,Russia,Il’inskiy,Quebec Papa Kilo Victor Sierra Delta Oscar Tango Bravo Yankee Lima Charlie Echo Alfa,559-1095,"error: invalid date ""08:00""",Puce,Harlene,ACTIVE
+213,Slovakia,Bratislava,India X-ray Delta Juliett Bravo Tango Romeo Golf Uniform Charlie Hotel Kilo Whiskey Oscar Echo,951-5288,"error: invalid date ""08:00""",Turquoise,Ansley,ACTIVE
+214,Brazil,Afogados da Ingazeira,Golf Zulu Quebec November India Yankee Mike Tango Kilo Charlie Juliett Uniform,941-0566,"error: invalid date ""08:00""",Red,Mireielle,ACTIVE
+215,Russia,Peterhof,Juliett Bravo November Foxtrot Mike Hotel Charlie Alfa Kilo Tango Quebec,388-8582,"error: invalid date ""08:00""",Fuscia,Vivianne,ACTIVE
+216,Morocco,Larache,Echo Delta Juliett Uniform Papa Foxtrot Yankee Sierra Hotel Romeo Alfa India Oscar Quebec Zulu,583-6398,"error: invalid date ""08:00""",Red,Nixie,ACTIVE
+217,Armenia,Areni,Golf Lima Bravo Oscar Foxtrot Juliett Quebec Hotel November Delta Romeo Uniform X-ray,081-5773,"error: invalid date ""08:00""",Green,Corena,ACTIVE
+218,Colombia,Lérida,Kilo Hotel Zulu Romeo X-ray Sierra Echo Victor Whiskey Oscar November,340-6677,"error: invalid date ""08:00""",Goldenrod,Josee,ACTIVE
+219,Brazil,Rio de Janeiro,Alfa Quebec Tango Papa Victor Charlie Zulu November Uniform Foxtrot Oscar Mike Romeo Sierra Echo Hotel Bravo Lima X-ray,351-0298,"error: invalid date ""08:00""",Turquoise,Monah,ACTIVE
+220,China,Wenbi,Victor Zulu Alfa Yankee Golf November Kilo X-ray Sierra Bravo Romeo Tango Oscar Foxtrot Whiskey,034-9990,"error: invalid date ""08:00""",Indigo,Della,ACTIVE
+221,United States,Pensacola,Hotel November Tango Victor Whiskey Bravo Kilo India Golf Lima Foxtrot Alfa Uniform Yankee Romeo,656-3995,"error: invalid date ""08:00""",Khaki,Barbra,ACTIVE
+222,Poland,Września,Sierra Victor Charlie Foxtrot Bravo November Alfa X-ray Uniform Delta,789-5151,"error: invalid date ""08:00""",Yellow,Allyson,ACTIVE
+223,Russia,Zykovo,Delta India Hotel Whiskey Romeo Lima Sierra Juliett November Papa Charlie X-ray Tango Yankee Uniform Kilo Alfa Bravo,024-0133,"error: invalid date ""08:00""",Green,Bari,ACTIVE
+224,Russia,Konëvo,Sierra Alfa Echo Oscar Whiskey Golf Yankee Lima Delta Charlie,556-4489,"error: invalid date ""08:00""",Crimson,Raven,ACTIVE
+225,Montenegro,Ulcinj,India Romeo Tango Charlie Uniform November Yankee Echo Sierra Hotel Golf Oscar Mike Quebec Zulu Victor Papa,140-9487,"error: invalid date ""08:00""",Puce,Meggie,ACTIVE
+226,China,Xinfeng,Sierra Foxtrot Alfa Juliett Quebec Bravo Charlie Kilo Mike Lima Hotel X-ray India Tango Echo Delta Victor Golf Papa Uniform,333-3182,"error: invalid date ""08:00""",Goldenrod,Valerie,ACTIVE
+227,Mexico,El Carmen,Victor Sierra Quebec Bravo India Tango Golf Lima Papa Romeo Echo November Yankee,408-2595,"error: invalid date ""08:00""",Khaki,Leodora,ACTIVE
+228,Peru,Huasahuasi,Lima Victor Golf Mike Alfa India Oscar Charlie Papa Romeo,298-2360,"error: invalid date ""08:00""",Crimson,Odella,ACTIVE
+229,Philippines,Santa Barbara,Kilo Delta Bravo Zulu Mike India Alfa Whiskey Uniform Lima X-ray Tango Victor Golf November Oscar Juliett Papa Hotel,827-3805,"error: invalid date ""08:00""",Aquamarine,Tabbi,ACTIVE
+230,Philippines,Mabiton,Echo Kilo Tango Sierra Lima Uniform Papa November Charlie Whiskey Mike Delta Romeo X-ray Juliett,165-9834,"error: invalid date ""08:00""",Maroon,Rozina,ACTIVE
+231,Ecuador,Cube,Hotel Lima Bravo Mike Victor Sierra Golf Romeo Oscar Yankee Kilo Quebec Juliett X-ray Papa Uniform Zulu Foxtrot Charlie,346-8867,"error: invalid date ""08:00""",Goldenrod,Giulietta,ACTIVE
+232,United States,Flushing,Charlie Kilo X-ray Hotel Echo Bravo Oscar Sierra Alfa Romeo Tango November Delta India Foxtrot Zulu,923-2406,"error: invalid date ""08:00""",Green,Loria,ACTIVE
+233,Bulgaria,Tervel,Sierra Golf Alfa Tango X-ray Kilo Papa Juliett Oscar November Lima,210-7309,"error: invalid date ""08:00""",Teal,Hyacinthia,ACTIVE
+234,Gambia,Koina,Bravo Quebec Juliett Victor Tango Romeo Echo Zulu Mike Delta Golf November Lima Charlie Foxtrot Whiskey Yankee Oscar Papa,911-4922,"error: invalid date ""08:00""",Mauv,Brande,ACTIVE
+235,China,Nancaicun,Zulu Quebec Tango Oscar Victor Mike Bravo Foxtrot Juliett Delta Yankee Sierra Alfa Romeo Uniform Papa,782-2783,"error: invalid date ""08:00""",Green,Jackelyn,ACTIVE
+236,China,Puyang,Juliett Mike Romeo X-ray Sierra India Oscar Hotel Tango Foxtrot Victor Golf Bravo Papa Whiskey Kilo Echo,769-1223,"error: invalid date ""08:00""",Mauv,Ellie,ACTIVE
+237,Portugal,Meruge,India Hotel Lima Uniform Golf X-ray Mike Alfa Charlie Romeo Foxtrot Papa Delta,859-7364,"error: invalid date ""08:00""",Indigo,Domeniga,ACTIVE
+238,China,Pinghu,Whiskey X-ray Alfa Mike Echo India Bravo Charlie Victor Lima Zulu Hotel Oscar,244-3732,"error: invalid date ""08:00""",Puce,Saundra,ACTIVE
+239,Poland,Gomunice,Whiskey Lima Bravo X-ray Romeo Hotel Juliett Kilo Charlie Zulu Tango Golf Alfa Foxtrot Sierra India Echo Papa Yankee Victor,605-1142,"error: invalid date ""08:00""",Puce,Lenore,ACTIVE
+240,Philippines,Mabilang,Alfa Hotel Whiskey X-ray Bravo Lima Zulu Papa Romeo India Echo,481-8075,"error: invalid date ""08:00""",Maroon,Eda,ACTIVE
+241,Brazil,Paranapanema,Victor Tango Zulu Papa November Lima Romeo Quebec Kilo X-ray Delta Sierra Uniform Foxtrot Mike India Bravo Oscar,422-3539,"error: invalid date ""08:00""",Yellow,Kakalina,ACTIVE
+242,Venezuela,Barrancas,X-ray Foxtrot Uniform Whiskey Quebec Golf Alfa Oscar Zulu Papa Victor Juliett Yankee Romeo Echo Hotel Delta Charlie Mike,747-3836,"error: invalid date ""08:00""",Fuscia,Allix,ACTIVE
+243,South Korea,Hwawŏn,Bravo Alfa X-ray Zulu Yankee Charlie Hotel Echo Lima Sierra Oscar,274-5918,"error: invalid date ""08:00""",Crimson,Madlin,ACTIVE
+244,Russia,Urukh,Hotel Uniform Yankee Mike Quebec Papa X-ray Whiskey Romeo Oscar Bravo,058-7092,"error: invalid date ""08:00""",Indigo,Moll,ACTIVE
+245,Colombia,La Jagua de Ibirico,Delta Oscar Hotel Zulu Kilo Uniform Juliett Charlie Sierra Quebec Mike Alfa November Papa Tango Victor Whiskey Golf X-ray,248-7572,"error: invalid date ""08:00""",Yellow,Jayme,ACTIVE
+246,Indonesia,Jatiprahu,Lima India Foxtrot Quebec Bravo Sierra Charlie Juliett Kilo Uniform Papa Yankee Whiskey X-ray,293-6809,"error: invalid date ""08:00""",Indigo,Danell,ACTIVE
+247,China,Linshanhe,Golf Quebec Tango Uniform India Yankee Bravo Echo November Victor X-ray Whiskey Mike Oscar Juliett Sierra,111-0969,"error: invalid date ""08:00""",Teal,Tara,ACTIVE
+248,Philippines,Nato,X-ray Kilo Charlie Hotel India Lima Whiskey Bravo Quebec Oscar Uniform November,929-8922,"error: invalid date ""08:00""",Teal,Elissa,ACTIVE
+249,Iran,Khalīlābād,Delta Golf Alfa Foxtrot Lima November Romeo Uniform Echo Zulu Bravo Quebec India Sierra Charlie,251-6208,"error: invalid date ""08:00""",Indigo,Madeline,ACTIVE
+250,China,Baizhu,Sierra Whiskey Echo Uniform Lima Yankee India Hotel Tango Charlie Juliett Quebec Oscar Victor,099-3736,"error: invalid date ""08:00""",Violet,Saundra,ACTIVE
+251,China,Tuochuan,Alfa X-ray Charlie Delta Romeo Bravo Kilo Tango Juliett Sierra Foxtrot Mike Zulu Lima Papa,218-6853,"error: invalid date ""08:00""",Puce,Lana,ACTIVE
+252,Indonesia,Kaducondong,Quebec Zulu Whiskey Yankee Uniform Papa X-ray Foxtrot Alfa Charlie November Lima Echo Romeo Sierra Golf,481-7643,"error: invalid date ""08:00""",Crimson,Bunnie,ACTIVE
+253,China,Duancun,Hotel Kilo Foxtrot Uniform Whiskey Papa Victor Bravo Quebec X-ray Mike Zulu Charlie Romeo Alfa India Yankee,229-3751,"error: invalid date ""08:00""",Maroon,Nell,ACTIVE
+254,Brazil,Buritama,Victor Mike Hotel Golf Bravo Alfa Kilo Charlie Uniform Oscar,747-3880,"error: invalid date ""08:00""",Yellow,Tess,ACTIVE
+255,Japan,Ōzu,Alfa Kilo Romeo India Echo Whiskey Victor Foxtrot X-ray Juliett Charlie Delta,286-7421,"error: invalid date ""08:00""",Puce,Britta,ACTIVE
+256,Colombia,Girón,Quebec Hotel Yankee Kilo Lima November Echo Bravo Whiskey India Sierra Golf Tango Charlie Papa Victor Juliett Zulu Romeo Foxtrot,508-8818,"error: invalid date ""08:00""",Goldenrod,Kimberley,ACTIVE
+257,Indonesia,Pejek,Mike Yankee Echo Hotel Whiskey November Victor Tango Uniform Golf Lima Alfa Quebec Zulu Foxtrot Sierra,972-5922,"error: invalid date ""08:00""",Teal,Reeta,ACTIVE
+258,Indonesia,Balong,Oscar Alfa India X-ray Kilo Whiskey Romeo Sierra Hotel Delta Lima Uniform Mike Tango Yankee Victor Golf,101-8144,"error: invalid date ""08:00""",Yellow,Rodi,ACTIVE
+259,Belarus,Krasnaye,Charlie Lima Bravo Alfa Papa Mike Golf Zulu India Sierra X-ray Tango Quebec Romeo Foxtrot Delta,519-3996,"error: invalid date ""08:00""",Maroon,Elaine,ACTIVE
+260,Macedonia,Konče,Alfa Victor Romeo Whiskey X-ray Tango Charlie Hotel Mike Yankee Zulu Oscar Kilo Quebec,443-5056,"error: invalid date ""08:00""",Orange,Fawne,ACTIVE
+261,Indonesia,Mandor,Lima November Yankee Papa Mike Bravo Uniform Foxtrot Victor Oscar Kilo Tango Delta Golf Alfa,472-6396,"error: invalid date ""08:00""",Orange,Bobette,ACTIVE
+262,Pakistan,Dera Murād Jamāli,Whiskey Charlie India Oscar Hotel Romeo Echo Tango Bravo Uniform November,703-8959,"error: invalid date ""08:00""",Aquamarine,Torrie,ACTIVE
+263,Lithuania,Virbalis,Papa Foxtrot India Delta November Zulu Kilo Whiskey Charlie Mike Oscar Golf Echo,451-8434,"error: invalid date ""08:00""",Orange,Monika,ACTIVE
+264,Indonesia,Hokor,Charlie Mike Golf Kilo Alfa Quebec Delta Bravo Hotel Juliett Yankee India Echo November,039-1697,"error: invalid date ""08:00""",Blue,Eve,ACTIVE
+265,China,Yuezhao,Kilo Alfa Romeo Charlie X-ray Sierra Zulu Victor Oscar Papa Lima Juliett Uniform Quebec Bravo Mike Hotel November Foxtrot Echo,179-0941,"error: invalid date ""08:00""",Turquoise,Sonya,ACTIVE
+266,Russia,Novoshakhtinskiy,Zulu Alfa Victor Yankee Romeo Delta Charlie Mike Lima Papa Golf Juliett Echo X-ray Foxtrot Uniform Bravo Kilo,411-3175,"error: invalid date ""08:00""",Purple,Allina,ACTIVE
+267,Indonesia,Panite,Sierra Kilo Alfa Mike Delta India Echo Bravo Victor Yankee Tango Quebec Foxtrot Juliett,214-5126,"error: invalid date ""08:00""",Pink,Leshia,ACTIVE
+268,United States,Oklahoma City,Charlie Lima X-ray Kilo Sierra Victor Alfa November Quebec Romeo,797-6498,"error: invalid date ""08:00""",Yellow,Glynda,ACTIVE
+269,Norway,Oslo,Charlie Romeo X-ray Victor Delta Papa Lima Yankee Quebec Tango Kilo,520-4033,"error: invalid date ""08:00""",Violet,Brandie,ACTIVE
+270,Venezuela,San Simón,Kilo Alfa Victor India Romeo Foxtrot Delta Zulu Tango X-ray Mike,347-7532,"error: invalid date ""08:00""",Orange,Rochelle,ACTIVE
+271,China,Zhaotong,Victor X-ray Quebec Yankee India Mike Sierra Hotel Juliett Delta Lima Zulu Foxtrot,729-7450,"error: invalid date ""08:00""",Blue,Maryl,ACTIVE
+272,Czech Republic,Kunčice pod Ondřejníkem,Papa Mike Whiskey November X-ray Golf Yankee Zulu Tango Alfa Hotel Juliett Foxtrot India Lima Victor Charlie Quebec Uniform,688-0452,"error: invalid date ""08:00""",Teal,Brier,ACTIVE
+273,China,Donglai,Kilo Papa India Charlie Golf Foxtrot Bravo Whiskey Echo November Sierra Tango Oscar Quebec Romeo,370-7939,"error: invalid date ""08:00""",Khaki,Lynea,ACTIVE
+274,China,Fuzhou,Hotel Kilo Bravo Whiskey Oscar Lima Mike X-ray Foxtrot Victor Alfa Echo Romeo Sierra Uniform Quebec,283-5032,"error: invalid date ""08:00""",Purple,Charil,ACTIVE
+275,Indonesia,Bireun,Hotel Quebec Alfa Mike Charlie Yankee Uniform Juliett Foxtrot Whiskey Bravo,057-7029,"error: invalid date ""08:00""",Goldenrod,Dannie,ACTIVE
+276,Indonesia,Tanjung Raja,Yankee Uniform Sierra Juliett Kilo Charlie Mike Delta Golf Lima Tango,090-6948,"error: invalid date ""08:00""",Mauv,Emlynne,ACTIVE
+277,China,Shuangbaiyang,Charlie Lima Papa Golf X-ray Whiskey Kilo Mike Juliett Echo Yankee Quebec Delta,140-0349,"error: invalid date ""08:00""",Maroon,Trixie,ACTIVE
+278,Indonesia,Sadang Kulon,Sierra Bravo Victor Lima Golf Hotel Kilo Juliett Whiskey November Delta India Yankee Uniform,112-0112,"error: invalid date ""08:00""",Mauv,Adah,ACTIVE
+279,Mongolia,Tsalgar,Quebec Charlie Whiskey Mike Lima Echo November Romeo Sierra India,076-4048,"error: invalid date ""08:00""",Crimson,Nannette,ACTIVE
+280,Indonesia,Gungguh,Delta Whiskey Bravo Romeo Yankee Sierra Juliett Papa Tango India Hotel Oscar Zulu Charlie Kilo Uniform November Golf Echo,668-7377,"error: invalid date ""08:00""",Maroon,Em,ACTIVE
+281,Mexico,Ricardo Flores Magon,Whiskey Bravo Sierra Romeo Alfa Uniform Charlie Tango Echo Zulu Hotel Oscar Lima Mike,139-1144,"error: invalid date ""08:00""",Goldenrod,Farrand,ACTIVE
+282,Thailand,Lam Sonthi,Oscar Sierra Echo Hotel Foxtrot India Juliett Mike Quebec Alfa November Kilo Zulu Whiskey,800-3063,"error: invalid date ""08:00""",Aquamarine,Lauri,ACTIVE
+283,Indonesia,Tembayangan Barat,Juliett Foxtrot Mike Alfa X-ray Bravo Oscar November Charlie Kilo Papa Romeo Yankee Hotel Delta,417-3395,"error: invalid date ""08:00""",Red,Stella,ACTIVE
+284,France,Paris 02,Quebec November Charlie Uniform Echo Alfa Zulu Mike Sierra Hotel Yankee Kilo Foxtrot,125-8873,"error: invalid date ""08:00""",Aquamarine,Heath,ACTIVE
+285,Ukraine,Svitlovods’k,Lima Tango Kilo Bravo Papa Yankee Victor India Uniform Quebec Sierra Echo Alfa Juliett Delta Whiskey Zulu X-ray,464-3755,"error: invalid date ""08:00""",Green,Hermina,ACTIVE
+286,Yemen,Dhahi,Bravo Quebec Delta X-ray Tango Romeo India Victor Sierra Oscar November,985-0638,"error: invalid date ""08:00""",Pink,Alexia,ACTIVE
+287,Sweden,Linköping,Alfa Victor Zulu Tango Uniform India Kilo Echo Golf November Romeo Whiskey X-ray Foxtrot Mike Sierra Yankee Oscar,737-1305,"error: invalid date ""08:00""",Goldenrod,Betsy,ACTIVE
+288,Palestinian Territory,Dayr Dibwān,Uniform Bravo Charlie Zulu X-ray Tango Victor Kilo Whiskey Papa Juliett Lima India Foxtrot Mike Echo Golf Hotel November,310-7334,"error: invalid date ""08:00""",Khaki,Liv,ACTIVE
+289,Palestinian Territory,Faḩmah,Quebec Bravo Lima Papa Juliett Foxtrot Whiskey Zulu Echo Oscar Uniform Hotel Alfa,590-4035,"error: invalid date ""08:00""",Blue,Pepi,ACTIVE
+290,Micronesia,Madolenihm Municipality Government,Whiskey Quebec Sierra Victor Yankee Zulu Juliett Romeo Golf Tango Kilo Lima X-ray,953-7434,"error: invalid date ""08:00""",Turquoise,Janey,ACTIVE
+291,China,Dongting,Bravo Foxtrot Romeo Lima Yankee Zulu Charlie Golf Alfa Oscar Sierra Delta India Papa Echo Mike,836-0965,"error: invalid date ""08:00""",Aquamarine,Meryl,ACTIVE
+292,Russia,Primorsko-Akhtarsk,Oscar Zulu Charlie Hotel Bravo Alfa Foxtrot Quebec Echo Yankee Whiskey Juliett Romeo,600-7430,"error: invalid date ""08:00""",Purple,Dode,ACTIVE
+293,Sweden,Mariestad,Sierra Whiskey Echo Romeo Papa Golf Lima Mike Delta Foxtrot Bravo India,925-6818,"error: invalid date ""08:00""",Blue,Gwyn,ACTIVE
+294,Thailand,Det Udom,Sierra Kilo Delta Juliett Echo Quebec Romeo Charlie X-ray Bravo Alfa Mike,983-5827,"error: invalid date ""08:00""",Indigo,Mellie,ACTIVE
+295,Poland,Milanówek,India Charlie Echo Yankee Zulu Whiskey Bravo Papa Kilo Sierra Golf November Mike,784-2926,"error: invalid date ""08:00""",Goldenrod,Catina,ACTIVE
+296,China,Lujiao,Romeo Bravo Charlie X-ray Kilo Victor Hotel Echo Tango Oscar Golf Zulu Alfa Quebec India November Uniform Lima Sierra Foxtrot,782-5896,"error: invalid date ""08:00""",Crimson,Catlaina,ACTIVE
+297,China,Rawa,Golf Charlie Mike Papa Kilo Hotel Tango Uniform Sierra Delta Echo Quebec Alfa Oscar Romeo Foxtrot Victor Yankee Zulu,361-4527,"error: invalid date ""08:00""",Mauv,Pammie,ACTIVE
+298,Indonesia,Air Bangis,Oscar Charlie X-ray Juliett Mike Zulu Uniform Lima Tango India Quebec Victor Yankee Whiskey Hotel,627-1434,"error: invalid date ""08:00""",Aquamarine,Trudi,ACTIVE
+299,Brazil,Igarapé,Foxtrot X-ray Yankee Romeo Mike Victor Hotel Lima India Golf Oscar Tango Quebec Bravo Alfa Whiskey Sierra,845-3339,"error: invalid date ""08:00""",Turquoise,Queenie,ACTIVE
+300,United States,Maple Plain,India Whiskey Delta Golf Bravo Oscar Foxtrot Uniform Romeo Alfa Zulu X-ray Juliett,735-5916,"error: invalid date ""08:00""",Puce,Loise,ACTIVE
+301,China,Yangba,Papa X-ray Bravo Whiskey Charlie Romeo Mike Yankee Victor India Tango Hotel Zulu Lima,178-3520,"error: invalid date ""08:00""",Khaki,Kelcey,ACTIVE
+302,Sweden,Trelleborg,India X-ray Zulu Victor Sierra Golf Bravo Papa Tango Lima Romeo November Whiskey Echo Kilo Oscar Yankee Hotel,000-8326,"error: invalid date ""08:00""",Maroon,Zandra,ACTIVE
+303,Syria,Al Mushannaf,Quebec Victor India Hotel Golf November Whiskey Yankee Uniform Juliett Alfa Delta Foxtrot Tango X-ray Romeo Mike Papa Echo Charlie,827-1030,"error: invalid date ""08:00""",Red,Stormy,ACTIVE
+304,Madagascar,Ankazondandy,Charlie Tango Victor Hotel Juliett Zulu Quebec Delta Romeo Lima India Bravo Mike Kilo Sierra Foxtrot,568-3458,"error: invalid date ""08:00""",Yellow,Tammi,ACTIVE
+305,China,Shuanglu,Oscar Charlie Juliett Romeo Alfa Golf Foxtrot Tango Whiskey Sierra Papa Lima Victor Yankee India Mike Uniform Zulu,117-7440,"error: invalid date ""08:00""",Aquamarine,Felicity,ACTIVE
+306,China,Liuji,Hotel Juliett Lima Delta November Victor Papa Yankee Golf Sierra Uniform Alfa Bravo Mike Oscar,380-7545,"error: invalid date ""08:00""",Goldenrod,Zonda,ACTIVE
+307,China,Lingbei,Papa Mike India Delta Yankee Juliett Golf Sierra Quebec Uniform Kilo Lima Echo Oscar Romeo Tango Foxtrot Zulu Alfa,114-4329,"error: invalid date ""08:00""",Fuscia,Gypsy,ACTIVE
+308,Sweden,Jönköping,Sierra Yankee Hotel Alfa Uniform Juliett Echo Delta Papa Bravo X-ray Oscar India Zulu Lima Charlie Golf Tango Quebec,357-2231,"error: invalid date ""08:00""",Maroon,Saudra,ACTIVE
+309,China,Haiyangsuo,Romeo Golf Victor Lima Quebec Bravo Foxtrot Delta Tango Sierra Yankee November Papa India X-ray Kilo Uniform Alfa,811-7071,"error: invalid date ""08:00""",Khaki,Allianora,ACTIVE
+310,Tanzania,Rujewa,Victor Yankee Mike Papa Oscar Lima Echo Golf Alfa Juliett Uniform November Whiskey Tango India Quebec Sierra Bravo X-ray Charlie,046-0670,"error: invalid date ""08:00""",Aquamarine,Claretta,ACTIVE
+311,Canada,Les Coteaux,Tango Mike November Zulu Romeo Hotel India Lima Whiskey Papa Yankee Bravo Uniform Kilo Sierra Foxtrot X-ray Echo Charlie,247-1770,"error: invalid date ""08:00""",Fuscia,Althea,ACTIVE
+312,China,Choujiang,X-ray Romeo Oscar Tango Foxtrot Delta Sierra Charlie Uniform Kilo Bravo Quebec Echo November,501-3621,"error: invalid date ""08:00""",Maroon,Patrice,ACTIVE
+313,France,Pau,Tango Juliett Hotel X-ray Quebec Golf Yankee Sierra Charlie Alfa Echo Foxtrot November Delta Whiskey Bravo Mike,370-6964,"error: invalid date ""08:00""",Green,Tanya,ACTIVE
+314,China,Ziyang,Victor Alfa Golf Sierra Kilo Echo Quebec Papa Romeo Lima Mike Uniform Juliett Yankee Whiskey,936-8125,"error: invalid date ""08:00""",Red,Noami,ACTIVE
+315,Ecuador,La Libertad,Victor Whiskey Oscar Kilo Yankee Golf Bravo November Charlie Sierra Foxtrot Mike Tango Lima X-ray,195-9414,"error: invalid date ""08:00""",Purple,Adrian,ACTIVE
+316,Mexico,San Rafael,Charlie X-ray Uniform Juliett Sierra Delta Foxtrot Kilo Yankee November Zulu Bravo Tango India Echo Mike Romeo Golf Hotel Oscar,395-3450,"error: invalid date ""08:00""",Puce,Brittaney,ACTIVE
+317,Poland,Łobez,Whiskey Lima X-ray Yankee India Delta Bravo Sierra Foxtrot Juliett Echo Kilo Alfa Tango Charlie Victor Golf,186-5558,"error: invalid date ""08:00""",Violet,Rhona,ACTIVE
+318,Indonesia,Banaran,Whiskey Sierra November Oscar Quebec Mike X-ray Lima Charlie Romeo Kilo Uniform,215-6292,"error: invalid date ""08:00""",Maroon,Modesty,ACTIVE
+319,Vietnam,Thị Trấn Ngan Dừa,Mike Uniform Zulu Yankee Juliett Hotel Alfa Oscar Tango Delta Charlie Bravo Kilo Sierra Golf Foxtrot Victor X-ray,004-3404,"error: invalid date ""08:00""",Pink,Arleta,ACTIVE
+320,Latvia,Riebiņi,Charlie Bravo Quebec Lima Sierra Zulu Hotel Victor Romeo Papa Mike Delta Uniform Foxtrot Whiskey Echo,052-1784,"error: invalid date ""08:00""",Aquamarine,Tiphany,ACTIVE
+321,Portugal,Santa Cruz das Flores,Zulu Alfa Mike Oscar Yankee Delta Bravo Charlie Echo Tango Lima Kilo Papa November Whiskey,224-2672,"error: invalid date ""08:00""",Goldenrod,Bonita,ACTIVE
+322,Philippines,Liloy,Yankee Hotel Whiskey Quebec Alfa Charlie Echo X-ray Uniform November,143-9468,"error: invalid date ""08:00""",Aquamarine,Rachelle,ACTIVE
+323,Greece,Koilás,Echo Delta Foxtrot Uniform Romeo November Hotel Kilo Yankee Golf X-ray Mike Quebec Charlie Alfa Tango,427-4134,"error: invalid date ""08:00""",Khaki,Hilary,ACTIVE
+324,Indonesia,Warung Wetan,Golf Quebec Juliett November Victor Foxtrot India Mike Lima Oscar,298-1566,"error: invalid date ""08:00""",Maroon,Donna,ACTIVE
+325,Russia,Kimil’tey,Alfa Zulu India Juliett Kilo Romeo November Hotel Oscar Golf Sierra Yankee Foxtrot Lima,736-7635,"error: invalid date ""08:00""",Khaki,Morganne,ACTIVE
+326,China,Yangzhou,Quebec Oscar Romeo Bravo Hotel X-ray Tango Foxtrot Delta Whiskey Uniform Lima Mike Juliett Victor India Kilo Yankee,968-2685,"error: invalid date ""08:00""",Fuscia,Henrieta,ACTIVE
+327,United States,Oklahoma City,November Yankee Mike Oscar Uniform Zulu Quebec Juliett Charlie Papa Hotel,250-9535,"error: invalid date ""08:00""",Aquamarine,Rodi,ACTIVE
+328,Finland,Lumijoki,November Whiskey Juliett Zulu Bravo Victor Kilo Tango Quebec Alfa Papa Yankee Lima Mike Sierra,730-3650,"error: invalid date ""08:00""",Orange,Portia,ACTIVE
+329,Ethiopia,Turmi,Quebec Alfa Echo Hotel Juliett Oscar November Romeo India Foxtrot Mike X-ray Bravo Lima Delta Charlie Sierra,202-3474,"error: invalid date ""08:00""",Puce,Giustina,ACTIVE
+330,Poland,Międzybrodzie Bialskie,Zulu Hotel Uniform Golf Bravo Mike Romeo Alfa Echo Delta Kilo Oscar Tango Yankee Quebec Foxtrot Charlie Juliett India Lima,820-0942,"error: invalid date ""08:00""",Fuscia,Kimberly,ACTIVE
+331,China,Xin’andu,Yankee Whiskey X-ray Alfa Mike Delta Golf Foxtrot Charlie Oscar Uniform,439-0484,"error: invalid date ""08:00""",Mauv,Kristyn,ACTIVE
+332,Indonesia,Randu,Kilo Bravo Tango Alfa November Zulu Yankee Papa Golf Hotel Quebec Mike Charlie Lima,758-6116,"error: invalid date ""08:00""",Teal,Caro,ACTIVE
+333,Tajikistan,Shaydon,Hotel Oscar Victor Juliett Zulu Echo Uniform Tango Quebec Papa Bravo Alfa Foxtrot Yankee November India Mike Golf Whiskey,756-3831,"error: invalid date ""08:00""",Orange,Norri,ACTIVE
+334,Indonesia,Arjasari,Echo X-ray Oscar Papa India Tango Lima Whiskey Delta Bravo Victor Mike Charlie Zulu Alfa,528-4140,"error: invalid date ""08:00""",Yellow,Sasha,ACTIVE
+335,Philippines,Kiupo,November Whiskey Tango Mike Hotel Echo Quebec Zulu Romeo Uniform Papa Victor Yankee Alfa Lima Oscar Sierra X-ray Foxtrot,200-5776,"error: invalid date ""08:00""",Maroon,Sibyl,ACTIVE
+336,France,Rennes,Papa X-ray India Romeo Tango Bravo Whiskey November Hotel Juliett Lima Zulu Yankee Echo Oscar Foxtrot,375-5774,"error: invalid date ""08:00""",Red,Therese,ACTIVE
+337,China,Xinning,Quebec Sierra Mike Bravo Whiskey Yankee Tango Victor Golf Charlie Foxtrot X-ray Juliett Kilo Lima Echo,442-2684,"error: invalid date ""08:00""",Violet,Gilda,ACTIVE
+338,Tunisia,Beni Khiar,Whiskey Zulu Charlie Bravo Foxtrot Golf X-ray Lima Hotel Papa,162-2910,"error: invalid date ""08:00""",Purple,Roxana,ACTIVE
+339,Indonesia,Karanggeneng,November India Yankee X-ray Papa Mike Delta Zulu Tango Victor Romeo Charlie Uniform Oscar Golf Quebec,682-6890,"error: invalid date ""08:00""",Teal,Kaela,ACTIVE
+340,Russia,Ustyuzhna,Oscar Whiskey Sierra November Mike Charlie Delta Romeo Juliett India Bravo Kilo Golf,706-5779,"error: invalid date ""08:00""",Orange,Lonee,ACTIVE
+341,Indonesia,Beskolen,Foxtrot Alfa Juliett Bravo Charlie Echo Yankee Delta Kilo Romeo Victor Zulu Papa Golf Whiskey November Quebec,919-2827,"error: invalid date ""08:00""",Indigo,Riva,ACTIVE
+342,China,Xinan,Lima Mike Uniform Whiskey Golf Hotel Echo Bravo Romeo November Victor Oscar India X-ray Papa Tango Juliett Kilo,461-8442,"error: invalid date ""08:00""",Pink,Harley,ACTIVE
+343,Cyprus,Ýpsonas,Sierra Whiskey India Hotel November Mike Papa Victor Echo Golf Alfa Uniform Tango Oscar Kilo Quebec Zulu X-ray Lima Yankee,373-9005,"error: invalid date ""08:00""",Violet,Tasha,ACTIVE
+344,Indonesia,Bulakan,X-ray Papa Uniform Bravo Yankee Mike November Oscar Zulu Victor Alfa Echo Tango Lima Kilo Quebec,473-6931,"error: invalid date ""08:00""",Green,Ulrica,ACTIVE
+345,China,Anhua,Charlie Yankee Papa Tango Oscar X-ray Victor Juliett Foxtrot Quebec Hotel Uniform Golf,682-3255,"error: invalid date ""08:00""",Aquamarine,Ofella,ACTIVE
+346,United States,Chicago,Romeo Juliett Whiskey Alfa November Mike Charlie Echo Foxtrot Tango Kilo Oscar Bravo Zulu Lima Quebec India,966-7204,"error: invalid date ""08:00""",Goldenrod,Waneta,ACTIVE
+347,Russia,Ust’-Dzheguta,Alfa Mike Hotel Golf Sierra Papa Delta November Bravo Foxtrot,414-6445,"error: invalid date ""08:00""",Orange,Ursala,ACTIVE
+348,Kazakhstan,Sayaq,Delta Sierra Uniform Lima Victor Echo Oscar X-ray Zulu Charlie Golf Bravo Yankee Hotel Whiskey Romeo,916-5116,"error: invalid date ""08:00""",Pink,Guillema,ACTIVE
+349,Philippines,Sanghan,Tango Foxtrot November Victor Yankee Delta Papa Sierra Oscar Quebec Mike Charlie Golf,519-6553,"error: invalid date ""08:00""",Violet,Stefanie,ACTIVE
+350,Brazil,Andradina,November Hotel Oscar Kilo Bravo Romeo Charlie Tango India Papa Yankee Mike Uniform Golf Echo Quebec Zulu Sierra,686-4885,"error: invalid date ""08:00""",Puce,Hedy,ACTIVE
+351,Ukraine,Velyka Mykhaylivka,November Quebec Whiskey Papa Juliett Sierra Tango Romeo Lima Yankee India,178-5356,"error: invalid date ""08:00""",Red,Gina,ACTIVE
+352,Japan,Ōmagari,Whiskey Yankee X-ray Bravo Golf India Delta Lima Kilo Victor Hotel Romeo Quebec Tango Charlie Alfa November Uniform Mike Oscar,845-1131,"error: invalid date ""08:00""",Orange,Oriana,ACTIVE
+353,Indonesia,Sumbersewu,Whiskey Bravo Alfa India Lima Papa Tango Kilo Uniform Juliett Golf Foxtrot Hotel Oscar Romeo Sierra Zulu,365-3982,"error: invalid date ""08:00""",Fuscia,Aeriell,ACTIVE
+354,Mexico,Francisco J Mujica,Sierra Echo Foxtrot Lima Bravo Uniform Victor November Papa Zulu Whiskey Romeo Charlie X-ray Quebec,306-1759,"error: invalid date ""08:00""",Orange,Brana,ACTIVE
+355,Palestinian Territory,Bayt Wazan,Golf Delta Oscar Foxtrot Lima Tango Zulu Victor Kilo Romeo Bravo Echo X-ray Yankee Alfa,007-3851,"error: invalid date ""08:00""",Puce,Evelyn,ACTIVE
+356,Norway,Moss,Bravo Delta X-ray Whiskey Echo Lima Sierra Zulu November Quebec,306-3351,"error: invalid date ""08:00""",Fuscia,Candice,ACTIVE
+357,United States,Young America,Zulu Victor Whiskey Papa Foxtrot Lima Bravo Tango November Uniform Alfa Echo Hotel Juliett Quebec Kilo,521-6917,"error: invalid date ""08:00""",Purple,Joelly,ACTIVE
+358,China,Xiaohebian,Bravo Oscar Alfa Echo Victor Zulu Tango Juliett Quebec Sierra Foxtrot Hotel Papa Whiskey Mike Delta Yankee,841-7935,"error: invalid date ""08:00""",Blue,Melli,ACTIVE
+359,China,Zoumaling,Sierra Mike Victor Quebec Oscar November Alfa Kilo Papa Uniform Charlie Yankee Juliett Zulu Romeo Bravo Echo Delta X-ray Whiskey,234-2355,"error: invalid date ""08:00""",Puce,Jordana,ACTIVE
+360,Argentina,Intendente Alvear,Bravo Alfa Delta Whiskey Quebec November Golf Tango Hotel Charlie X-ray,038-0625,"error: invalid date ""08:00""",Khaki,Minerva,ACTIVE
+361,Sweden,Lidingö,Golf Charlie Sierra Zulu Echo Quebec Oscar Papa November Whiskey Yankee Uniform,743-8014,"error: invalid date ""08:00""",Blue,Quintina,ACTIVE
+362,China,Jincheng,Echo Oscar Whiskey Charlie X-ray November Bravo Golf Uniform Tango Sierra Foxtrot Juliett Quebec Romeo,119-3858,"error: invalid date ""08:00""",Purple,Celestia,ACTIVE
+363,Russia,Sorokino,Uniform Lima Papa Foxtrot Romeo Golf Mike Alfa November Hotel Kilo Whiskey,755-5195,"error: invalid date ""08:00""",Blue,Mireielle,ACTIVE
+364,Ecuador,El Ángel,Victor November Bravo Kilo Tango Yankee Whiskey Delta Papa Hotel X-ray Zulu Alfa Oscar Charlie Romeo Echo Quebec Mike Foxtrot,346-9323,"error: invalid date ""08:00""",Maroon,Katharyn,ACTIVE
+365,Czech Republic,Krupka,Whiskey Uniform Alfa Sierra November X-ray Delta India Mike Zulu Charlie Juliett Hotel Romeo Golf Foxtrot Echo,479-2819,"error: invalid date ""08:00""",Indigo,Flor,ACTIVE
+366,Macedonia,Lukovo,Delta Yankee India Whiskey Mike Kilo Echo Romeo Oscar Zulu Golf Hotel Victor Bravo Lima Juliett Alfa Uniform Foxtrot Tango,149-2412,"error: invalid date ""08:00""",Turquoise,Nadean,ACTIVE
+367,Sweden,Hallsberg,Zulu India Charlie Quebec Kilo Alfa Yankee Tango Uniform November Delta Bravo Whiskey Romeo Mike Lima Golf Papa X-ray Foxtrot,410-4939,"error: invalid date ""08:00""",Crimson,Valenka,ACTIVE
+368,Thailand,Si That,Quebec November Uniform Golf X-ray Charlie Zulu Delta Mike Sierra Papa Hotel Tango Kilo Lima Bravo Whiskey Yankee Juliett India,300-6768,"error: invalid date ""08:00""",Mauv,Angele,ACTIVE
+369,Russia,Biryulëvo Zapadnoye,Kilo Papa Yankee Golf Foxtrot Zulu Mike Alfa Tango Delta Charlie,181-8615,"error: invalid date ""08:00""",Fuscia,Jillayne,ACTIVE
+370,China,Aba,Delta India Papa Lima Foxtrot Juliett Quebec Tango Golf Echo Uniform Yankee Victor Oscar,558-4465,"error: invalid date ""08:00""",Fuscia,Susannah,ACTIVE
+371,China,Mayong,Bravo Kilo Papa November Quebec Echo Oscar Yankee Alfa Romeo Zulu,063-2258,"error: invalid date ""08:00""",Blue,Sibby,ACTIVE
+372,China,Xi’an,Sierra Uniform Echo Tango Oscar Papa Juliett Zulu Golf Yankee X-ray Mike Alfa Romeo Hotel,338-6382,"error: invalid date ""08:00""",Mauv,Arleyne,ACTIVE
+373,China,Wulin,Kilo Yankee Uniform Bravo Papa Hotel Victor Sierra Oscar Lima Mike Zulu Romeo Whiskey India November Echo Golf Foxtrot,910-0329,"error: invalid date ""08:00""",Maroon,Larine,ACTIVE
+374,China,Xianghu,Juliett Bravo November Hotel Zulu Victor Yankee Delta Papa Kilo Uniform Quebec Romeo X-ray Tango,877-6467,"error: invalid date ""08:00""",Blue,Ellissa,ACTIVE
+375,Philippines,Mianay,Sierra Whiskey Quebec Oscar Yankee X-ray Echo Foxtrot Romeo Uniform Bravo,508-0813,"error: invalid date ""08:00""",Aquamarine,Tanitansy,ACTIVE
+376,Philippines,Alilem,Uniform November Hotel Papa Quebec Delta X-ray Juliett Sierra Kilo Lima Echo Alfa Victor Tango India Whiskey Bravo Yankee Zulu,220-1850,"error: invalid date ""08:00""",Blue,Frances,ACTIVE
+377,Brazil,Caçador,Echo Lima Hotel Tango Bravo Golf X-ray Alfa Delta Kilo Quebec Sierra Charlie India November Whiskey Oscar Romeo Victor,743-8599,"error: invalid date ""08:00""",Turquoise,Gennie,ACTIVE
+378,China,Taibai,Foxtrot India Whiskey Romeo Victor Kilo Juliett Delta Echo Charlie Alfa Mike Sierra,851-2502,"error: invalid date ""08:00""",Orange,Paola,ACTIVE
+379,Argentina,Corralito,Kilo Mike Romeo Papa Uniform India Delta Hotel November Foxtrot Charlie,825-5964,"error: invalid date ""08:00""",Red,Roslyn,ACTIVE
+380,Pakistan,Chak Two Hundred Forty-Nine TDA,Echo Yankee Oscar Quebec Bravo Papa Lima Hotel Victor Mike X-ray Uniform Foxtrot,459-3462,"error: invalid date ""08:00""",Teal,Garnette,ACTIVE
+381,Nigeria,Ubiaja,Tango Whiskey November X-ray Kilo Bravo Hotel Uniform Mike Quebec Victor Juliett Papa India Echo Sierra,524-8236,"error: invalid date ""08:00""",Fuscia,Kelci,ACTIVE
+382,Indonesia,Datarsitu,Uniform Zulu Sierra Victor November Quebec Delta Juliett Echo Golf Yankee Bravo Lima Alfa Hotel Mike X-ray Whiskey,657-4978,"error: invalid date ""08:00""",Violet,Marianne,ACTIVE
+383,Cayman Islands,George Town,Uniform India Mike Bravo Whiskey Oscar Tango Quebec Kilo Sierra Zulu,798-0941,"error: invalid date ""08:00""",Teal,Roseline,ACTIVE
+384,Spain,"Palmas De Gran Canaria, Las",Quebec Foxtrot Romeo Papa Tango Uniform November Charlie Delta Hotel X-ray Golf Juliett,236-9575,"error: invalid date ""08:00""",Orange,Maritsa,ACTIVE
+385,Russia,Kochevo,Golf Kilo Delta November Whiskey X-ray Tango Alfa Victor Yankee Oscar Quebec Romeo Hotel India Lima,684-9154,"error: invalid date ""08:00""",Red,Enriqueta,ACTIVE
+386,Yemen,Ḩabbān,Hotel Golf Victor Charlie Mike Bravo Papa Delta Whiskey India Kilo Foxtrot Lima X-ray,853-5736,"error: invalid date ""08:00""",Maroon,Minda,ACTIVE
+387,China,Huoshaoping,Papa Bravo Lima Delta Whiskey Uniform Tango India Golf Mike Oscar Yankee Hotel November Charlie Foxtrot Juliett Zulu X-ray,211-5706,"error: invalid date ""08:00""",Indigo,Ladonna,ACTIVE
+388,Russia,Leonidovo,Uniform Zulu India Yankee Kilo Alfa Sierra Romeo Charlie Hotel Tango Juliett November,897-0416,"error: invalid date ""08:00""",Pink,Pammy,ACTIVE
+389,Brazil,Franca,Golf Foxtrot Sierra Papa Lima Bravo Yankee November Echo Kilo Quebec Zulu Charlie India Hotel Delta Whiskey,697-2347,"error: invalid date ""08:00""",Crimson,Mimi,ACTIVE
+390,Colombia,María la Baja,Delta Golf Mike Sierra Yankee Kilo Lima Oscar Uniform India Charlie Papa Echo Romeo,789-9989,"error: invalid date ""08:00""",Mauv,Lauri,ACTIVE
+391,El Salvador,Acajutla,Yankee Charlie Hotel Foxtrot Alfa Kilo Delta Mike X-ray Echo Whiskey India Lima Uniform Sierra November Victor Oscar Bravo,622-2306,"error: invalid date ""08:00""",Pink,Alis,ACTIVE
+392,Sweden,Örebro,Golf Zulu Quebec Romeo Yankee Kilo Hotel India Papa Foxtrot Bravo Whiskey Mike Lima Alfa Tango November Oscar Sierra,648-2151,"error: invalid date ""08:00""",Indigo,Kerry,ACTIVE
+393,United States,Fort Pierce,Whiskey Sierra Quebec Delta Golf Lima Yankee Mike Charlie Victor Kilo Papa Echo Romeo Juliett Uniform Foxtrot,948-2469,"error: invalid date ""08:00""",Crimson,Jacquetta,ACTIVE
+394,Suriname,Brokopondo,Lima Kilo November Quebec Alfa Golf Uniform Foxtrot India Zulu Victor Bravo Delta Whiskey,145-8430,"error: invalid date ""08:00""",Yellow,Marrilee,ACTIVE
+395,Poland,Lachowice,Victor Golf Mike Kilo India Romeo Lima Charlie Papa Echo Yankee Sierra Delta Uniform Foxtrot,171-9346,"error: invalid date ""08:00""",Turquoise,Stephine,ACTIVE
+396,Russia,Pryamitsyno,Bravo Delta Yankee Victor X-ray Kilo Juliett Foxtrot Oscar Zulu,898-6646,"error: invalid date ""08:00""",Green,Gillan,ACTIVE
+397,Greece,Kyriáki,Uniform Mike India Quebec Delta Oscar Charlie Tango Bravo Whiskey Echo Foxtrot Juliett Zulu Romeo Kilo X-ray Papa Sierra,292-1412,"error: invalid date ""08:00""",Teal,Ree,ACTIVE
+398,China,Longsheng,India Yankee Charlie Mike Hotel Victor November Juliett Lima Oscar Echo Papa Foxtrot Golf,803-3868,"error: invalid date ""08:00""",Yellow,Doti,ACTIVE
+399,China,Jingang,Tango Uniform Alfa Yankee Bravo Whiskey Lima Sierra Echo Charlie Foxtrot Zulu Mike X-ray Delta Oscar Quebec Hotel,786-1687,"error: invalid date ""08:00""",Indigo,Eve,ACTIVE
+400,Indonesia,Cigalontang,Mike Foxtrot Romeo Quebec Whiskey Golf Victor Charlie Yankee Tango Hotel Kilo Alfa Papa Lima Delta Uniform,619-9290,"error: invalid date ""08:00""",Yellow,Alysia,ACTIVE
+401,Afghanistan,Rabāţ-e Sangī-ye Pā’īn,Romeo Zulu X-ray Juliett Papa Bravo November India Sierra Echo Alfa Foxtrot Victor Whiskey Quebec Tango Uniform Charlie Yankee,022-4526,"error: invalid date ""08:00""",Orange,Gwennie,ACTIVE
+402,Peru,Palcamayo,Oscar Hotel X-ray Zulu Delta Echo Yankee Uniform Romeo Alfa,062-2283,"error: invalid date ""08:00""",Purple,Jody,ACTIVE
+403,Philippines,San Miguel,Foxtrot Yankee Delta Hotel Victor Uniform Whiskey November India Charlie Zulu Quebec Mike Juliett Alfa Papa Lima,465-1223,"error: invalid date ""08:00""",Orange,Zahara,ACTIVE
+404,Sweden,Vargön,Alfa India Foxtrot Uniform Kilo November Sierra Lima Hotel Bravo Whiskey Echo Quebec Tango Oscar,228-3673,"error: invalid date ""08:00""",Crimson,Xaviera,ACTIVE
+405,China,Guanli,November Hotel Lima Tango Zulu Romeo X-ray Victor Mike Foxtrot Oscar Quebec Alfa Whiskey Bravo Yankee Golf Uniform Sierra India,538-5129,"error: invalid date ""08:00""",Red,Sharai,ACTIVE
+406,Mongolia,Naran-mandokhu Somon,Uniform Lima Mike Kilo Yankee Sierra Bravo Juliett Charlie Whiskey X-ray Tango Alfa Romeo,162-0413,"error: invalid date ""08:00""",Crimson,Mina,ACTIVE
+407,France,Montpellier,Charlie Delta Uniform X-ray Sierra Foxtrot Golf Hotel Lima Bravo Romeo,276-5319,"error: invalid date ""08:00""",Red,Babbie,ACTIVE
+408,China,Tonggu,Delta Whiskey Romeo November Foxtrot Charlie Kilo Zulu Yankee Uniform Mike Oscar Hotel Lima Echo,677-5937,"error: invalid date ""08:00""",Aquamarine,Selina,ACTIVE
+409,Japan,Abashiri,Mike Uniform Yankee Whiskey Bravo Oscar Quebec Hotel Romeo India Kilo Juliett Foxtrot Alfa Lima Zulu November X-ray,993-0880,"error: invalid date ""08:00""",Green,Danielle,ACTIVE
+410,U.S. Virgin Islands,Charlotte Amalie,Charlie Alfa Romeo India Tango Zulu Echo Hotel Oscar Victor Bravo Papa Juliett Sierra Whiskey Delta Yankee,806-0278,"error: invalid date ""08:00""",Teal,Jillayne,ACTIVE
+411,Ecuador,Nueva Loja,Bravo Golf Yankee Lima X-ray Tango Echo Zulu Kilo Romeo Quebec Alfa Uniform Oscar Victor Delta,063-4081,"error: invalid date ""08:00""",Turquoise,Erna,ACTIVE
+412,China,Shatou,Victor Bravo Alfa Romeo India Whiskey Zulu Delta Tango Golf Echo Juliett Uniform Quebec November X-ray Foxtrot Kilo Mike,506-0932,"error: invalid date ""08:00""",Mauv,Ardath,ACTIVE
+413,Greece,Rizómilos,Quebec Lima Kilo Juliett November Romeo Zulu Golf Papa Whiskey Hotel Bravo Charlie India Uniform,929-7478,"error: invalid date ""08:00""",Khaki,Jasmin,ACTIVE
+414,Sweden,Forshaga,Alfa Romeo Yankee Oscar India Kilo X-ray Charlie Lima Foxtrot Uniform Papa Bravo Tango Mike Echo Victor November Juliett Delta,406-4446,"error: invalid date ""08:00""",Crimson,Twyla,ACTIVE
+415,China,Toubao,Tango Uniform Oscar Zulu Charlie Echo Quebec Yankee Delta Kilo X-ray,209-1483,"error: invalid date ""08:00""",Crimson,Haleigh,ACTIVE
+416,China,Hongqiao,Oscar India Tango Golf Bravo Yankee Lima Delta Victor X-ray Mike Whiskey Kilo Uniform Zulu Sierra Echo Charlie,989-0953,"error: invalid date ""08:00""",Yellow,Corilla,ACTIVE
+417,Mexico,Lazaro Cardenas,Kilo Bravo Echo Oscar Yankee Golf Alfa Papa Foxtrot Sierra Hotel Quebec Charlie Lima,799-4083,"error: invalid date ""08:00""",Crimson,Faustina,ACTIVE
+418,Ukraine,Kuznetsovs’k,Alfa Bravo Echo Zulu Mike Quebec Uniform Romeo Lima Foxtrot Golf Tango Sierra Hotel,496-0345,"error: invalid date ""08:00""",Violet,Philly,ACTIVE
+419,Indonesia,Wasior,Golf Alfa Hotel Oscar Uniform Papa Tango Sierra Lima Quebec Foxtrot Victor X-ray Delta Juliett Yankee Charlie,920-9609,"error: invalid date ""08:00""",Aquamarine,Clarette,ACTIVE
+420,Russia,Kachkanar,Lima Charlie Foxtrot Delta Quebec India Romeo Papa Mike Uniform Tango November Alfa Victor Echo Sierra,381-6864,"error: invalid date ""08:00""",Purple,Willy,ACTIVE
+421,China,Huansheng,Papa Quebec Sierra Golf November X-ray Hotel Mike Zulu Oscar Romeo Delta Charlie Foxtrot Echo India Tango,784-5535,"error: invalid date ""08:00""",Red,Elana,ACTIVE
+422,China,Tanxi,Papa Zulu Kilo Echo Golf Charlie Romeo Sierra Juliett November,434-4632,"error: invalid date ""08:00""",Turquoise,Rosaleen,ACTIVE
+423,Canada,Kirkland Lake,Delta Golf Bravo Victor Zulu Tango Quebec Charlie Oscar Foxtrot Hotel Papa Mike Uniform India Lima Yankee,576-1379,"error: invalid date ""08:00""",Green,Elena,ACTIVE
+424,Russia,Manturovo,Echo Juliett Alfa November Mike X-ray India Quebec Sierra Bravo Romeo Lima Charlie Hotel Foxtrot Uniform Oscar Tango,301-7021,"error: invalid date ""08:00""",Purple,Wendeline,ACTIVE
+425,Malaysia,Kuantan,Charlie November Uniform Oscar Echo Papa Golf Tango Sierra Foxtrot Romeo Quebec Bravo X-ray,423-7628,"error: invalid date ""08:00""",Puce,Trista,ACTIVE
+426,Russia,Orlovskiy,Hotel Zulu Tango Lima Mike India Victor Sierra November Whiskey,314-1382,"error: invalid date ""08:00""",Puce,Quinta,ACTIVE
+427,China,Tangping,Alfa Sierra Zulu Uniform Whiskey Romeo Charlie Kilo Victor Hotel Delta Lima Golf Bravo Papa Yankee Foxtrot Juliett Quebec X-ray,898-9469,"error: invalid date ""08:00""",Green,Mirabella,ACTIVE
+428,United States,Columbus,Oscar Zulu Sierra November Quebec Uniform X-ray Kilo Mike Golf Tango Juliett India,434-6369,"error: invalid date ""08:00""",Khaki,Molly,ACTIVE
+429,Argentina,Capitán Bermúdez,November Yankee Golf Victor Charlie India Uniform Bravo X-ray Whiskey Delta Juliett Foxtrot,814-8217,"error: invalid date ""08:00""",Puce,Maegan,ACTIVE
+430,China,Hongdun,Foxtrot India Tango Mike Charlie Oscar Lima Delta November Papa Victor X-ray Uniform,736-2608,"error: invalid date ""08:00""",Indigo,Ebony,ACTIVE
+431,China,Heiiyugou,Uniform Oscar Alfa Zulu Foxtrot Victor India Quebec Tango X-ray November Mike Romeo Kilo Delta Sierra Charlie Juliett Yankee Echo,588-2215,"error: invalid date ""08:00""",Blue,Karee,ACTIVE
+432,China,Shaoguan,Zulu Echo X-ray Alfa November Uniform Sierra Victor Whiskey Golf Quebec Foxtrot Tango Oscar Romeo Delta Charlie Papa,202-2532,"error: invalid date ""08:00""",Orange,Adena,ACTIVE
+433,Netherlands,Alkmaar,Uniform Oscar Zulu Bravo Sierra Whiskey Tango India Hotel November Foxtrot Juliett Mike Yankee Lima Quebec Romeo Echo,761-3221,"error: invalid date ""08:00""",Turquoise,Modesta,ACTIVE
+434,China,Zhetian,Juliett Foxtrot Mike Lima Delta Zulu Uniform Victor Kilo Charlie,076-3285,"error: invalid date ""08:00""",Goldenrod,Rozelle,ACTIVE
+435,Brazil,Duque de Caxias,Whiskey Sierra India X-ray Mike Kilo Alfa Hotel November Delta Victor Romeo Yankee Papa Tango Juliett Golf,620-9316,"error: invalid date ""08:00""",Fuscia,Naoma,ACTIVE
+436,Indonesia,Bambanglipuro,Tango Bravo X-ray Lima November Oscar Romeo Mike Alfa Papa Whiskey Quebec Sierra Yankee,688-9787,"error: invalid date ""08:00""",Khaki,Rosabella,ACTIVE
+437,Philippines,Boliney,Zulu Victor Hotel Alfa Papa Whiskey Golf Yankee November Bravo,126-9370,"error: invalid date ""08:00""",Red,Sylvia,ACTIVE
+438,Indonesia,Mulyorejo,Foxtrot Yankee Hotel Juliett Romeo India Whiskey Tango Kilo Uniform Oscar Delta Quebec,095-7902,"error: invalid date ""08:00""",Blue,Danna,ACTIVE
+439,Sweden,Stockholm,Alfa Juliett Sierra Yankee Romeo India Mike November Bravo Uniform Oscar Foxtrot X-ray Kilo Tango Charlie Golf Zulu,004-1845,"error: invalid date ""08:00""",Goldenrod,Sonya,ACTIVE
+440,China,Zhanjia,Mike Yankee Uniform Victor Whiskey Sierra India X-ray Papa Alfa Juliett Quebec Romeo,507-4491,"error: invalid date ""08:00""",Puce,Marthe,ACTIVE
+441,Colombia,Cubará,Romeo Charlie Bravo November Lima Papa Alfa Oscar Mike Sierra Tango Echo Juliett,568-0384,"error: invalid date ""08:00""",Khaki,Mirabel,ACTIVE
+442,China,Huikou,Quebec Uniform Lima Victor Yankee Bravo Charlie Foxtrot Whiskey Delta Hotel Romeo Kilo Echo Papa India Golf,761-2269,"error: invalid date ""08:00""",Goldenrod,Rosabel,ACTIVE
+443,Tunisia,Al Marsá,Tango Echo Whiskey Papa Kilo India Lima Yankee Quebec Oscar Alfa Zulu X-ray Uniform,539-1889,"error: invalid date ""08:00""",Teal,Tabitha,ACTIVE
+444,Ukraine,Kolodenka,November Whiskey Yankee Oscar Papa Delta Sierra Romeo Foxtrot India Uniform Mike Quebec Kilo,864-2653,"error: invalid date ""08:00""",Crimson,Jerrilyn,ACTIVE
+445,Brazil,Bambuí,X-ray Uniform Victor Mike Alfa Bravo Zulu Kilo Juliett Echo,345-4208,"error: invalid date ""08:00""",Pink,Edin,ACTIVE
+446,Brazil,Itajaí,Yankee Papa X-ray Victor Golf Juliett Hotel Uniform Bravo Kilo,403-4013,"error: invalid date ""08:00""",Goldenrod,Flossy,ACTIVE
+447,Namibia,Opuwo,Sierra Whiskey Golf Kilo Foxtrot Mike Lima Juliett Alfa Romeo Yankee Victor,916-8827,"error: invalid date ""08:00""",Aquamarine,Ardath,ACTIVE
+448,China,Baise City,Hotel Echo Yankee Oscar X-ray Romeo Victor Uniform Kilo Whiskey,856-4098,"error: invalid date ""08:00""",Maroon,Beulah,ACTIVE
+449,Ethiopia,Gelemso,Lima Charlie Delta November Uniform Tango Oscar X-ray Zulu Whiskey Victor Sierra Romeo Kilo Quebec Foxtrot Alfa Papa India Golf,772-8924,"error: invalid date ""08:00""",Crimson,Elizabeth,ACTIVE
+450,Indonesia,Maliiha,Alfa Tango Papa India Charlie X-ray Romeo Victor Quebec Mike Bravo Oscar Sierra Kilo Juliett,194-0424,"error: invalid date ""08:00""",Pink,Elfreda,ACTIVE
+451,Ukraine,Nemyriv,Bravo Hotel Sierra Quebec Whiskey Papa Golf Foxtrot November Lima Charlie X-ray Uniform Romeo Kilo India Delta Yankee,055-6533,"error: invalid date ""08:00""",Purple,Isa,ACTIVE
+452,Finland,Kauniainen,X-ray India Hotel Mike Foxtrot Bravo Echo Tango November Juliett Golf,678-9214,"error: invalid date ""08:00""",Khaki,Neile,ACTIVE
+453,China,Sangmu,Romeo Whiskey Golf Tango Foxtrot Uniform Hotel Delta X-ray Mike Kilo Papa Sierra Charlie,562-1641,"error: invalid date ""08:00""",Purple,Sheba,ACTIVE
+454,Indonesia,Pulaukijang,Delta Sierra Romeo Oscar Echo Yankee X-ray Alfa Quebec Lima Uniform Papa Golf Foxtrot November India Mike Kilo Charlie,233-2236,"error: invalid date ""08:00""",Maroon,Greta,ACTIVE
+455,Finland,Särkisalo,Uniform November Mike Lima Hotel Foxtrot X-ray Romeo Echo Bravo Yankee Kilo Quebec,630-7224,"error: invalid date ""08:00""",Indigo,Fernandina,ACTIVE
+456,Israel,Gedera,Sierra Whiskey Charlie Papa Yankee Romeo Lima Golf Victor Kilo X-ray November Alfa Foxtrot Zulu,530-8885,"error: invalid date ""08:00""",Indigo,Kelsy,ACTIVE
+457,China,Beixin,Kilo X-ray India Whiskey Zulu Yankee Romeo November Charlie Juliett Victor Lima Quebec Tango Sierra Delta Oscar Golf,299-0267,"error: invalid date ""08:00""",Fuscia,Pansie,ACTIVE
+458,Japan,Aisai,Echo Zulu Golf Tango November Foxtrot Whiskey Alfa Quebec Papa India Yankee Mike,375-3859,"error: invalid date ""08:00""",Fuscia,Sidonia,ACTIVE
+459,Jordan,Malkā,Alfa Kilo Sierra Hotel Victor Tango Oscar November Whiskey Uniform X-ray,899-3891,"error: invalid date ""08:00""",Mauv,Viole,ACTIVE
+460,Nigeria,Dutsin Ma,Papa Yankee Charlie India Bravo Quebec November Oscar Sierra Zulu Alfa Foxtrot Hotel Victor Uniform Lima Delta,554-7277,"error: invalid date ""08:00""",Violet,Danette,ACTIVE
+461,China,Jinzhou,Victor November Uniform Quebec Whiskey Kilo Zulu Mike Juliett Bravo X-ray Oscar Delta Papa,300-9354,"error: invalid date ""08:00""",Violet,Emili,ACTIVE
+462,Sweden,Ystad,Juliett Foxtrot Papa November Uniform Whiskey Hotel Golf Delta Kilo Bravo Alfa Tango X-ray Mike India,320-6553,"error: invalid date ""08:00""",Green,Cam,ACTIVE
+463,Bulgaria,Chelopech,Golf Tango Sierra Whiskey Mike Delta Echo Uniform Romeo Papa X-ray Victor Hotel India Alfa Juliett Bravo,893-9503,"error: invalid date ""08:00""",Red,Ellynn,ACTIVE
+464,Portugal,Figueira dos Cavaleiros,Oscar Papa Yankee November Bravo Hotel Romeo Alfa Echo X-ray Whiskey Golf Sierra India Juliett Delta Victor Quebec Uniform Lima,268-2482,"error: invalid date ""08:00""",Purple,Stephenie,ACTIVE
+465,South Korea,Hwado,Whiskey India Alfa Oscar Romeo Juliett Uniform Sierra Kilo Charlie X-ray Mike Zulu November Golf,908-3175,"error: invalid date ""08:00""",Crimson,Isobel,ACTIVE
+466,China,Zhongtong,Tango Foxtrot Papa Delta Echo India Romeo Alfa X-ray Sierra Golf November Uniform Mike Lima Quebec Kilo,300-1111,"error: invalid date ""08:00""",Indigo,Lil,ACTIVE
+467,Portugal,Tojeira,Whiskey Uniform Zulu Sierra Papa Alfa Hotel India Oscar Foxtrot Victor,709-8717,"error: invalid date ""08:00""",Mauv,Deny,ACTIVE
+468,France,Autun,India X-ray Whiskey Golf Juliett Alfa Bravo Mike Foxtrot Oscar Uniform Quebec Victor Delta Echo Yankee Tango Sierra,154-7446,"error: invalid date ""08:00""",Mauv,Chandra,ACTIVE
+469,Poland,Żychlin,X-ray Tango Victor Yankee Alfa Kilo Papa Sierra Foxtrot Romeo Lima Charlie Zulu Mike Echo,557-3082,"error: invalid date ""08:00""",Fuscia,Jacqueline,ACTIVE
+470,Indonesia,Sendangagung,India Romeo Papa X-ray Oscar Hotel Uniform Whiskey Echo Kilo Golf Sierra Zulu Yankee Victor Charlie,050-7484,"error: invalid date ""08:00""",Pink,Shelba,ACTIVE
+471,China,Liudu,Echo November Alfa Mike Uniform India Golf Kilo Yankee X-ray Charlie Juliett,616-8656,"error: invalid date ""08:00""",Pink,Corly,ACTIVE
+472,Czech Republic,Vojkovice,India Tango Juliett Delta Hotel Lima Uniform Echo Romeo Yankee Whiskey Oscar November Alfa Golf Sierra Mike Foxtrot Charlie,974-3710,"error: invalid date ""08:00""",Orange,Ardisj,ACTIVE
+473,Venezuela,Chaguaramas,India Romeo Alfa Yankee Papa November Zulu Mike Golf Echo Quebec Charlie Delta Whiskey Victor Oscar Lima Tango,896-0064,"error: invalid date ""08:00""",Violet,Martha,ACTIVE
+474,Philippines,Sirib,Whiskey Golf Victor Oscar Uniform Juliett Romeo November Hotel Yankee Bravo Zulu Echo Charlie Lima Tango Quebec,681-8064,"error: invalid date ""08:00""",Khaki,Maddi,ACTIVE
+475,China,Xihe,Charlie Lima Quebec Foxtrot Hotel November Oscar Victor Mike Whiskey Bravo Uniform Golf Kilo Papa Juliett Sierra X-ray Yankee,545-8051,"error: invalid date ""08:00""",Purple,Tildie,ACTIVE
+476,Russia,Rudnya,India Romeo Tango Golf Echo Papa Juliett Kilo Yankee Uniform,868-2268,"error: invalid date ""08:00""",Red,Claretta,ACTIVE
+477,Malta,Imsida,Alfa Juliett Lima Hotel X-ray Zulu Mike Kilo Whiskey India Delta Charlie Yankee,368-1050,"error: invalid date ""08:00""",Maroon,Kelli,ACTIVE
+478,Indonesia,Tanggung,Quebec Oscar Bravo India Foxtrot Juliett Alfa Mike Lima Zulu Yankee Delta Sierra Golf Whiskey Victor November X-ray Charlie Romeo,678-6396,"error: invalid date ""08:00""",Fuscia,Masha,ACTIVE
+479,Palau,Koror,Zulu Quebec Whiskey Alfa Lima Bravo Yankee Papa Echo Uniform Romeo Kilo Hotel Golf Delta,613-3590,"error: invalid date ""08:00""",Turquoise,Nanine,ACTIVE
+480,China,Jiucaigou,Alfa Yankee Uniform November Tango Victor Bravo Echo India Delta Kilo Oscar Lima Zulu,960-8718,"error: invalid date ""08:00""",Purple,Bibbye,ACTIVE
+481,Syria,Sulūk,Whiskey Golf Quebec Uniform Alfa Tango November Victor Charlie X-ray Yankee Zulu,035-6225,"error: invalid date ""08:00""",Fuscia,Fiorenze,ACTIVE
+482,Brazil,Guarujá,Bravo Yankee Charlie Kilo Alfa Juliett Romeo November Uniform X-ray,155-2251,"error: invalid date ""08:00""",Yellow,Luelle,ACTIVE
+483,China,Fengqiao,Yankee Uniform Mike Kilo Bravo Papa Victor India Foxtrot Oscar Hotel,046-4235,"error: invalid date ""08:00""",Violet,Maureen,ACTIVE
+484,China,Dongfeng,Uniform India Papa Mike Victor Alfa Yankee Delta Juliett Tango Hotel Bravo Charlie Golf Whiskey Echo,133-8970,"error: invalid date ""08:00""",Teal,Alyce,ACTIVE
+485,Comoros,Moutsamoudou,Golf Oscar Papa Delta Romeo Lima Zulu Hotel Juliett Whiskey Bravo Tango X-ray Echo Mike Kilo Sierra Uniform,579-6623,"error: invalid date ""08:00""",Blue,Maribel,ACTIVE
+486,Argentina,Machagai,Tango India Echo Romeo Charlie November Golf Foxtrot Hotel Uniform Papa Quebec Mike Lima Alfa Zulu,602-0972,"error: invalid date ""08:00""",Turquoise,Dinnie,ACTIVE
+487,China,Balbagay,Lima Papa Tango Kilo Zulu Mike Echo Sierra Charlie Foxtrot November Quebec India Bravo Juliett Victor Yankee Golf Whiskey,391-7088,"error: invalid date ""08:00""",Pink,Aimee,ACTIVE
+488,Mongolia,Balgatay,Delta Romeo Oscar Uniform X-ray Quebec Alfa Whiskey Juliett Mike Lima Sierra Yankee Victor Zulu,434-5113,"error: invalid date ""08:00""",Goldenrod,Stacy,ACTIVE
+489,Philippines,San Miguel,Victor Quebec Golf Tango Mike Charlie Papa Delta November Romeo Lima X-ray Alfa Kilo Juliett Zulu India,149-6098,"error: invalid date ""08:00""",Fuscia,Raf,ACTIVE
+490,Indonesia,Blobo,Bravo Alfa India Juliett Sierra X-ray Golf Tango November Quebec Mike Charlie Romeo Victor,129-9508,"error: invalid date ""08:00""",Blue,Ashley,ACTIVE
+491,Indonesia,Momanalu,Quebec Papa Uniform Yankee November Oscar Alfa Sierra Zulu Lima Golf Foxtrot Juliett Echo Mike Delta Bravo Charlie,499-4022,"error: invalid date ""08:00""",Green,Coral,ACTIVE
+492,Philippines,Haligue,Foxtrot Hotel Oscar Mike Victor X-ray Whiskey Golf Uniform Papa Tango Kilo Quebec,079-2656,"error: invalid date ""08:00""",Violet,Caro,ACTIVE
+493,United States,Milwaukee,Hotel Charlie Kilo Delta Mike India Sierra Lima Echo Whiskey Victor,410-4234,"error: invalid date ""08:00""",Crimson,Kitti,ACTIVE
+494,Sweden,Uppsala,Echo Juliett Alfa Whiskey Tango Bravo Romeo Uniform Quebec Mike,704-9928,"error: invalid date ""08:00""",Crimson,Jessalin,ACTIVE
+495,China,Badaogu,Zulu Victor Mike Bravo Kilo Uniform Juliett Delta Tango Charlie Golf Sierra,283-8932,"error: invalid date ""08:00""",Khaki,Caressa,ACTIVE
+496,Sweden,Norrahammar,Oscar Romeo Tango Quebec Hotel Yankee Alfa Delta Golf Echo Bravo November Papa Mike Lima,886-1353,"error: invalid date ""08:00""",Crimson,Aurora,ACTIVE
+497,Russia,Mitrofanovka,Mike X-ray Papa Whiskey Foxtrot Tango Uniform Lima November Golf Bravo Sierra Alfa Delta Oscar,860-9628,"error: invalid date ""08:00""",Red,Bamby,ACTIVE
+498,Macedonia,Negotino,Whiskey Alfa Victor Lima Echo Hotel Tango Delta Uniform Mike X-ray Juliett Golf India Yankee Foxtrot Zulu,752-0332,"error: invalid date ""08:00""",Khaki,Cathie,ACTIVE
+499,China,Suyang,Foxtrot Juliett Echo India Lima Whiskey Uniform Victor Mike Oscar Yankee Delta Tango Hotel,900-5395,"error: invalid date ""08:00""",Yellow,Kylie,ACTIVE
+500,China,Xieshui,Foxtrot Hotel Whiskey November Zulu Papa Bravo Sierra Golf Juliett Mike Charlie Lima Tango X-ray India Delta Alfa Uniform Yankee,103-6790,"error: invalid date ""08:00""",Red,Abagael,ACTIVE
+501,Ethiopia,Dīla,November Golf Zulu Foxtrot Alfa Bravo Sierra Yankee India Oscar Hotel Mike,751-8760,"error: invalid date ""08:00""",Purple,Paulina,ACTIVE
+502,United States,Clearwater,Whiskey Zulu X-ray Oscar Papa Delta Charlie Kilo Quebec Echo Bravo,586-6694,"error: invalid date ""08:00""",Maroon,Cyndia,ACTIVE
+503,Czech Republic,Doksy,Quebec Victor X-ray Uniform Bravo Mike Alfa Zulu Hotel India Foxtrot Delta Oscar Lima November,812-1221,"error: invalid date ""08:00""",Aquamarine,Shirlene,ACTIVE
+504,China,Honglin,India X-ray Kilo Lima November Juliett Quebec Hotel Romeo Oscar,235-0892,"error: invalid date ""08:00""",Goldenrod,Anna,ACTIVE
+505,Philippines,Sabangan,Oscar Mike Zulu Echo Golf November Tango Kilo Papa X-ray Charlie Hotel Whiskey Sierra Foxtrot Lima Victor Romeo Alfa,518-0821,"error: invalid date ""08:00""",Goldenrod,Teddi,ACTIVE
+506,Philippines,Tabuc Pontevedra,Oscar Charlie Papa Foxtrot Juliett Tango Hotel Zulu Yankee Kilo Bravo X-ray India,330-4195,"error: invalid date ""08:00""",Aquamarine,Janella,ACTIVE
+507,Philippines,Padre Burgos,Victor Quebec Bravo Oscar Echo Golf Delta Kilo Hotel Charlie Lima Papa,382-9155,"error: invalid date ""08:00""",Fuscia,Shirlene,ACTIVE
+508,China,Ma’ao,X-ray Tango Uniform Bravo Yankee Romeo Kilo Quebec Hotel Whiskey Juliett Alfa Lima Echo Mike Sierra Golf,872-7147,"error: invalid date ""08:00""",Puce,Hedi,ACTIVE
+509,Senegal,Matam,Charlie Hotel Tango Papa Lima November Juliett X-ray Mike Kilo Alfa Whiskey,927-8758,"error: invalid date ""08:00""",Teal,Damara,ACTIVE
+510,Indonesia,Kotaagung,Bravo Kilo November Charlie Delta Juliett Tango Whiskey Hotel Mike Golf X-ray Lima Sierra Foxtrot Yankee Uniform Papa Oscar Alfa,630-7763,"error: invalid date ""08:00""",Yellow,Emera,ACTIVE
+511,Zimbabwe,Chivhu,Bravo Uniform Tango Oscar X-ray Juliett Mike Papa Kilo Golf Echo India Sierra Quebec Victor Delta Hotel,762-5971,"error: invalid date ""08:00""",Blue,Junette,ACTIVE
+512,Poland,Ruda Maleniecka,Lima Juliett Delta Zulu Echo Victor India Uniform Mike Hotel Golf Tango X-ray,153-0323,"error: invalid date ""08:00""",Violet,Linda,ACTIVE
+513,China,Zilang,Mike Kilo Tango Papa Whiskey Yankee Quebec Lima Juliett Uniform Romeo Foxtrot India Victor Charlie Zulu,098-2991,"error: invalid date ""08:00""",Aquamarine,Remy,ACTIVE
+514,South Korea,Cheongpyeong,Hotel India Tango Delta Foxtrot Papa Lima Mike Uniform Sierra Juliett Charlie Quebec,070-5476,"error: invalid date ""08:00""",Maroon,Ardith,ACTIVE
+515,China,Pubu,Yankee Quebec X-ray Whiskey Sierra Golf Charlie Romeo Mike Papa Zulu,073-2123,"error: invalid date ""08:00""",Indigo,Leilah,ACTIVE
+516,Mexico,Petrolera,Delta Romeo Tango India Mike Echo Charlie Yankee Bravo Foxtrot Juliett Uniform Papa Lima Oscar Victor November Sierra Whiskey,954-4224,"error: invalid date ""08:00""",Turquoise,Jenni,ACTIVE
+517,Philippines,Cawayan,November Alfa Sierra Whiskey Lima Romeo Zulu Echo X-ray India Yankee Victor Tango Golf Uniform,775-9295,"error: invalid date ""08:00""",Yellow,Jackie,ACTIVE
+518,China,Yingtou,Sierra Yankee Oscar Bravo Victor Quebec Hotel India Whiskey Echo Papa Foxtrot,551-2182,"error: invalid date ""08:00""",Aquamarine,Fanny,ACTIVE
+519,Ukraine,Baryshivka,Papa Quebec Victor Golf X-ray Foxtrot Juliett Hotel India Charlie Alfa,441-1376,"error: invalid date ""08:00""",Orange,Antonella,ACTIVE
+520,China,Ha’erlong,Papa Juliett Whiskey Mike Lima Alfa Quebec X-ray Uniform Hotel Tango Victor Sierra Delta Yankee Echo,386-3668,"error: invalid date ""08:00""",Khaki,Henrietta,ACTIVE
+521,Vietnam,Nam Đàn,Whiskey Romeo Golf Oscar Echo Mike Quebec Hotel November Alfa Uniform Sierra Charlie Foxtrot X-ray Papa,253-3284,"error: invalid date ""08:00""",Indigo,Katheryn,ACTIVE
+522,China,Jiangtou,Mike Golf Whiskey India Juliett Sierra November Oscar Quebec Hotel Charlie Alfa Romeo Tango Kilo Victor Foxtrot Bravo Delta Papa,843-2945,"error: invalid date ""08:00""",Indigo,Kaye,ACTIVE
+523,Myanmar,Bhamo,India November Sierra Quebec Mike Tango Uniform Romeo Victor Foxtrot Oscar Juliett Kilo Zulu Charlie,286-3227,"error: invalid date ""08:00""",Maroon,Beilul,ACTIVE
+524,Indonesia,Timon,Charlie Bravo India Yankee Papa Alfa Echo Mike Tango Kilo X-ray Hotel November Sierra Lima,508-0044,"error: invalid date ""08:00""",Mauv,Erena,ACTIVE
+525,Brazil,Brumado,Romeo Bravo Hotel Lima India Delta Echo X-ray Charlie Quebec Kilo Uniform,212-6474,"error: invalid date ""08:00""",Mauv,Chiquia,ACTIVE
+526,Indonesia,Patalan,Bravo Mike November Romeo Uniform Sierra Oscar Alfa Kilo Zulu Golf India Yankee Foxtrot,286-7278,"error: invalid date ""08:00""",Indigo,Aurlie,ACTIVE
+527,Chad,Béboto,Kilo India Bravo Golf Quebec Yankee Lima Tango Charlie November Echo Victor X-ray Zulu Juliett Foxtrot Oscar Whiskey Mike Hotel,570-8303,"error: invalid date ""08:00""",Aquamarine,Jesselyn,ACTIVE
+528,China,Baojiadian,Juliett Mike Oscar November Alfa Delta Foxtrot India Tango Uniform Charlie Golf Kilo X-ray Papa Quebec Bravo Victor Echo Sierra,341-8934,"error: invalid date ""08:00""",Blue,Renate,ACTIVE
+529,Malaysia,Kuala Lumpur,X-ray Hotel Tango Foxtrot Papa India Alfa Zulu Echo Oscar Kilo Mike Juliett Golf,367-1632,"error: invalid date ""08:00""",Khaki,Viole,ACTIVE
+530,Peru,Caleta Cruz,Quebec Kilo Victor Romeo November Bravo Whiskey Mike Oscar Echo Delta,806-4245,"error: invalid date ""08:00""",Mauv,Roseanna,ACTIVE
+531,China,Diancun,Quebec Charlie Oscar Delta Foxtrot Alfa Bravo Golf Lima Yankee November Victor Sierra Uniform Mike Echo Tango,438-5891,"error: invalid date ""08:00""",Red,Elnore,ACTIVE
+532,Cuba,Batabanó,Whiskey Romeo Kilo Echo Uniform Golf Charlie Quebec Yankee Tango,853-8489,"error: invalid date ""08:00""",Turquoise,Janean,ACTIVE
+533,China,Liquan Chengguanzhen,Kilo Echo Tango Whiskey Juliett Yankee November Foxtrot Golf India Mike Hotel Oscar Bravo Charlie Lima Romeo Quebec X-ray,337-0163,"error: invalid date ""08:00""",Puce,Rachael,ACTIVE
+534,Guinea,Beyla,Charlie Hotel Uniform November Whiskey Victor Tango Juliett Lima Quebec,410-4564,"error: invalid date ""08:00""",Khaki,Ianthe,ACTIVE
+535,Indonesia,Bungursari,Romeo Quebec Foxtrot Alfa Tango Bravo November X-ray Zulu Kilo Golf Juliett Uniform Charlie Victor Delta Whiskey India Mike Papa,758-5551,"error: invalid date ""08:00""",Orange,Benny,ACTIVE
+536,China,Panzhou,Hotel Romeo Alfa Charlie Lima Oscar India Uniform X-ray November Papa Bravo Victor Whiskey Foxtrot Zulu Delta Kilo Tango Quebec,480-8016,"error: invalid date ""08:00""",Mauv,Hildagarde,ACTIVE
+537,Indonesia,Naebugis,Bravo X-ray Quebec Echo Delta Hotel Golf Kilo Whiskey Tango Romeo Lima Sierra November Uniform Zulu Mike,625-4813,"error: invalid date ""08:00""",Fuscia,Dani,ACTIVE
+538,Sweden,Skärholmen,Uniform India Oscar Zulu Echo Golf Hotel Mike Bravo Victor Kilo Yankee,695-2910,"error: invalid date ""08:00""",Green,Dido,ACTIVE
+539,Grenada,Saint George's,X-ray India Tango Delta Charlie Bravo Zulu Yankee Alfa Foxtrot,361-6853,"error: invalid date ""08:00""",Khaki,Nikki,ACTIVE
+540,Germany,Duisburg,Foxtrot Whiskey Bravo Romeo Golf Juliett Delta Oscar Yankee Sierra Alfa Hotel India,494-3234,"error: invalid date ""08:00""",Orange,Augustine,ACTIVE
+541,China,Wuli,Papa Echo X-ray Uniform Hotel Quebec Golf Whiskey Lima Sierra Juliett Kilo Charlie India Victor Oscar Alfa,767-9248,"error: invalid date ""08:00""",Teal,Marguerite,ACTIVE
+542,Pakistan,Khadan Khāk,Foxtrot November Bravo Romeo India Tango Hotel Alfa Quebec Juliett Kilo Uniform Echo X-ray Yankee Sierra Charlie,956-1519,"error: invalid date ""08:00""",Orange,Candis,ACTIVE
+543,Serbia,Nova Varoš,Whiskey Juliett Sierra Golf November Mike India Charlie Kilo Uniform Yankee Oscar X-ray Echo Papa Hotel Quebec Bravo Lima Tango,246-0127,"error: invalid date ""08:00""",Fuscia,Veronika,ACTIVE
+544,Colombia,Mocoa,Romeo Zulu Juliett Victor Echo Uniform Sierra Lima Golf Papa Bravo Charlie Whiskey Tango Kilo November Yankee Foxtrot,295-9228,"error: invalid date ""08:00""",Crimson,Orelle,ACTIVE
+545,France,Levallois-Perret,Golf Kilo Juliett India Bravo Charlie X-ray Romeo Hotel Whiskey Yankee Foxtrot Sierra Echo Quebec Oscar Tango,937-7504,"error: invalid date ""08:00""",Indigo,Damaris,ACTIVE
+546,Bulgaria,Kotel,India X-ray Hotel Victor Uniform Lima Tango Mike Sierra Oscar Whiskey Alfa Charlie Bravo,621-6742,"error: invalid date ""08:00""",Crimson,Fayre,ACTIVE
+547,Indonesia,Cikulahan,Charlie Romeo Bravo Papa Foxtrot Zulu Quebec Tango Mike Alfa Golf Echo Sierra Uniform Kilo Hotel,145-0617,"error: invalid date ""08:00""",Maroon,Joyce,ACTIVE
+548,Russia,Altuf’yevskiy,Bravo India Sierra Kilo Foxtrot Quebec Whiskey November Romeo Papa Charlie Echo Victor Hotel Uniform Mike Oscar,064-3812,"error: invalid date ""08:00""",Goldenrod,Kerstin,ACTIVE
+549,China,Louguan,Victor Alfa Kilo Papa Golf Foxtrot Romeo Oscar Uniform Tango Hotel Whiskey Charlie,552-9865,"error: invalid date ""08:00""",Teal,Shelly,ACTIVE
+550,France,Quimper,India Sierra Tango Delta Mike Echo Quebec Uniform Papa November Foxtrot Hotel Juliett Lima Romeo Zulu Bravo Oscar Whiskey,902-2429,"error: invalid date ""08:00""",Maroon,Margarete,ACTIVE
+551,Malaysia,Bandar Pusat Jengka,India Delta Tango X-ray Quebec November Whiskey Uniform Sierra Echo Oscar,113-7620,"error: invalid date ""08:00""",Puce,Belinda,ACTIVE
+552,Argentina,Rafaela,Papa Yankee Golf India Romeo Lima Mike Hotel Whiskey Echo Kilo Delta Bravo November X-ray Victor Tango Oscar Foxtrot Uniform,735-4613,"error: invalid date ""08:00""",Crimson,Eddie,ACTIVE
+553,Indonesia,Simpang,Uniform Mike Yankee Hotel Foxtrot November Golf Charlie Quebec Papa Oscar Lima Bravo Whiskey India Juliett Alfa X-ray Echo Zulu,285-0105,"error: invalid date ""08:00""",Goldenrod,Chloris,ACTIVE
+554,Portugal,Santos Evos,Golf India X-ray Hotel Foxtrot Juliett Quebec Mike Yankee Echo Sierra Zulu Oscar Papa November Alfa Uniform Bravo Whiskey Delta,352-4939,"error: invalid date ""08:00""",Red,Floria,ACTIVE
+555,Canada,Bonavista,Charlie Oscar Alfa Echo Mike Yankee Sierra Lima Whiskey X-ray Victor Papa Uniform India Golf Tango Quebec Foxtrot Bravo Kilo,191-8753,"error: invalid date ""08:00""",Mauv,Jennilee,ACTIVE
+556,Ireland,Rathnew,Romeo Victor Zulu Bravo X-ray Lima Yankee Tango Alfa Echo Uniform Golf Delta November Mike,033-6682,"error: invalid date ""08:00""",Blue,Diandra,ACTIVE
+557,Moldova,Saharna,Quebec Hotel Charlie X-ray Yankee Uniform Zulu Bravo Victor Sierra Foxtrot Whiskey Juliett Golf November Lima Romeo Tango Kilo Oscar,019-1293,"error: invalid date ""08:00""",Orange,Dara,ACTIVE
+558,China,Ketang,Alfa Oscar Juliett Kilo Sierra Victor November Papa X-ray Uniform Whiskey Mike Romeo,328-5696,"error: invalid date ""08:00""",Yellow,Jessamine,ACTIVE
+559,Indonesia,Sayang Lauq,Yankee Hotel India Uniform Mike Lima Quebec Charlie Sierra Bravo X-ray Oscar Foxtrot,543-7715,"error: invalid date ""08:00""",Fuscia,Maridel,ACTIVE
+560,Macedonia,Kičevo,India Zulu Kilo Papa X-ray Oscar Lima Romeo Golf Hotel Sierra Victor Delta,061-3943,"error: invalid date ""08:00""",Green,Dyann,ACTIVE
+561,Tanzania,Igurusi,Quebec Whiskey November Alfa India Golf Foxtrot Kilo Romeo Charlie Victor Echo,255-9608,"error: invalid date ""08:00""",Pink,Jo-ann,ACTIVE
+562,Libya,Zliten,Foxtrot Papa November X-ray Zulu Lima Romeo Echo Tango Uniform Charlie Juliett Kilo Victor Alfa Whiskey Oscar Yankee Sierra Golf,652-5217,"error: invalid date ""08:00""",Puce,Patience,ACTIVE
+563,Philippines,Lupon,India Sierra Papa Romeo Quebec Golf Kilo Oscar Hotel Whiskey Victor Juliett Tango Yankee,692-5243,"error: invalid date ""08:00""",Violet,Judith,ACTIVE
+564,Slovenia,Trnovlje pri Celju,Sierra Romeo Kilo Tango Whiskey X-ray Quebec Zulu Bravo Hotel Juliett Delta Alfa Yankee Mike Victor,862-1807,"error: invalid date ""08:00""",Purple,Veronike,ACTIVE
+565,China,Hengxizhen,Charlie Romeo Golf Whiskey November X-ray Uniform Zulu Quebec Echo Oscar Bravo Victor Papa Delta Alfa Sierra,622-7674,"error: invalid date ""08:00""",Green,Hedvige,ACTIVE
+566,Brazil,Rio do Sul,Oscar Victor Romeo Kilo Lima India Tango Juliett Zulu Foxtrot,995-2330,"error: invalid date ""08:00""",Fuscia,Anica,ACTIVE
+567,Lithuania,Lazdijai,Oscar Delta Bravo India Papa Foxtrot Charlie Romeo Hotel Alfa Sierra Yankee Mike Golf Juliett Echo Lima,785-0389,"error: invalid date ""08:00""",Blue,Mariquilla,ACTIVE
+568,Central African Republic,Ouadda,Papa Yankee Golf X-ray November India Zulu Whiskey Oscar Kilo Uniform Sierra Alfa Lima Victor Romeo Charlie Bravo,102-1576,"error: invalid date ""08:00""",Maroon,Leodora,ACTIVE
+569,Sweden,Halmstad,Echo X-ray Mike Tango Foxtrot Juliett Oscar Whiskey Uniform Victor Bravo Papa Sierra Alfa Yankee Romeo India Kilo,488-6716,"error: invalid date ""08:00""",Violet,Gavrielle,ACTIVE
+570,Brazil,Águas Vermelhas,Papa Lima Delta Romeo Uniform Juliett Tango Quebec Zulu Whiskey Mike,565-2191,"error: invalid date ""08:00""",Crimson,Dacy,ACTIVE
+571,China,Dalongtan,November Charlie Hotel Kilo Echo Alfa Zulu India Victor Sierra Tango Bravo Golf Foxtrot X-ray Romeo Uniform Lima Quebec Juliett,299-8622,"error: invalid date ""08:00""",Fuscia,Mathilda,ACTIVE
+572,Canada,Sherbrooke,X-ray Lima Zulu Sierra Bravo Hotel Kilo India Oscar Alfa Whiskey,925-0573,"error: invalid date ""08:00""",Orange,Fidelia,ACTIVE
+573,Vietnam,Thị Trấn Nguyên Bình,Hotel Quebec Mike Delta Yankee Echo Oscar Charlie Victor Uniform Romeo,859-2905,"error: invalid date ""08:00""",Mauv,Crysta,ACTIVE
+574,Czech Republic,Milíkov,Zulu Romeo November Quebec Golf Victor Echo Yankee Tango Foxtrot Bravo Juliett Papa India Sierra,257-4245,"error: invalid date ""08:00""",Yellow,Marice,ACTIVE
+575,Indonesia,Wewit,Golf Charlie Uniform Foxtrot Whiskey X-ray Mike Lima November Juliett Victor Oscar Sierra Tango,916-6235,"error: invalid date ""08:00""",Red,Lara,ACTIVE
+576,Philippines,Sindangan,X-ray Zulu Mike Kilo Tango November Victor Echo Sierra Papa India Charlie Foxtrot Quebec Bravo,102-1964,"error: invalid date ""08:00""",Purple,Appolonia,ACTIVE
+577,Poland,Damnica,Charlie Oscar Alfa Foxtrot Zulu Quebec Romeo Delta Whiskey Uniform Echo Juliett,349-1477,"error: invalid date ""08:00""",Maroon,Salome,ACTIVE
+578,Greece,Fteliá,X-ray Lima Bravo Kilo Romeo Sierra Oscar Hotel Zulu Uniform Whiskey Charlie Alfa Golf India Juliett Papa Tango,410-6134,"error: invalid date ""08:00""",Maroon,Felicle,ACTIVE
+579,Chad,Mongo,Charlie Uniform Echo Foxtrot November Bravo Quebec X-ray Golf Hotel,353-1719,"error: invalid date ""08:00""",Violet,Tamqrah,ACTIVE
+580,Philippines,Pulong Sampalok,Oscar Sierra Romeo Tango Whiskey Alfa November Bravo Victor Mike X-ray India Delta Echo Foxtrot Juliett,351-0622,"error: invalid date ""08:00""",Crimson,Tootsie,ACTIVE
+581,Palestinian Territory,‘Ūrīf,Whiskey Bravo November Lima Foxtrot Sierra Victor Hotel Charlie Quebec India,731-3348,"error: invalid date ""08:00""",Goldenrod,Happy,ACTIVE
+582,China,Nyima,Papa Echo Bravo India Hotel Oscar Zulu Whiskey Juliett November Quebec X-ray Charlie Kilo Lima Victor,519-2751,"error: invalid date ""08:00""",Indigo,Emelia,ACTIVE
+583,Morocco,Jorf,Golf Charlie Victor Lima Papa November Tango Juliett Zulu Kilo Hotel India Uniform X-ray Yankee,602-3240,"error: invalid date ""08:00""",Crimson,Annetta,ACTIVE
+584,China,Jingzhou,Echo Quebec Bravo November Sierra Foxtrot X-ray Hotel Alfa Golf Papa Juliett Yankee India Delta Whiskey,429-6568,"error: invalid date ""08:00""",Green,Ardine,ACTIVE
+585,Sweden,Västerås,Mike Yankee X-ray Golf Uniform Papa Oscar Foxtrot Zulu Echo Charlie Alfa Romeo Sierra Tango India Juliett,774-1665,"error: invalid date ""08:00""",Green,Di,ACTIVE
+586,Brazil,Quixadá,Zulu Alfa Sierra Quebec Hotel Echo Juliett Delta Mike India Papa Yankee Victor Whiskey Lima Oscar Tango,559-0085,"error: invalid date ""08:00""",Teal,Robinett,ACTIVE
+587,China,Dagu,Echo Romeo Whiskey Papa India Victor Bravo Tango Golf Quebec X-ray Kilo Mike Foxtrot,821-3479,"error: invalid date ""08:00""",Crimson,Kerstin,ACTIVE
+588,Sierra Leone,Potoru,Foxtrot Sierra Alfa Whiskey Papa India X-ray Kilo Yankee November,931-1670,"error: invalid date ""08:00""",Maroon,Lois,ACTIVE
+589,Bulgaria,Malko Tŭrnovo,Charlie Alfa Juliett Victor Hotel Sierra Echo Papa Delta Whiskey X-ray Zulu Quebec Lima November Foxtrot,818-3008,"error: invalid date ""08:00""",Mauv,Sherilyn,ACTIVE
+590,Philippines,Malicboy,Hotel Golf X-ray Foxtrot Yankee Sierra Echo Victor Quebec Mike Delta Romeo Oscar Papa Uniform Lima Juliett November Tango Whiskey,928-1089,"error: invalid date ""08:00""",Red,Netty,ACTIVE
+591,Norway,Oslo,Juliett Tango Whiskey X-ray Charlie India Quebec Hotel Lima Golf Echo,552-9175,"error: invalid date ""08:00""",Fuscia,Donielle,ACTIVE
+592,Poland,Raszczyce,Mike Yankee Sierra Lima Charlie Oscar Juliett Victor Uniform Tango,667-6996,"error: invalid date ""08:00""",Purple,Leila,ACTIVE
+593,Indonesia,Gubukjero Timuk,Papa November Oscar Foxtrot Victor Echo Kilo Zulu Juliett Mike Sierra Lima Golf Alfa Uniform Hotel Charlie Delta Bravo,358-1458,"error: invalid date ""08:00""",Yellow,Ofella,ACTIVE
+594,Colombia,La Dorada,Papa Uniform Juliett Sierra Victor Bravo Yankee Whiskey Mike India Charlie Foxtrot Alfa November Tango Zulu Echo,377-8929,"error: invalid date ""08:00""",Green,Leia,ACTIVE
+595,Sweden,Göteborg,Charlie Kilo Yankee November Alfa Whiskey Uniform Tango Delta Juliett Zulu Foxtrot Lima Romeo Quebec Bravo Victor,576-0791,"error: invalid date ""08:00""",Puce,Alaine,ACTIVE
+596,Vietnam,Hương Sơn,Quebec November Delta India Oscar Papa Lima Charlie Tango Whiskey Yankee Romeo Mike Echo Uniform Bravo Victor,025-0444,"error: invalid date ""08:00""",Teal,Sher,ACTIVE
+597,Madagascar,Nosy Varika,Bravo Juliett Romeo Lima Victor Hotel India Quebec Echo Papa Oscar Whiskey Mike Tango,472-5957,"error: invalid date ""08:00""",Crimson,Amy,ACTIVE
+598,Guinea,Mandiana,November Lima Charlie Kilo Mike Golf Victor India Quebec Juliett Alfa,261-1388,"error: invalid date ""08:00""",Crimson,Jacqui,ACTIVE
+599,China,Jiuting,Oscar Uniform X-ray Alfa Golf Foxtrot India Victor Echo Charlie Juliett Papa Zulu Hotel Quebec Romeo Lima Whiskey,001-9354,"error: invalid date ""08:00""",Khaki,Corny,ACTIVE
+600,Philippines,Ugac Sur,Golf Papa Tango November Uniform Bravo Quebec Mike Whiskey Hotel Charlie Sierra Foxtrot Delta Zulu Oscar,680-6733,"error: invalid date ""08:00""",Blue,Martica,ACTIVE
+601,Venezuela,Mariara,Juliett Romeo November India X-ray Delta Tango Kilo Charlie Uniform Bravo Echo Mike,135-6337,"error: invalid date ""08:00""",Violet,Marje,ACTIVE
+602,Malaysia,Sandakan,Juliett Golf November Victor Zulu Bravo Alfa Tango Oscar Delta Foxtrot X-ray Lima Papa Quebec India Mike Hotel Yankee Whiskey,573-1699,"error: invalid date ""08:00""",Blue,Dyann,ACTIVE
+603,Portugal,Chavão,Quebec Whiskey Hotel Juliett Kilo India Uniform Delta Echo Tango Oscar Golf Yankee X-ray Foxtrot Romeo,501-7739,"error: invalid date ""08:00""",Red,Tresa,ACTIVE
+604,Canada,Skatepark,Kilo Lima X-ray Alfa Foxtrot Sierra Yankee Bravo Uniform Hotel Victor Romeo Mike Whiskey Quebec Zulu Charlie Oscar Juliett,860-3471,"error: invalid date ""08:00""",Purple,Felecia,ACTIVE
+605,China,Shibi,Golf Hotel Victor Yankee Juliett November Delta X-ray India Mike Echo,787-1422,"error: invalid date ""08:00""",Khaki,Zarla,ACTIVE
+606,Russia,Petrokamenskoye,Whiskey November Foxtrot Golf Quebec Juliett Tango Papa Charlie Mike Hotel Lima India Romeo Echo Victor X-ray Zulu Uniform Kilo,697-3384,"error: invalid date ""08:00""",Teal,Lorettalorna,ACTIVE
+607,Bangladesh,Bāndarban,Foxtrot Mike Sierra Victor Quebec Bravo Oscar Lima Kilo Alfa Yankee Golf Uniform November Whiskey Zulu Echo Hotel Juliett Papa,744-7284,"error: invalid date ""08:00""",Teal,Pammie,ACTIVE
+608,China,Huangmei,Juliett Yankee Alfa Echo Whiskey Victor Zulu Mike Delta Charlie,399-8047,"error: invalid date ""08:00""",Indigo,Adore,ACTIVE
+609,Indonesia,Watublapi,Oscar Quebec Papa Lima November Delta Echo X-ray Sierra Golf Alfa Romeo Zulu Victor Juliett Whiskey Yankee Charlie Kilo Tango,546-3174,"error: invalid date ""08:00""",Purple,Bettye,ACTIVE
+610,Czech Republic,Hodkovice nad Mohelkou,Uniform Victor Foxtrot November Bravo Quebec Hotel Sierra Juliett Yankee,664-4594,"error: invalid date ""08:00""",Aquamarine,Jaquenette,ACTIVE
+611,Vietnam,Hòa Bình,India Charlie Echo Romeo Juliett Alfa Zulu Yankee Foxtrot Delta,739-6238,"error: invalid date ""08:00""",Mauv,Caitlin,ACTIVE
+612,China,Hewan,Romeo Juliett Bravo Golf Hotel November Papa Zulu Sierra Alfa Tango India Quebec Victor Whiskey,708-2846,"error: invalid date ""08:00""",Pink,Jsandye,ACTIVE
+613,Peru,Satipo,X-ray Hotel Papa Lima Tango Uniform Juliett Foxtrot Whiskey Yankee Alfa Bravo,180-9197,"error: invalid date ""08:00""",Teal,Selia,ACTIVE
+614,Indonesia,Leuburi,Victor November Charlie Yankee Mike Tango Romeo Lima Kilo Oscar India Echo Delta Golf Hotel Papa Zulu,735-7022,"error: invalid date ""08:00""",Green,Goldie,ACTIVE
+615,Poland,Strzelce Krajeńskie,Yankee Alfa Golf Hotel November Romeo Juliett Victor Delta Foxtrot Mike Lima Echo,997-5012,"error: invalid date ""08:00""",Violet,Pearle,ACTIVE
+616,Japan,Oyama,India November Alfa Tango Lima Papa Delta Foxtrot Golf Romeo Kilo Mike Charlie Quebec Hotel X-ray Whiskey Bravo,502-3285,"error: invalid date ""08:00""",Purple,Brynna,ACTIVE
+617,Finland,Hollola,Lima Victor Juliett Echo Kilo X-ray Papa Foxtrot India Zulu Sierra Yankee Whiskey Alfa,391-5915,"error: invalid date ""08:00""",Fuscia,Gizela,ACTIVE
+618,Poland,Wijewo,Foxtrot Uniform Charlie Golf Juliett Hotel Bravo Papa Romeo Echo Tango,679-2959,"error: invalid date ""08:00""",Pink,Bernadina,ACTIVE
+619,Uganda,Mubende,India Echo Juliett Whiskey November Bravo Quebec Alfa Victor X-ray,175-4725,"error: invalid date ""08:00""",Indigo,Katusha,ACTIVE
+620,Venezuela,Acarigua,Quebec Romeo Foxtrot Yankee India Alfa Echo Golf Juliett Lima Papa Bravo Mike Kilo Victor Sierra Oscar,322-1619,"error: invalid date ""08:00""",Aquamarine,Happy,ACTIVE
+621,Tunisia,Douane,Quebec Whiskey Bravo Yankee Victor Mike Hotel November Uniform Charlie Golf Romeo Echo Sierra Foxtrot Tango Juliett Alfa Oscar Zulu,494-1164,"error: invalid date ""08:00""",Goldenrod,Roch,ACTIVE
+622,Pakistan,Jīwani,Sierra Lima Charlie Zulu Kilo Foxtrot Papa Uniform Romeo Mike Juliett Golf Tango Whiskey Echo Oscar Bravo Alfa,170-1673,"error: invalid date ""08:00""",Goldenrod,Doretta,ACTIVE
+623,Poland,Powidz,Alfa Foxtrot November Victor Echo Golf Delta Oscar Quebec Whiskey Kilo Uniform India Mike Yankee X-ray Bravo,402-0789,"error: invalid date ""08:00""",Fuscia,Trixy,ACTIVE
+624,Ukraine,Olyka,Sierra Bravo Juliett Foxtrot Golf November Oscar Whiskey Hotel India Romeo Delta Quebec,897-6399,"error: invalid date ""08:00""",Mauv,Carri,ACTIVE
+625,Portugal,Sobreira,Golf Quebec X-ray Mike India Charlie Oscar Bravo Echo Yankee Hotel Tango,821-1540,"error: invalid date ""08:00""",Indigo,Darya,ACTIVE
+626,Madagascar,Ambatofinandrahana,Kilo Victor Golf Lima Juliett Uniform Delta Tango India Echo Quebec Bravo Mike Oscar Yankee Hotel November,543-6980,"error: invalid date ""08:00""",Yellow,Kevyn,ACTIVE
+627,China,Daoqiao,India Foxtrot Hotel Uniform Tango Oscar Juliett Charlie Kilo X-ray Alfa Lima Sierra Whiskey Quebec Zulu Echo,719-3936,"error: invalid date ""08:00""",Mauv,Rosabella,ACTIVE
+628,Russia,Tëploye,Mike Oscar Foxtrot Whiskey Kilo Victor November Quebec Lima Juliett Golf,911-5512,"error: invalid date ""08:00""",Mauv,Blinny,ACTIVE
+629,Mozambique,Beira,Golf Charlie November Bravo Tango Romeo Quebec Alfa Hotel Delta Yankee Echo Uniform Sierra Kilo Juliett,615-2818,"error: invalid date ""08:00""",Crimson,Koo,ACTIVE
+630,Indonesia,Sukarama,Whiskey Bravo Hotel Golf Tango Charlie Papa Sierra Uniform Romeo Mike Echo Alfa India Kilo Delta X-ray Foxtrot Juliett,960-0082,"error: invalid date ""08:00""",Red,Lise,ACTIVE
+631,Japan,Kashihara,Whiskey Hotel Bravo Alfa Oscar Victor X-ray Tango Golf Kilo Sierra Romeo Foxtrot Yankee,900-6767,"error: invalid date ""08:00""",Violet,Anabelle,ACTIVE
+632,Indonesia,Munjungan,Golf Bravo Sierra Alfa Quebec Whiskey Foxtrot India Yankee Mike Zulu Echo Charlie,809-0871,"error: invalid date ""08:00""",Puce,Henrie,ACTIVE
+633,China,Hengshanqiao,Kilo Foxtrot November Golf Lima Sierra Zulu Delta Hotel Victor Bravo,934-8618,"error: invalid date ""08:00""",Indigo,Mikaela,ACTIVE
+634,Cuba,Cabaiguán,Juliett November Yankee Tango Victor Romeo Golf Echo Uniform Quebec Sierra Hotel Foxtrot Alfa X-ray Bravo Lima,280-9477,"error: invalid date ""08:00""",Maroon,Theresa,ACTIVE
+635,Philippines,Bantogon,Bravo Kilo X-ray Lima Golf Mike Uniform Alfa Papa Foxtrot,068-9656,"error: invalid date ""08:00""",Goldenrod,Jaynell,ACTIVE
+636,Portugal,Souto,Whiskey Alfa Mike Romeo Yankee Golf Victor Echo Kilo Lima Delta Juliett,049-5523,"error: invalid date ""08:00""",Orange,Glad,ACTIVE
+637,Indonesia,Nunleu,India Zulu Echo Foxtrot Delta Quebec Charlie Papa Mike Whiskey Kilo Sierra Victor X-ray Juliett November Oscar Romeo Lima,026-9273,"error: invalid date ""08:00""",Orange,Catarina,ACTIVE
+638,Portugal,Muro,Victor Oscar Kilo Bravo Zulu Yankee Lima X-ray Charlie Quebec Delta Juliett Foxtrot Mike Echo India Hotel Tango,118-5450,"error: invalid date ""08:00""",Aquamarine,Cassandre,ACTIVE
+639,Poland,Murcki,Sierra Foxtrot November Bravo Oscar Mike Echo Delta Whiskey X-ray Juliett Kilo,835-0786,"error: invalid date ""08:00""",Red,Ardyce,ACTIVE
+640,Philippines,Ilihan,India Yankee Juliett Quebec Bravo Tango Whiskey Sierra Romeo Kilo Delta Papa Alfa Oscar Lima X-ray Uniform,732-5241,"error: invalid date ""08:00""",Crimson,Philippa,ACTIVE
+641,Indonesia,Krajan Timur Mlokorejo,Uniform November Juliett Lima Zulu Alfa Yankee Quebec Bravo Victor Mike Charlie Sierra Golf Whiskey Delta X-ray Romeo Kilo Echo,756-2179,"error: invalid date ""08:00""",Teal,Dorine,ACTIVE
+642,South Africa,Tarkastad,Alfa Kilo Victor Mike Foxtrot Oscar Golf Charlie November Whiskey Yankee Sierra Papa Echo Zulu Tango Bravo India,632-9569,"error: invalid date ""08:00""",Violet,Marchelle,ACTIVE
+643,Russia,Spirovo,Foxtrot Golf Quebec Victor Kilo Whiskey Delta Alfa Oscar Yankee Zulu Bravo India Romeo X-ray Uniform November Tango,849-3502,"error: invalid date ""08:00""",Green,Latashia,ACTIVE
+644,Poland,Barcin,Kilo Alfa Golf Lima Mike Charlie Yankee Delta Hotel Bravo Echo Sierra Uniform Romeo Victor Quebec,892-0140,"error: invalid date ""08:00""",Goldenrod,Willie,ACTIVE
+645,Philippines,Mataya,Uniform Sierra Papa Foxtrot Bravo India Yankee Charlie Victor Romeo Zulu X-ray Golf November Alfa Quebec Tango,432-2613,"error: invalid date ""08:00""",Turquoise,Arlyne,ACTIVE
+646,Croatia,Stari Grad,Papa Lima November Oscar Romeo X-ray Tango Golf Whiskey Sierra Zulu Uniform Quebec India Kilo Hotel,458-0735,"error: invalid date ""08:00""",Yellow,Wenonah,ACTIVE
+647,Indonesia,Lubukgadang,Uniform Lima Charlie Juliett X-ray Sierra Tango Mike Kilo Golf Quebec Oscar Papa Hotel Bravo,922-3008,"error: invalid date ""08:00""",Khaki,Elspeth,ACTIVE
+648,Ethiopia,Deder,Bravo Tango Papa Delta Zulu Quebec Uniform Kilo Romeo Whiskey November Golf Echo Mike,376-2545,"error: invalid date ""08:00""",Pink,Ree,ACTIVE
+649,Sweden,Norberg,November Tango Oscar Mike Alfa Delta Quebec Victor Whiskey Golf Charlie Kilo Lima Romeo Sierra Hotel India,005-1251,"error: invalid date ""08:00""",Maroon,Rozelle,ACTIVE
+650,China,Huazhai,Whiskey Tango Kilo Foxtrot Juliett Uniform Papa Charlie Hotel Yankee Sierra Victor Delta Alfa,016-6123,"error: invalid date ""08:00""",Maroon,Elyse,ACTIVE
+651,Indonesia,Bangunharja,Echo Zulu X-ray Whiskey Bravo November Juliett Mike Sierra Victor,656-2973,"error: invalid date ""08:00""",Yellow,Oralle,ACTIVE
+652,Uzbekistan,Dashtobod,Juliett Oscar India Alfa Mike Foxtrot Yankee Victor Bravo Tango Lima Charlie X-ray Hotel,318-0574,"error: invalid date ""08:00""",Khaki,Livvy,ACTIVE
+653,Guatemala,Tamahú,Kilo Papa Sierra Oscar Hotel X-ray Mike Quebec Juliett Yankee Echo Whiskey Uniform Golf Tango India Alfa November Zulu,000-9556,"error: invalid date ""08:00""",Maroon,Di,ACTIVE
+654,Indonesia,Timbrangan,Yankee Quebec Whiskey Victor Foxtrot Charlie Mike Zulu X-ray November Bravo Echo Romeo Delta,110-8854,"error: invalid date ""08:00""",Turquoise,Wilone,ACTIVE
+655,Russia,Groznyy,Bravo Hotel Romeo Golf Alfa Delta Whiskey Charlie Kilo Oscar Juliett Foxtrot Mike Uniform Quebec Lima,365-7437,"error: invalid date ""08:00""",Indigo,Marya,ACTIVE
+656,Brazil,Leopoldina,Papa Golf Uniform India Tango Foxtrot Hotel Alfa Mike Kilo Bravo Whiskey Delta Sierra Victor Juliett Lima Charlie Quebec Oscar,164-2769,"error: invalid date ""08:00""",Crimson,Gilda,ACTIVE
+657,Australia,Eastern Suburbs Mc,Zulu Quebec Foxtrot Oscar Sierra Alfa November Golf Delta Mike Romeo Tango Juliett Papa Hotel Echo Whiskey,862-3828,"error: invalid date ""08:00""",Turquoise,Cordelie,ACTIVE
+658,Uganda,Pader Palwo,Tango Lima Juliett Yankee Quebec Whiskey Romeo Uniform Charlie Oscar India Echo Sierra Kilo,645-9017,"error: invalid date ""08:00""",Red,Octavia,ACTIVE
+659,Morocco,Imider,Alfa Juliett Mike Lima November Uniform Papa Oscar Quebec Bravo Tango Victor Delta Hotel India Foxtrot Whiskey Kilo Echo Romeo,638-5061,"error: invalid date ""08:00""",Orange,Tandi,ACTIVE
+660,China,Sigou,Mike Uniform Lima Zulu Oscar Charlie Kilo Delta Romeo Alfa Golf,386-3500,"error: invalid date ""08:00""",Purple,Jenilee,ACTIVE
+661,China,Gaoqiao,Foxtrot Golf Lima Whiskey Echo Delta Hotel Zulu Tango Quebec Bravo X-ray Victor,213-4262,"error: invalid date ""08:00""",Green,Babbette,ACTIVE
+662,China,Huotian,Oscar Uniform Romeo Quebec Kilo Golf Echo Yankee Sierra Delta Hotel Zulu Alfa Whiskey X-ray India Bravo Lima,506-5064,"error: invalid date ""08:00""",Purple,Elvera,ACTIVE
+663,Sweden,Stockholm,Kilo Oscar Victor Juliett Romeo Foxtrot November Golf Zulu Bravo Whiskey Lima Tango Mike Hotel,161-0865,"error: invalid date ""08:00""",Green,Maurise,ACTIVE
+664,Indonesia,Cibunar,Alfa Oscar Tango Kilo Romeo Mike Bravo India Hotel Lima Delta Yankee X-ray Echo Golf,394-8914,"error: invalid date ""08:00""",Fuscia,Genia,ACTIVE
+665,Indonesia,Cibalieur,Romeo Quebec Juliett Zulu Lima Bravo Foxtrot Whiskey Tango India Uniform Mike Sierra Charlie Yankee Alfa Delta,306-5635,"error: invalid date ""08:00""",Violet,Lolita,ACTIVE
+666,United States,Springfield,Alfa Delta Oscar Yankee Mike Quebec Hotel November Echo Lima Papa,696-2636,"error: invalid date ""08:00""",Blue,Robbi,ACTIVE
+667,Colombia,San Marcos,Lima Yankee Golf Zulu Charlie Hotel Echo Alfa Victor Quebec,066-0621,"error: invalid date ""08:00""",Aquamarine,Wilhelmine,ACTIVE
+668,Indonesia,Sumberdangdang,Kilo November Foxtrot Mike Yankee Lima Golf Oscar Zulu Uniform Charlie Juliett Tango Romeo Bravo,778-8235,"error: invalid date ""08:00""",Purple,Allissa,ACTIVE
+669,Pakistan,Rasūlnagar,Alfa Papa Sierra Romeo Kilo Tango Hotel Bravo Foxtrot Victor Delta Uniform Whiskey Quebec Lima,568-7199,"error: invalid date ""08:00""",Blue,Ashley,ACTIVE
+670,Vietnam,Thành Phố Hà Giang,Delta Mike Romeo Oscar X-ray Sierra Victor Bravo Foxtrot Kilo Papa Charlie November Alfa Yankee Uniform,185-7600,"error: invalid date ""08:00""",Purple,Loria,ACTIVE
+671,Haiti,Acul du Nord,Alfa Bravo Victor Lima Zulu Papa Hotel November Oscar Whiskey Mike Sierra Charlie Quebec Golf X-ray Tango,599-4939,"error: invalid date ""08:00""",Yellow,Merle,ACTIVE
+672,Slovenia,Pesnica pri Mariboru,Tango Charlie Golf Echo Foxtrot November Hotel India Whiskey Sierra Delta,049-7821,"error: invalid date ""08:00""",Aquamarine,Clemence,ACTIVE
+673,Russia,Sovetskoye,Lima Oscar Alfa Echo Papa Quebec X-ray Charlie Juliett Victor Kilo Foxtrot Romeo November,421-4378,"error: invalid date ""08:00""",Blue,Renae,ACTIVE
+674,China,Chuzhou,India Bravo Echo Kilo Alfa Golf Foxtrot Charlie Whiskey Quebec Juliett Hotel Papa Mike November Yankee Delta,224-8440,"error: invalid date ""08:00""",Puce,Kacy,ACTIVE
+675,Poland,Pamiątkowo,Lima Charlie Uniform Oscar Alfa Sierra Quebec November Juliett Zulu Romeo Yankee India Golf Whiskey Mike Delta Papa Victor,994-6197,"error: invalid date ""08:00""",Green,Tally,ACTIVE
+676,Mexico,Benito Juarez,Uniform Victor Echo Zulu Quebec Papa Foxtrot Whiskey November Lima Bravo Alfa Delta Romeo Yankee India Oscar X-ray Juliett Tango,655-0820,"error: invalid date ""08:00""",Khaki,Blisse,ACTIVE
+677,Ukraine,Turiys’k,Hotel Tango Charlie Mike Victor Sierra Alfa Bravo Golf November,412-9846,"error: invalid date ""08:00""",Crimson,Kiley,ACTIVE
+678,Czech Republic,Petřvald,Uniform November Kilo Zulu Quebec Whiskey Yankee X-ray Lima Romeo Sierra Mike Delta Foxtrot Oscar Charlie Bravo Juliett Papa Alfa,727-3746,"error: invalid date ""08:00""",Goldenrod,Giorgia,ACTIVE
+679,Russia,Yug,Foxtrot Sierra Oscar X-ray Tango Charlie Papa Romeo Alfa Golf Yankee Delta Mike Victor Quebec Hotel Uniform India Echo,235-2697,"error: invalid date ""08:00""",Orange,Aggy,ACTIVE
+680,Cuba,Florida,Romeo Hotel Oscar Uniform Charlie Delta Mike Victor India Foxtrot Tango Zulu Echo,004-3366,"error: invalid date ""08:00""",Goldenrod,Coralyn,ACTIVE
+681,Sweden,Tomelilla,Delta India Alfa Juliett Bravo Kilo Mike Golf Victor Oscar Hotel X-ray Echo Whiskey Foxtrot Papa Yankee Uniform Lima,517-5299,"error: invalid date ""08:00""",Orange,Clovis,ACTIVE
+682,Brazil,Amparo,Zulu Juliett Whiskey Papa India Bravo Tango X-ray Alfa Romeo Kilo Yankee,149-1102,"error: invalid date ""08:00""",Blue,Peggy,ACTIVE
+683,Indonesia,Pamotan,India Quebec Golf Echo Oscar November Alfa Tango Whiskey Foxtrot Charlie X-ray Yankee Mike Lima Juliett Papa,094-5567,"error: invalid date ""08:00""",Aquamarine,Virginia,ACTIVE
+684,Brazil,Toledo,Hotel Yankee Oscar Sierra Charlie Whiskey Mike Foxtrot Delta Zulu Bravo Golf Echo,834-7448,"error: invalid date ""08:00""",Maroon,Ralina,ACTIVE
+685,Indonesia,Cijambe,Quebec Kilo Romeo Yankee X-ray Golf November Oscar Sierra Alfa,114-0770,"error: invalid date ""08:00""",Teal,Stacia,ACTIVE
+686,Russia,Kolyvan’,Uniform Alfa Romeo Yankee Charlie X-ray Kilo Delta Oscar Mike Lima Papa Juliett Zulu Golf Whiskey Victor November India,397-8163,"error: invalid date ""08:00""",Green,Shandee,ACTIVE
+687,Sri Lanka,Tangalla,Oscar Papa Romeo November Foxtrot Hotel Mike Tango Quebec India Golf,900-7963,"error: invalid date ""08:00""",Blue,Lilia,ACTIVE
+688,Indonesia,Puyung,Mike Oscar Alfa Juliett Foxtrot Uniform X-ray Hotel Bravo November Charlie,593-8171,"error: invalid date ""08:00""",Teal,Malynda,ACTIVE
+689,United States,Decatur,Hotel Bravo Quebec Golf November Papa Delta Mike Juliett Victor Lima Kilo Tango Yankee Alfa X-ray Whiskey Echo Foxtrot,403-4828,"error: invalid date ""08:00""",Purple,Yoshiko,ACTIVE
+690,Portugal,Aroeira,Kilo Bravo Yankee Tango Charlie November Echo India Whiskey Quebec Golf Zulu Lima Mike,122-4560,"error: invalid date ""08:00""",Orange,Faye,ACTIVE
+691,Latvia,Ādaži,Juliett Bravo Quebec Golf Alfa Delta Foxtrot Echo Whiskey Sierra Tango Romeo Mike Papa X-ray Hotel November Oscar Victor,999-7832,"error: invalid date ""08:00""",Mauv,Danella,ACTIVE
+692,Guinea,Nzérékoré,Hotel India Romeo Delta Kilo Quebec Juliett Charlie Uniform Golf Papa,953-8692,"error: invalid date ""08:00""",Maroon,Fred,ACTIVE
+693,China,Zhuqi,Mike Romeo Alfa Victor Oscar Sierra Whiskey November Hotel Kilo Yankee Papa India Golf Uniform Echo Delta Juliett Zulu Foxtrot,868-7506,"error: invalid date ""08:00""",Puce,Danell,ACTIVE
+694,France,Saint-Avold,Papa Sierra Juliett Lima Hotel Oscar Uniform Yankee Whiskey Zulu Bravo Delta X-ray Romeo Charlie Alfa November Golf Kilo Victor,089-9812,"error: invalid date ""08:00""",Turquoise,Kore,ACTIVE
+695,China,Xindian,Golf Hotel Alfa Quebec Foxtrot Juliett Yankee Papa Delta Bravo Romeo Charlie Mike Echo Zulu Oscar Sierra November India,017-9735,"error: invalid date ""08:00""",Orange,Concordia,ACTIVE
+696,Japan,Shibata,Kilo Whiskey Golf Uniform Bravo Victor Quebec Alfa Delta Oscar Mike Echo Sierra November X-ray Charlie Tango Hotel Romeo,212-3957,"error: invalid date ""08:00""",Red,Shell,ACTIVE
+697,China,Dongfeng,Alfa Zulu Lima X-ray Victor Kilo Papa Golf Juliett Delta Tango Yankee Bravo Echo Romeo,498-2410,"error: invalid date ""08:00""",Purple,Lynnette,ACTIVE
+698,Switzerland,Zürich,Hotel Alfa Yankee Quebec Uniform Sierra Tango X-ray Victor Echo Kilo Charlie Romeo,284-3862,"error: invalid date ""08:00""",Orange,Merna,ACTIVE
+699,Czech Republic,Rumburk,Romeo Kilo Foxtrot Uniform Echo Juliett November Whiskey Golf Hotel Lima Delta Tango Oscar Charlie Yankee India Victor Papa,011-7301,"error: invalid date ""08:00""",Teal,Carine,ACTIVE
+700,Czech Republic,Zbiroh,Mike Kilo Alfa Tango Sierra Yankee Golf Quebec India Charlie Delta Romeo Uniform Papa Bravo Zulu,824-3497,"error: invalid date ""08:00""",Teal,Martie,ACTIVE
+701,France,Cergy-Pontoise,Juliett Echo Romeo Whiskey Golf Lima Alfa Foxtrot Bravo Papa Yankee,424-8700,"error: invalid date ""08:00""",Crimson,Lorine,ACTIVE
+702,Myanmar,Dawei,Romeo Delta India Oscar Charlie Alfa Zulu Sierra Papa Yankee Victor Tango Lima Whiskey Bravo Uniform,504-8304,"error: invalid date ""08:00""",Fuscia,Griselda,ACTIVE
+703,Brazil,Santana,November Echo Delta Sierra Quebec Lima Romeo Golf Tango Kilo X-ray Bravo Oscar,882-2098,"error: invalid date ""08:00""",Green,Merralee,ACTIVE
+704,China,Panshi,Bravo Romeo Tango Yankee Papa Oscar Foxtrot X-ray Whiskey Lima,646-8804,"error: invalid date ""08:00""",Mauv,Daria,ACTIVE
+705,France,Neuilly-sur-Seine,November Oscar Uniform Juliett Hotel Charlie Echo Whiskey X-ray Sierra Delta Bravo Papa Lima Mike Victor Foxtrot Tango India Quebec,562-6471,"error: invalid date ""08:00""",Blue,Carola,ACTIVE
+706,Bulgaria,Koynare,Kilo India Tango Echo Charlie Delta Oscar Bravo Romeo Foxtrot Golf Uniform Hotel Sierra Whiskey X-ray November Juliett,121-9055,"error: invalid date ""08:00""",Indigo,Ophelia,ACTIVE
+707,United States,Richmond,Alfa Zulu Quebec Yankee Foxtrot Hotel India Papa Whiskey Mike Romeo Tango Oscar Delta Bravo Golf X-ray,366-2779,"error: invalid date ""08:00""",Aquamarine,Janna,ACTIVE
+708,Indonesia,Sukadami,Sierra Oscar Mike Foxtrot Yankee Tango Papa India Lima Zulu Victor Bravo November Uniform Alfa,159-6892,"error: invalid date ""08:00""",Violet,Leola,ACTIVE
+709,China,Junkou,Oscar Quebec X-ray November Golf Uniform Victor Yankee Kilo Alfa India Romeo,659-6391,"error: invalid date ""08:00""",Red,Janey,ACTIVE
+710,Greece,Néos Mylótopos,Charlie Whiskey Yankee Kilo X-ray Bravo Alfa Tango Lima Foxtrot November Hotel Uniform Romeo Quebec Mike Zulu Echo India Sierra,387-4796,"error: invalid date ""08:00""",Indigo,Ardelle,ACTIVE
+711,Mali,Timbuktu,Juliett Bravo Romeo Yankee Charlie Foxtrot Uniform Echo Delta India Hotel Kilo Whiskey X-ray Zulu Victor Alfa,820-2592,"error: invalid date ""08:00""",Puce,Robinette,ACTIVE
+712,Tuvalu,Tanrake Village,Foxtrot India Bravo Charlie November X-ray Quebec Kilo Zulu Papa,238-1330,"error: invalid date ""08:00""",Goldenrod,Ericha,ACTIVE
+713,Uruguay,Aguas Corrientes,Bravo Echo X-ray Oscar Delta Victor Yankee Quebec Uniform Lima Zulu Golf November,703-4697,"error: invalid date ""08:00""",Violet,Malvina,ACTIVE
+714,China,Huqiu,India X-ray Mike Tango Romeo Juliett Bravo Zulu Yankee Uniform Golf Echo Charlie,504-3531,"error: invalid date ""08:00""",Violet,Darda,ACTIVE
+715,France,Noyelles-sous-Lens,India Hotel Echo Kilo November Yankee Whiskey Lima Alfa Tango X-ray Sierra Quebec,512-4095,"error: invalid date ""08:00""",Yellow,Chelsie,ACTIVE
+716,China,Huitong,Charlie X-ray Yankee Tango Kilo Whiskey Papa Delta Alfa Oscar Echo Bravo Foxtrot Golf Zulu India Uniform Victor,214-8577,"error: invalid date ""08:00""",Violet,Carrissa,ACTIVE
+717,China,Tonghong,Tango Oscar Lima Uniform Golf Papa Whiskey Bravo Yankee Charlie Delta Hotel Foxtrot November Sierra Mike Romeo India,968-2044,"error: invalid date ""08:00""",Indigo,Karen,ACTIVE
+718,China,Ximapo,Quebec India Tango Yankee Sierra Oscar Delta Papa Golf Alfa Juliett Kilo Zulu X-ray Lima,012-6955,"error: invalid date ""08:00""",Fuscia,Rubetta,ACTIVE
+719,Indonesia,Tenggong,Charlie India Golf Oscar X-ray Romeo Papa Tango Mike Bravo Hotel November,115-8870,"error: invalid date ""08:00""",Aquamarine,Joceline,ACTIVE
+720,Sri Lanka,Matara,Quebec Delta Echo Juliett Bravo Tango Kilo Victor Mike Papa India Golf Romeo,469-1322,"error: invalid date ""08:00""",Purple,Catharine,ACTIVE
+721,Argentina,Gobernador Gálvez,Lima India Golf Whiskey Yankee Juliett Papa Oscar November Zulu Delta Alfa X-ray Victor,289-9102,"error: invalid date ""08:00""",Pink,Evania,ACTIVE
+722,Ukraine,Kosmach,Bravo X-ray Oscar Juliett November Hotel Whiskey Alfa Romeo Zulu Quebec Sierra Golf Kilo,649-3719,"error: invalid date ""08:00""",Pink,Tiffie,ACTIVE
+723,Philippines,Buenavista,Zulu Papa India Kilo Golf Oscar Mike Juliett November Uniform Victor Lima Yankee Romeo,778-8971,"error: invalid date ""08:00""",Orange,Emmy,ACTIVE
+724,Colombia,Guamal,Uniform Romeo Tango Hotel Whiskey X-ray Golf Mike Sierra Kilo November Juliett Alfa Oscar,871-9814,"error: invalid date ""08:00""",Maroon,Vally,ACTIVE
+725,Ireland,Cloyne,Juliett Foxtrot Uniform November Lima Papa Hotel Romeo Alfa Mike Tango Echo Delta Bravo Oscar Charlie Sierra,955-8273,"error: invalid date ""08:00""",Green,Melisandra,ACTIVE
+726,Philippines,Liloy,Whiskey Quebec Yankee Victor Lima Bravo Alfa India Uniform Golf Echo Zulu Kilo,000-2962,"error: invalid date ""08:00""",Mauv,Roxie,ACTIVE
+727,Brazil,Surubim,Papa Juliett Zulu Victor November Hotel Golf Oscar Mike Alfa Delta,107-5997,"error: invalid date ""08:00""",Crimson,Shanie,ACTIVE
+728,Portugal,Labruge,Quebec Mike Sierra Alfa X-ray Echo Uniform India Oscar Charlie,882-2240,"error: invalid date ""08:00""",Puce,Vonny,ACTIVE
+729,Russia,Rostov,Yankee Zulu Papa Kilo Oscar Juliett India Bravo Foxtrot Charlie,696-9477,"error: invalid date ""08:00""",Khaki,Rivi,ACTIVE
+730,Egypt,Iţsā,Zulu Kilo Mike Victor Alfa Bravo Charlie X-ray Foxtrot Delta Yankee Juliett Tango,531-3175,"error: invalid date ""08:00""",Orange,Timmi,ACTIVE
+731,Argentina,Mattaldi,Victor Bravo Yankee Quebec Uniform Sierra Alfa Zulu Papa Juliett India Tango Romeo Echo X-ray Hotel Golf Whiskey,504-4722,"error: invalid date ""08:00""",Orange,Marnia,ACTIVE
+732,Spain,Palencia,X-ray Foxtrot Oscar Hotel India Yankee Sierra Golf Charlie Uniform Zulu Echo,430-8590,"error: invalid date ""08:00""",Goldenrod,Alanna,ACTIVE
+733,Philippines,Balaogan,X-ray Oscar Sierra Papa Uniform Victor India Bravo Lima Mike Yankee Quebec,826-7497,"error: invalid date ""08:00""",Pink,Anett,ACTIVE
+734,Poland,Unisław,Zulu Papa Uniform Juliett Bravo Oscar Whiskey Tango Golf Foxtrot November Alfa Hotel Kilo,577-8493,"error: invalid date ""08:00""",Crimson,Raeann,ACTIVE
+735,Croatia,Karlobag,Mike Yankee November Delta Quebec Romeo Hotel Lima Foxtrot Kilo Juliett Bravo Golf Victor Oscar Echo X-ray Papa Whiskey India,497-1564,"error: invalid date ""08:00""",Maroon,Kora,ACTIVE
+736,China,Xinhua,Alfa Juliett November Delta Yankee Romeo Tango Mike Uniform India Whiskey Oscar Victor Lima Zulu,560-7514,"error: invalid date ""08:00""",Orange,Livia,ACTIVE
+737,Indonesia,Patrang,Alfa Sierra Oscar Delta Hotel November Kilo X-ray Romeo Zulu Echo Bravo Uniform Foxtrot Victor Papa Golf,463-7071,"error: invalid date ""08:00""",Khaki,Gretal,ACTIVE
+738,Indonesia,Sukarara Utara,Echo Zulu Tango November Victor Whiskey India X-ray Kilo Yankee Sierra Papa Mike Bravo Juliett Oscar,420-6836,"error: invalid date ""08:00""",Maroon,Dalenna,ACTIVE
+739,Thailand,Chamni,X-ray Juliett Mike Quebec Oscar Yankee Alfa Zulu Uniform Victor India Kilo Papa Foxtrot Whiskey Echo Hotel,392-0532,"error: invalid date ""08:00""",Aquamarine,Paulie,ACTIVE
+740,China,Liushutun,Victor Kilo Golf Foxtrot November Uniform Quebec Echo X-ray Bravo Tango Oscar,001-1711,"error: invalid date ""08:00""",Aquamarine,Ileana,ACTIVE
+741,China,Hanfeng,Charlie Uniform Hotel India Juliett X-ray Victor Zulu Whiskey Quebec,338-9269,"error: invalid date ""08:00""",Turquoise,Audrey,ACTIVE
+742,Bulgaria,Isperikh,Victor Yankee Golf Juliett Papa Sierra Tango Delta Bravo Whiskey Zulu India Foxtrot Uniform,249-8395,"error: invalid date ""08:00""",Puce,Cherrita,ACTIVE
+743,Nicaragua,Siuna,Alfa Romeo Yankee Hotel Kilo India Tango X-ray Echo Lima Charlie Zulu Delta Whiskey Papa Mike Quebec Foxtrot,640-0896,"error: invalid date ""08:00""",Mauv,Laurette,ACTIVE
+744,China,Shuangyuan,Oscar India Papa Alfa Quebec Hotel Juliett Tango November Uniform Kilo Victor,539-1587,"error: invalid date ""08:00""",Violet,Ceciley,ACTIVE
+745,Portugal,Carvalho,Foxtrot Echo X-ray Papa Uniform Tango Victor Whiskey Juliett Kilo Charlie Alfa India,734-4802,"error: invalid date ""08:00""",Indigo,Jocelyne,ACTIVE
+746,Philippines,Lumbatan,Whiskey Romeo Kilo Victor Sierra Golf Yankee Quebec Bravo Hotel Tango Juliett Lima Delta Foxtrot Mike X-ray,522-6898,"error: invalid date ""08:00""",Green,Fanchette,ACTIVE
+747,China,Zhengdonglu,Yankee Zulu X-ray Juliett Victor Oscar Golf India Charlie Sierra Hotel Tango Echo November Bravo Whiskey,469-5283,"error: invalid date ""08:00""",Mauv,Phaedra,ACTIVE
+748,Canada,Richmond,Yankee Delta Tango Charlie Foxtrot Golf Romeo Kilo Victor Sierra Zulu November Lima India Papa Mike Oscar X-ray Uniform Hotel,164-6959,"error: invalid date ""08:00""",Khaki,Olia,ACTIVE
+749,Reunion,Le Port,India Uniform Hotel Delta Victor Mike Yankee Lima Echo Foxtrot X-ray Alfa Juliett November Zulu Whiskey Quebec Oscar Kilo Golf,131-7359,"error: invalid date ""08:00""",Red,Lorrin,ACTIVE
+750,Spain,Cartagena,Echo Juliett Alfa India Sierra Hotel Kilo Bravo Yankee Tango Whiskey November Quebec,895-6709,"error: invalid date ""08:00""",Purple,Fifi,ACTIVE
+751,Poland,Widuchowa,Romeo Juliett X-ray Yankee Kilo Golf Delta Charlie Oscar Alfa Uniform Quebec Foxtrot,145-1353,"error: invalid date ""08:00""",Yellow,Gennifer,ACTIVE
+752,Russia,Nytva,Quebec Juliett Mike India Yankee Alfa Papa November Echo Romeo Whiskey Uniform Lima Bravo Zulu Foxtrot,116-4381,"error: invalid date ""08:00""",Green,Cindelyn,ACTIVE
+753,Indonesia,Aeteke,Quebec Bravo Papa X-ray Hotel Romeo Tango Yankee Alfa Sierra Zulu,434-2315,"error: invalid date ""08:00""",Puce,Lotte,ACTIVE
+754,Bulgaria,Lakatnik,Quebec Lima Golf Echo Delta Papa Oscar Sierra Zulu Alfa Bravo,438-4597,"error: invalid date ""08:00""",Khaki,Hildegarde,ACTIVE
+755,Brazil,Anguera,X-ray Echo Uniform Lima India Juliett Zulu Tango Bravo Charlie Whiskey Kilo Hotel Foxtrot,535-8703,"error: invalid date ""08:00""",Yellow,Jana,ACTIVE
+756,Micronesia,Makur,Alfa Yankee Sierra Delta Lima Echo Victor Juliett Papa India November Uniform Golf,125-5097,"error: invalid date ""08:00""",Turquoise,Clarinda,ACTIVE
+757,China,Jibu Hulangtu,Oscar Tango Foxtrot Golf Juliett Uniform Lima India Alfa Delta X-ray Quebec Yankee Kilo,618-4254,"error: invalid date ""08:00""",Goldenrod,Tybi,ACTIVE
+758,Philippines,Bontoc,Golf Bravo Tango Charlie Quebec X-ray Lima Sierra Foxtrot Yankee,741-8414,"error: invalid date ""08:00""",Fuscia,Sofie,ACTIVE
+759,Guatemala,Santa Cruz La Laguna,Echo Juliett Bravo Delta Kilo Charlie Golf Oscar Uniform Whiskey Victor Yankee Papa Mike,628-9198,"error: invalid date ""08:00""",Red,Mari,ACTIVE
+760,Poland,Radzanów,Alfa X-ray Golf India Mike Hotel Echo Delta Yankee Whiskey,656-5966,"error: invalid date ""08:00""",Puce,Clementia,ACTIVE
+761,Malaysia,Pulau Pinang,Juliett Sierra Quebec Victor Whiskey India Echo Papa Alfa Mike Charlie Bravo Delta Foxtrot,552-3731,"error: invalid date ""08:00""",Green,Bernadette,ACTIVE
+762,Brazil,Santo Amaro,Golf Sierra India X-ray Foxtrot Whiskey Kilo Bravo Echo Yankee Victor Alfa Zulu Lima Delta Hotel November Juliett Papa Romeo,367-9905,"error: invalid date ""08:00""",Teal,Anjanette,ACTIVE
+763,Japan,Hanyū,Delta Kilo Foxtrot India Echo November Sierra Lima Whiskey Victor Oscar Charlie,203-5490,"error: invalid date ""08:00""",Fuscia,Hortense,ACTIVE
+764,Poland,Krzeczów,Zulu Delta Hotel Bravo India Uniform Charlie Golf Oscar Juliett Victor Alfa Foxtrot Quebec Kilo Mike Tango Sierra,882-7317,"error: invalid date ""08:00""",Blue,Cherlyn,ACTIVE
+765,Poland,Przeworsk,Mike Hotel Whiskey X-ray Charlie Quebec Papa India Romeo Foxtrot Kilo Bravo Sierra Juliett November,130-6713,"error: invalid date ""08:00""",Red,Lynna,ACTIVE
+766,Portugal,Venda do Valador,Charlie Delta Sierra Alfa Mike Victor Quebec Lima Papa Echo Juliett,301-3464,"error: invalid date ""08:00""",Mauv,Lesli,ACTIVE
+767,Belarus,Bal’shavik,Yankee Victor Hotel Foxtrot Sierra Papa Alfa Golf Echo X-ray Quebec Tango Zulu Lima Delta India Uniform Bravo Oscar,518-4537,"error: invalid date ""08:00""",Green,Liane,ACTIVE
+768,Mexico,San Isidro,Victor Golf November Sierra Hotel X-ray Mike Papa Whiskey Echo India Kilo Charlie Oscar,801-3712,"error: invalid date ""08:00""",Teal,Karil,ACTIVE
+769,China,Gubu,Sierra India Papa Lima Romeo Charlie Alfa Echo Uniform November Hotel Zulu Foxtrot Mike Kilo Bravo X-ray,083-4252,"error: invalid date ""08:00""",Green,Ariadne,ACTIVE
+770,Indonesia,Salinggara,Golf Whiskey Bravo Kilo India Tango Juliett Romeo Alfa Mike Yankee Delta Uniform Quebec,992-0817,"error: invalid date ""08:00""",Yellow,Dulcia,ACTIVE
+771,Canada,Alma,Foxtrot Yankee Alfa Romeo Victor Lima November Echo Oscar Delta Kilo Bravo Hotel Mike Tango Juliett X-ray Quebec Charlie Whiskey,433-4296,"error: invalid date ""08:00""",Red,Electra,ACTIVE
+772,China,Sanxi,Papa Bravo Charlie Oscar Whiskey Sierra Juliett X-ray Romeo Golf Zulu Kilo India Quebec Yankee,279-1021,"error: invalid date ""08:00""",Yellow,Sonja,ACTIVE
+773,Poland,Puck,Foxtrot Mike Oscar Zulu Papa Kilo Bravo Whiskey Charlie Quebec Echo India Alfa Lima Delta Yankee Golf Hotel X-ray,236-9618,"error: invalid date ""08:00""",Yellow,Jobey,ACTIVE
+774,Thailand,Amnat Charoen,X-ray Victor Bravo Papa Hotel Alfa Juliett Foxtrot Quebec November Zulu Delta Romeo Echo Uniform Whiskey Golf,374-1012,"error: invalid date ""08:00""",Khaki,Daniella,ACTIVE
+775,China,Jiangkou,Oscar Zulu Foxtrot Whiskey November Echo Romeo Tango Kilo Delta Alfa Victor,706-2658,"error: invalid date ""08:00""",Orange,Antonie,ACTIVE
+776,Russia,Teberda,Oscar Hotel Uniform Alfa Lima Foxtrot Romeo Charlie Papa Tango India X-ray Echo,656-8872,"error: invalid date ""08:00""",Goldenrod,Andie,ACTIVE
+777,Russia,Admiralteisky,Uniform Mike Hotel Charlie Lima November Golf Kilo Delta Papa Sierra Yankee Echo Zulu Foxtrot Victor Juliett Bravo Oscar,116-1872,"error: invalid date ""08:00""",Teal,Clea,ACTIVE
+778,China,Zhangshui,November Echo Quebec Papa Tango Romeo Whiskey Kilo Alfa Sierra Bravo Hotel Delta X-ray,233-1335,"error: invalid date ""08:00""",Mauv,Cherice,ACTIVE
+779,Canada,Mirabel,Bravo Mike Tango Zulu Delta Golf Papa Foxtrot India Victor Uniform,145-7405,"error: invalid date ""08:00""",Pink,Faunie,ACTIVE
+780,Mexico,El Calvario,Papa Kilo India Delta Tango Echo Yankee Alfa Sierra November Lima Foxtrot Juliett Romeo Mike,062-5438,"error: invalid date ""08:00""",Yellow,Alexis,ACTIVE
+781,Serbia,Kragujevac,Mike Zulu Papa Golf Alfa Victor Echo Whiskey Quebec India Yankee Hotel Foxtrot Sierra Kilo,218-0965,"error: invalid date ""08:00""",Turquoise,Chicky,ACTIVE
+782,Indonesia,Cimanggu,Charlie Mike Foxtrot Kilo X-ray Whiskey Yankee November Romeo India Tango Lima Victor,830-9857,"error: invalid date ""08:00""",Turquoise,Lorenza,ACTIVE
+783,Brazil,Bastos,Lima Yankee India Delta Golf Whiskey November Charlie Papa Hotel Kilo Mike Echo Juliett Uniform,639-5386,"error: invalid date ""08:00""",Mauv,Lilith,ACTIVE
+784,Montenegro,Herceg-Novi,Oscar Bravo Lima X-ray Foxtrot Romeo Juliett Quebec Mike Alfa Echo Delta India Kilo Papa Hotel Victor,719-2730,"error: invalid date ""08:00""",Maroon,Honor,ACTIVE
+785,Peru,Celendín,Lima Oscar X-ray Kilo Hotel Victor Uniform Delta Whiskey Tango Charlie Papa Romeo Sierra Zulu Mike November Golf,949-2200,"error: invalid date ""08:00""",Orange,Luella,ACTIVE
+786,Brazil,Tapera,Lima Bravo Oscar X-ray Zulu Sierra Echo Hotel Romeo Golf Tango Victor Uniform Papa Alfa,626-8395,"error: invalid date ""08:00""",Pink,Shandy,ACTIVE
+787,China,Xijiao,X-ray Whiskey Tango Oscar Romeo November Sierra Echo Yankee Delta,414-4137,"error: invalid date ""08:00""",Teal,Wilmette,ACTIVE
+788,Portugal,Alhos Vedros,X-ray Quebec Mike Tango Papa Charlie Oscar Kilo Foxtrot Romeo,802-1329,"error: invalid date ""08:00""",Pink,Kym,ACTIVE
+789,Egypt,Al Maţarīyah,Whiskey Charlie Foxtrot November Oscar Lima Hotel Tango Romeo Delta Juliett X-ray Bravo Uniform Kilo Papa Echo Alfa,891-9847,"error: invalid date ""08:00""",Orange,Janessa,ACTIVE
+790,Ethiopia,Bichena,Papa Uniform Alfa Juliett Golf November Kilo Delta Mike Zulu Quebec Hotel,583-0648,"error: invalid date ""08:00""",Crimson,Ruth,ACTIVE
+791,China,Xia Dawo,Uniform Victor Yankee Whiskey Zulu Echo India Romeo Alfa X-ray Foxtrot Kilo Oscar Charlie Papa Sierra Juliett Quebec Bravo,461-8742,"error: invalid date ""08:00""",Crimson,Lurleen,ACTIVE
+792,Argentina,Paraná,Foxtrot Charlie Kilo Victor Zulu India Tango Mike Echo Whiskey Romeo Sierra Quebec,943-4370,"error: invalid date ""08:00""",Fuscia,Vonnie,ACTIVE
+793,Russia,Sterlitamak,Whiskey Mike Juliett Yankee Kilo Romeo Zulu India Tango Delta Golf Foxtrot Victor Bravo Charlie,628-1577,"error: invalid date ""08:00""",Aquamarine,Arline,ACTIVE
+794,Tunisia,Jammāl,Alfa X-ray Delta Oscar Yankee Echo Hotel Mike Sierra Golf Lima Charlie,831-0458,"error: invalid date ""08:00""",Khaki,Alvina,ACTIVE
+795,Argentina,Pocito,Papa Delta Romeo Echo Bravo Sierra India Hotel Lima Charlie Foxtrot Victor Uniform X-ray Golf Kilo,819-6805,"error: invalid date ""08:00""",Yellow,Casey,ACTIVE
+796,Finland,Karkkila,Victor Papa Romeo November Juliett Oscar Tango Golf Mike Lima Kilo Whiskey Bravo Quebec Uniform Foxtrot Delta Echo Sierra,264-7183,"error: invalid date ""08:00""",Green,Debi,ACTIVE
+797,Czech Republic,Náklo,Kilo Echo X-ray Yankee Delta Bravo Mike Victor November India Golf Uniform Hotel Foxtrot Romeo,356-6154,"error: invalid date ""08:00""",Red,Andrei,ACTIVE
+798,China,Qiaoyi,November Victor X-ray Golf Whiskey Tango Sierra Alfa Papa Echo India Juliett Foxtrot Hotel Uniform Zulu Delta Lima Mike,090-4060,"error: invalid date ""08:00""",Maroon,Maurene,ACTIVE
+799,Albania,Poshnje,Romeo Charlie Mike Foxtrot X-ray Oscar Uniform Papa Lima Tango India Yankee Quebec November Kilo Zulu Bravo Delta,082-3763,"error: invalid date ""08:00""",Crimson,Annie,ACTIVE
+800,Indonesia,Cimanggu,Delta Foxtrot Romeo Papa India Sierra Juliett Echo Whiskey Golf Kilo Victor Quebec Oscar Mike Hotel Tango Zulu November Alfa,661-2568,"error: invalid date ""08:00""",Red,Ebony,ACTIVE
+801,Portugal,Estrada,Juliett Golf Tango Zulu Hotel Uniform X-ray Sierra Mike Charlie Yankee November Papa,577-6871,"error: invalid date ""08:00""",Aquamarine,Danice,ACTIVE
+802,Indonesia,Balekambang,Juliett Hotel Whiskey Mike X-ray Foxtrot Delta Kilo Lima Zulu Alfa Yankee Papa Tango Quebec India,520-0017,"error: invalid date ""08:00""",Red,Samara,ACTIVE
+803,Indonesia,Wanga,Whiskey Charlie Delta Uniform Alfa Lima Romeo Zulu Foxtrot Yankee Tango Mike,893-5129,"error: invalid date ""08:00""",Indigo,Pierrette,ACTIVE
+804,China,Hutou,November Kilo Quebec Mike Hotel Yankee Uniform Charlie Whiskey Papa Victor Oscar Zulu Juliett India Echo Golf X-ray Delta,393-6675,"error: invalid date ""08:00""",Goldenrod,Addy,ACTIVE
+805,United States,Lexington,Kilo Tango Whiskey Foxtrot Alfa Lima Papa Mike Bravo Echo Quebec,397-9871,"error: invalid date ""08:00""",Purple,Jessy,ACTIVE
+806,United States,Washington,Sierra Delta Yankee Alfa Quebec November Golf X-ray Oscar Kilo Lima,185-3319,"error: invalid date ""08:00""",Mauv,Olia,ACTIVE
+807,Honduras,El Agua Dulcita,Yankee Mike Romeo Whiskey Echo Foxtrot Quebec Alfa Sierra Juliett X-ray Tango Zulu November Delta,030-3982,"error: invalid date ""08:00""",Mauv,Leese,ACTIVE
+808,Indonesia,Wonda,Papa Bravo Quebec Zulu Charlie Alfa Yankee Romeo X-ray Sierra November,423-4315,"error: invalid date ""08:00""",Violet,Ailina,ACTIVE
+809,Norway,Porsgrunn,Hotel Victor Whiskey X-ray Alfa Uniform Mike India Golf Sierra Delta,663-1420,"error: invalid date ""08:00""",Puce,Stacee,ACTIVE
+810,Russia,Novopokrovka,Charlie Quebec November Whiskey Hotel Mike Uniform Yankee Papa Bravo Tango Lima Delta Juliett Zulu X-ray,233-1549,"error: invalid date ""08:00""",Maroon,Gwynne,ACTIVE
+811,Czech Republic,Podolí,Delta Mike Tango Foxtrot Bravo Lima Uniform X-ray Whiskey Alfa Quebec Kilo Hotel Juliett Victor Echo,562-7584,"error: invalid date ""08:00""",Red,Maressa,ACTIVE
+812,Panama,Alto de la Estancia,Juliett Yankee Echo Mike November Lima Delta Papa Hotel Zulu Whiskey India Tango Uniform Bravo Sierra Kilo Romeo Alfa,030-1335,"error: invalid date ""08:00""",Puce,Joannes,ACTIVE
+813,Portugal,São Pedro do Estoril,Golf Tango India Oscar Uniform X-ray Hotel Charlie Sierra Juliett Alfa Zulu Victor Echo Quebec Delta Lima Mike,276-6489,"error: invalid date ""08:00""",Purple,Marne,ACTIVE
+814,Japan,Isehara,Echo Bravo Zulu Papa Yankee Oscar X-ray Quebec Foxtrot Tango India Whiskey Alfa Mike November,212-2534,"error: invalid date ""08:00""",Purple,Rebekah,ACTIVE
+815,Indonesia,Karangpeton,Mike Kilo Quebec Foxtrot Oscar Golf November Charlie Delta Bravo Zulu Lima X-ray Victor Tango Alfa,959-8211,"error: invalid date ""08:00""",Violet,Larisa,ACTIVE
+816,Brazil,Rio Negro,Yankee Golf Mike Juliett Tango India Kilo Charlie Victor Sierra Oscar Bravo Romeo Quebec Hotel X-ray Uniform Delta Papa,920-9407,"error: invalid date ""08:00""",Teal,Donna,ACTIVE
+817,France,Quimper,Whiskey Tango Romeo Bravo Golf Mike Uniform India Juliett Delta Quebec Oscar Zulu Hotel X-ray Lima Yankee Kilo,587-4872,"error: invalid date ""08:00""",Maroon,Jenica,ACTIVE
+818,Pakistan,Nowshera Cantonment,Alfa November Zulu Charlie Kilo X-ray Papa Romeo Hotel Foxtrot Delta,618-3539,"error: invalid date ""08:00""",Orange,Elenore,ACTIVE
+819,Togo,Atakpamé,Golf Sierra Echo Lima Bravo Kilo Mike November Foxtrot Oscar Alfa Victor Hotel Tango X-ray Juliett India Zulu Uniform Quebec,539-0388,"error: invalid date ""08:00""",Khaki,Bette,ACTIVE
+820,China,Longzhong,Victor Oscar Mike Foxtrot Uniform Juliett Bravo Zulu Charlie Papa,620-1177,"error: invalid date ""08:00""",Yellow,Lurline,ACTIVE
+821,Syria,Sahnaiya,Whiskey Lima Delta X-ray Foxtrot Golf Tango November Zulu Juliett Yankee Kilo Oscar Bravo India Sierra Quebec Echo Uniform Papa,177-1284,"error: invalid date ""08:00""",Blue,Salome,ACTIVE
+822,Portugal,Cimo de Vila,Uniform Delta Lima Charlie X-ray India Romeo Oscar Hotel Whiskey Foxtrot Zulu Yankee Tango,835-9333,"error: invalid date ""08:00""",Indigo,Cynthia,ACTIVE
+823,Tunisia,Chebba,Sierra Kilo Lima Zulu India Tango Foxtrot Bravo November Yankee Hotel Juliett Victor Delta Quebec X-ray,495-1852,"error: invalid date ""08:00""",Maroon,Seka,ACTIVE
+824,Russia,Grigoropolisskaya,Bravo Quebec Tango Hotel Echo X-ray Romeo Lima Mike Uniform Whiskey Delta Victor Golf,350-8101,"error: invalid date ""08:00""",Pink,Sella,ACTIVE
+825,Dominican Republic,La Julia,Charlie Echo Kilo Zulu Delta Whiskey November Quebec Mike Oscar Papa Lima Foxtrot,921-9433,"error: invalid date ""08:00""",Mauv,Lorenza,ACTIVE
+826,United States,Florence,X-ray Lima Uniform Kilo Yankee Golf Papa Hotel Alfa India Mike,746-2877,"error: invalid date ""08:00""",Indigo,Abagail,ACTIVE
+827,China,Guan’e,India Sierra Zulu Alfa Uniform Yankee Victor Romeo Bravo Juliett Oscar Charlie Hotel Delta X-ray Foxtrot Kilo Mike Echo Golf,753-9555,"error: invalid date ""08:00""",Yellow,Sandye,ACTIVE
+828,Canada,La Ronge,Tango Victor Papa Lima Romeo November India Zulu Oscar Golf Kilo Quebec Juliett Sierra,342-9819,"error: invalid date ""08:00""",Red,Corabel,ACTIVE
+829,Afghanistan,Balkh,X-ray Yankee Foxtrot Hotel Quebec Alfa Oscar Mike Juliett Charlie Golf Kilo Echo,719-6625,"error: invalid date ""08:00""",Red,Nananne,ACTIVE
+830,Poland,Pawonków,Delta Papa Kilo X-ray Zulu India Tango Yankee Romeo Whiskey,843-2052,"error: invalid date ""08:00""",Crimson,Pearla,ACTIVE
+831,China,Hanting,Charlie Whiskey Sierra X-ray Victor Uniform Alfa Tango November Quebec Oscar Mike Delta Juliett Bravo,461-8711,"error: invalid date ""08:00""",Indigo,Deena,ACTIVE
+832,China,Baisha,Quebec Victor Mike Oscar Delta Hotel November Echo Papa Juliett Bravo Whiskey,520-4065,"error: invalid date ""08:00""",Red,Margie,ACTIVE
+833,Serbia,Begejci,Kilo Alfa India Romeo Delta Yankee Echo November Papa Tango,450-7125,"error: invalid date ""08:00""",Purple,Lizette,ACTIVE
+834,France,Metz,Lima Foxtrot Whiskey Uniform Hotel Mike Juliett Sierra X-ray Charlie Victor Alfa Delta Tango Zulu Yankee Quebec,889-0788,"error: invalid date ""08:00""",Turquoise,Zahara,ACTIVE
+835,Slovenia,Solkan,Charlie Lima November Foxtrot Bravo Golf Sierra Juliett Kilo Mike Whiskey Quebec Delta Uniform Alfa Tango India Echo Victor,159-3268,"error: invalid date ""08:00""",Mauv,Talya,ACTIVE
+836,China,Hairag,Romeo November India Lima Bravo Quebec Alfa Juliett Kilo Mike X-ray Papa Uniform Whiskey Oscar,396-1086,"error: invalid date ""08:00""",Maroon,Cilka,ACTIVE
+837,Croatia,Umag,Uniform Echo Sierra Foxtrot Oscar X-ray Lima Tango Hotel Juliett Quebec Mike Bravo India Yankee November Delta Whiskey Papa,605-5267,"error: invalid date ""08:00""",Crimson,Hyacinthia,ACTIVE
+838,China,Pianling,Charlie Echo Golf Yankee Uniform Lima Alfa Papa X-ray Delta Romeo,210-2483,"error: invalid date ""08:00""",Mauv,Ulrika,ACTIVE
+839,Indonesia,Arjasari,Hotel Golf Whiskey Victor Charlie Zulu Foxtrot Oscar Papa Alfa Tango India November Romeo X-ray Lima Bravo Kilo Mike,190-3724,"error: invalid date ""08:00""",Violet,Kalila,ACTIVE
+840,Philippines,Dalupaon,Hotel Tango Charlie November Echo Alfa Juliett Sierra Mike India Yankee Kilo Uniform,164-7161,"error: invalid date ""08:00""",Violet,Edwina,ACTIVE
+841,Sweden,Järfälla,India Zulu Victor Lima Uniform Yankee Delta Papa Golf Mike Sierra Oscar Bravo Foxtrot Tango November Charlie X-ray,027-2414,"error: invalid date ""08:00""",Maroon,Shalna,ACTIVE
+842,Bolivia,San Francisco,Bravo Tango Yankee Zulu Victor Sierra Kilo Echo X-ray India Papa Mike Alfa November Uniform Foxtrot Oscar,965-7801,"error: invalid date ""08:00""",Goldenrod,Mechelle,ACTIVE
+843,Argentina,Campo Viera,Tango Foxtrot Golf Yankee Bravo Uniform Oscar Lima X-ray Juliett Zulu Alfa India Papa,575-8560,"error: invalid date ""08:00""",Green,Celene,ACTIVE
+844,Canada,Farnham,Golf X-ray Delta Victor Zulu Alfa Quebec Bravo Romeo Lima Oscar Yankee,682-7682,"error: invalid date ""08:00""",Mauv,Hettie,ACTIVE
+845,Poland,Tolkmicko,Papa Tango Hotel Charlie Alfa Golf Whiskey Quebec November Oscar Kilo India Romeo Foxtrot Lima,873-7103,"error: invalid date ""08:00""",Turquoise,Leonelle,ACTIVE
+846,Philippines,Maria Aurora,Zulu Quebec Lima Alfa November Victor Golf India X-ray Foxtrot Uniform Papa Charlie Sierra Romeo Mike Delta Tango Yankee Juliett,386-6143,"error: invalid date ""08:00""",Yellow,Georgina,ACTIVE
+847,China,Wuyao,Uniform Kilo India Romeo X-ray Zulu Tango Sierra Whiskey Golf Quebec Victor Oscar Echo,368-4348,"error: invalid date ""08:00""",Teal,Lethia,ACTIVE
+848,Philippines,Banaybanay,November Hotel Golf Zulu Juliett Uniform Tango Foxtrot India Alfa Yankee Lima Quebec,339-3987,"error: invalid date ""08:00""",Blue,Willette,ACTIVE
+849,Iran,‘Abbāsābād,Yankee Whiskey Uniform Zulu Echo Lima Kilo November Charlie Quebec Mike X-ray Tango Golf Bravo Sierra Juliett Romeo Delta,014-1399,"error: invalid date ""08:00""",Violet,Corrina,ACTIVE
+850,Nepal,Tulsīpur,Tango Charlie Hotel Quebec X-ray Yankee Delta Uniform Oscar Papa Mike Echo Victor,304-7099,"error: invalid date ""08:00""",Purple,Noelyn,ACTIVE
+851,China,Pingtang,Mike Tango Whiskey Uniform India Victor November Yankee Alfa Quebec Romeo Lima Golf Hotel,665-9316,"error: invalid date ""08:00""",Yellow,Florette,ACTIVE
+852,Brazil,São José de Mipibu,Echo Quebec Oscar Uniform Juliett Victor Papa Lima Charlie Foxtrot Sierra Delta Kilo Whiskey Zulu India X-ray Mike Hotel Tango,320-1324,"error: invalid date ""08:00""",Yellow,Genovera,ACTIVE
+853,China,Heshui,India Zulu Golf Echo Romeo X-ray Bravo November Papa Lima Victor Hotel Oscar Whiskey,960-8542,"error: invalid date ""08:00""",Blue,Amalie,ACTIVE
+854,Guadeloupe,Pointe-à-Pitre,Bravo Oscar Hotel Whiskey Alfa India Tango Delta Foxtrot Uniform November Romeo Papa Quebec,772-1659,"error: invalid date ""08:00""",Violet,Staci,ACTIVE
+855,United States,Austin,Zulu Kilo Sierra Uniform Oscar Bravo Yankee Echo Hotel Delta Quebec,869-2785,"error: invalid date ""08:00""",Red,Suzie,ACTIVE
+856,Brazil,Ilhabela,Quebec Hotel Delta Yankee Foxtrot Charlie Uniform Golf November Echo Whiskey India X-ray Zulu Mike Kilo Victor Oscar Sierra,932-0473,"error: invalid date ""08:00""",Green,Lura,ACTIVE
+857,Sweden,Kungshamn,X-ray Bravo Zulu Quebec Lima Yankee Uniform Hotel Oscar Delta Golf Sierra Victor November Kilo Alfa India Tango Juliett,361-7438,"error: invalid date ""08:00""",Indigo,Laure,ACTIVE
+858,Nigeria,Ikeja,Charlie Uniform Papa Delta Golf Yankee November Alfa India Oscar Quebec Lima Sierra Zulu Bravo Victor X-ray Foxtrot Romeo Echo,362-5924,"error: invalid date ""08:00""",Pink,Lorrie,ACTIVE
+859,France,Sallanches,India X-ray Charlie Lima Yankee Golf Zulu Mike Delta Romeo Tango Hotel Bravo,052-4619,"error: invalid date ""08:00""",Crimson,Ethelind,ACTIVE
+860,Armenia,Gugark’,X-ray Papa Charlie Whiskey Juliett Zulu Tango Golf Mike Oscar November Romeo Quebec Echo Hotel Lima Sierra Bravo,175-3109,"error: invalid date ""08:00""",Blue,Tierney,ACTIVE
+861,Russia,Rodionovo-Nesvetayskaya,Mike Delta X-ray Oscar Kilo Foxtrot Golf Victor Tango Quebec November Alfa Yankee,495-1637,"error: invalid date ""08:00""",Violet,Robbin,ACTIVE
+862,Czech Republic,Fryčovice,Hotel Tango Victor India Echo November Sierra Papa Quebec Bravo,832-3385,"error: invalid date ""08:00""",Teal,Starlene,ACTIVE
+863,China,Cikou,Oscar Zulu Yankee Mike Victor Golf Hotel November Tango Quebec X-ray Uniform Papa Echo Whiskey Bravo Juliett Foxtrot,644-3321,"error: invalid date ""08:00""",Purple,Pepita,ACTIVE
+864,Philippines,Semirara,Mike Whiskey Bravo Zulu Uniform Delta X-ray Papa Quebec Lima Romeo Victor Sierra Tango Oscar Charlie Echo,920-2292,"error: invalid date ""08:00""",Fuscia,Ruthy,ACTIVE
+865,Lithuania,Kulautuva,Yankee Zulu Oscar Quebec Romeo Sierra Kilo Whiskey X-ray Hotel Golf November Uniform Tango Delta,610-5291,"error: invalid date ""08:00""",Orange,Lucinda,ACTIVE
+866,Poland,Kuczbork-Osada,Papa Quebec Mike Golf November Bravo Echo India Zulu Juliett Charlie Foxtrot,507-0048,"error: invalid date ""08:00""",Mauv,Rodina,ACTIVE
+867,Japan,Hita,Lima Bravo Foxtrot Tango Papa Golf Quebec Delta Yankee Oscar Victor Echo,249-1062,"error: invalid date ""08:00""",Crimson,Corina,ACTIVE
+868,Tanzania,Dar es Salaam,Bravo Sierra Tango Kilo Oscar Quebec Whiskey Papa Yankee Hotel Uniform Delta Golf Echo X-ray,219-9443,"error: invalid date ""08:00""",Pink,Shari,ACTIVE
+869,Indonesia,Kowang Utara,November X-ray Uniform Bravo Zulu Whiskey India Tango Golf Mike Alfa Juliett Foxtrot Hotel Romeo Lima,763-5509,"error: invalid date ""08:00""",Indigo,Maegan,ACTIVE
+870,Russia,Sergeyevka,Charlie Uniform Hotel Yankee Echo Oscar Foxtrot November Kilo X-ray Romeo Victor Juliett Delta Lima Bravo Tango,900-7583,"error: invalid date ""08:00""",Yellow,Marylee,ACTIVE
+871,Portugal,Vila Flor,Echo Romeo Delta November Mike Charlie Golf Victor Whiskey Uniform Alfa X-ray Tango Kilo Juliett Oscar Hotel Quebec Lima,905-0575,"error: invalid date ""08:00""",Turquoise,Sharline,ACTIVE
+872,Kazakhstan,Lenger,Quebec Delta Foxtrot Juliett November Alfa Hotel Oscar Whiskey Zulu Romeo Lima X-ray Bravo Mike Charlie Yankee Papa,451-0877,"error: invalid date ""08:00""",Fuscia,Sydney,ACTIVE
+873,China,Fulong,Bravo Charlie India Tango Oscar Mike Echo Papa Golf November,731-1652,"error: invalid date ""08:00""",Indigo,Gwenora,ACTIVE
+874,Russia,Otrado-Kubanskoye,Foxtrot Yankee Hotel Victor Golf Whiskey Lima Zulu Bravo Delta November Charlie X-ray Romeo India Kilo,803-0979,"error: invalid date ""08:00""",Pink,Jilleen,ACTIVE
+875,Colombia,Norcasia,India Whiskey Sierra Victor Tango Echo Zulu Bravo Golf Oscar November Hotel,422-7324,"error: invalid date ""08:00""",Yellow,Sharyl,ACTIVE
+876,Poland,Jelcz,Tango Uniform Whiskey Hotel Delta Romeo Lima Quebec Sierra Golf Alfa Papa Kilo November X-ray Echo India Zulu Foxtrot,350-0934,"error: invalid date ""08:00""",Puce,Ericka,ACTIVE
+877,Japan,Ōmuta,Papa Delta Lima Bravo Kilo Oscar Mike Sierra Foxtrot Yankee X-ray,235-5691,"error: invalid date ""08:00""",Red,Daile,ACTIVE
+878,Serbia,Rumenka,Victor Yankee India Bravo Charlie Foxtrot X-ray Golf Oscar Kilo Tango Quebec Alfa Hotel Delta,261-2423,"error: invalid date ""08:00""",Fuscia,Odette,ACTIVE
+879,Brazil,Viana,Whiskey Foxtrot Mike Oscar Juliett Echo Bravo Alfa Delta Victor India Papa Uniform Tango,826-2420,"error: invalid date ""08:00""",Aquamarine,Andeee,ACTIVE
+880,Brazil,Itaí,Zulu Yankee Charlie Golf X-ray Tango Lima Foxtrot Romeo Whiskey Bravo Juliett,889-5886,"error: invalid date ""08:00""",Puce,Stephani,ACTIVE
+881,Indonesia,Badung,Tango November Bravo India Yankee Victor Oscar Whiskey Hotel Papa Foxtrot Uniform Sierra Juliett Echo Kilo,808-5293,"error: invalid date ""08:00""",Blue,Gelya,ACTIVE
+882,China,Yushan,November Tango Delta Zulu Mike Bravo Juliett Kilo Quebec Uniform Oscar Yankee Charlie Papa Romeo Alfa X-ray,886-0841,"error: invalid date ""08:00""",Fuscia,Dorie,ACTIVE
+883,Indonesia,Sampangan,Kilo Quebec Charlie Bravo Mike Yankee Echo Golf Tango Foxtrot Lima Sierra Delta Alfa Romeo,010-0582,"error: invalid date ""08:00""",Goldenrod,Fayina,ACTIVE
+884,Philippines,Mapulo,India Hotel Golf Kilo Oscar Whiskey Mike Yankee Romeo Victor Sierra Delta Juliett Bravo Tango,777-6076,"error: invalid date ""08:00""",Blue,Carey,ACTIVE
+885,South Africa,Groblersdal,Kilo Uniform Mike Papa Alfa X-ray November Oscar Hotel Zulu Quebec Delta Charlie Echo Victor Juliett,182-4358,"error: invalid date ""08:00""",Mauv,Mellisent,ACTIVE
+886,Honduras,Ojos de Agua,India Papa Mike Golf Hotel Sierra Bravo Uniform Yankee Whiskey Kilo Zulu Quebec November Echo Charlie Alfa X-ray Juliett,966-1272,"error: invalid date ""08:00""",Khaki,Grissel,ACTIVE
+887,China,Daji,Golf Hotel Foxtrot Oscar Kilo Victor Alfa Tango Romeo Zulu Whiskey X-ray Quebec Echo Lima Yankee Mike Papa Uniform Sierra,223-3113,"error: invalid date ""08:00""",Blue,Gill,ACTIVE
+888,Kazakhstan,Shar,Delta Victor Juliett Uniform Whiskey Sierra November Lima Papa Hotel Foxtrot Alfa India Echo Kilo,178-2334,"error: invalid date ""08:00""",Aquamarine,Marlyn,ACTIVE
+889,Indonesia,Lakbok,Papa Foxtrot Echo Oscar November Quebec Yankee Bravo Delta Hotel Victor Kilo Charlie X-ray,836-4391,"error: invalid date ""08:00""",Purple,Belicia,ACTIVE
+890,Ethiopia,Gondar,X-ray Foxtrot Echo Yankee Golf Charlie Delta Uniform Oscar Hotel Kilo Whiskey Tango Alfa Zulu Juliett November India,742-9692,"error: invalid date ""08:00""",Goldenrod,Mallorie,ACTIVE
+891,Philippines,Tignoan,Sierra Whiskey Alfa Victor Uniform Kilo Charlie Tango Papa Zulu X-ray,141-9431,"error: invalid date ""08:00""",Mauv,Maire,ACTIVE
+892,Indonesia,Pomahan,Juliett India Mike Papa Uniform X-ray Hotel Victor Lima Delta Oscar Bravo Romeo Kilo,215-7777,"error: invalid date ""08:00""",Yellow,Keslie,ACTIVE
+893,China,Talin Hiag,Romeo Uniform India Charlie Quebec Sierra Whiskey Golf Kilo Foxtrot,100-9959,"error: invalid date ""08:00""",Yellow,Andreana,ACTIVE
+894,Greece,Filiátes,Mike Whiskey Delta Sierra India Victor Alfa Oscar Bravo Charlie Kilo X-ray Quebec Romeo Hotel,412-6224,"error: invalid date ""08:00""",Khaki,Hana,ACTIVE
+895,France,Valenciennes,Charlie Whiskey Juliett Sierra Delta November Quebec Golf Zulu Alfa,272-2995,"error: invalid date ""08:00""",Orange,Kaylee,ACTIVE
+896,Czech Republic,Hodkovice nad Mohelkou,Uniform November Foxtrot Golf Oscar Victor Juliett Zulu Bravo Yankee Tango Romeo Charlie Echo Lima Papa,882-1566,"error: invalid date ""08:00""",Crimson,Pietra,ACTIVE
+897,Saudi Arabia,Ad Dawādimī,November Zulu Echo X-ray Sierra Kilo Yankee Charlie Juliett Whiskey Uniform Romeo,816-1558,"error: invalid date ""08:00""",Crimson,Estella,ACTIVE
+898,China,Xi’an,Alfa Golf Zulu X-ray Foxtrot Oscar Hotel Bravo India Sierra Whiskey Kilo Mike Charlie Juliett Lima November Papa Tango,060-8085,"error: invalid date ""08:00""",Violet,Aurelie,ACTIVE
+899,Dominican Republic,Juan Adrián,Zulu Lima Sierra Charlie Romeo Foxtrot Alfa Bravo Papa India Hotel Uniform Oscar,750-4369,"error: invalid date ""08:00""",Indigo,Roxi,ACTIVE
+900,Norway,Harstad,X-ray Bravo Alfa Charlie Romeo Quebec Kilo Delta Mike India Hotel Lima Echo November Sierra Tango Golf,840-2946,"error: invalid date ""08:00""",Mauv,Wendy,ACTIVE
+901,Poland,Błonie,Victor Delta India Kilo Bravo Mike Juliett Foxtrot Golf Sierra November Oscar Whiskey Lima,244-3829,"error: invalid date ""08:00""",Pink,Agace,ACTIVE
+902,China,Qingshu,Charlie Sierra Yankee Mike Oscar Alfa Victor November Lima Romeo Echo Golf,866-3492,"error: invalid date ""08:00""",Turquoise,Carie,ACTIVE
+903,Panama,Mulatupo,Juliett Zulu Foxtrot Tango X-ray Sierra Kilo Hotel Oscar Papa Golf Victor Bravo Mike Romeo Uniform Whiskey Delta,542-1238,"error: invalid date ""08:00""",Mauv,Nyssa,ACTIVE
+904,Senegal,Diofior,India Echo Sierra Golf Mike Quebec Lima X-ray Zulu Romeo Hotel Kilo Alfa Yankee Victor November Delta,192-8928,"error: invalid date ""08:00""",Fuscia,Kipp,ACTIVE
+905,Indonesia,Simpanganduwet,Juliett Quebec Uniform Sierra Victor Kilo Yankee X-ray Oscar Foxtrot Echo Alfa Hotel,688-9433,"error: invalid date ""08:00""",Aquamarine,Jamie,ACTIVE
+906,Czech Republic,Česká Skalice,Sierra Victor Alfa Bravo Delta Romeo Hotel Papa Quebec Mike India Foxtrot Whiskey Zulu November Echo Charlie Uniform Lima Oscar,431-0183,"error: invalid date ""08:00""",Indigo,Elmira,ACTIVE
+907,China,Wutongkou,Papa Juliett Yankee Bravo Uniform Echo Zulu Tango Hotel Foxtrot Lima November Delta Alfa India,392-7767,"error: invalid date ""08:00""",Violet,Edee,ACTIVE
+908,Indonesia,Palaihari,X-ray Hotel Bravo Uniform Mike Papa Quebec Charlie Oscar Juliett Golf Lima India Sierra,567-5580,"error: invalid date ""08:00""",Puce,Nance,ACTIVE
+909,Finland,Lappajärvi,Charlie Lima Echo Quebec Papa Hotel Victor Tango Juliett Alfa X-ray Kilo Oscar Foxtrot Romeo Delta,979-1986,"error: invalid date ""08:00""",Orange,Margarethe,ACTIVE
+910,Germany,Frankfurt am Main,India Victor Uniform X-ray Tango Sierra Alfa Golf Whiskey Mike Romeo Charlie Papa Echo Juliett Foxtrot November Hotel Quebec,326-1014,"error: invalid date ""08:00""",Crimson,Elysha,ACTIVE
+911,Haiti,Roche-à-Bateau,Yankee Echo Bravo Tango Uniform Papa Sierra Mike Kilo Victor,542-0635,"error: invalid date ""08:00""",Orange,Dennie,ACTIVE
+912,Greece,Áno Kopanákion,Charlie Mike X-ray Alfa Oscar Tango Juliett Zulu Uniform Bravo Hotel Yankee Golf Romeo Echo Kilo Quebec Foxtrot,673-7028,"error: invalid date ""08:00""",Maroon,Ertha,ACTIVE
+913,Belarus,Prawdzinski,Romeo Alfa X-ray Golf Whiskey Victor Uniform Lima Oscar Hotel,385-1994,"error: invalid date ""08:00""",Mauv,Sianna,ACTIVE
+914,Argentina,Charras,Hotel Yankee Lima Bravo Victor Delta Quebec Charlie Romeo November,916-0464,"error: invalid date ""08:00""",Fuscia,Uta,ACTIVE
+915,Ukraine,Khorostkiv,Victor Mike Tango Sierra Alfa Papa Kilo Zulu Charlie Quebec,934-4125,"error: invalid date ""08:00""",Goldenrod,Ricky,ACTIVE
+916,Luxembourg,Mertert,Victor Tango Hotel Kilo November Yankee Lima Papa Romeo Oscar Juliett X-ray Zulu Bravo Alfa Charlie Uniform Golf Quebec Delta,919-8200,"error: invalid date ""08:00""",Pink,Elisabet,ACTIVE
+917,Indonesia,Banjar Pekandelan,Papa Romeo Bravo Yankee Kilo Foxtrot Uniform Oscar Mike Hotel Sierra X-ray Echo Alfa,888-0822,"error: invalid date ""08:00""",Orange,Carolee,ACTIVE
+918,Russia,Burmakino,India Papa Oscar Foxtrot Charlie Quebec Juliett Echo Alfa Zulu Uniform Whiskey Mike Golf Romeo Kilo X-ray Yankee Bravo Delta,692-0291,"error: invalid date ""08:00""",Fuscia,Bambi,ACTIVE
+919,Philippines,Malaga,Romeo Quebec Kilo Lima Papa Whiskey Yankee Golf Hotel X-ray Foxtrot Echo Zulu Bravo Juliett India,145-7856,"error: invalid date ""08:00""",Red,Genevieve,ACTIVE
+920,Albania,Labinot-Mal,India Romeo Echo Whiskey Kilo Alfa Quebec Victor Delta Bravo Hotel Charlie Foxtrot,411-1814,"error: invalid date ""08:00""",Blue,Georgine,ACTIVE
+921,Indonesia,Birsa,Papa Golf Yankee Victor Juliett Charlie Delta Tango Uniform Romeo Alfa Kilo Foxtrot Mike Bravo Whiskey November,547-2673,"error: invalid date ""08:00""",Blue,Eveleen,ACTIVE
+922,Vietnam,Thạnh Mỹ,Quebec Sierra Delta Whiskey Lima Yankee India X-ray Oscar Romeo Echo Tango,488-0638,"error: invalid date ""08:00""",Mauv,Eadith,ACTIVE
+923,Sudan,Rabak,Foxtrot Hotel Golf Delta Whiskey Sierra Bravo Papa Zulu Alfa Lima November Mike India Romeo Uniform Oscar Yankee Quebec,043-0256,"error: invalid date ""08:00""",Goldenrod,Angela,ACTIVE
+924,Pakistan,Nārang,Romeo Papa November Uniform Golf Sierra India Alfa Hotel Juliett Yankee,222-2096,"error: invalid date ""08:00""",Khaki,Simonne,ACTIVE
+925,Solomon Islands,Auki,X-ray Victor Oscar Quebec Uniform Tango November Golf Sierra Charlie Bravo Zulu Juliett,121-7722,"error: invalid date ""08:00""",Yellow,Elli,ACTIVE
+926,China,Aotou,Charlie Quebec Echo Golf Whiskey November Foxtrot Romeo Bravo Oscar,497-8265,"error: invalid date ""08:00""",Yellow,Eden,ACTIVE
+927,Russia,Sokolovo,Mike Papa X-ray Romeo Juliett Tango Golf November Uniform Zulu Oscar Lima Alfa Kilo Sierra Charlie Delta Hotel,322-7106,"error: invalid date ""08:00""",Pink,Fanchette,ACTIVE
+928,Cameroon,Tiko,November Alfa X-ray Victor Golf Mike Papa Whiskey Delta Foxtrot Yankee Romeo,835-3971,"error: invalid date ""08:00""",Mauv,Sibby,ACTIVE
+929,Sweden,Höganäs,Mike Uniform Lima Kilo Victor Foxtrot Zulu Bravo Romeo Oscar Echo Quebec Golf,572-3415,"error: invalid date ""08:00""",Aquamarine,Winnah,ACTIVE
+930,Serbia,Vršac,Juliett Echo November Kilo Golf Sierra Uniform Hotel Foxtrot Romeo,642-7812,"error: invalid date ""08:00""",Fuscia,Teressa,ACTIVE
+931,Bulgaria,Tvŭrditsa,Golf Kilo Sierra Foxtrot Lima Charlie Alfa Papa Oscar Zulu X-ray Delta Uniform Victor Tango Quebec Whiskey Mike Bravo Juliett,145-1846,"error: invalid date ""08:00""",Green,Vevay,ACTIVE
+932,Indonesia,Pasar,Quebec India Delta Zulu Oscar Whiskey Charlie November X-ray Bravo Tango Alfa Romeo Echo Papa Lima Juliett Golf Foxtrot,806-0956,"error: invalid date ""08:00""",Yellow,Rosita,ACTIVE
+933,Russia,Klyuchevsk,Alfa Kilo Echo Juliett Whiskey Quebec Tango Delta Lima Mike Bravo X-ray Romeo Charlie Oscar Foxtrot Hotel,904-2561,"error: invalid date ""08:00""",Orange,Carolann,ACTIVE
+934,China,Heshe,Papa Uniform Kilo Victor Yankee Charlie Foxtrot Romeo Lima Oscar India X-ray Bravo Whiskey November Tango Echo Zulu,181-1566,"error: invalid date ""08:00""",Green,Loutitia,ACTIVE
+935,Vietnam,Nha Trang,Hotel Uniform Papa Bravo Foxtrot India November X-ray Whiskey Juliett Quebec Golf Alfa Yankee Delta Romeo Echo Lima Sierra,875-2595,"error: invalid date ""08:00""",Mauv,Cleo,ACTIVE
+936,China,Erdu,Kilo X-ray Romeo Charlie Sierra Golf Lima India Victor Oscar Zulu Foxtrot Uniform Yankee Tango Hotel Alfa Whiskey November,902-7559,"error: invalid date ""08:00""",Purple,Stephine,ACTIVE
+937,United States,Racine,Oscar India Lima Tango Alfa Kilo Yankee X-ray Charlie Delta Romeo Bravo Golf Juliett Uniform November Hotel Papa Zulu,794-3864,"error: invalid date ""08:00""",Puce,Karylin,ACTIVE
+938,China,Guangsheng,Yankee Charlie Quebec Mike Juliett Alfa India Kilo Golf Delta,326-4369,"error: invalid date ""08:00""",Crimson,Shalne,ACTIVE
+939,South Africa,Lephalale,Zulu Kilo Charlie Golf Juliett Alfa Romeo November Mike Papa Hotel Lima,983-3395,"error: invalid date ""08:00""",Green,Hilde,ACTIVE
+940,Burundi,Makamba,Charlie India Sierra November Golf Zulu Juliett Echo Foxtrot Romeo,039-7213,"error: invalid date ""08:00""",Pink,Lilly,ACTIVE
+941,Sweden,Munkfors,Hotel Bravo Papa Delta November Oscar Echo Golf Juliett India X-ray Lima Romeo Victor,096-5483,"error: invalid date ""08:00""",Pink,Sella,ACTIVE
+942,Indonesia,Onan Ganjang Satu,Bravo Hotel Zulu November Lima Delta Yankee Charlie Quebec Golf Uniform Mike Victor Juliett Echo Kilo Sierra Romeo,290-9879,"error: invalid date ""08:00""",Purple,Hollyanne,ACTIVE
+943,Poland,Rzeszów,Foxtrot Sierra India Zulu Oscar Bravo Whiskey Mike Kilo Quebec Uniform Romeo Victor November Juliett Echo Yankee X-ray,319-8151,"error: invalid date ""08:00""",Violet,Myrtie,ACTIVE
+944,Somalia,Dujuuma,Romeo Yankee Victor Oscar Sierra Echo Zulu November Tango Delta,860-3769,"error: invalid date ""08:00""",Pink,Noelyn,ACTIVE
+945,Mexico,Buenos Aires,Sierra Yankee Oscar Romeo Juliett November Charlie Echo Uniform Golf Quebec Mike X-ray Victor Lima Foxtrot Alfa,935-8025,"error: invalid date ""08:00""",Khaki,Gizela,ACTIVE
+946,Iran,Dārāb,Juliett Charlie Victor Whiskey Lima Echo Uniform Hotel Mike Papa Yankee Tango Sierra Oscar X-ray Alfa Golf Delta,527-4601,"error: invalid date ""08:00""",Aquamarine,Genovera,ACTIVE
+947,Japan,Ishiki,Mike Echo Charlie Whiskey Foxtrot Yankee Kilo Golf Juliett Sierra Delta Alfa,751-0157,"error: invalid date ""08:00""",Violet,Kizzie,ACTIVE
+948,Serbia,Stari Lec,Romeo November Bravo Foxtrot Echo Juliett Kilo Hotel Oscar Zulu Tango Alfa Charlie,421-4136,"error: invalid date ""08:00""",Khaki,Susie,ACTIVE
+949,Russia,Mozhga,Tango Juliett Whiskey Kilo Sierra Foxtrot Charlie Romeo Hotel Zulu Oscar X-ray Golf Quebec November,038-3934,"error: invalid date ""08:00""",Green,Tamarra,ACTIVE
+950,Indonesia,Pilang,Delta Tango November Quebec Romeo Whiskey Zulu Uniform India Golf,214-4472,"error: invalid date ""08:00""",Red,Leola,ACTIVE
+951,Colombia,El Doncello,India Foxtrot Golf X-ray Quebec Sierra Zulu Oscar Charlie Echo November Romeo Bravo Juliett Kilo Whiskey Papa,572-7522,"error: invalid date ""08:00""",Fuscia,Talya,ACTIVE
+952,Brazil,Porangatu,Romeo November Oscar Juliett Kilo Foxtrot Delta Tango Echo India Papa Quebec Uniform Whiskey Victor Golf Charlie,658-3371,"error: invalid date ""08:00""",Yellow,Alana,ACTIVE
+953,China,Heicheng,Romeo Sierra Alfa Papa Golf Foxtrot Whiskey Juliett Delta Lima Oscar Hotel Bravo Uniform Quebec November Zulu,236-2630,"error: invalid date ""08:00""",Aquamarine,Polly,ACTIVE
+954,Sweden,Bromma,Echo Zulu Yankee Juliett Lima Sierra Bravo Delta Uniform Charlie Mike Alfa Tango November Oscar,241-2243,"error: invalid date ""08:00""",Red,Marianna,ACTIVE
+955,Pakistan,Badīn,Alfa Tango Oscar Foxtrot Quebec Charlie Romeo Mike Zulu Kilo Sierra,034-0582,"error: invalid date ""08:00""",Puce,Carlyn,ACTIVE
+956,Indonesia,Rahayu,Romeo Juliett Echo Charlie Hotel Yankee Zulu Alfa Uniform Bravo Sierra Lima Mike,985-0033,"error: invalid date ""08:00""",Red,Mignon,ACTIVE
+957,Indonesia,Katur,Mike Juliett Uniform Sierra Victor Papa Whiskey Foxtrot Zulu Yankee X-ray,820-4508,"error: invalid date ""08:00""",Turquoise,Luelle,ACTIVE
+958,Azerbaijan,Zabrat,Foxtrot Uniform X-ray Mike Bravo Whiskey Lima Kilo Golf Sierra Echo Charlie Romeo Delta,743-3511,"error: invalid date ""08:00""",Orange,Ninnetta,ACTIVE
+959,Tanzania,Tabora,Echo Yankee Juliett Mike Charlie Zulu Tango Lima Sierra November Oscar Kilo Golf Delta Papa Foxtrot Whiskey Alfa,516-5002,"error: invalid date ""08:00""",Puce,Louisette,ACTIVE
+960,China,Chikeng,Charlie Echo November Kilo Sierra Yankee Juliett Hotel Victor Uniform X-ray Oscar Romeo Alfa Whiskey Papa Bravo,214-4653,"error: invalid date ""08:00""",Purple,Adina,ACTIVE
+961,Chile,Talagante,Charlie Mike Oscar Lima Yankee Bravo X-ray Zulu Whiskey Alfa Hotel Victor Papa Juliett Kilo Uniform Delta Golf Echo,233-7992,"error: invalid date ""08:00""",Crimson,Brianna,ACTIVE
+962,Morocco,Sidi Yahia el Gharb,Tango Whiskey Charlie Lima Foxtrot Kilo Echo India Mike Bravo,000-6484,"error: invalid date ""08:00""",Goldenrod,Jorie,ACTIVE
+963,Argentina,El Bolsón,Foxtrot Uniform Oscar India Charlie Zulu Delta Victor Juliett Papa Hotel Echo Mike Romeo Kilo Quebec X-ray Lima Whiskey Golf,761-1376,"error: invalid date ""08:00""",Crimson,Cassey,ACTIVE
+964,Indonesia,Wanagiri,Papa Hotel Whiskey Mike Tango Quebec X-ray Juliett Charlie Bravo Victor,539-7532,"error: invalid date ""08:00""",Red,Cilka,ACTIVE
+965,Indonesia,Mandalasari,Foxtrot Quebec Kilo Tango Romeo Lima Papa Golf Alfa Hotel Zulu Echo Victor X-ray Delta,126-7696,"error: invalid date ""08:00""",Teal,Wynny,ACTIVE
+966,Philippines,Cantao-an,Whiskey Lima X-ray Tango Kilo Golf Alfa Zulu Quebec Papa Hotel Delta Sierra Foxtrot Bravo Oscar Uniform Mike November Romeo,793-8337,"error: invalid date ""08:00""",Puce,Catriona,ACTIVE
+967,France,Ajaccio,Echo Bravo India Charlie Foxtrot Uniform November Papa Lima Hotel Victor,512-1780,"error: invalid date ""08:00""",Blue,Andria,ACTIVE
+968,Indonesia,Cibatu,Papa Delta India Mike Juliett Bravo Golf Hotel Charlie Victor Yankee Quebec Whiskey Zulu Oscar Foxtrot,248-1428,"error: invalid date ""08:00""",Puce,Coretta,ACTIVE
+969,Brazil,Presidente Venceslau,Oscar Victor Whiskey Uniform Kilo Sierra Golf Mike X-ray India November Delta Lima Bravo Alfa Papa Tango Foxtrot,050-1774,"error: invalid date ""08:00""",Khaki,Celestia,ACTIVE
+970,Indonesia,Nao,Romeo Yankee Victor Hotel Oscar Kilo Foxtrot Whiskey Bravo Tango November Mike Delta X-ray,399-6245,"error: invalid date ""08:00""",Fuscia,Maurizia,ACTIVE
+971,Panama,Río Sereno,Zulu Delta Bravo Juliett India Yankee Kilo Oscar Echo X-ray,426-0715,"error: invalid date ""08:00""",Yellow,Bendite,ACTIVE
+972,Malaysia,Kuching,Charlie Zulu Echo Victor Oscar Quebec Lima Bravo Kilo Foxtrot Sierra Mike Golf Tango Hotel Juliett Romeo Papa Delta,967-1201,"error: invalid date ""08:00""",Pink,Jemima,ACTIVE
+973,Poland,Pantalowice,Romeo Tango Lima Victor Echo Zulu X-ray Oscar Delta India,774-9899,"error: invalid date ""08:00""",Maroon,Harlie,ACTIVE
+974,Portugal,Estombar,Papa Charlie Yankee Oscar November Foxtrot Mike X-ray Hotel Delta Golf Quebec Tango Alfa Zulu Lima,892-0707,"error: invalid date ""08:00""",Goldenrod,Nike,ACTIVE
+975,Russia,Kotovo,Papa Zulu Oscar Romeo Bravo Echo Whiskey Sierra Golf Mike India Delta,936-1471,"error: invalid date ""08:00""",Puce,Jsandye,ACTIVE
+976,Philippines,Alangilanan,India Whiskey Uniform November Victor Alfa Hotel Kilo Oscar Mike,008-3114,"error: invalid date ""08:00""",Yellow,Agna,ACTIVE
+977,Indonesia,Krajan Tambakrejo,Delta Foxtrot Uniform Whiskey Bravo Zulu Oscar Mike Charlie X-ray Romeo India Hotel Kilo Papa Yankee Alfa,289-0141,"error: invalid date ""08:00""",Maroon,Nyssa,ACTIVE
+978,Samoa,Vaiusu,Quebec Foxtrot Yankee Oscar Sierra Mike India Echo Whiskey Zulu Hotel Tango Kilo Romeo,526-3885,"error: invalid date ""08:00""",Turquoise,Crissie,ACTIVE
+979,China,Xuebu,Kilo Delta Tango Oscar Foxtrot Bravo Victor Charlie Papa Quebec Whiskey Alfa X-ray Hotel Sierra November Yankee India Golf Romeo,198-7019,"error: invalid date ""08:00""",Crimson,Sosanna,ACTIVE
+980,Dominican Republic,Hondo Valle,Delta Sierra Papa Lima November Uniform Charlie Golf Quebec Mike Tango Victor Romeo Alfa Bravo Hotel Foxtrot Oscar Whiskey Kilo,500-0660,"error: invalid date ""08:00""",Fuscia,Vivyan,ACTIVE
+981,Indonesia,Mempawah,Delta Romeo Bravo Charlie Papa Zulu Uniform Echo Foxtrot Mike Kilo Whiskey Yankee Victor Oscar,885-6179,"error: invalid date ""08:00""",Khaki,Greta,ACTIVE
+982,Poland,Lyski,Romeo Uniform Mike Charlie Foxtrot Kilo Papa Hotel India Golf Bravo Lima Zulu Sierra Tango X-ray,224-3827,"error: invalid date ""08:00""",Fuscia,Madelena,ACTIVE
+983,Indonesia,Batulawang,Foxtrot Papa Tango Sierra India Echo Kilo Uniform Whiskey Victor Oscar Yankee Bravo X-ray Delta,178-5678,"error: invalid date ""08:00""",Goldenrod,Kandace,ACTIVE
+984,Cuba,Ciro Redondo,Mike Yankee Papa India Charlie Romeo Juliett Zulu Sierra Tango Foxtrot Quebec X-ray Bravo Lima November Echo,887-8285,"error: invalid date ""08:00""",Turquoise,Faythe,ACTIVE
+985,Sweden,Göteborg,Juliett Oscar Quebec Tango Uniform Papa Whiskey Sierra Delta Lima,608-2694,"error: invalid date ""08:00""",Turquoise,Almeria,ACTIVE
+986,Russia,Iksha,Bravo India Delta Oscar Echo Juliett Quebec X-ray Zulu Mike,421-7307,"error: invalid date ""08:00""",Turquoise,Ester,ACTIVE
+987,China,Jinsheng,X-ray Foxtrot November Victor Kilo Charlie Golf Echo Romeo Uniform Tango Yankee Oscar,175-2139,"error: invalid date ""08:00""",Orange,Kylie,ACTIVE
+988,Macedonia,Чучер - Сандево,Victor Tango Yankee Golf Papa Whiskey Oscar Foxtrot Echo Mike Quebec X-ray Lima,270-0410,"error: invalid date ""08:00""",Green,Isabel,ACTIVE
+989,China,Haoxinying,India November Golf Alfa Papa Hotel X-ray Delta Mike Romeo Kilo Sierra Yankee Zulu Quebec Echo Juliett Uniform,303-6006,"error: invalid date ""08:00""",Maroon,Melina,ACTIVE
+990,Poland,Paniówki,Hotel Mike Foxtrot Bravo Alfa Zulu Juliett X-ray Kilo Lima Golf Yankee Victor,795-0154,"error: invalid date ""08:00""",Red,Lucretia,ACTIVE
+991,Brazil,Rio Claro,Papa Kilo Zulu Uniform Delta Sierra Romeo Foxtrot Yankee Bravo Quebec November Oscar Hotel Alfa Lima,057-6606,"error: invalid date ""08:00""",Indigo,Hailee,ACTIVE
+992,Nigeria,Zaria,Golf Victor Kilo X-ray Mike Oscar Romeo Charlie Hotel Juliett,373-5000,"error: invalid date ""08:00""",Fuscia,Corny,ACTIVE
+993,Serbia,Novi Kneževac,X-ray Mike Kilo Lima November Juliett Zulu Quebec Tango Papa Golf Oscar Foxtrot Echo Bravo Delta,606-5070,"error: invalid date ""08:00""",Blue,Madlen,ACTIVE
+994,Costa Rica,Esquipulas,Sierra Delta Victor Alfa Lima Echo Tango Bravo Whiskey Papa Zulu Uniform November Golf Yankee Hotel,486-0075,"error: invalid date ""08:00""",Crimson,Cairistiona,ACTIVE
+995,Thailand,Hat Yai,Papa Kilo Uniform Yankee Golf Lima November Bravo Echo Foxtrot Hotel,555-2052,"error: invalid date ""08:00""",Khaki,Jo,ACTIVE
+996,Botswana,Kang,Juliett Delta Quebec India Echo Golf Tango Alfa Zulu Uniform Charlie Romeo Papa Yankee Victor Sierra,498-8625,"error: invalid date ""08:00""",Aquamarine,Aurelie,ACTIVE
+997,Thailand,Sathon,Yankee Bravo India Hotel Delta Kilo Sierra Uniform Whiskey Echo November,300-3467,"error: invalid date ""08:00""",Yellow,Ida,ACTIVE
+998,Belarus,Brahin,Victor November Juliett Mike Whiskey Sierra Alfa Yankee Uniform Oscar Zulu Delta Hotel Lima Echo Quebec India Golf,570-1909,"error: invalid date ""08:00""",Blue,Larina,ACTIVE
+999,Russia,Lesogorsk,Hotel Papa Alfa Juliett Sierra Victor Foxtrot Yankee Bravo Uniform X-ray Kilo Tango Echo Whiskey Golf November,367-1703,"error: invalid date ""08:00""",Puce,Tani,ACTIVE
+1000,China,Pingshan,Bravo Romeo Uniform Alfa November Foxtrot Delta Zulu Victor Oscar,662-4645,"error: invalid date ""08:00""",Khaki,Georgeanne,ACTIVE
