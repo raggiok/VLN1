@@ -14,6 +14,9 @@ class ReportLogic():
     def fetch_all_destinations(self):
         return self.data.get_destinations()
 
+    def fetch_all_invoices(self):
+        return self.data.get_invoices()
+
     ### UTILIZATION REPORT ###
     #This is the report we are going to create {"Destination": [vehicle_type, days, days_out_of_year]}
 
@@ -98,17 +101,6 @@ class ReportLogic():
         #         continue
         # print(result)
 
-
-
-                
-
-    
-
-
-        
-
-
-
     def merge_report(self):
         pass
         # report = self.destinations_to_dict()
@@ -125,3 +117,46 @@ class ReportLogic():
 
     #Contracts --> Rental days
     #Vehicle --> types
+    def change_to_datetime(self, date_text):
+        try:
+            date_text = datetime.datetime.strptime(date_text, '%d.%m.%y')
+            return date_text
+        except ValueError:
+            pass
+    
+    def change_to_string(self, date_time):
+        date_string = datetime.datetime.strftime(date_time, '%d.%m.%y')
+        return date_string
+
+    def get_paid_invoices(self):
+        paid = []
+        for invoice in self.fetch_all_invoices():
+            if invoice.state.lower() == 'paid':
+                paid.append(invoice)
+        return paid
+
+    def get_paid_invoices_and_contracts(self):
+        paid_invoices = self.get_paid_invoices()
+        invoice_contracts = []
+        list_of_lists = []
+        for invoice in paid_invoices:
+            for contract in self.fetch_all_contracts:
+                if invoice.contract_unique_id == contract.unique_id:
+                    invoice_contracts.append(contract)
+        list_of_lists.append(paid_invoices)
+        list_of_lists.append(invoice_contracts)
+        return list_of_lists
+
+    def revenue_by_date(self, date_from, date_to):
+        list_of_lists = self.get_paid_invoices_and_contracts()
+        result_list = []
+        begin = self.change_to_datetime(date_from)
+        end = self.change_to_datetime(date_to)
+        for contract in list_of_lists[1]:
+            if (self.change_to_datetime(contract.checkin_date) >= begin) & (self.change_to_datetime(contract.checkin_date) <= end):
+                result_list.append(contract)
+        if result_list:
+            return result_list
+        else:
+            return 'No revenue to show during that time period.'
+

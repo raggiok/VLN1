@@ -5,10 +5,7 @@ from ui.ContractsUI import ContractUI
 from ui.DestinationUI import destinationUI
 from ui.EmployeeUI import EmployeeUI
 from ui.InvoiceUI import InvoiceUI
-<<<<<<< HEAD
-=======
 from ui.ReportsUI import ReportUI
->>>>>>> 5e3d7dd3ea1270040a7c49ccddd6fdfa3b4f3472
 from logic.logicAPI import LogicAPI
 
 class UIMain:

@@ -338,3 +338,6 @@ class LogicAPI:
 
     def add_vehicle_type(self):
         return self.report.add_vehicle_type()
+    
+    def revenue_by_date(self, start_date, end_date):
+        return self.report.revenue_by_date(start_date, end_date)
