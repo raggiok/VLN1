@@ -17,3 +17,7 @@ class GeneralUI():
     #Menu footer
     def ui_menu_footer(self):
         print("-"*50)
+
+    def ui_edit_input(self):
+        selection = input("\n>> Select option: ")
+        return selection

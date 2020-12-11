@@ -1,8 +1,10 @@
 from logic.logicAPI import LogicAPI
 from models.Employee import Employee
+from ui.GeneralUI import GeneralUI
 
 class EmployeeUI:
     def __init__(self):
+        self.general = GeneralUI()
         self.logicAPI = LogicAPI()
         self.employee_menu()
 
@@ -16,7 +18,7 @@ class EmployeeUI:
         user_input = ""
         for field in employeeFieldnames:
             if user_input.lower() == "q":
-                return self.employee_menu()
+                return 
             if field == "Password":
                 user_input = self.logicAPI.generate_password()
             else:
@@ -35,7 +37,7 @@ class EmployeeUI:
         selection = ""
         while selection != "11":
             self.ui_print_edit_menu() #ask user what he would like to edit
-            selection = self.ui_edit_input()
+            selection = self.general.ui_edit_input()
             if selection == "1":
                 employee.name = self.value_input()
             elif selection == "2":
@@ -58,17 +60,12 @@ class EmployeeUI:
                 employee.email = self.value_input()
             elif selection == "11":
                 return employee
-
-    #Get input for edit menu
-    def ui_edit_input(self):
-        selection = input("\n>> Select option: ")
-        return selection
     
     #unique_id	name	ssn	role	address	zip_code	city	country	home_phone	mobile_phone	email	state
     #Prints the employee Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
-        self.ui_menu_header("Edit employee")
+        self.general.ui_menu_header("Edit employee")
         print("\nSelect field to edit:")
         print("1. Name")
         print("2. SSN")
@@ -81,7 +78,7 @@ class EmployeeUI:
         print("9. Mobile_phone")
         print("10. Email")
         print("11. Exit")
-        self.ui_menu_footer()
+        self.general.ui_menu_footer()
 
     #Print Employee Table Header
     def ui_employee_table_header(self):
@@ -244,22 +241,14 @@ class EmployeeUI:
             print(employee)
         self.ui_employee_table_footer()
 
-    #Menu header
-    def ui_menu_header(self, menu_name):
-        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
-
-    #Menu footer
-    def ui_menu_footer(self):
-        print("\n" + "-"*50)
-
     #name	ssn	role	address	zip_code	city	country
     #Prints the search menu for employee
     def ui_search_menu(self):
-        self.ui_menu_header("Employee Search")
+        self.general.ui_menu_header("Employee Search")
         print("\nPlease select a search option:")
         self.UI_numbered_menu(["Name", "Social Security Number", "Role", "Address", "Zip Code", "City", "Country", "Exit"])
         #self.UI_numbered_menu([ "ID", "Role", "Exit"])
-        self.ui_menu_footer()
+        self.general.ui_menu_footer()
         selection = input("\n>> Select option: ").lower()
         return selection
 
@@ -273,9 +262,9 @@ class EmployeeUI:
     #Prints the employee Main Menu
     def employee_menu(self):
         while True:
-            self.ui_menu_header("Employee Menu")
+            self.general.ui_menu_header("Employee Menu")
             print("\nSelect an option...\n1. Create new employee \n2. Search employees  \n3. View all employees \n4. Edit employee \n5. Delete employee \n6. Main Menu")
-            self.ui_menu_footer()
+            self.general.ui_menu_footer()
             command = input(">> Select option: ")
             command = command.lower()
             if command == "1":

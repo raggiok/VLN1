@@ -12,7 +12,6 @@ class UIMain:
     promt_login = True
 
     def __init__(self):
-        self.logic = LogicAPI()
         self.login()
         
         #Menu header
@@ -56,7 +55,11 @@ class UIMain:
     def admin_ui_loop(self):
         while True:
             self.ui_menu_header("Main Menu")
+<<<<<<< HEAD
             print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \n7. Invoices \nq. Quit program\n")
+=======
+            print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \n7. Invoices \nq. to quit program\n")
+>>>>>>> 5130f7688c176517a3963aebf75957d9ba69d240
             self.ui_menu_footer()
             command = input("Input your command: ")
             command = command.lower()

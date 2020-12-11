@@ -1,11 +1,13 @@
 from logic.logicAPI import LogicAPI
 from models.contracts import Contract
+from ui.GeneralUI import GeneralUI
 import datetime
 
 class ContractUI:
     
 
     def __init__(self):
+        self.general = GeneralUI()
         self.logic = LogicAPI()
         self.contract_main_menu()
 
@@ -16,14 +18,6 @@ class ContractUI:
         '''Takes a list as parameter and prints all the items of a list in an order from 1. list[0], 2. list[1] and so on'''
         for i in range(0,(len(a_list))):
             print(f"{i+1}. {a_list[i]}")
-
-    #Menu header
-    def ui_menu_header(self, menu_name):
-        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
-
-    #Menu footer
-    def ui_menu_footer(self):
-        print("\n" + "-"*53)
 
     def print_select_option(self):
         return input(">> Select option: ").lower()
@@ -114,10 +108,10 @@ class ContractUI:
     ### CONTRACT MAIN MENU ###
     def contract_main_menu(self):
         while True:
-            self.ui_menu_header("Contract Menu")
+            self.general.ui_menu_header("Contract Menu")
             print("\nPlease select a an option:")
             self.ui_numbered_menu(["Create contract", "Search contracts", "View all contracts", "Edit contract", "Cancel contract", "Delete contract", "Main menu"])
-            self.ui_menu_footer()
+            self.general.ui_menu_footer()
             command = self.print_select_option()
             if command == "1":  #1. Create contract
                 contract_param = self.new_contract()
@@ -153,10 +147,10 @@ class ContractUI:
 
     def contract_search_menu(self):
         while True:
-            self.ui_menu_header("Contract Search")
+            self.general.ui_menu_header("Contract Search")
             print("\nPlease select search option:")
             self.ui_numbered_menu(["Search by Contract ID", "Search by Customer name", "Search by Vehicle ID", "Main menu"])
-            self.ui_menu_footer()
+            self.general.ui_menu_footer()
             command = self.print_select_option()
             if command == "1":
                 contract_id = input(">> Enter Contract ID: ")
@@ -206,7 +200,7 @@ class ContractUI:
         selection = ""
         while selection != "8":
             self.ui_print_edit_menu() #ask user what he would like to edit
-            selection = self.ui_edit_input()
+            selection = self.general.ui_edit_input()
             if selection == "1":
                 for contract in contracts:
                     contract.customer = self.value_input()
@@ -231,15 +225,11 @@ class ContractUI:
             elif selection == "8":
                 return contract
 
-    #Get input for edit menu
-    def ui_edit_input(self):
-        selection = input("\n>> Select option: ")
-        return selection
 
     #Prints the Vehicle Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
-        self.ui_menu_header("Edit vehicle")
+        self.general.ui_menu_header("Edit vehicle")
         print("\nSelect field to edit:")
         print("1. Customer name")
         print("2. Vehicle ID")

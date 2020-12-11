@@ -37,7 +37,7 @@ class destinationUI:
     
         while selection != "9":
             self.ui_print_edit_menu() #ask user what he would like to edit
-            selection = self.ui_edit_input()
+            selection = self.general.ui_edit_input()
             if selection == "1":
                 destination.country = self.value_input()
             elif selection == "2":
@@ -56,11 +56,6 @@ class destinationUI:
                 destination.state = self.value_input()
             elif selection == "9":
                 return destination
-
-    #Get input for edit menu
-    def ui_edit_input(self):
-        selection = input("\n>> Select option: ")
-        return selection
     
     #Prints the destination Edit menu options
     def ui_print_edit_menu(self):
@@ -290,7 +285,7 @@ class destinationUI:
                 elif selection == "7":
                     self.ui_print_main_contact()
                 elif selection == "8":
-                    return self.destination_menu()    
+                    return   
             elif command == "3":
                 self.ui_all_destinations()
             elif command == "4":

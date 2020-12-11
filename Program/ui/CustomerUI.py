@@ -1,8 +1,10 @@
 from logic.logicAPI import LogicAPI
 from models.Customers import Customer
+from ui.GeneralUI import GeneralUI
 
 class CustomerUI:
     def __init__(self):
+        self.general = GeneralUI()
         self.logicAPI = LogicAPI()
         self.customer_menu()
 
@@ -16,7 +18,7 @@ class CustomerUI:
         user_input = ""
         for field in customerFieldnames:
             if user_input.lower() == "q":
-                return self.customer_menu()
+                return 
             user_input = input(f"Enter {field}: ")
             inputList.append(user_input)
         return inputList
@@ -33,7 +35,7 @@ class CustomerUI:
         selection = ""
         while selection != "9":
             self.ui_print_edit_menu() 
-            selection = self.ui_edit_input()
+            selection = self.general.ui_edit_input()
             if selection == "1":
                 customer.name = self.value_input()
             elif selection == "2":
@@ -51,19 +53,14 @@ class CustomerUI:
             elif selection =="8":
                 customer.email = self.value_input()
             elif selection == "9":
-                return customer
+                return 
             
-
-    #Get input for edit menu
-    def ui_edit_input(self):
-        selection = input("\n>> Select option: ")
-        return selection
     
     #unique_id,name,ssn,address,zip_code,city,country,phone,email,state
     #Prints the Customer Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
-        self.ui_menu_header("Edit customer")
+        self.general.ui_menu_header("Edit customer")
         print("\nSelect field to edit:")
         print("1. Name")
         print("2. Social Security No.")
@@ -74,7 +71,7 @@ class CustomerUI:
         print("7. Phone")
         print("8. Email")
         print("9. Exit")
-        self.ui_menu_footer()
+        self.general.ui_menu_footer()
 
     #name,ssn,address,zip_code,city,country,phone,email,state
     #Print Customer Table Header
@@ -107,7 +104,7 @@ class CustomerUI:
             print(customer) 
         self.ui_customer_table_footer()
         return customer
-
+        
     #name,ssn,address,zip_code,city,country
     ###availability option search ###
     def ui_name_available_print(self):
@@ -220,21 +217,13 @@ class CustomerUI:
             print(customer)
         self.ui_customer_table_footer()
 
-    #Menu header
-    def ui_menu_header(self, menu_name):
-        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
-
-    #Menu footer
-    def ui_menu_footer(self):
-        print("\n" + "-"*50)
-    
 
     #Print search menu 
     def ui_search_menu(self):
-        self.ui_menu_header("Customer Search") 
+        self.general.ui_menu_header("Customer Search") 
         print("\nPlease enter search option:")
         self.UI_numbered_menu(["Name", "Social Security No.", "Address", "Zip Code", "City",  "Country", "Exit"])
-        self.ui_menu_footer()
+        self.general.ui_menu_footer()
         selection = input("\n>> Select option: ").lower()
         return selection
 
@@ -249,9 +238,9 @@ class CustomerUI:
     #Print customer main menu
     def customer_menu(self):
         while True:
-            self.ui_menu_header("Customer Menu")
+            self.general.ui_menu_header("Customer Menu")
             print("\nSelect an option...\n1. Create new customer \n2. Search customer \n3. View all customers \n4. Edit customer \n5. Delete customer \n6. Main menu ")   
-            self.ui_menu_footer()      
+            self.general.ui_menu_footer()      
             command = input(">> Select option: ").lower()
             command = command.lower()
             if command == "1":
