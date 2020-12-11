@@ -51,7 +51,7 @@ class InvoiceUI:
                 print(self.logic.create_invoice(invoice_ID))
             elif choice == '4':
                 id_invoice = input(">> Enter invoice ID: ")
-                self.logic.set_invoice_to_payed()
+                print(self.logic.set_invoice_to_payed(id_invoice))
             elif choice == '5':
                 return
             else:

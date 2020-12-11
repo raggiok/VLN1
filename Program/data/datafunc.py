@@ -15,7 +15,7 @@ ALL_FIELDNAMES = {
     "destination": ['unique_id', 'country', 'city', 'airport', 'phone_number', 'opening_time', 'closing_time', 'main_contact', 'state'],
     "employee": ['unique_id', 'name', 'ssn', 'role', 'address', 'zip_code', 'city', 'country', 'home_phone', 'mobile_phone', 'email', 'password', 'state'],
     "vehicle": ['unique_id', 'manufacturer', 'model', 'vehicle_type', 'status', 'man_year', 'color', 'license_type', 'location', 'rate', 'state'],
-    "invoice": ['unique_id','contract_unique_id', 'customer_unique_id', 'vehicle_unique_id', 'rate', 'total_days', 'total_price', 'late_fee' 'invoice_type', 'state'],
+    "invoice": ['unique_id','contract_unique_id', 'customer_unique_id', 'vehicle_unique_id', 'rate', 'total_days', 'total_price', 'late_fee', 'invoice_type', 'state'],
     "rate": ['unique_id','name', 'cost_per_day']
     }
 

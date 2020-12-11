@@ -324,4 +324,4 @@ class LogicAPI:
         return self.contract.get_all_invoices()
     
     def set_invoice_to_payed(self, invoice_id):
-        return self.contract.set_invoice_to_payed()
+        return self.contract.set_invoice_to_payed(invoice_id)

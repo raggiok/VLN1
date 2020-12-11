@@ -155,7 +155,6 @@ class ContractLogic:
         total += hours_total.days * int(rate_invoice.cost_per_day)
         total += late_fee
         invoice = Invoice("", contract.unique_id, customer.ssn, vehicle.unique_id, rate_invoice.cost_per_day, (hours_total.days + late_hours.days), int(total), int(late_fee))
-        print(invoice)
         contract.total_price = total
         contract.state = 'INVOICED'
         self.data.update_contract(contract)
