@@ -16,7 +16,7 @@ class CustomerUI:
         user_input = ""
         for field in customerFieldnames:
             if user_input.lower() == "q":
-                return self.customer_menu()
+                return 
             user_input = input(f"Enter {field}: ")
             inputList.append(user_input)
         return inputList
@@ -51,7 +51,7 @@ class CustomerUI:
             elif selection =="8":
                 customer.email = self.value_input()
             elif selection == "9":
-                return customer
+                return 
             
 
     #Get input for edit menu
@@ -107,7 +107,7 @@ class CustomerUI:
             print(customer) 
         self.ui_customer_table_footer()
         return customer
-
+        
     #name,ssn,address,zip_code,city,country
     ###availability option search ###
     def ui_name_available_print(self):

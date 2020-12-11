@@ -11,7 +11,6 @@ class UIMain:
     promt_login = True
 
     def __init__(self):
-        self.logic = LogicAPI()
         self.login()
         
         #Menu header

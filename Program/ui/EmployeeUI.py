@@ -16,7 +16,7 @@ class EmployeeUI:
         user_input = ""
         for field in employeeFieldnames:
             if user_input.lower() == "q":
-                return self.employee_menu()
+                return 
             if field == "Password":
                 user_input = self.logicAPI.generate_password()
             else:
