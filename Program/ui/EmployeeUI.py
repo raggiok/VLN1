@@ -167,7 +167,7 @@ class EmployeeUI:
     def ui_country_available_print(self):
         '''Prints all employee country'''
         print("\nAvailable Options:")
-        employees = self.logicAPI.available_country()
+        employees = self.logicAPI.emp_available_country()
         for employee in employees:
             print("\t" + employee)
         print()

@@ -1,7 +1,5 @@
 unique_id,country,city,airport,phone_number,opening_time,closing_time,main_contact,state
-1,land,Keflavik,Keflavik Airport,558-5498,10:00,15:00,Bjarki,DELETED
-2,Iceland,TEST,,558-5498,10:00,15:00,Bjarki,DELETED
-3,Iceland,Keflavik,RVK,558-5498,10:00,15:00,Bjarki,ACTIVE
-4,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Main Contact,ACTIVE
-5,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Contact,ACTIVE
-6,Iceland,TEST,Keflavik Airport,558-5498,10:00,15:00,Contact,ACTIVE
+1,Iceland,Reykjavik,Keflavik,551-4545,441-4545,15:00,Ragnar,ACTIVE
+2,Greenland,Nuuk,Narsasaq,552-4545,10:00,13:00,Nisse,ACTIVE
+3,Greenland,Kulusuk,Nigaratatak,09:00,12:00,14:00,Bjogdo,ACTIVE
+4,Faraoe Islands,Thorshavn,Faroyer Airport,224-4566,15:00,21:00,Isleif,ACTIVE

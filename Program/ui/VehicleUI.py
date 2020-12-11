@@ -18,7 +18,13 @@ class VehicleUI:
         for field in vehicleFieldnames:
             if user_input.lower() == "q":
                 return self.vehicle_menu()
-            user_input = input(f"Enter {field}: ")
+            if field == "Location":
+                user_input = ""
+                destinations = self.ui_country_available_print()
+                while user_input not in destinations:
+                    user_input = input(f"Enter {field}: ")
+            else:
+                user_input = input(f"Enter {field}: ")
             inputList.append(user_input)
         return inputList
 
@@ -267,6 +273,15 @@ class VehicleUI:
         '''Takes a list as parameter and prints all the items of a list in an order from 1. list[0], 2. list[1] and so on'''
         for i in range(0,(len(a_list))):
             print(f"{i+1}. {a_list[i]}")
+
+    def ui_country_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logic.available_country()
+        for destination in destinations:
+            print("\t" + destination)
+        print()
+        return destinations
 
     #Prints the Vehicle Main Menu
     def vehicle_menu(self):

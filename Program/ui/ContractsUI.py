@@ -2,8 +2,8 @@ from logic.logicAPI import LogicAPI
 from models.contracts import Contract
 import datetime
 
-
 class ContractUI:
+    
 
     def __init__(self):
         self.logic = LogicAPI()
@@ -30,7 +30,7 @@ class ContractUI:
 
     def print_table_header(self):
         print()
-        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<29}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Creation Date":<20}{"Check-out Date":<20}{"Check-in Date":<20}{"Check-in Location":<20}{"State":<20}')
+        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<31}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Creation Date":<20}{"Check-out Date":<20}{"Check-in Date":<20}{"Check-in Location":<20}{"State":<20}')
         print("="*260)
 
     #Print Contract Table Footer
@@ -46,6 +46,15 @@ class ContractUI:
             print("\nIncorrect input, make sure the format is DD.MM.YY\n")
             return False
 
+    def ui_country_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logic.available_country()
+        for destination in destinations:
+            print("\t" + destination)
+        print()
+        return destinations
+
     #Prints UI for new contract
     def new_contract(self):
         contractFieldnames = ["Customer name", "Customer Social Security No.","Vehicle ID", "Start date of rental period (dd.mm.yy)","End date of rental period (dd.mm.yy)","Country","Employee name","Total price"] # + "Contract Creation Date"
@@ -54,38 +63,46 @@ class ContractUI:
         print("\nPlease enter the following details to create a new contract:" )
         user_input = ""
         for field in contractFieldnames:
-            user_input = input(f"Enter {field}: ")
-            if user_input.lower() == "q":
-                return self.contract_main_menu()
-            #Checks start date format
-            if contractFieldnames.index(field) == 3:
-                date_check = False
-                while user_input != "q":
-                    date_check = self.validate(user_input)
-                    if date_check == False:
-                        user_input = input(f"Enter {field}: ")
-                    else:
-                        start_date = datetime.datetime.strptime(user_input, '%d.%m.%y')
-                        yesterday = datetime.datetime.today() - datetime.timedelta(days=1)
-                        if start_date <= yesterday:
-                            print("Dates before today are invalid")
+            if field == "Country":
+                destinations = self.ui_country_available_print()
+                user_input = ""
+                while user_input not in destinations:
+                    user_input = input(f"Enter {field}: ")
+                    if user_input == "q":
+                        break
+            else:    
+                user_input = input(f"Enter {field}: ")
+                if user_input.lower() == "q":
+                    return self.contract_main_menu()
+                #Checks start date format
+                if contractFieldnames.index(field) == 3:
+                    date_check = False
+                    while user_input != "q":
+                        date_check = self.validate(user_input)
+                        if date_check == False:
                             user_input = input(f"Enter {field}: ")
                         else:
-                            break
-            #Checks end date format
-            elif contractFieldnames.index(field) == 4:
-                date_check = False
-                while user_input != "q":
-                    date_check = self.validate(user_input)
-                    if date_check == False:
-                        user_input = input(f"Enter {field}: ")
-                    else:
-                        end_date = datetime.datetime.strptime(user_input, '%d.%m.%y')
-                        if start_date > end_date:
-                            print("Dates before start date are invalid.")
+                            start_date = datetime.datetime.strptime(user_input, '%d.%m.%y')
+                            yesterday = datetime.datetime.today() - datetime.timedelta(days=1)
+                            if start_date <= yesterday:
+                                print("Dates before today are invalid")
+                                user_input = input(f"Enter {field}: ")
+                            else:
+                                break
+                #Checks end date format
+                elif contractFieldnames.index(field) == 4:
+                    date_check = False
+                    while user_input != "q":
+                        date_check = self.validate(user_input)
+                        if date_check == False:
                             user_input = input(f"Enter {field}: ")
                         else:
-                            break            
+                            end_date = datetime.datetime.strptime(user_input, '%d.%m.%y')
+                            if start_date > end_date:
+                                print("Dates before start date are invalid.")
+                                user_input = input(f"Enter {field}: ")
+                            else:
+                                break
             inputList.append(user_input)
         #Add Contract creation date "Contract Creation Date"
         contract_creation_date = datetime.datetime.today()
