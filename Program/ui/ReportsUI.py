@@ -40,11 +40,10 @@ class ReportUI:
 
     #Print Vehicle Table Header
     def utility_table_header(self):
-        print(f"{'Location':<20}{'Vehicle Type':<20}{'Days rented in a year (%)':<20}")
+        print(f"{'Location':<40}{'Vehicle Type':<40}{'Days rented in a year (%)':<50}")
         print("-"*100)
     
     def utility_table_footer(self):
-        print(f"{'Location':<20}{'Vehicle Type':<20}{'Days rented in a year (%)':<50}")
         print("-"*100)
     
     ### CONTRACT MAIN MENU ###
@@ -52,7 +51,7 @@ class ReportUI:
         while True:
             self.ui_menu_header("Reports")
             print("\nPlease select a an option:")
-            self.ui_numbered_menu(["Revenues", "Vehicle Usability", "Invoices", "Main Menu"])
+            self.ui_numbered_menu(["Revenues", "Vehicle Usability", "Main Menu"])
             self.ui_menu_footer()
             command = self.print_select_option()
             if command == "1":
@@ -65,12 +64,10 @@ class ReportUI:
                 for key,val in result_dict.items():
                     print(f"{key}")
                     for k,v in val.items():
-                        print(f"{'':<20}{k:<20}{v:<50.2f}")
-                self.ui_menu_footer()
-
-            elif command == "3": # 3. Invoices
-                pass
-            elif command == "4":
+                        print(f"{'':<40}{k:<40}{v:<50.2f}")
+                    print("-"*100)
+                self.utility_table_footer()
+            elif command == "3":
                 return
             else:
                 print("Invalid command, try again")

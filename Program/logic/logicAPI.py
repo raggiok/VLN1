@@ -341,19 +341,12 @@ class LogicAPI:
 
     def utilization_report(self):
         return self.report.utilization_report()
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 062249459cba311428aa43aeb8c6757df07cbb00
     def add_vehicle_type(self):
         return self.report.add_vehicle_type()
     
     def revenue_by_date(self, start_date, end_date):
         return self.report.revenue_by_date(start_date, end_date)
-<<<<<<< HEAD
     
     def result_list(self):
         return self.report.result_list()
-=======
->>>>>>> 062249459cba311428aa43aeb8c6757df07cbb00
