@@ -188,6 +188,11 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 ---Fimmtudagur 10.12.2020---
 -
 # Ragnar:
+-Bætti inn aðgangsstýringakerfi
+-Lagaði bögga í UI
+-Byrjaði á Report UI til að skrifa út skýrslur
+-Kláraði edit og delete virkni fyrir contracts
+-Bætti við villuprófun á input á ýmislegt tengt contract og fleiru
 # Callista:
 # Fannar:
 # Franz:

@@ -202,7 +202,7 @@ class ContractLogic:
     def set_invoice_to_payed(self, invoice_id):
         listi = self.search_invoices(invoice_id)
         if listi[0] != "\n*** No match found ***\n":
-            listi[0].state = 'PAYED'
+            listi[0].state = 'PAID'
             self.data.update_invoice(listi[0])
             return 'State successfully changed.'
         else:

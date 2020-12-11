@@ -5,6 +5,10 @@ from ui.ContractsUI import ContractUI
 from ui.DestinationUI import destinationUI
 from ui.EmployeeUI import EmployeeUI
 from ui.InvoiceUI import InvoiceUI
+<<<<<<< HEAD
+=======
+from ui.ReportsUI import ReportUI
+>>>>>>> 5e3d7dd3ea1270040a7c49ccddd6fdfa3b4f3472
 from logic.logicAPI import LogicAPI
 
 class UIMain:
@@ -54,7 +58,7 @@ class UIMain:
     def admin_ui_loop(self):
         while True:
             self.ui_menu_header("Main Menu")
-            print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \n7. Invoices \nq. to quit program\n")
+            print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \n7. Invoices \nq. Quit program\n")
             self.ui_menu_footer()
             command = input("Input your command: ")
             command = command.lower()

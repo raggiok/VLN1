@@ -10,5 +10,8 @@ class Destination:
         self.main_contact = main_contact
         self.state = state
 
+    def get_destination(self):
+        return self.city
+
     def __str__(self):
         return f"{self.unique_id:<20}{self.country:<20}{self.city:<20}{self.airport:<20}{self.phone_number:<20}{self.opening_time:<20}{self.closing_time:<20}{self.main_contact:<20}"

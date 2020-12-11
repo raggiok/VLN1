@@ -1,11 +1,13 @@
 from logic.logicAPI import LogicAPI
 from models.contracts import Contract
+from ui.GeneralUI import GeneralUI
 import datetime
 
-
 class ContractUI:
+    
 
     def __init__(self):
+        self.general = GeneralUI()
         self.logic = LogicAPI()
         self.contract_main_menu()
 
@@ -17,20 +19,12 @@ class ContractUI:
         for i in range(0,(len(a_list))):
             print(f"{i+1}. {a_list[i]}")
 
-    #Menu header
-    def ui_menu_header(self, menu_name):
-        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
-
-    #Menu footer
-    def ui_menu_footer(self):
-        print("\n" + "-"*53)
-
     def print_select_option(self):
         return input(">> Select option: ").lower()
 
     def print_table_header(self):
         print()
-        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<29}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Creation Date":<20}{"Check-out Date":<20}{"Check-in Date":<20}{"Check-in Location":<20}{"State":<20}')
+        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<31}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Creation Date":<20}{"Check-out Date":<20}{"Check-in Date":<20}{"Check-in Location":<20}{"State":<20}')
         print("="*260)
 
     #Print Contract Table Footer
@@ -46,6 +40,15 @@ class ContractUI:
             print("\nIncorrect input, make sure the format is DD.MM.YY\n")
             return False
 
+    def ui_country_available_print(self):
+        '''Prints all destination type categories'''
+        print("\nAvailable Options:")
+        destinations = self.logic.available_country()
+        for destination in destinations:
+            print("\t" + destination)
+        print()
+        return destinations
+
     #Prints UI for new contract
     def new_contract(self):
         contractFieldnames = ["Customer name", "Customer Social Security No.","Vehicle ID", "Start date of rental period (dd.mm.yy)","End date of rental period (dd.mm.yy)","Country","Employee name","Total price"] # + "Contract Creation Date"
@@ -54,38 +57,46 @@ class ContractUI:
         print("\nPlease enter the following details to create a new contract:" )
         user_input = ""
         for field in contractFieldnames:
-            user_input = input(f"Enter {field}: ")
-            if user_input.lower() == "q":
-                return self.contract_main_menu()
-            #Checks start date format
-            if contractFieldnames.index(field) == 3:
-                date_check = False
-                while user_input != "q":
-                    date_check = self.validate(user_input)
-                    if date_check == False:
-                        user_input = input(f"Enter {field}: ")
-                    else:
-                        start_date = datetime.datetime.strptime(user_input, '%d.%m.%y')
-                        yesterday = datetime.datetime.today() - datetime.timedelta(days=1)
-                        if start_date <= yesterday:
-                            print("Dates before today are invalid")
+            if field == "Country":
+                destinations = self.ui_country_available_print()
+                user_input = ""
+                while user_input not in destinations:
+                    user_input = input(f"Enter {field}: ")
+                    if user_input == "q":
+                        break
+            else:    
+                user_input = input(f"Enter {field}: ")
+                if user_input.lower() == "q":
+                    return self.contract_main_menu()
+                #Checks start date format
+                if contractFieldnames.index(field) == 3:
+                    date_check = False
+                    while user_input != "q":
+                        date_check = self.validate(user_input)
+                        if date_check == False:
                             user_input = input(f"Enter {field}: ")
                         else:
-                            break
-            #Checks end date format
-            elif contractFieldnames.index(field) == 4:
-                date_check = False
-                while user_input != "q":
-                    date_check = self.validate(user_input)
-                    if date_check == False:
-                        user_input = input(f"Enter {field}: ")
-                    else:
-                        end_date = datetime.datetime.strptime(user_input, '%d.%m.%y')
-                        if start_date > end_date:
-                            print("Dates before start date are invalid.")
+                            start_date = datetime.datetime.strptime(user_input, '%d.%m.%y')
+                            yesterday = datetime.datetime.today() - datetime.timedelta(days=1)
+                            if start_date <= yesterday:
+                                print("Dates before today are invalid")
+                                user_input = input(f"Enter {field}: ")
+                            else:
+                                break
+                #Checks end date format
+                elif contractFieldnames.index(field) == 4:
+                    date_check = False
+                    while user_input != "q":
+                        date_check = self.validate(user_input)
+                        if date_check == False:
                             user_input = input(f"Enter {field}: ")
                         else:
-                            break            
+                            end_date = datetime.datetime.strptime(user_input, '%d.%m.%y')
+                            if start_date > end_date:
+                                print("Dates before start date are invalid.")
+                                user_input = input(f"Enter {field}: ")
+                            else:
+                                break
             inputList.append(user_input)
         #Add Contract creation date "Contract Creation Date"
         contract_creation_date = datetime.datetime.today()
@@ -97,10 +108,10 @@ class ContractUI:
     ### CONTRACT MAIN MENU ###
     def contract_main_menu(self):
         while True:
-            self.ui_menu_header("Contract Menu")
+            self.general.ui_menu_header("Contract Menu")
             print("\nPlease select a an option:")
             self.ui_numbered_menu(["Create contract", "Search contracts", "View all contracts", "Edit contract", "Cancel contract", "Delete contract", "Main menu"])
-            self.ui_menu_footer()
+            self.general.ui_menu_footer()
             command = self.print_select_option()
             if command == "1":  #1. Create contract
                 contract_param = self.new_contract()
@@ -136,10 +147,10 @@ class ContractUI:
 
     def contract_search_menu(self):
         while True:
-            self.ui_menu_header("Contract Search")
+            self.general.ui_menu_header("Contract Search")
             print("\nPlease select search option:")
             self.ui_numbered_menu(["Search by Contract ID", "Search by Customer name", "Search by Vehicle ID", "Main menu"])
-            self.ui_menu_footer()
+            self.general.ui_menu_footer()
             command = self.print_select_option()
             if command == "1":
                 contract_id = input(">> Enter Contract ID: ")
@@ -189,7 +200,7 @@ class ContractUI:
         selection = ""
         while selection != "8":
             self.ui_print_edit_menu() #ask user what he would like to edit
-            selection = self.ui_edit_input()
+            selection = self.general.ui_edit_input()
             if selection == "1":
                 for contract in contracts:
                     contract.customer = self.value_input()
@@ -214,15 +225,11 @@ class ContractUI:
             elif selection == "8":
                 return contract
 
-    #Get input for edit menu
-    def ui_edit_input(self):
-        selection = input("\n>> Select option: ")
-        return selection
 
     #Prints the Vehicle Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
-        self.ui_menu_header("Edit vehicle")
+        self.general.ui_menu_header("Edit vehicle")
         print("\nSelect field to edit:")
         print("1. Customer name")
         print("2. Vehicle ID")

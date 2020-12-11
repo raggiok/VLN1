@@ -4,6 +4,7 @@ from logic.VehicleLogic import VehicleLogic
 from logic.CustomerLogic import CustomerLogic
 from logic.DestinationLogic import DestinationLogic
 from logic.EmployeeLogic import EmployeeLogic
+from logic.ReportLogic import ReportLogic
 
 class LogicAPI:
 
@@ -13,6 +14,7 @@ class LogicAPI:
         self.customer = CustomerLogic()
         self.destination = DestinationLogic()
         self.employee = EmployeeLogic()
+        self.report = ReportLogic()
 
         ### Vehicles ###
     def create_vehicle(self,manufacturer,model,vehicle_type,status,manufacturing_year,color,license_type,location,rate):
@@ -295,7 +297,7 @@ class LogicAPI:
     def available_city(self):
         return self.employee.available_the_city()
 
-    def available_country(self):
+    def emp_available_country(self):
         return self.employee.available_the_country()
 
 
@@ -305,13 +307,6 @@ class LogicAPI:
     def check_password(self,user_id, password):
         return self.employee.check_employee_password(user_id, password)
 
-
-
-
-
-    
-
-    
     ###Invoice###
 
     def create_invoice(self, contract_id):
@@ -324,4 +319,22 @@ class LogicAPI:
         return self.contract.get_all_invoices()
     
     def set_invoice_to_payed(self, invoice_id):
-        return self.contract.set_invoice_to_payed(invoice_id)
+        return self.contract.set_invoice_to_payed()
+
+
+    ### REPORTS ###
+
+    def get_utitlity_report(self):
+        return self.report.merge_report()
+
+    def contracts_to_list(self):
+        return self.report.contracts_to_list()
+    
+    def vehicle_id_and_types(self):
+        return self.report.vehicle_id_and_types()
+
+    def calcuate_days_per_vehicle(self,vehicle_list):
+        return self.report.calcuate_days_per_vehicle(vehicle_list)
+
+    def add_vehicle_type(self):
+        return self.report.add_vehicle_type()

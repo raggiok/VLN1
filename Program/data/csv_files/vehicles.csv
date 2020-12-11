@@ -49,4 +49,6 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 53,BMW,1,1,1,1,,1,1,A,ACTIVE
 55,BMW,BLACK,CAR,OK,2021,BLACK,DRIVERS,RVK,A,ACTIVE
 57,BMW,BLOISSS,BABA,OKOKOK,2015,BLUE,DRIVER,Reykjavik,500,ACTIVE
+59,asdf,sadf,sadf,asdf,sadf,sdf,asdf,asfd,asdf,ACTIVE
+61,asdf,sadf,rara,OK,2020,Red,Driver,Iceland,2500,ACTIVE
 59,test,test,test,test,test,test,test,test,test,ACTIVE
