@@ -171,7 +171,7 @@ class ReportLogic():
         invoice_contracts = []
         list_of_lists = []
         for invoice in paid_invoices:
-            for contract in self.fetch_all_contracts:
+            for contract in self.fetch_all_contracts():
                 if invoice.contract_unique_id == contract.unique_id:
                     invoice_contracts.append(contract)
         list_of_lists.append(paid_invoices)
@@ -190,4 +190,3 @@ class ReportLogic():
             return result_list
         else:
             return 'No revenue to show during that time period.'
-
