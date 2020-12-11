@@ -3,7 +3,7 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 2,TAILG,Free Fly II,Medium road,OK,2019,Orange,Drivers license,Kulusuk,A,ACTIVE
 3,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Longyearbyen,A,ACTIVE
 4,Kayman Kayaks,Crazy,Light water,OK,2020,Yellow,None,Thorshavn,B,DELETED
-5,Kayman Kayaks,Crazy HV,Light water,OK,2020,Yellow,None,Nuuk,A,ACTIVE
+5,Kayman Kayaks,Crazy HV,Light water,OK,2021,Yellow,None,Nuuk,A,ACTIVE
 6,Cani-Fit,Fat Max,Light off-road,OK,2019,Black,None,Nuuk,A,ACTIVE
 7,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,A,ACTIVE
 8,Cani-Fit,Fat Max,Light off-road,OK,2017,Black,None,Thorshavn,A,ACTIVE
@@ -51,4 +51,5 @@ unique_id,manufacturer,model,vehicle_type,status,man_year,color,license_type,loc
 57,BMW,BLOISSS,BABA,OKOKOK,2015,BLUE,DRIVER,Reykjavik,500,ACTIVE
 59,asdf,sadf,sadf,asdf,sadf,sdf,asdf,asfd,asdf,ACTIVE
 61,asdf,sadf,rara,OK,2020,Red,Driver,Iceland,2500,ACTIVE
-59,test,test,test,test,test,test,test,test,test,ACTIVE
+62,test,test,test,test,test,test,test,test,test,ACTIVE
+64,TADA,BABA,CAR,OK,2010,RED,DRIVER,Iceland,A,ACTIVE

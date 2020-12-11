@@ -15,9 +15,10 @@ class ReportLogic():
         return self.data.get_destinations()
 
     ### UTILIZATION REPORT ###
+    #This is the report we are going to create {"Destination": [vehicle_type, days, days_out_of_year]}
 
     def destinations_to_dict(self):
-        #report {"Destination": [vehicle_type, days, days_out_of_year]}
+        #report = {"Destination": ""}
         report = {}
         destinations = self.fetch_all_destinations()
         for destination in destinations:
@@ -25,7 +26,7 @@ class ReportLogic():
             if dest in report:
                 continue
             else:
-                report[dest] = 0
+                report[dest] = ""
         return report
     
     def contracts_to_list(self):
@@ -43,7 +44,7 @@ class ReportLogic():
 
     def calcuate_days_per_vehicle(self, vehicle_list):
         '''Takes a list of vehicles in this format: vehicle_id, checkout_date, checkin_date'''
-        #sum_list = [(vehicle_id, days_rented),(vehicle_id, days_rented)...]
+        #sum_list = [[vehicle_id, days_rented],[vehicle_id, days_rented]...]
         sum_list = []
         for vehicle in vehicle_list:
             vehicle_id = vehicle[0]
@@ -69,7 +70,13 @@ class ReportLogic():
         vehicle_list = self.contracts_to_list()
         days_list = self.calcuate_days_per_vehicle(vehicle_list)
         vehicle_types = self.vehicle_id_and_types()
-        print(days_list)
+        for vehicle in vehicle_types:
+            unique_id = vehicle[0]
+            vehicle_type = vehicle[1]
+            if vehicle:
+                pass
+
+            
 
 
 

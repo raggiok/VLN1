@@ -59,12 +59,11 @@ class VehicleUI:
             elif selection == "9":
                 vehicle.rate = self.value_input()
             elif selection == "q":
-                return 
+                return vehicle
 
     #Prints the Vehicle Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
-
         self.general.ui_menu_header("Edit vehicle")
         print("\nSelect field to edit:")
         print("1. Manufacturer")
@@ -77,7 +76,7 @@ class VehicleUI:
         print("8. Location")
         print("9. Rate")
         print("q. Exit")
-        self.ui_menu_footer()
+        self.general.ui_menu_footer()
         
 
     #Print Vehicle Table Header

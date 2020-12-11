@@ -5,4 +5,4 @@ unique_id,customer,customer_ssn,vehicle_unique_id,start_date,end_date,country,em
 4,Þór,181818-1818,22,10.12.20,11.12.20,Greenland,Ragnar,9999,09.12.20,10.12.20,10.12.20,D,Active
 5,David,151515-1515,41,10.12.20,11.12.20,location,Ragnar,290.0,10.12.20,10.12.20,15.12.20,C,INVOICED
 6,David,151515-1515,42,10.12.20,11.12.20,location,Ragnar,290.0,10.12.20,10.12.20,15.12.20,C,ACTIVE
-6,Bobby,140512-1213,61,15.12.20,20.12.20,Iceland,Ragnar,2500,11.12.20,A,B,C,ACTIVE
+7,Bobby,140512-1213,61,15.12.20,20.12.20,Iceland,Ragnar,2500,11.12.20,A,B,C,ACTIVE
