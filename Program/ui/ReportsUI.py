@@ -51,18 +51,10 @@ class ReportUI:
             self.ui_numbered_menu(["Revenues", "Vehicle Usability", "Invoices", "Main Menu"])
             self.ui_menu_footer()
             command = self.print_select_option()
-<<<<<<< HEAD
-            if command == "1":  #1. Revenues
-                # a_list = self.logic.contracts_to_list()
-                # result = self.logic.calcuate_days_per_vehicle(a_list)
-                # print(result)
-                pass
-=======
             if command == "1":
                 start_date = input(">> Input start date in format dd.mm.yy: ")
                 end_date = input(">> Input end date in format dd.mm.yy: ")
                 self.revenue_statistics(start_date, end_date)
->>>>>>> fb9b957beccdad678c6ee9b4720471b0c7fb7686
             elif command == "2": # 2. Vehicle usability
                 self.logic.utilization_report()
                 

@@ -77,7 +77,6 @@ class ReportLogic():
         for vehicle in vehicle_types:
             unique_id = vehicle[0]
             vehicle_type = vehicle[1]
-<<<<<<< HEAD
             if unique_id in result_dict:
                 if not isinstance(result_dict[unique_id], list):
                     result_dict[unique_id] = [result_dict[unique_id]]
@@ -107,7 +106,6 @@ class ReportLogic():
                 result_dict[vehicle_type] = days_rented
             else:
                 result_dict[vehicle_type] =+ days_rented
-=======
             if vehicle:
                 pass
 
@@ -143,14 +141,11 @@ class ReportLogic():
         
         
 
->>>>>>> fb9b957beccdad678c6ee9b4720471b0c7fb7686
 
         print(result_dict)
 
 
 
-<<<<<<< HEAD
-=======
     #Contracts --> Rental days
     #Vehicle --> types
     def change_to_datetime(self, date_text):
@@ -196,4 +191,3 @@ class ReportLogic():
         else:
             return 'No revenue to show during that time period.'
 
->>>>>>> fb9b957beccdad678c6ee9b4720471b0c7fb7686
