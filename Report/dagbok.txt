@@ -176,7 +176,10 @@ lagaði search föll í logic layer.
 ---Þriðjudagur 08.12.2020---
 -
 # Ragnar:
+-áframhald með Contact flokkin koma virkni í lag
 # Callista:
+-Updating Customer and employee UI
+-bug Checking
 # Fannar:
 Vann í að implementa availability kerfi fyrir bíla og bætti datetime föllum í logic layers.
 # Franz:
@@ -188,6 +191,7 @@ Vann í að implementa availability kerfi fyrir bíla og bætti datetime föllum
 # Callista:
 # Fannar: Vann við að bæta við invoice kerfi, tengja rates við bíla og reikna út tíma og verð o.sfrv. 
 # Franz:
+-áfram hald með UI Layer og villuprófun
 
 ---Fimmtudagur 10.12.2020---
 -
@@ -197,14 +201,21 @@ Vann í að implementa availability kerfi fyrir bíla og bætti datetime föllum
 -Byrjaði á Report UI til að skrifa út skýrslur
 -Kláraði edit og delete virkni fyrir contracts
 -Bætti við villuprófun á input á ýmislegt tengt contract og fleiru
-# Callista:
+# Callista: Worked on Customer UI and Employee
 # Fannar: Hélt áfram að vinna við invoice kerfið, gerði UI fyrir það og bætti við logic virkni fyrir UI-ið
 # Franz:
+-byrjað að vinna í myndbandi 
 
 
 ---Föstudagur 11.12.2020---
 
 # Ragnar:
-# Callista
+-Kláraði aðgangstýringu
+-Yfirferð á kóða 
+-Kláraði Report UI og Logic 
+-Unnið að skýrslu 
+# Callista: went over code check for errors and updated use cases for report
 # Fannar: Vann að villuleitun og lagfæringu og að uppfærslu skýrslu.
 # Franz:
+-kláraði myndband 
+-uppfærði Stöðurit
