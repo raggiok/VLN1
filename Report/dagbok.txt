@@ -130,7 +130,8 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 - Uppfæra suma virkni fyrir Vehicle logic og ætlar svo alfarið að hætta vinna í logic og ui layer
 #Callista: 
 -Continue updating UI layer to have more alike coding pattern instead of having different code basis for each UI layers 
-#Fannar:
+#Fannar: Heldur áfram að vinna í logic layer
+-Uppfærði ýmsa virkni í contract klasanum
 #Franz:
 -uppfæra UI layer og samræma kóða 
 -unnið í aðalvalmynd UI
@@ -152,7 +153,8 @@ Ef allt gengur eftir munum við geta kallað eftir endurgjöf frá kennurum á f
 #Callista:
 - start working on employee UI draft 
 - creating menu options
-#Fannar:
+#Fannar: Áframhaldandi vinna við logic layer.
+- Hófst handa við að útfæra LOGIC API skrá
 #Franz:
 -áframhaldandi vinna í UI
 ---Mánudagur 07.12.2020---
@@ -166,7 +168,8 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 # Callista:
 - continue with employee UI print options 
 - updating customer UI 
-# Fannar:
+# Fannar: Breytti logic layernum, hann vinnur nú með data API
+lagaði search föll í logic layer.
 # Franz:
 -Bæta við leitar gildum í UI uppfærði í UI,data og logic
 
@@ -175,6 +178,7 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 # Ragnar:
 # Callista:
 # Fannar:
+Vann í að implementa availability kerfi fyrir bíla og bætti datetime föllum í logic layers.
 # Franz:
 -klára aðalvalmynd svo leiðir í öll submenu 
 
@@ -182,7 +186,7 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 -
 # Ragnar:
 # Callista:
-# Fannar:
+# Fannar: Vann við að bæta við invoice kerfi, tengja rates við bíla og reikna út tíma og verð o.sfrv. 
 # Franz:
 
 ---Fimmtudagur 10.12.2020---
@@ -194,5 +198,13 @@ DataAPI og LogicAPI eru að miklu leiti klárir. Nú erum við að vinna í að 
 -Kláraði edit og delete virkni fyrir contracts
 -Bætti við villuprófun á input á ýmislegt tengt contract og fleiru
 # Callista:
-# Fannar:
+# Fannar: Hélt áfram að vinna við invoice kerfið, gerði UI fyrir það og bætti við logic virkni fyrir UI-ið
+# Franz:
+
+
+---Föstudagur 11.12.2020---
+
+# Ragnar:
+# Callista
+# Fannar: Vann að villuleitun og lagfæringu og að uppfærslu skýrslu.
 # Franz:
