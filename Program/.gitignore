@@ -3,4 +3,4 @@
 data/__pycache__/
 models/__pycache__/
 ui/__pycache__/
-logic/__pycache__/
+Program/logic/__pycache__/

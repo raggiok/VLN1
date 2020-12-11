@@ -53,7 +53,7 @@ class CustomerUI:
             elif selection =="8":
                 customer.email = self.value_input()
             elif selection == "9":
-                return 
+                return customer
             
     
     #unique_id,name,ssn,address,zip_code,city,country,phone,email,state

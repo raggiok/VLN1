@@ -14,6 +14,9 @@ class ReportLogic():
     def fetch_all_destinations(self):
         return self.data.get_destinations()
 
+    def fetch_all_invoices(self):
+        return self.data.get_invoices()
+
     ### UTILIZATION REPORT ###
     #This is the report we are going to create {"Destination": [vehicle_type, days, days_out_of_year]}
 
@@ -74,6 +77,7 @@ class ReportLogic():
         for vehicle in vehicle_types:
             unique_id = vehicle[0]
             vehicle_type = vehicle[1]
+<<<<<<< HEAD
             if unique_id in result_dict:
                 if not isinstance(result_dict[unique_id], list):
                     result_dict[unique_id] = [result_dict[unique_id]]
@@ -103,8 +107,93 @@ class ReportLogic():
                 result_dict[vehicle_type] = days_rented
             else:
                 result_dict[vehicle_type] =+ days_rented
+=======
+            if vehicle:
+                pass
+
+            
+
+
+
+        # for vehicle in vehicle_types:
+        #     vehicle_id = vehicle[0]
+        #     vehicle_type = vehicle[1]
+        #     if vehicle_type in result:
+
+
+        #     if vehicle_id not in result:
+        #         for a_vehicle in days_list:
+        #             unique_id = a_vehicle[0]
+        #             days_rented = a_vehicle[1]
+        #             if vehicle_id == unique_id:
+        #                 result[vehicle_type] = [days_rented, vehicle_id])
+        #             else:
+        #                 result.append([vehicle_id, vehicle_type, "0"])
+        #     else:
+        #         continue
+        # print(result)
+
+    def merge_report(self):
+        pass
+        # report = self.destinations_to_dict()
+
+
+        
+        
+        
+        
+
+>>>>>>> fb9b957beccdad678c6ee9b4720471b0c7fb7686
 
         print(result_dict)
 
 
 
+<<<<<<< HEAD
+=======
+    #Contracts --> Rental days
+    #Vehicle --> types
+    def change_to_datetime(self, date_text):
+        try:
+            date_text = datetime.datetime.strptime(date_text, '%d.%m.%y')
+            return date_text
+        except ValueError:
+            pass
+    
+    def change_to_string(self, date_time):
+        date_string = datetime.datetime.strftime(date_time, '%d.%m.%y')
+        return date_string
+
+    def get_paid_invoices(self):
+        paid = []
+        for invoice in self.fetch_all_invoices():
+            if invoice.state.lower() == 'paid':
+                paid.append(invoice)
+        return paid
+
+    def get_paid_invoices_and_contracts(self):
+        paid_invoices = self.get_paid_invoices()
+        invoice_contracts = []
+        list_of_lists = []
+        for invoice in paid_invoices:
+            for contract in self.fetch_all_contracts:
+                if invoice.contract_unique_id == contract.unique_id:
+                    invoice_contracts.append(contract)
+        list_of_lists.append(paid_invoices)
+        list_of_lists.append(invoice_contracts)
+        return list_of_lists
+
+    def revenue_by_date(self, date_from, date_to):
+        list_of_lists = self.get_paid_invoices_and_contracts()
+        result_list = []
+        begin = self.change_to_datetime(date_from)
+        end = self.change_to_datetime(date_to)
+        for contract in list_of_lists[1]:
+            if (self.change_to_datetime(contract.checkin_date) >= begin) & (self.change_to_datetime(contract.checkin_date) <= end):
+                result_list.append(contract)
+        if result_list:
+            return result_list
+        else:
+            return 'No revenue to show during that time period.'
+
+>>>>>>> fb9b957beccdad678c6ee9b4720471b0c7fb7686

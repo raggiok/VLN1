@@ -1,5 +1,6 @@
 from logic.logicAPI import LogicAPI
 from ui.GeneralUI import GeneralUI
+from models.contracts import Contract
 
 class ReportUI:
 
@@ -32,6 +33,11 @@ class ReportUI:
         print("-"*260)
         print()
 
+    def revenue_table_header(self):
+        print()
+        print(f'{"Date":<20}{"Location":<20}{"Revenue(€)":<20}')
+        print("="*60)
+
     #Print Vehicle Table Header
     def vehicle_table_header(self):
         print(f"{'Unique ID':<20}{'Manufacturer':<20}{'Model':<20}{'Vehicle type':<20}{'Status':<20}{'Manufac. year':<20}{'Color':<20}{'License Req.':<20}{'Location':<20}{'Rate':<20}")
@@ -45,11 +51,18 @@ class ReportUI:
             self.ui_numbered_menu(["Revenues", "Vehicle Usability", "Invoices", "Main Menu"])
             self.ui_menu_footer()
             command = self.print_select_option()
+<<<<<<< HEAD
             if command == "1":  #1. Revenues
                 # a_list = self.logic.contracts_to_list()
                 # result = self.logic.calcuate_days_per_vehicle(a_list)
                 # print(result)
                 pass
+=======
+            if command == "1":
+                start_date = input(">> Input start date in format dd.mm.yy: ")
+                end_date = input(">> Input end date in format dd.mm.yy: ")
+                self.revenue_statistics(start_date, end_date)
+>>>>>>> fb9b957beccdad678c6ee9b4720471b0c7fb7686
             elif command == "2": # 2. Vehicle usability
                 self.logic.utilization_report()
                 
@@ -111,10 +124,16 @@ class ReportUI:
     #     print("""Select an option...\n1. Revenue statistics.\n2. Vehicle statistics.""")
     #     self.ui_menu_footer()
 
-    # def revenue_statistics(self):
-    #     self.ui_menu_header('Revenue Statistics')
-    #     print("""Select an option...\n1. Revenue by month.\n2. Revenue by date.""")
-    #     self.ui_menu_footer()
+    def revenue_statistics(self, start_date, end_date):
+        search_list = self.logic.revenue_by_date(start_date, end_date)
+        if search_list == 'No revenue to show during that time period.':
+            print(f'\n***** {search_list} *****')
+            return
+        else:
+            print(self.revenue_table_header)
+            for result in search_list:
+                print(f'{result.checkout_date:<20}{result.country:<20}{result.total_price:<20}')
+            print(self.print_table_footer)
 
     # def billing_overview(self):
     #     self.ui_menu_header('Billing Overview')
