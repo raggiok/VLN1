@@ -6,6 +6,16 @@ class ReportUI:
         self.logic = LogicAPI()
         self.report = self.print_report_menu()
 
+
+    #Review revenue during time period
+
+    #Overview of vehicle in a specific destination, categorized by type
+
+
+
+
+
+
     def print_report_menu(self):
         self.ui_menu_header('Report Menu')
         print("""\nSelect an option...\n1. Print statistics by destination.\n2. Print revenue statistics.\n3. Print billing overview.""")
