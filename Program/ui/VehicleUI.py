@@ -1,9 +1,10 @@
 from logic.logicAPI import LogicAPI
 from models.Vehicle import Vehicle
-
+from ui.GeneralUI import GeneralUI
 
 class VehicleUI:
     def __init__(self):
+        self.general = GeneralUI()
         self.logic = LogicAPI()
         self.vehicle_menu()
         # self.ui_print_type()
@@ -32,7 +33,7 @@ class VehicleUI:
         selection = ""
         while selection != "9":
             self.ui_print_edit_menu() #ask user what he would like to edit
-            selection = self.ui_edit_input()
+            selection = self.general.ui_edit_input()
             if selection == "1":
                 vehicle.manufacturer = self.value_input()
             elif selection == "2":
@@ -54,16 +55,11 @@ class VehicleUI:
             elif selection == "q":
                 return 
 
-    #Get input for edit menu
-    def ui_edit_input(self):
-        selection = input("\n>> Select option: ")
-        return selection
-    
     #Prints the Vehicle Edit menu options
     def ui_print_edit_menu(self):
         '''Prints options for Edit menu and accepts input'''
 
-        self.ui_menu_header("Edit vehicle")
+        self.general.ui_menu_header("Edit vehicle")
         print("\nSelect field to edit:")
         print("1. Manufacturer")
         print("2. Model")
@@ -255,10 +251,10 @@ class VehicleUI:
 
     #Prints the search menu for vehicles
     def ui_search_menu(self):
-        self.ui_menu_header("Vehicle Search")
+        self.general.ui_menu_header("Vehicle Search")
         print("\nPlease select a search option:")
         self.UI_numbered_menu(["Manufacturer","Model","Vehicle type","Status","Manufacturing year","Color","License Requirement","Location","Exit"])
-        self.ui_menu_footer
+        self.general.ui_menu_footer()
         selection = input("\n>> Select option: ")
         return selection
 
@@ -271,9 +267,9 @@ class VehicleUI:
     #Prints the Vehicle Main Menu
     def vehicle_menu(self):
         while True:
-            self.ui_menu_header("Vehicle Menu")
+            self.general.ui_menu_header("Vehicle Menu")
             print("\nSelect an option...\n1. Create new vehicle \n2. Search vehicles \n3. Check availability \n4. Return/check out vehicle. \n5. View all vehicles \n6. Edit vehicle \n7. Delete vehicle \n8. Main Menu")
-            self.ui_menu_footer()
+            self.general.ui_menu_footer()
             command = input(">> Select option: ")
             command = command.lower()
             if command == "1":
@@ -319,9 +315,9 @@ class VehicleUI:
                 print("Invalid command, try again")
     
     def ui_checkin_menu(self):
-        self.ui_menu_header('Check-in Menu')
+        self.general.ui_menu_header('Check-in Menu')
         print("Select an option...\n1.Check out vehicle.\n2.Check in vehicle.\n3.Return.")
-        self.ui_menu_footer()
+        self.general.ui_menu_footer()
         choice = input(">> Select option: ")
         if choice == '3':
             return
@@ -334,10 +330,3 @@ class VehicleUI:
         elif choice == '3':
             return
             
-    #Menu header
-    def ui_menu_header(self, menu_name):
-        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
-
-    #Menu footer
-    def ui_menu_footer(self):
-        print("\n" + "-"*50)  

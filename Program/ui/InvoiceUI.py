@@ -2,20 +2,16 @@ from csv import unix_dialect
 from logic.logicAPI import LogicAPI
 from models.Invoice import Invoice
 from ui.ContractsUI import ContractUI
+from ui.GeneralUI import GeneralUI
 
 class InvoiceUI:
 
     def __init__(self):
+        self.general = GeneralUI()
         self.logic = LogicAPI()
         self.invoice_menu()
 
     #Menu header
-    def ui_menu_header(self, menu_name):
-        print("\n" + "-"*20 + f"{menu_name}" + "-"*20)
-
-    #Menu footer
-    def ui_menu_footer(self):
-        print("\n" + "-"*53)
 
     def print_select_option(self):
         return input(">> Select option: ").lower()
@@ -32,9 +28,9 @@ class InvoiceUI:
 
     def invoice_menu(self):
         while True:
-            self.ui_menu_header("Invoice Menu")
+            self.general.ui_menu_header("Invoice Menu")
             self.ui_numbered_menu(["Print invoice list", "Search for invoice by unique ID", "Send invoice", "Mark invoice as payed", "Main menu"])
-            self.ui_menu_footer()
+            self.general.ui_menu_footer()
             choice = self.print_select_option()
             if choice == '1':
                 self.print_table_header()
