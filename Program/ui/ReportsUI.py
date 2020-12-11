@@ -39,10 +39,14 @@ class ReportUI:
         print("="*60)
 
     #Print Vehicle Table Header
-    def vehicle_table_header(self):
-        print(f"{'Unique ID':<20}{'Manufacturer':<20}{'Model':<20}{'Vehicle type':<20}{'Status':<20}{'Manufac. year':<20}{'Color':<20}{'License Req.':<20}{'Location':<20}{'Rate':<20}")
-        print("-"*200)
-
+    def utility_table_header(self):
+        print(f"{'Location':<20}{'Vehicle Type':<20}{'Days rented in a year (%)':<20}")
+        print("-"*100)
+    
+    def utility_table_footer(self):
+        print(f"{'Location':<20}{'Vehicle Type':<20}{'Days rented in a year (%)':<50}")
+        print("-"*100)
+    
     ### CONTRACT MAIN MENU ###
     def report_main_menu(self):
         while True:
@@ -51,28 +55,18 @@ class ReportUI:
             self.ui_numbered_menu(["Revenues", "Vehicle Usability", "Invoices", "Main Menu"])
             self.ui_menu_footer()
             command = self.print_select_option()
-<<<<<<< HEAD
-            if command == "1":  #1. Revenues
-                # a_list = self.logic.contracts_to_list()
-                # result = self.logic.calcuate_days_per_vehicle(a_list)
-                # print(result)
-                pass
-=======
             if command == "1":
                 start_date = input(">> Input start date in format dd.mm.yy: ")
                 end_date = input(">> Input end date in format dd.mm.yy: ")
                 self.revenue_statistics(start_date, end_date)
->>>>>>> fb9b957beccdad678c6ee9b4720471b0c7fb7686
             elif command == "2": # 2. Vehicle usability
-                self.logic.utilization_report()
-                
-                # self.vehicle_table_header()
-                # for item in self.logic.all_vehicles():
-                #     print(item)
-                # self.ui_menu_footer()
-                #Sækja contract, lesa út destination
-                #lesa út úr contract fjölda daga í notkun
-                # deila með 354 og sýna %
+                result_dict = self.logic.result_list()
+                self.utility_table_header()
+                for key,val in result_dict.items():
+                    print(f"{key}")
+                    for k,v in val.items():
+                        print(f"{'':<20}{k:<20}{v:<50.2f}")
+                self.ui_menu_footer()
 
             elif command == "3": # 3. Invoices
                 pass
