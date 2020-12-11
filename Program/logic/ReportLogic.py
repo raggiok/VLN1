@@ -64,64 +64,47 @@ class ReportLogic():
             vehicle_type_list.append([vehicle_id, vehicle_type])
         return vehicle_type_list
 
-    def add_vehicle_type(self):
-        #combo_vehicle_list = [(vehicle_id,vehicle_type,days_rented),(vehicle_id,vehicle_type,days_rented)]
-        result = {}
+    def merge_report(self):
+        #Returns a Dictonary Report in the following format.
+        #combo_vehicle_list = {"vehicle_id": [vehicle_type,days_rented],"vehicle_id": [vehicle_type,days_rented],....}
+        result_dict = {}
         vehicle_list = self.contracts_to_list()
         days_list = self.calcuate_days_per_vehicle(vehicle_list)
         vehicle_types = self.vehicle_id_and_types()
         for vehicle in vehicle_types:
             unique_id = vehicle[0]
             vehicle_type = vehicle[1]
-            if vehicle:
-                pass
+            if unique_id in result_dict:
+                if not isinstance(result_dict[unique_id], list):
+                    result_dict[unique_id] = [result_dict[unique_id]]
+                result_dict[unique_id].append(vehicle_type)
+            else:
+                result_dict[unique_id] = [vehicle_type]
+        for key, value in result_dict.items():
+            for a_vehicle in days_list:
+                a_unique_id = a_vehicle[0]
+                days_rented = a_vehicle[1]
+                if a_unique_id == key:
+                    value.append(days_rented)
+        return result_dict
 
-            
+    def utilization_report(self):
+        result_dict = {}
+        current_dict = self.merge_report()
+        for key, val in current_dict.items():
+            vehicle_type = val[0]
+            days_rented = 0
+            for i in range(1,len(val)):
+                if len(val) > 1:
+                    days_rented =+ int(val[i])
+                else:
+                    continue
+            if vehicle_type not in result_dict:
+                result_dict[vehicle_type] = days_rented
+            else:
+                result_dict[vehicle_type] =+ days_rented
 
-
-
-        # for vehicle in vehicle_types:
-        #     vehicle_id = vehicle[0]
-        #     vehicle_type = vehicle[1]
-        #     if vehicle_type in result:
-
-
-        #     if vehicle_id not in result:
-        #         for a_vehicle in days_list:
-        #             unique_id = a_vehicle[0]
-        #             days_rented = a_vehicle[1]
-        #             if vehicle_id == unique_id:
-        #                 result[vehicle_type] = [days_rented, vehicle_id])
-        #             else:
-        #                 result.append([vehicle_id, vehicle_type, "0"])
-        #     else:
-        #         continue
-        # print(result)
-
-
-
-                
-
-    
-
-
-        
+        print(result_dict)
 
 
 
-    def merge_report(self):
-        pass
-        # report = self.destinations_to_dict()
-
-
-        
-        
-        
-        
-
-
-
-
-
-    #Contracts --> Rental days
-    #Vehicle --> types
