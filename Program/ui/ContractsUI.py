@@ -24,7 +24,7 @@ class ContractUI:
 
     def print_table_header(self):
         print()
-        print(f'{"Contract ID":<20}{"Customer Name":<20}{"Customer SSN":<20}{"Vehicle ID":<20}{"Contract Duration":<31}{"Country":<20}{"Employee":<20}{"Total price":<20}{"Creation Date":<20}{"Check-out Date":<20}{"Check-in Date":<20}{"Check-in Location":<20}{"State":<20}')
+        print(f'{"Contract ID":<15}{"Customer Name":<15}{"Customer SSN":<15}{"Vehicle ID":<15}{"Contract Duration":<25}{"Country":<15}{"Employee":<15}{"Total price":<15}{"Creation Date":<15}{"Check-out Date":<15}{"Check-in Date":<15}{"Check-in Location":<25}{"State":<15}')
         print("="*260)
 
     #Print Contract Table Footer

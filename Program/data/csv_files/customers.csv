@@ -1,3 +1,9 @@
-unique_id,name,ssn,address,zip_code,city,country,phone,email,state
-1,Bobby,151516-2829,Heimilisgata 15,113,Reykjavik,Iceland,551-6464,Bobby@test.is,ACTIVE
-2,Sara,141489-2323,Homestreet 5,445,Nuuk,Greenland,551-4488,Sara@sara.com,ACTIVE
+unique_id,name,ssn,address,zip_code,city,country,phone,email,state	
+2,John Smith,150588-2459,Heimilisgata 1,104,Reykjavik,Iceland,551-4489,John@email.com,Inactive	
+3,John Smith,150588-2459,Heimilisgata 1,104,Reykjavik,Iceland,551-4489,John@email.com,Active	
+4,John Smith,150588-2459,Heimilisgata 1,TEST,Reykjavik,Iceland,551-4489,John@email.com,Inactive	
+5,John Smith,150588-2459,Heimilisgata 1,104,Reykjavik,Iceland,551-4489,John@email.com,Active	
+6,John Smith,150588-2459,Heimilisgata 1,104,Reykjavik,Iceland,551-4489,John@email.com,Active	
+7,Sara,171717-1717,HomeStreet,113,Reykjavik,Iceland,551-4545,sara@test.is,ACTIVE	
+8,Sara,171717-1717,HomeStreet,113,Reykjavik,Iceland,551-4545,sara@test.is,ACTIVE	
+9,Sara,171717-1717,HomeStreet,113,Reykjavik,Iceland,551-4545,sara@test.is,ACTIVE
