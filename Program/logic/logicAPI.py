@@ -336,8 +336,16 @@ class LogicAPI:
     def calcuate_days_per_vehicle(self,vehicle_list):
         return self.report.calcuate_days_per_vehicle(vehicle_list)
 
+<<<<<<< HEAD
+    def merge_report(self):
+        return self.report.merge_report()
+
+    def utilization_report(self):
+        return self.report.utilization_report()
+=======
     def add_vehicle_type(self):
         return self.report.add_vehicle_type()
     
     def revenue_by_date(self, start_date, end_date):
         return self.report.revenue_by_date(start_date, end_date)
+>>>>>>> fb9b957beccdad678c6ee9b4720471b0c7fb7686
