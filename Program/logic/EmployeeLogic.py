@@ -1,5 +1,8 @@
 from data.dataAPI import dataAPI
 from models.Employee import Employee
+import random
+import datetime
+
 
 class EmployeeLogic:
 
@@ -154,3 +157,27 @@ class EmployeeLogic:
             if employee.zip_code.lower() == zip_code.lower():
                 retList.append(employee)
         return self.no_match_found(retList)
+
+
+    def autogenerate_password(self):
+            random.seed(datetime.datetime.today())
+            return str(random.randint(1000,9999))
+
+    def validate_password(self, result_list):
+            if result_list:
+                employee_role = result_list[0].get_role()
+                return employee_role
+            else:
+                return None
+
+    def check_employee_password(self,unique_user_id,password):
+        employee = self.search_employee_by_id(unique_user_id)
+        try:
+            retList = []
+            for employee in employee:
+                if employee.unique_id == unique_user_id:
+                    if employee.password.lower() == password.lower():
+                        retList.append(employee)
+            return self.validate_password(retList)
+        except AttributeError:
+            return None

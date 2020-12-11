@@ -1,6 +1,9 @@
-unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,email,state
-1,Ragnar,d,d,d,d,d,d,d,d,d,ACTIVE
-2,d,d,d,d,d,d,d,d,d,d,DELETED
-3,Rabbbbi,asdfasd,asdfas,sadfas,sadfasf,asdfasdf,sdaf,555555555,4444444,22222222,DELETED
-4,adam,22,cashier,sa,sa,sa,s,a,as,sa,ACTIVE
-5,TEST,ddd,Admin,Heimili,456,RVK,ICE,45612,5514456,test@test.is,ACTIVE
+unique_id,name,ssn,role,address,zip_code,city,country,home_phone,mobile_phone,email,password,state
+1,Ragnar,d,d,d,d,d,d,d,d,d,password,ACTIVE
+2,d,d,d,d,d,d,d,d,d,d,password,DELETED
+3,Rabbbbi,asdfasd,asdfas,sadfas,sadfasf,asdfasdf,sdaf,555555555,4444444,22222222,password,DELETED
+4,adam,22,cashier,sa,sa,sa,s,a,as,sa,password,ACTIVE
+5,TEST,ddd,OFFICE,Heimili,456,RVK,ICE,45612,5514456,test@test.is,password,ACTIVE
+6,Jon Jonsson,150589-2129,ADMIN,TEST 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,6168,ACTIVE
+7,Jon Jonsson,150589-2129,AIRPORT,TEST 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,1473,ACTIVE
+8,Jon Jonsson,150589-2129,AIRPORT,TEST 50,105,Reykjavik,Iceland,889-2121,551-4469,test@test.is,6666,ACTIVE

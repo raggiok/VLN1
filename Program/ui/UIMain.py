@@ -7,11 +7,12 @@ from ui.EmployeeUI import EmployeeUI
 from ui.InvoiceUI import InvoiceUI
 
 class UIMain:
-    
-    def __init__(self):
-        self.ui_loop()
-    
+    promt_login = True
 
+    def __init__(self):
+        self.logic = LogicAPI()
+        self.login()
+        
         #Menu header
     def ui_menu_header(self, menu_name):
         print(" _   _       _   _            _      _ _                  ")
@@ -20,16 +21,44 @@ class UIMain:
         print("| . ` |/ _` | . ` |   / /\ \ | | '__| | | '_ \ / _ \/ __| ")
         print("| |\  | (_| | |\  |  / ____ \| | |  | | | | | |  __/\__ \ ")
         print("|_| \_|\__,_|_| \_| /_/    \_\_|_|  |_|_|_| |_|\___||___/ ")
+        print()
         print("-"*20 + f"{menu_name}" + "-"*20)
 
     #Menu footer
     def ui_menu_footer(self):
         print("-"*50)
 
-    def ui_loop(self):
+
+    def login(self):
+        self.ui_menu_header("Please Login")
+        while self.promt_login == True:
+            print('\nPress "q" to exit')
+            print()
+            # employee_id = input(">> Employee ID: ")
+            # if employee_id == "q":
+            #     break
+            # password = input(">> Password: ")
+            # employee_role = self.logic.check_password(employee_id, password)
+            employee_role = "ADMIN"
+            if employee_role == None:
+                print("\n*** INVALID PASSWORD AND/OR USERNAME ***\n")
+            else:
+                if employee_role == "OFFICE":
+                    self.office_ui_loop()
+                elif employee_role == "AIRPORT":
+                    self.airport_ui_loop()
+                elif employee_role == "ADMIN":
+                    self.admin_ui_loop()
+
+
+    def admin_ui_loop(self):
         while True:
             self.ui_menu_header("Main Menu")
+<<<<<<< HEAD
             print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \n7. Invoices \nq. to quit program\n")
+=======
+            print("\nSelect an option...\n1. Vehicles \n2. Customers \n3. Contracts \n4. Reports \n5. Destinations \n6. Employees \nq. Quit program\n")
+>>>>>>> da5ace442c08336c38d8fb7c333c3eb33b9e7fb8
             self.ui_menu_footer()
             command = input("Input your command: ")
             command = command.lower()
@@ -40,7 +69,7 @@ class UIMain:
             elif command == "3":
                 self.contracts = ContractUI()
             elif command == "4":
-                pass # Vantar reports
+                self.report = ReportUI()
             elif command == "5":
                 self.destination = destinationUI()
             elif command == "6":            
@@ -48,7 +77,42 @@ class UIMain:
             elif command == '7':
                 self.invoice = InvoiceUI()
             elif command == "q":
-                break
+                self.promt_login = False
+                return
+            else:
+                print("Invalid command, try again")
+    
+    def airport_ui_loop(self):
+        while True:
+            self.ui_menu_header("Main Menu")
+            print("\nSelect an option...\n1. Vehicles \n2. Customers \nq. Quit program\n")
+            self.ui_menu_footer()
+            command = input("Input your command: ")
+            command = command.lower()
+            if command == "1":
+                self.vehicle = VehicleUI()
+            elif command == "2":
+                self.customer = CustomerUI()
+            elif command == "q":
+                self.promt_login = False
+                return
+            else:
+                print("Invalid command, try again")
+
+    def office_ui_loop(self):
+        while True:
+            self.ui_menu_header("Main Menu")
+            print("\nSelect an option...\n1. Contracts \n2. Reports \nq. Quit program\n")
+            self.ui_menu_footer()
+            command = input("Input your command: ")
+            command = command.lower()
+            if command == "1":
+                self.contracts = ContractUI()
+            elif command == "2":
+                self.report = ReportUI()
+            elif command == "q":
+                self.promt_login = False
+                return
             else:
                 print("Invalid command, try again")
 
